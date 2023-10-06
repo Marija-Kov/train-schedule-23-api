@@ -16,7 +16,8 @@ import {
     createTimetableMatrix_d2,
     shapeTrainsData,
     shapeStationsData,
-    writeApi
+    writeTrainsEndpoint,
+    writeStationsEndpoint
 } from './functions'
 
 const departureTimes_d1 = extractDepartureTimes(dataStr_direction1);
@@ -54,7 +55,11 @@ const stationsDataShaped =
    trainsDataShaped
  );
 
- writeApi(
+ writeTrainsEndpoint(
+  trainsDataShaped,
+)
+
+ writeStationsEndpoint(
    stationsDataShaped,
    holidays
  )
