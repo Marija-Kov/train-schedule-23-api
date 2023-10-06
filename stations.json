@@ -1,0 +1,6521 @@
+{
+  "holidays": [
+    "2023-01-01",
+    "2023-01-02",
+    "2023-01-03",
+    "2023-01-07",
+    "2023-02-15",
+    "2023-02-16",
+    "2023-05-01",
+    "2023-05-02",
+    "2023-11-11"
+  ],
+  "stations": [
+    {
+      "name": "batajnica",
+      "nameFormatted": "Batajnica",
+      "departures": [
+        {
+          "time": 4.2,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 4.26,
+          "trainDetails": {
+            "id": 7901,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.57,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.27,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.03,
+          "trainDetails": {
+            "id": 8201,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.57,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.27,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.57,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.1,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.57,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.27,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10,
+          "trainDetails": {
+            "id": 8203,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.57,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.57,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.57,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.57,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.57,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.42,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.59,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.27,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.51,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.03,
+          "trainDetails": {
+            "id": 8041,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.27,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.45,
+          "trainDetails": {
+            "id": 7905,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.57,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.27,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.27,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.57,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.57,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.36,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.32,
+          "trainDetails": {
+            "id": 7900,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.14,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.44,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.59,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.44,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.14,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.44,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.18,
+          "trainDetails": {
+            "id": 8200,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.14,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.52,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.59,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.59,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.24,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 11.59,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.59,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.59,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.04,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.44,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.14,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.44,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.18,
+          "trainDetails": {
+            "id": 7110,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.14,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.44,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.14,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.59,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.39,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.18,
+          "trainDetails": {
+            "id": 8202,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 18.59,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.55,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.59,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.18,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.36,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.36,
+          "trainDetails": {
+            "id": 8208,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.14,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.25,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "kamendin",
+      "nameFormatted": "Kamendin",
+      "departures": [
+        {
+          "time": 4.23,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 4.3,
+          "trainDetails": {
+            "id": 7901,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.01,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.31,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.06,
+          "trainDetails": {
+            "id": 8201,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.01,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.31,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.01,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.14,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.01,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.31,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.04,
+          "trainDetails": {
+            "id": 8203,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.01,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.01,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.01,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.01,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.01,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.46,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.03,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.31,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.55,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.07,
+          "trainDetails": {
+            "id": 8041,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.31,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.49,
+          "trainDetails": {
+            "id": 7905,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.01,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.31,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.31,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.01,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.01,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.4,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.38,
+          "trainDetails": {
+            "id": 7900,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.18,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.48,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.03,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.48,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.18,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.48,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.23,
+          "trainDetails": {
+            "id": 8200,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.18,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.56,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.03,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.03,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.28,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.03,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.03,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.03,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.09,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.48,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.18,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.48,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.23,
+          "trainDetails": {
+            "id": 7110,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.18,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.48,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.18,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.03,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.43,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.23,
+          "trainDetails": {
+            "id": 8202,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.03,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.07,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.03,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.22,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.41,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.41,
+          "trainDetails": {
+            "id": 8208,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.18,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.29,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "zemunsko polje",
+      "nameFormatted": "Zemunsko polje",
+      "departures": [
+        {
+          "time": 4.26,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 4.34,
+          "trainDetails": {
+            "id": 7901,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.03,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.33,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.09,
+          "trainDetails": {
+            "id": 8201,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.03,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.33,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.03,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.16,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.03,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.33,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.08,
+          "trainDetails": {
+            "id": 8203,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.03,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.03,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.03,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.03,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.03,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.48,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.05,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.33,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.57,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.1,
+          "trainDetails": {
+            "id": 8041,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.33,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.52,
+          "trainDetails": {
+            "id": 7905,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.03,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.33,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.33,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.03,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.03,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.44,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.41,
+          "trainDetails": {
+            "id": 7900,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.22,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.52,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.07,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.52,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.22,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.52,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.26,
+          "trainDetails": {
+            "id": 8200,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.22,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.07,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.07,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.32,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.07,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.07,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.07,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.12,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.52,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.22,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.52,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.26,
+          "trainDetails": {
+            "id": 7110,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.22,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.52,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.22,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.07,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.47,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.26,
+          "trainDetails": {
+            "id": 8202,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.07,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.1,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.07,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.26,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.44,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.44,
+          "trainDetails": {
+            "id": 8208,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.22,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.33,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "altina",
+      "nameFormatted": "Altina",
+      "departures": [
+        {
+          "time": 4.29,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 4.37,
+          "trainDetails": {
+            "id": 7901,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.05,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.35,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.12,
+          "trainDetails": {
+            "id": 8201,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.05,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.35,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.05,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.18,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.05,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.35,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.12,
+          "trainDetails": {
+            "id": 8203,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.05,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.05,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.05,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.05,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.05,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.5,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.07,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.35,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.59,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.13,
+          "trainDetails": {
+            "id": 8041,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.35,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.55,
+          "trainDetails": {
+            "id": 7905,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.05,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.35,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.35,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.05,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.05,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.46,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.45,
+          "trainDetails": {
+            "id": 7900,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.24,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.54,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.09,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.54,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.24,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.54,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.3,
+          "trainDetails": {
+            "id": 8200,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.24,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.02,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.09,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.09,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.34,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.09,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.09,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.09,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.15,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.54,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.24,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.54,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.29,
+          "trainDetails": {
+            "id": 7110,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.24,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.54,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.24,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.09,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.49,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.3,
+          "trainDetails": {
+            "id": 8202,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.09,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.15,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.09,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.28,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.47,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.47,
+          "trainDetails": {
+            "id": 8208,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.24,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.35,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "zemun",
+      "nameFormatted": "Zemun",
+      "departures": [
+        {
+          "time": 6.09,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.39,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.09,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.39,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.09,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.22,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.09,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.39,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.09,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.09,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.09,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.09,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.09,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.54,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.11,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.39,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.17,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.39,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.09,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.39,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.39,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.09,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.09,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.52,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.3,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.15,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.3,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.3,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.08,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.15,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.15,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.4,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.15,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.15,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.15,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.3,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.3,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.3,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.15,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.55,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.15,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.15,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.34,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.3,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.41,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "tosin bunar",
+      "nameFormatted": "Tošin bunar",
+      "departures": [
+        {
+          "time": 6.13,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.43,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.13,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.43,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.13,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.26,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.13,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.43,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.13,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.13,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.13,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.13,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.13,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.58,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.15,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.43,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.2,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.43,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.13,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.43,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.43,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.13,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.13,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.56,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.34,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.04,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.19,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.04,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.34,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.04,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.34,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.11,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.19,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.19,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.43,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.19,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.19,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.19,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.04,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.34,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.04,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.34,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.04,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.34,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.19,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.59,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.19,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.19,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.38,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.34,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.45,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "novi beograd",
+      "nameFormatted": "Novi Beograd",
+      "departures": [
+        {
+          "time": 6.16,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.46,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.16,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.46,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.16,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.29,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.16,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.46,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.16,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.16,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.16,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.16,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.16,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.01,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.18,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.46,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.23,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.46,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.16,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.46,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.46,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.16,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.16,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 5.59,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.37,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.07,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.22,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.07,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.37,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.07,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.37,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.13,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.22,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.22,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.45,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.22,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.22,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.22,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.07,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.37,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.07,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.37,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.07,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.37,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.22,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.02,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.22,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.22,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.41,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.37,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.48,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "beograd centar",
+      "nameFormatted": "Beograd centar",
+      "departures": [
+        {
+          "time": 6.19,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.49,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.19,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.49,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.19,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.32,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.19,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.49,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.19,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.19,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.19,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.19,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.19,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.04,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.21,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.49,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.26,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.49,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.19,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.49,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.49,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.19,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.19,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.01,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.39,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.09,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.24,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.09,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.39,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.09,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.39,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.15,
+          "trainDetails": {
+            "id": 8310,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.24,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.24,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.47,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.24,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.24,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.24,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.09,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.39,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.09,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.39,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.09,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.39,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.24,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.04,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.24,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.24,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.43,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.39,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.5,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "karadjordjev park",
+      "nameFormatted": "Karađorđev park",
+      "departures": [
+        {
+          "time": 4.3,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 4.38,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.2,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.5,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.13,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.2,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.5,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.2,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.33,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.2,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.5,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.13,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.2,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.2,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.2,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.2,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 14.2,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.05,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.22,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.5,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.27,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.22,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.5,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.06,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.44,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.14,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.29,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.17,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.44,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.14,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.44,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.29,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.29,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.53,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.29,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.29,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.29,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.14,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.44,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.14,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.44,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.14,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.44,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.29,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.09,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.29,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.29,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.48,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.44,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.55,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "vukov spomenik",
+      "nameFormatted": "Vukov spomenik",
+      "departures": [
+        {
+          "time": 6.24,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.54,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.24,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.54,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.24,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.37,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.24,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.54,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.24,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.24,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.24,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.24,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.24,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.09,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.26,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.54,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.26,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.54,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.24,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.54,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.54,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.24,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.24,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.09,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.47,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.17,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.32,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.2,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.47,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.17,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.47,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.32,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.32,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.56,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.32,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.32,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.32,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.17,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.47,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.17,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.47,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.17,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.47,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.32,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.12,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.32,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.32,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.51,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.47,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 22.58,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "pancevacki most",
+      "nameFormatted": "Pančevacki most",
+      "departures": [
+        {
+          "time": 6.28,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.58,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.28,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.58,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.28,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.41,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.28,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.58,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.28,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.28,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.28,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.28,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.28,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.13,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.3,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.58,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.3,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.58,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.28,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.58,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.58,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.28,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.28,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.13,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.51,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.21,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.36,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.24,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.51,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.21,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.51,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.36,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.36,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12,
+          "trainDetails": {
+            "id": 8022,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 12.36,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.36,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.36,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.21,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.51,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.21,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.51,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.21,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.51,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.36,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.15,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 19.36,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.36,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.55,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.51,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 23.01,
+          "trainDetails": {
+            "id": 8340,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "krnjaca most",
+      "nameFormatted": "Krnjača most",
+      "departures": [
+        {
+          "time": 6.32,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.02,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.32,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.02,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.32,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.45,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.32,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.02,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.32,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.32,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.32,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.32,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.32,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.17,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.34,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.02,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.34,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.02,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.32,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.02,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.02,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.32,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.32,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.16,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.54,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.24,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.39,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.27,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.54,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.24,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.54,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.39,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.39,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.39,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.39,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.39,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.24,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.54,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.24,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.54,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.24,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.54,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.39,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.39,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.39,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.58,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.54,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "krnjaca ukr",
+      "nameFormatted": "Krnjača ukr.",
+      "departures": [
+        {
+          "time": 6.36,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.06,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.36,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.06,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.36,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.49,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.36,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.06,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.36,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.36,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.36,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.36,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.36,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.21,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.38,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.06,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.38,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.06,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.36,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.06,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.06,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.36,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.36,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.18,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.56,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.26,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.41,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.29,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.56,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.26,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.56,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.41,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.41,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.41,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.41,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.41,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.26,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.56,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.26,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.56,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.26,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.56,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.41,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.41,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.41,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.56,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "sebes",
+      "nameFormatted": "Sebeš",
+      "departures": [
+        {
+          "time": 6.39,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.09,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.39,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.09,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.39,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.52,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.39,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.09,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.39,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.39,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.39,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.39,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.39,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.24,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.41,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.09,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.41,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.09,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.39,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.09,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.09,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.39,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.39,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.2,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.58,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.28,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.43,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.31,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.58,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.28,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.58,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.43,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.43,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.43,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.43,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.43,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.28,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.58,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.28,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.58,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.28,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.58,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.43,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.43,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.43,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21.02,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 21.58,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "ovca",
+      "nameFormatted": "Ovča",
+      "departures": [
+        {
+          "time": 6.42,
+          "trainDetails": {
+            "id": 8001,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.12,
+          "trainDetails": {
+            "id": 8005,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.42,
+          "trainDetails": {
+            "id": 8007,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.12,
+          "trainDetails": {
+            "id": 8011,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 8.42,
+          "trainDetails": {
+            "id": 8013,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.55,
+          "trainDetails": {
+            "id": 8015,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.42,
+          "trainDetails": {
+            "id": 8017,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.12,
+          "trainDetails": {
+            "id": 8019,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.42,
+          "trainDetails": {
+            "id": 8021,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.42,
+          "trainDetails": {
+            "id": 8023,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.42,
+          "trainDetails": {
+            "id": 8025,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.42,
+          "trainDetails": {
+            "id": 8029,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.42,
+          "trainDetails": {
+            "id": 8033,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.27,
+          "trainDetails": {
+            "id": 8035,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 15.44,
+          "trainDetails": {
+            "id": 8037,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.12,
+          "trainDetails": {
+            "id": 8039,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.44,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.12,
+          "trainDetails": {
+            "id": 8043,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.42,
+          "trainDetails": {
+            "id": 8045,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.12,
+          "trainDetails": {
+            "id": 8047,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.12,
+          "trainDetails": {
+            "id": 8049,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.42,
+          "trainDetails": {
+            "id": 8051,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.42,
+          "trainDetails": {
+            "id": 8053,
+            "directionId": 1,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 6.24,
+          "trainDetails": {
+            "id": 8000,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.02,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 7.32,
+          "trainDetails": {
+            "id": 8004,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 7.47,
+          "trainDetails": {
+            "id": 8006,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 8.35,
+          "trainDetails": {
+            "id": 8010,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 9.02,
+          "trainDetails": {
+            "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 9.32,
+          "trainDetails": {
+            "id": 8014,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.02,
+          "trainDetails": {
+            "id": 8016,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 10.47,
+          "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 11.47,
+          "trainDetails": {
+            "id": 8020,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.47,
+          "trainDetails": {
+            "id": 8024,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 13.47,
+          "trainDetails": {
+            "id": 8026,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 14.47,
+          "trainDetails": {
+            "id": 8030,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 15.32,
+          "trainDetails": {
+            "id": 8034,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 16.02,
+          "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 16.32,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 17.02,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 17.32,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 18.02,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 18.47,
+          "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 19.47,
+          "trainDetails": {
+            "id": 8050,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 20.47,
+          "trainDetails": {
+            "id": 8052,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21.06,
+          "trainDetails": {
+            "id": 8054,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 22.02,
+          "trainDetails": {
+            "id": 8056,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        }
+      ]
+    }
+  ]
+}

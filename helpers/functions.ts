@@ -1,19 +1,21 @@
 import fs from 'fs';
 
-type Train = {
+type TrainDetails = {
   id: number,
   directionId: 1 | 2,
-  activeOnWeekendsAndHolidays: boolean | "w&h_only",
-  itinerary: {station: string, time: number}[]
+  activeOnWeekendsAndHolidays: boolean | "w&h_only" 
 };
+
+type TrainItinerary =  {station: string, time: number}[];
+
+type Train = TrainDetails & {itinerary: TrainItinerary};
+
+type StationDeparture = {time: number, trainDetails: TrainDetails};
 
 type Station = {
   name: string,
   nameFormatted: string,
-  departures: {
-      time: number, 
-      trainDetails: Train
-  }[]
+  departures: StationDeparture[]
 };
 
 export function extractDepartureTimes(dataStr: string): string[][]{
@@ -186,6 +188,16 @@ export function shapeTrainsData(
    return arr
   }
 
+export function writeTrainsEndpoint(arr: Train[]){
+  const trains: any = {};
+  for (let train of arr){
+   trains[train.id] = train;
+  }
+  return fs.writeFile("../trains.json", JSON.stringify(trains), (err) => {
+   console.log(err)
+  })
+  }
+
 export function shapeStationsData(
     stations: string[], 
     stationsFormatted: string[], 
@@ -205,18 +217,21 @@ export function shapeStationsData(
       const trLen = trainsData.length;
       for (let j = 0; j < trLen; ++j){
         if(trainsData[j].itinerary[i]){
-          const stObj: {time: number, trainDetails: Train} = {
+          const departure: StationDeparture = {
             time: 0,
             trainDetails: {
                 id: 0,
                 directionId: 1,
                 activeOnWeekendsAndHolidays: false,
-                itinerary: []
             }
           };
-          stObj.time = Number(trainsData[j].itinerary[i].time);
-          stObj.trainDetails = trainsData[j]
-          obj.departures.push(stObj);
+          departure.time = Number(trainsData[j].itinerary[i].time);
+          departure.trainDetails = {
+            id: trainsData[j].id,
+            directionId: trainsData[j].directionId,
+            activeOnWeekendsAndHolidays: trainsData[j].activeOnWeekendsAndHolidays,
+          }
+          obj.departures.push(departure);
          }
       }
       arr.push(obj); 
@@ -224,15 +239,15 @@ export function shapeStationsData(
     return arr
   }
 
-export function writeApi(
+export function writeStationsEndpoint(
   stationsData: Station[],
   holidays: string[]
   ): void {
-   const api = {
+   const data = {
     holidays: holidays,
     stations: stationsData
    }   
-   return fs.writeFile("../data.json", JSON.stringify(api), (err) => {
+   return fs.writeFile("../stations.json", JSON.stringify(data), (err) => {
     console.log(err)
    }) 
   }
