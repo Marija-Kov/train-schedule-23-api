@@ -20,7 +20,7 @@ type Station = {
 
 export function extractDepartureTimes(dataStr: string): string[][]{
       /*
-       Takes in raw data string (copy-pasted from the pdf table) 
+       Takes in data string extracted from the PDF 
        and returns all times of departures of any train in an array
        for each station in the given direction.
       */

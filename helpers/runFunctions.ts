@@ -8,7 +8,7 @@ import {
     stations,
     stationsFormatted,
     holidays
-} from './rawData'
+} from './extractedData'
 
 import {
     extractDepartureTimes,
