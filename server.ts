@@ -20,6 +20,17 @@ const server = http.createServer((req, res) => {
       }
       return res.end(data);
     });
+  } else if (url && url.startsWith("/trains/")) {
+    const train = url.split('/')[2];
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+    fs.readFile("./trains.json", "utf-8", (err, data) => {
+      if (err) {
+        return res.end(err);
+      }
+      const json = JSON.parse(data);
+      return res.end(JSON.stringify(json[train]));
+    });
   } else if (url === "/stations") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
