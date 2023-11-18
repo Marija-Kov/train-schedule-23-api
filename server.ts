@@ -21,15 +21,45 @@ const server = http.createServer((req, res) => {
       return res.end(data);
     });
   } else if (url && url.startsWith("/trains/")) {
-    const train = url.split('/')[2];
+    let trainId = "";
+    let direction = 0;
+    const splitUrl = url.split("/");
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     fs.readFile("./trains.json", "utf-8", (err, data) => {
       if (err) {
         return res.end(err);
       }
-      const json = JSON.parse(data);
-      return res.end(JSON.stringify(json[train]));
+      const trains = JSON.parse(data);
+      if (splitUrl[2].length > 2) {
+        trainId = splitUrl[2];
+        return res.end(JSON.stringify(trains[trainId]));
+      } else if (splitUrl[2] === "1" || splitUrl[2] === "2") {
+        direction = Number(splitUrl[2]);
+        let result: any[] = [];
+        for (let train in trains) {
+          if (trains[train].directionId === direction) {
+            result.push(trains[train]);
+          }
+        }
+        return res.end(JSON.stringify(result));
+      } else if (splitUrl[2] === "wh"){
+        let result: any[] = [];
+        for (let train in trains) {
+          if (trains[train].activeOnWeekendsAndHolidays === true || trains[train].activeOnWeekendsAndHolidays === "w&h_only") {
+            result.push(trains[train]);
+          }
+        }
+        return res.end(JSON.stringify(result));
+      } else if (splitUrl[2] === "ed"){
+        let result: any[] = [];
+        for (let train in trains) {
+          if (trains[train].activeOnWeekendsAndHolidays === true || trains[train].activeOnWeekendsAndHolidays === false) {
+            result.push(trains[train]);
+          }
+        }
+        return res.end(JSON.stringify(result));
+      }
     });
   } else if (url === "/stations") {
     res.statusCode = 200;
@@ -40,8 +70,8 @@ const server = http.createServer((req, res) => {
       }
       return res.end(data);
     });
-  } else if (url && url.startsWith("/stations/")){
-    const station = url.split('/')[2];
+  } else if (url && url.startsWith("/stations/")) {
+    const station = url.split("/")[2];
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     fs.readFile("./stations.json", "utf-8", (err, data) => {
@@ -51,10 +81,10 @@ const server = http.createServer((req, res) => {
       const json = JSON.parse(data);
       return res.end(JSON.stringify(json.stations[station]));
     });
-  } else if (url === "/"){
+  } else if (url === "/") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/plain");
-    res.end("Welcome to the API!")
+    res.end("Welcome to the API!");
   } else {
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/plain");
