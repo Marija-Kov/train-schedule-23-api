@@ -89,18 +89,42 @@ const server = http.createServer((req, res) => {
       if (err) {
         return res.end(err);
       }
-      return res.end(data);
+      const stations = JSON.parse(data).stations;
+      return res.end(JSON.stringify(stations, null, 2));
     });
   } else if (url && url.startsWith("/stations/")) {
-    const station = url.split("/")[2];
+    const splitUrl = url.split("/");
+    const station = splitUrl[2].split("-").join(" ");
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     fs.readFile("./stations.json", "utf-8", (err, data) => {
       if (err) {
         return res.end(err);
       }
-      const json = JSON.parse(data);
-      return res.end(JSON.stringify(json.stations[station]));
+      const stations = JSON.parse(data).stations;
+      /* Departures from station in specific direction */
+      if (splitUrl[3]) {
+        for (let s of stations) {
+          if (s.name === station) {
+            return (() => {
+              let departures: any[] = [];
+              for (let departure of s.departures) {
+                if (
+                  departure.trainDetails.directionId === Number(splitUrl[3])
+                ) {
+                  departures.push(departure);
+                }
+              }
+              return res.end(JSON.stringify(departures, null, 2));
+            })();
+          }
+        }
+      }
+      for (let s of stations) {
+        if (s.name === station) {
+          return res.end(JSON.stringify(s, null, 2));
+        }
+      }
     });
   } else if (url === "/") {
     res.statusCode = 200;
