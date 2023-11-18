@@ -31,34 +31,55 @@ const server = http.createServer((req, res) => {
         return res.end(err);
       }
       const trains = JSON.parse(data);
+      /* Train by ID number */
       if (splitUrl[2].length > 2) {
         trainId = splitUrl[2];
-        return res.end(JSON.stringify(trains[trainId]));
+        return res.end(JSON.stringify(trains[trainId], null, 2));
+        /* Trains by direction */
       } else if (splitUrl[2] === "1" || splitUrl[2] === "2") {
         direction = Number(splitUrl[2]);
         let result: any[] = [];
-        for (let train in trains) {
-          if (trains[train].directionId === direction) {
-            result.push(trains[train]);
+        /* Trains active on weekends and holidays in the given direction */
+        if (splitUrl[3] && splitUrl[3] === "wh") {
+          for (let train in trains) {
+            if (
+              trains[train].directionId === direction &&
+              trains[train].activeOnWeekendsAndHolidays === "w&h_only"
+            ) {
+              result.push(trains[train]);
+            }
           }
-        }
-        return res.end(JSON.stringify(result));
-      } else if (splitUrl[2] === "wh"){
-        let result: any[] = [];
-        for (let train in trains) {
-          if (trains[train].activeOnWeekendsAndHolidays === true || trains[train].activeOnWeekendsAndHolidays === "w&h_only") {
-            result.push(trains[train]);
+          return res.end(JSON.stringify(result, null, 2));
+          /* Trains active every day in the given direction */
+        } else if (splitUrl[3] && splitUrl[3] === "ed") {
+          for (let train in trains) {
+            if (
+              trains[train].directionId === direction &&
+              trains[train].activeOnWeekendsAndHolidays === true
+            ) {
+              result.push(trains[train]);
+            }
           }
-        }
-        return res.end(JSON.stringify(result));
-      } else if (splitUrl[2] === "ed"){
-        let result: any[] = [];
-        for (let train in trains) {
-          if (trains[train].activeOnWeekendsAndHolidays === true || trains[train].activeOnWeekendsAndHolidays === false) {
-            result.push(trains[train]);
+          return res.end(JSON.stringify(result, null, 2));
+          /* Trains active Monday to Friday in the given direction */
+        } else if (splitUrl[3] && splitUrl[3] === "wd") {
+          for (let train in trains) {
+            if (
+              trains[train].directionId === direction &&
+              trains[train].activeOnWeekendsAndHolidays === false
+            ) {
+              result.push(trains[train]);
+            }
           }
+          return res.end(JSON.stringify(result, null, 2));
+        } else {
+          for (let train in trains) {
+            if (trains[train].directionId === direction) {
+              result.push(trains[train]);
+            }
+          }
+          return res.end(JSON.stringify(result, null, 2));
         }
-        return res.end(JSON.stringify(result));
       }
     });
   } else if (url === "/stations") {
