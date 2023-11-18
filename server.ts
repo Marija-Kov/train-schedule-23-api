@@ -102,8 +102,67 @@ const server = http.createServer((req, res) => {
         return res.end(err);
       }
       const stations = JSON.parse(data).stations;
-      /* Departures from station in specific direction */
+      /* Departures from station in a specific direction */
       if (splitUrl[3]) {
+        /* Departures from station in a specific direction on weekends and holidays only */
+        if (splitUrl[4] && splitUrl[4] === "wh") {
+          for (let s of stations) {
+            if (s.name === station) {
+              return (() => {
+                let departures: any[] = [];
+                for (let departure of s.departures) {
+                  if (
+                    departure.trainDetails.directionId ===
+                      Number(splitUrl[3]) &&
+                    departure.trainDetails.activeOnWeekendsAndHolidays ===
+                      "w&h_only"
+                  ) {
+                    departures.push(departure);
+                  }
+                }
+                return res.end(JSON.stringify(departures, null, 2));
+              })();
+            }
+          }
+          /* Departures from station in a specific direction, every day */
+        } else if (splitUrl[4] && splitUrl[4] === "ed") {
+          for (let s of stations) {
+            if (s.name === station) {
+              return (() => {
+                let departures: any[] = [];
+                for (let departure of s.departures) {
+                  if (
+                    departure.trainDetails.directionId ===
+                      Number(splitUrl[3]) &&
+                    departure.trainDetails.activeOnWeekendsAndHolidays === true
+                  ) {
+                    departures.push(departure);
+                  }
+                }
+                return res.end(JSON.stringify(departures, null, 2));
+              })();
+            }
+          }
+          /* Departures from station in a specific direction, Monday to Friday */
+        } else if (splitUrl[4] && splitUrl[4] === "wd") {
+          for (let s of stations) {
+            if (s.name === station) {
+              return (() => {
+                let departures: any[] = [];
+                for (let departure of s.departures) {
+                  if (
+                    departure.trainDetails.directionId ===
+                      Number(splitUrl[3]) &&
+                    departure.trainDetails.activeOnWeekendsAndHolidays === false
+                  ) {
+                    departures.push(departure);
+                  }
+                }
+                return res.end(JSON.stringify(departures, null, 2));
+              })();
+            }
+          }
+        }
         for (let s of stations) {
           if (s.name === station) {
             return (() => {
@@ -120,6 +179,8 @@ const server = http.createServer((req, res) => {
           }
         }
       }
+
+      /* Station details */
       for (let s of stations) {
         if (s.name === station) {
           return res.end(JSON.stringify(s, null, 2));
