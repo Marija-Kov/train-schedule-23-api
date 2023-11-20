@@ -1,14 +1,16 @@
 # Train schedule API
 
-The primary purpose of this API is to serve as a structured source of data for the <a href="https://github.com/Marija-Kov/train-schedule">Train Schedule</a> app.
+The primary purpose of this repository is providing a static source of data (JSON files) for the <a href="https://github.com/Marija-Kov/train-schedule">Train Schedule</a> app. <br>
+On top of that, it is an actual web API that can be consumed with HTTP requests.
 
 ## Functionality
 
-### I Organizing data into usable resources
+### I - Organizing data into usable resources
 
 The API contains a program that uses extracted train schedule data to generate 2 endpoints (JSON files).
+<br>
 To try it out locally:
-
+<br>
 1. Install <a href="https://nodejs.org/en">Node.js</a> on your machine;
 2. Clone repository;
 3. Install dependencies - ``` npm install```
@@ -18,7 +20,7 @@ To try it out locally:
    ```
    will generate ```stations.json``` and ```trains.json``` .
 
-### II Serving data
+### II - Serving data
 
 The API exposes endpoints for accessing data related to trains and train stations.
 
@@ -27,7 +29,7 @@ To try it out locally, navigate to the root directory and run: ```nodemon server
 #### Train routes
 
 - ```/trains```  will expose all trains with details;
-- ```/trains/[trainId]```, where trainId is a 4-digit number, will get a single train;
+- ```/trains/[trainId]```, where trainId is a <a href="https://github.com/Marija-Kov/train-schedule-23-api/blob/build-api/helpers/extractedData.ts">4-digit number</a>, will get a single train;
 - ```/trains/[directionId]```, where [directionId](#directionId) is either number 1 or 2, will get all trains that go in the given direction;
 - ```/trains/[directionId]/[activity]```, where activity can be either ```ed``` (every day), ```wd``` (weekday - Monday to Friday) or ```wh``` (weekends and holidays only), will get trains going in the given direction on specified days;
 
