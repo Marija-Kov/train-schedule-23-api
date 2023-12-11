@@ -1,6 +1,6 @@
 # Train schedule API
 
-The primary purpose of this repository is providing a static source of data (JSON files) for the <a href="https://github.com/Marija-Kov/train-schedule">Train Schedule</a> app. <br>
+The primary purpose of this repository is providing a static source of data (JSON files) for the <a href="https://github.com/marija-kov/train-schedule">Train Schedule</a> app. <br>
 On top of that, it is an actual web API that can be consumed with HTTP requests.
 
 ## Functionality
