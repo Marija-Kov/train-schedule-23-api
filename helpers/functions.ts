@@ -193,7 +193,7 @@ export function writeTrainsEndpoint(arr: Train[]){
   for (let train of arr){
    trains[train.id] = train;
   }
-  return fs.writeFile("../trains.json", JSON.stringify(trains), (err) => {
+  return fs.writeFile("../trains.json", JSON.stringify(trains, null, 2), (err) => {
    console.log(err)
   })
   }
@@ -247,7 +247,7 @@ export function writeStationsEndpoint(
     holidays: holidays,
     stations: stationsData
    }   
-   return fs.writeFile("../stations.json", JSON.stringify(data), (err) => {
+   return fs.writeFile("../stations.json", JSON.stringify(data, null, 2), (err) => {
     console.log(err)
    }) 
   }
