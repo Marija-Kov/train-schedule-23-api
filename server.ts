@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
         return res.end(err);
       }
       const trains = JSON.parse(data);
-      return getData_trains(res, trains, directionOrTrainId, frequency);
+      return filterTrainsData(res, trains, directionOrTrainId, frequency);
     });
   } else if (url === "/stations") {
     res.statusCode = 200;
@@ -55,7 +55,7 @@ const server = http.createServer((req, res) => {
         return res.end(err);
       }
       const stations = JSON.parse(data).stations;
-      return getData_stations(res, stations, station, direction, frequency);
+      return filterStationsData(res, stations, station, direction, frequency);
     });
   } else if (url === "/") {
     res.statusCode = 200;
@@ -77,110 +77,3 @@ server.listen(port, () => {
 });
 
 const getData_stations = (
-  res: any,
-  stations: any[],
-  station: string,
-  direction: number,
-  frequency: string
-) => {
-  if (frequency) {
-    let activeOnWeekendsAndHolidays: any;
-    switch (frequency) {
-      case "wh":
-        activeOnWeekendsAndHolidays = "w&h_only";
-        break;
-      case "ed":
-        activeOnWeekendsAndHolidays = true;
-        break;
-      case "wd":
-        activeOnWeekendsAndHolidays = false;
-        break;
-      default:
-        undefined;
-    }
-    for (let s of stations) {
-      if (s.name === station) {
-        return (() => {
-          let departures: any[] = [];
-          for (let departure of s.departures) {
-            if (
-              departure.trainDetails.directionId === direction &&
-              departure.trainDetails.activeOnWeekendsAndHolidays ===
-                activeOnWeekendsAndHolidays
-            ) {
-              departures.push(departure);
-            }
-          }
-          return res.end(JSON.stringify(departures, null, 2));
-        })();
-      }
-    }
-  } else if (direction) {
-    for (let s of stations) {
-      if (s.name === station) {
-        return (() => {
-          let departures: any[] = [];
-          for (let departure of s.departures) {
-            if (departure.trainDetails.directionId === direction) {
-              departures.push(departure);
-            }
-          }
-          return res.end(JSON.stringify(departures, null, 2));
-        })();
-      }
-    }
-  } else {
-    for (let s of stations) {
-      if (s.name === station) {
-        return res.end(JSON.stringify(s, null, 2));
-      }
-    }
-  }
-};
-
-const getData_trains = (
-  res: any,
-  trains: any[],
-  directionOrTrainId: number,
-  frequency: string
-) => {
-  if (frequency) {
-    let activeOnWeekendsAndHolidays: any;
-    switch (frequency) {
-      case "wh":
-        activeOnWeekendsAndHolidays = "w&h_only";
-        break;
-      case "ed":
-        activeOnWeekendsAndHolidays = true;
-        break;
-      case "wd":
-        activeOnWeekendsAndHolidays = false;
-        break;
-      default:
-        undefined;
-    }
-    let result: any[] = [];
-    for (let train in trains) {
-      if (
-        trains[train].directionId === directionOrTrainId &&
-        trains[train].activeOnWeekendsAndHolidays ===
-          activeOnWeekendsAndHolidays
-      ) {
-        result.push(trains[train]);
-      }
-    }
-    return res.end(JSON.stringify(result, null, 2));
-  }
-
-  if (directionOrTrainId.toString().length === 4) {
-    return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
-  } else if ([1, 2].includes(directionOrTrainId)) {
-    let result: any[] = [];
-    for (let train in trains) {
-      if (trains[train].directionId === directionOrTrainId) {
-        result.push(trains[train]);
-      }
-    }
-    return res.end(JSON.stringify(result, null, 2));
-  }
-};
