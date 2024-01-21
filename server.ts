@@ -11,20 +11,21 @@ const server = http.createServer(async (req, res) => {
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "405 Method Not Allowed" }));
   }
-  if (url === "/trains") {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "application/json");
-    try {
-      const json = await fs.readFile("./trains.json", "utf-8");
-      return res.end(json);
-    } catch (error) {
-      console.error("Error reading trains.json:", error);
-      res.statusCode = 500;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Internal server error" }));
-    }
-  } else if (url && url.startsWith("/trains/")) {
+  if (url && url.startsWith("/trains")) {
     const splitUrl = url.split("/");
+    if (!splitUrl[2]) {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      try {
+        const json = await fs.readFile("./trains.json", "utf-8");
+        return res.end(json);
+      } catch (error) {
+        console.error("Error reading trains.json:", error);
+        res.statusCode = 500;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify({ error: "Internal server error" }));
+      }
+    }
     const directionOrTrainId = Number(splitUrl[2]);
     const frequency = splitUrl[3];
     res.statusCode = 200;
@@ -39,20 +40,21 @@ const server = http.createServer(async (req, res) => {
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Internal server error" }));
     }
-  } else if (url === "/stations") {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "application/json");
-    try {
-      const json = await fs.readFile("./stations.json", "utf-8");
-      return res.end(json);
-    } catch (error) {
-      console.error("Error reading stations.json:", error);
-      res.statusCode = 500;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Internal server error" }));
-    }
-  } else if (url && url.startsWith("/stations/")) {
+  } else if (url && url.startsWith("/stations")) {
     const splitUrl = url.split("/");
+    if (!splitUrl[2]) {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
+      try {
+        const json = await fs.readFile("./stations.json", "utf-8");
+        return res.end(json);
+      } catch (error) {
+        console.error("Error reading stations.json:", error);
+        res.statusCode = 500;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(JSON.stringify({ error: "Internal server error" }));
+      }
+    }
     const station = splitUrl[2].split("-").join(" ");
     const direction = Number(splitUrl[3]);
     const frequency = splitUrl[4];
