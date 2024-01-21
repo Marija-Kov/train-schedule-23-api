@@ -1,48 +1,56 @@
 import http from "http";
-import fs from "fs";
+import { promises as fs } from "fs";
+import { filterStationsData, filterTrainsData } from "./filterData";
 
 const port = process.env.PORT || 3003;
 
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
   const { url, method } = req;
   if (method !== "GET") {
     res.statusCode = 405;
-    res.setHeader("Content-Type", "text/plain");
-    res.end("405 Method Not Allowed");
-    return;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "405 Method Not Allowed" }));
   }
   if (url === "/trains") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
-    fs.readFile("./trains.json", "utf-8", (err, data) => {
-      if (err) {
-        return res.end(err);
-      }
-      return res.end(data);
-    });
+    try {
+      const json = await fs.readFile("./trains.json", "utf-8");
+      return res.end(json);
+    } catch (error) {
+      console.error("Error reading trains.json:", error);
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ error: "Internal server error" }));
+    }
   } else if (url && url.startsWith("/trains/")) {
     const splitUrl = url.split("/");
     const directionOrTrainId = Number(splitUrl[2]);
     const frequency = splitUrl[3];
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
-    fs.readFile("./trains.json", "utf-8", (err, data) => {
-      if (err) {
-        return res.end(err);
-      }
-      const trains = JSON.parse(data);
-      return filterTrainsData(res, trains, directionOrTrainId, frequency);
-    });
+    try {
+      const json = await fs.readFile("./trains.json", "utf-8");
+      const data = JSON.parse(json);
+      return filterTrainsData(res, data, directionOrTrainId, frequency);
+    } catch (error) {
+      console.error("Error reading/filtering trains data:", error);
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ error: "Internal server error" }));
+    }
   } else if (url === "/stations") {
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
-    fs.readFile("./stations.json", "utf-8", (err, data) => {
-      if (err) {
-        return res.end(err);
-      }
-      const stations = JSON.parse(data).stations;
-      return res.end(JSON.stringify(stations, null, 2));
-    });
+    try {
+      const json = await fs.readFile("./stations.json", "utf-8");
+      return res.end(json);
+    } catch (error) {
+      console.error("Error reading stations.json:", error);
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ error: "Internal server error" }));
+    }
   } else if (url && url.startsWith("/stations/")) {
     const splitUrl = url.split("/");
     const station = splitUrl[2].split("-").join(" ");
@@ -50,21 +58,26 @@ const server = http.createServer((req, res) => {
     const frequency = splitUrl[4];
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
-    fs.readFile("./stations.json", "utf-8", (err, data) => {
-      if (err) {
-        return res.end(err);
-      }
-      const stations = JSON.parse(data).stations;
-      return filterStationsData(res, stations, station, direction, frequency);
-    });
+    try {
+      const json = await fs.readFile("./stations.json", "utf-8");
+      const data = JSON.parse(json).stations;
+      return filterStationsData(res, data, station, direction, frequency);
+    } catch (error) {
+      console.error("Error reading/filtering stations data:", error);
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ error: "Internal server error" }));
+    }
   } else if (url === "/") {
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
-    res.end("Welcome to the API!");
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({ message: "Welcome to the train schedule API!" })
+    );
   } else {
     res.statusCode = 404;
-    res.setHeader("Content-Type", "text/plain");
-    res.end("404 Not Found");
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "Not found" }));
   }
 });
 
@@ -75,5 +88,3 @@ server.on("error", (error) => {
 server.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
-
-const getData_stations = (
