@@ -1,3 +1,4 @@
+import { ServerResponse } from "http";
 import {
   stations as stationNames,
   trainId_d1,
@@ -5,10 +6,10 @@ import {
 } from "./helpers/extractedData";
 
 export const filterStationsData = (
-  res: any,
+  res: ServerResponse,
   stations: any[],
   station: string,
-  direction: number,
+  direction: number | undefined,
   frequency: string
 ) => {
   if (!stationNames.includes(station)) {
@@ -16,7 +17,7 @@ export const filterStationsData = (
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Invalid station name" }));
   }
-  if (direction || Number.isNaN(direction)) {
+  if (typeof direction === "number") {
     if (![1, 2].includes(direction)) {
       res.statusCode = 400;
       res.setHeader("Content-Type", "application/json");
@@ -71,7 +72,7 @@ export const filterStationsData = (
 };
 
 export const filterTrainsData = (
-  res: any,
+  res: ServerResponse,
   trains: any[],
   directionOrTrainId: number,
   frequency: string

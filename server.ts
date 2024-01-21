@@ -56,7 +56,11 @@ const server = http.createServer(async (req, res) => {
       }
     }
     const station = splitUrl[2].split("-").join(" ");
-    const direction = Number(splitUrl[3]);
+    const direction = (() => {
+      if (!splitUrl[3]) return undefined;
+      if (splitUrl[3] === "") return NaN;
+      return Number(splitUrl[3]);
+    })();
     const frequency = splitUrl[4];
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
