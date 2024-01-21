@@ -16,35 +16,38 @@ export const filterStationsData = (
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Invalid station name" }));
   }
-  if (frequency) {
-    if (!["wh", "wd", "ed"].includes(frequency)) {
-      res.statusCode = 400;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Invalid frequency parameter" }));
-    }
-    const activeOnWeekendsAndHolidays = activity(frequency);
-    for (let s of stations) {
-      if (s.name === station) {
-        return (() => {
-          let departures: any[] = [];
-          for (let departure of s.departures) {
-            if (
-              departure.trainDetails.directionId === direction &&
-              departure.trainDetails.activeOnWeekendsAndHolidays ===
-                activeOnWeekendsAndHolidays
-            ) {
-              departures.push(departure);
-            }
-          }
-          return res.end(JSON.stringify(departures, null, 2));
-        })();
-      }
-    }
-  } else if (direction) {
+  if (direction || Number.isNaN(direction)) {
     if (![1, 2].includes(direction)) {
       res.statusCode = 400;
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
+    }
+    if (frequency) {
+      if (!["wh", "wd", "ed"].includes(frequency)) {
+        res.statusCode = 400;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(
+          JSON.stringify({ error: "Invalid frequency parameter" })
+        );
+      }
+      const activeOnWeekendsAndHolidays = activity(frequency);
+      for (let s of stations) {
+        if (s.name === station) {
+          return (() => {
+            let departures: any[] = [];
+            for (let departure of s.departures) {
+              if (
+                departure.trainDetails.directionId === direction &&
+                departure.trainDetails.activeOnWeekendsAndHolidays ===
+                  activeOnWeekendsAndHolidays
+              ) {
+                departures.push(departure);
+              }
+            }
+            return res.end(JSON.stringify(departures, null, 2));
+          })();
+        }
+      }
     }
     for (let s of stations) {
       if (s.name === station) {
@@ -59,11 +62,10 @@ export const filterStationsData = (
         })();
       }
     }
-  } else {
-    for (let s of stations) {
-      if (s.name === station) {
-        return res.end(JSON.stringify(s, null, 2));
-      }
+  }
+  for (let s of stations) {
+    if (s.name === station) {
+      return res.end(JSON.stringify(s, null, 2));
     }
   }
 };
@@ -86,15 +88,17 @@ export const filterTrainsData = (
       );
     }
     if (frequency) {
-        res.statusCode = 400;
-        res.setHeader("Content-Type", "application/json");
-        return res.end(
-          JSON.stringify({ error: "Invalid route: cannot use frequency parameter with train id" })
-        );
+      res.statusCode = 400;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({
+          error: "Invalid route: cannot use frequency parameter with train id",
+        })
+      );
     } else {
       return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
     }
-  } 
+  }
   if (directionOrTrainId.toString().length === 1) {
     if (![1, 2].includes(directionOrTrainId)) {
       res.statusCode = 400;
