@@ -74,26 +74,6 @@ export const filterTrainsData = (
   directionOrTrainId: number,
   frequency: string
 ) => {
-  if (frequency) {
-    if (!["wh", "wd", "ed"].includes(frequency)) {
-      res.statusCode = 400;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Invalid frequency parameter" }));
-    }
-    const activeOnWeekendsAndHolidays = activity(frequency);
-    let result: any[] = [];
-    for (let train in trains) {
-      if (
-        trains[train].directionId === directionOrTrainId &&
-        trains[train].activeOnWeekendsAndHolidays ===
-          activeOnWeekendsAndHolidays
-      ) {
-        result.push(trains[train]);
-      }
-    }
-    return res.end(JSON.stringify(result, null, 2));
-  }
-
   if (directionOrTrainId.toString().length > 1) {
     if (
       directionOrTrainId.toString().length !== 4 ||
@@ -105,8 +85,17 @@ export const filterTrainsData = (
         JSON.stringify({ error: "Invalid train id or direction parameter" })
       );
     }
-    return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
-  } else if (directionOrTrainId.toString().length === 1) {
+    if (frequency) {
+        res.statusCode = 400;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(
+          JSON.stringify({ error: "Invalid route: cannot use frequency parameter with train id" })
+        );
+    } else {
+      return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
+    }
+  } 
+  if (directionOrTrainId.toString().length === 1) {
     if (![1, 2].includes(directionOrTrainId)) {
       res.statusCode = 400;
       res.setHeader("Content-Type", "application/json");
@@ -114,13 +103,35 @@ export const filterTrainsData = (
         JSON.stringify({ error: "Invalid train id or direction parameter" })
       );
     }
-    let result: any[] = [];
-    for (let train in trains) {
-      if (trains[train].directionId === directionOrTrainId) {
-        result.push(trains[train]);
+    if (frequency) {
+      if (!["wh", "wd", "ed"].includes(frequency)) {
+        res.statusCode = 400;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(
+          JSON.stringify({ error: "Invalid frequency parameter" })
+        );
       }
+      const activeOnWeekendsAndHolidays = activity(frequency);
+      let result: any[] = [];
+      for (let train in trains) {
+        if (
+          trains[train].directionId === directionOrTrainId &&
+          trains[train].activeOnWeekendsAndHolidays ===
+            activeOnWeekendsAndHolidays
+        ) {
+          result.push(trains[train]);
+        }
+      }
+      return res.end(JSON.stringify(result, null, 2));
+    } else {
+      let result: any[] = [];
+      for (let train in trains) {
+        if (trains[train].directionId === directionOrTrainId) {
+          result.push(trains[train]);
+        }
+      }
+      return res.end(JSON.stringify(result, null, 2));
     }
-    return res.end(JSON.stringify(result, null, 2));
   }
 };
 
