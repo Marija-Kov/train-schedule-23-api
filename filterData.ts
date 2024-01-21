@@ -1,3 +1,9 @@
+import {
+  stations as stationNames,
+  trainId_d1,
+  trainId_d2,
+} from "./helpers/extractedData";
+
 export const filterStationsData = (
   res: any,
   stations: any[],
@@ -5,6 +11,11 @@ export const filterStationsData = (
   direction: number,
   frequency: string
 ) => {
+  if (!stationNames.includes(station)) {
+    res.statusCode = 400;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "Invalid station name" }));
+  }
   if (frequency) {
     if (!["wh", "wd", "ed"].includes(frequency)) {
       res.statusCode = 400;
@@ -83,9 +94,26 @@ export const filterTrainsData = (
     return res.end(JSON.stringify(result, null, 2));
   }
 
-  if (directionOrTrainId.toString().length === 4) {
+  if (directionOrTrainId.toString().length > 1) {
+    if (
+      directionOrTrainId.toString().length !== 4 ||
+      ![...trainId_d1, ...trainId_d2].includes(directionOrTrainId)
+    ) {
+      res.statusCode = 400;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({ error: "Invalid train id or direction parameter" })
+      );
+    }
     return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
-  } else if ([1, 2].includes(directionOrTrainId)) {
+  } else if (directionOrTrainId.toString().length === 1) {
+    if (![1, 2].includes(directionOrTrainId)) {
+      res.statusCode = 400;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({ error: "Invalid train id or direction parameter" })
+      );
+    }
     let result: any[] = [];
     for (let train in trains) {
       if (trains[train].directionId === directionOrTrainId) {
