@@ -1,4 +1,5 @@
 import { ServerResponse } from "http";
+import { Station, Train } from "./trainScheduleTypes"
 import {
   stations as stationNames,
   trainId_d1,
@@ -7,7 +8,7 @@ import {
 
 export const filterStationsData = (
   res: ServerResponse,
-  stations: any[],
+  stations: Station[],
   station: string,
   direction: number | undefined,
   frequency: string
@@ -73,7 +74,7 @@ export const filterStationsData = (
 
 export const filterTrainsData = (
   res: ServerResponse,
-  trains: any[],
+  trains: Train[],
   directionOrTrainId: number,
   frequency: string
 ) => {
