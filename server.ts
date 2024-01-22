@@ -11,8 +11,18 @@ const server = http.createServer(async (req, res) => {
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "405 Method Not Allowed" }));
   }
+  /*
+   There are 2 main resource URLs, '/trains' and '/stations'.
+   All subresource URLs start with either of them:
+  */
   if (url && url.startsWith("/trains")) {
+    /*
+     Get all URL parameters:
+    */
     const splitUrl = url.split("/");
+    /*
+     If there are no additional parameters, return the entire .json file:
+    */
     if (!splitUrl[2]) {
       res.statusCode = 200;
       res.setHeader("Content-Type", "application/json");
@@ -26,6 +36,9 @@ const server = http.createServer(async (req, res) => {
         return res.end(JSON.stringify({ error: "Internal server error" }));
       }
     }
+    /*
+     If there are additional parameters, parse the .json file and filter the data:
+    */
     const directionOrTrainId = Number(splitUrl[2]);
     const frequency = splitUrl[3];
     res.statusCode = 200;
@@ -55,6 +68,10 @@ const server = http.createServer(async (req, res) => {
         return res.end(JSON.stringify({ error: "Internal server error" }));
       }
     }
+    /*
+     Multi-part station names are separated with '-' in the URL and with ' ' in .json files
+     so they have to be formatted before beigh passed to filter function:
+    */
     const station = splitUrl[2].split("-").join(" ");
     const direction = splitUrl[3] ? Number(splitUrl[3]) : undefined;
     const frequency = splitUrl[4];
