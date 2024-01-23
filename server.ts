@@ -70,7 +70,7 @@ const server = http.createServer(async (req, res) => {
     }
     /*
      Multi-part station names are separated with '-' in the URL and with ' ' in .json files
-     so they have to be formatted before beigh passed to filter function:
+     so they have to be formatted before being passed to the filter function:
     */
     const station = splitUrl[2].split("-").join(" ");
     const direction = splitUrl[3] ? Number(splitUrl[3]) : undefined;

@@ -170,7 +170,7 @@ export const filterTrainsData = (
       }
       return res.end(JSON.stringify(result, null, 2));
     } else {
-      /*
+    /*
      Filter the trains by direction id only:
     */
       let result: any[] = [];
