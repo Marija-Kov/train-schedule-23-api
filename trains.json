@@ -4,10 +4,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "zemun", "time": 4.11 },
-      { "station": "tosin bunar", "time": 4.14 },
-      { "station": "novi beograd", "time": 4.17 },
-      { "station": "beograd centar", "time": 4.22 }
+      {
+        "station": "zemun",
+        "time": 4.11
+      },
+      {
+        "station": "tosin bunar",
+        "time": 4.14
+      },
+      {
+        "station": "novi beograd",
+        "time": 4.17
+      },
+      {
+        "station": "beograd centar",
+        "time": 4.22
+      }
     ]
   },
   "7108": {
@@ -15,21 +27,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 14.44 },
-      { "station": "sebes", "time": 14.48 },
-      { "station": "krnjaca ukr", "time": 14.52 },
-      { "station": "krnjaca most", "time": 14.54 },
-      { "station": "pancevacki most", "time": 15 },
-      { "station": "vukov spomenik", "time": 15.03 },
-      { "station": "karadjordjev park", "time": 15.07 },
-      { "station": "beograd centar", "time": 15.1 },
-      { "station": "novi beograd", "time": 15.09 },
-      { "station": "tosin bunar", "time": 15.12 },
-      { "station": "zemun", "time": 15.15 },
-      { "station": "altina", "time": 15.24 },
-      { "station": "zemunsko polje", "time": 15.26 },
-      { "station": "kamendin", "time": 15.28 },
-      { "station": "batajnica", "time": 15.32 }
+      {
+        "station": "ovca",
+        "time": 14.44
+      },
+      {
+        "station": "sebes",
+        "time": 14.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 14.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 14.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 15.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 15.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.12
+      },
+      {
+        "station": "zemun",
+        "time": 15.15
+      },
+      {
+        "station": "altina",
+        "time": 15.24
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.26
+      },
+      {
+        "station": "kamendin",
+        "time": 15.28
+      },
+      {
+        "station": "batajnica",
+        "time": 15.32
+      }
     ]
   },
   "7110": {
@@ -37,21 +94,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 16.14 },
-      { "station": "sebes", "time": 16.18 },
-      { "station": "krnjaca ukr", "time": 16.22 },
-      { "station": "krnjaca most", "time": 16.24 },
-      { "station": "pancevacki most", "time": 16.3 },
-      { "station": "vukov spomenik", "time": 16.33 },
-      { "station": "karadjordjev park", "time": 16.37 },
-      { "station": "beograd centar", "time": 16.4 },
-      { "station": "novi beograd", "time": 16.23 },
-      { "station": "tosin bunar", "time": 16.26 },
-      { "station": "zemun", "time": 16.29 },
-      { "station": "altina", "time": 16.54 },
-      { "station": "zemunsko polje", "time": 16.56 },
-      { "station": "kamendin", "time": 16.58 },
-      { "station": "batajnica", "time": 17.02 }
+      {
+        "station": "ovca",
+        "time": 16.14
+      },
+      {
+        "station": "sebes",
+        "time": 16.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 16.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 16.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 16.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 16.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 16.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.23
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.26
+      },
+      {
+        "station": "zemun",
+        "time": 16.29
+      },
+      {
+        "station": "altina",
+        "time": 16.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 16.56
+      },
+      {
+        "station": "kamendin",
+        "time": 16.58
+      },
+      {
+        "station": "batajnica",
+        "time": 17.02
+      }
     ]
   },
   "7113": {
@@ -59,21 +161,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 15.51 },
-      { "station": "kamendin", "time": 15.55 },
-      { "station": "zemunsko polje", "time": 15.57 },
-      { "station": "altina", "time": 15.59 },
-      { "station": "zemun", "time": 16.17 },
-      { "station": "tosin bunar", "time": 16.2 },
-      { "station": "novi beograd", "time": 16.22 },
-      { "station": "beograd centar", "time": 16.26 },
-      { "station": "karadjordjev park", "time": 16.18 },
-      { "station": "vukov spomenik", "time": 16.22 },
-      { "station": "pancevacki most", "time": 16.26 },
-      { "station": "krnjaca most", "time": 16.3 },
-      { "station": "krnjaca ukr", "time": 16.33 },
-      { "station": "sebes", "time": 16.36 },
-      { "station": "ovca", "time": 16.39 }
+      {
+        "station": "batajnica",
+        "time": 15.51
+      },
+      {
+        "station": "kamendin",
+        "time": 15.55
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.57
+      },
+      {
+        "station": "altina",
+        "time": 15.59
+      },
+      {
+        "station": "zemun",
+        "time": 16.17
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.2
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.26
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 16.18
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 16.22
+      },
+      {
+        "station": "pancevacki most",
+        "time": 16.26
+      },
+      {
+        "station": "krnjaca most",
+        "time": 16.3
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 16.33
+      },
+      {
+        "station": "sebes",
+        "time": 16.36
+      },
+      {
+        "station": "ovca",
+        "time": 16.39
+      }
     ]
   },
   "7114": {
@@ -81,21 +228,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 19.59 },
-      { "station": "sebes", "time": 20.03 },
-      { "station": "krnjaca ukr", "time": 20.07 },
-      { "station": "krnjaca most", "time": 20.09 },
-      { "station": "pancevacki most", "time": 20.15 },
-      { "station": "vukov spomenik", "time": 20.18 },
-      { "station": "karadjordjev park", "time": 20.22 },
-      { "station": "beograd centar", "time": 20.25 },
-      { "station": "novi beograd", "time": 20.07 },
-      { "station": "tosin bunar", "time": 20.1 },
-      { "station": "zemun", "time": 20.14 },
-      { "station": "altina", "time": 20.58 },
-      { "station": "zemunsko polje", "time": 21 },
-      { "station": "kamendin", "time": 21.02 },
-      { "station": "batajnica", "time": 21.06 }
+      {
+        "station": "ovca",
+        "time": 19.59
+      },
+      {
+        "station": "sebes",
+        "time": 20.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 20.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 20.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 20.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 20.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 20.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 20.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 20.07
+      },
+      {
+        "station": "tosin bunar",
+        "time": 20.1
+      },
+      {
+        "station": "zemun",
+        "time": 20.14
+      },
+      {
+        "station": "altina",
+        "time": 20.58
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 21
+      },
+      {
+        "station": "kamendin",
+        "time": 21.02
+      },
+      {
+        "station": "batajnica",
+        "time": 21.06
+      }
     ]
   },
   "7116": {
@@ -103,10 +295,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "beograd centar", "time": 21.37 },
-      { "station": "novi beograd", "time": 21.41 },
-      { "station": "tosin bunar", "time": 21.44 },
-      { "station": "zemun", "time": 21.47 }
+      {
+        "station": "beograd centar",
+        "time": 21.37
+      },
+      {
+        "station": "novi beograd",
+        "time": 21.41
+      },
+      {
+        "station": "tosin bunar",
+        "time": 21.44
+      },
+      {
+        "station": "zemun",
+        "time": 21.47
+      }
     ]
   },
   "7900": {
@@ -114,21 +318,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 6.14 },
-      { "station": "sebes", "time": 6.18 },
-      { "station": "krnjaca ukr", "time": 6.22 },
-      { "station": "krnjaca most", "time": 6.24 },
-      { "station": "pancevacki most", "time": 6.3 },
-      { "station": "vukov spomenik", "time": 6.33 },
-      { "station": "karadjordjev park", "time": 6.37 },
-      { "station": "beograd centar", "time": 6.44 },
-      { "station": "novi beograd", "time": 6.48 },
-      { "station": "tosin bunar", "time": 6.51 },
-      { "station": "zemun", "time": 6.54 },
-      { "station": "altina", "time": 6.54 },
-      { "station": "zemunsko polje", "time": 6.56 },
-      { "station": "kamendin", "time": 6.58 },
-      { "station": "batajnica", "time": 7.02 }
+      {
+        "station": "ovca",
+        "time": 6.14
+      },
+      {
+        "station": "sebes",
+        "time": 6.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 6.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 6.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 6.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 6.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 6.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 6.44
+      },
+      {
+        "station": "novi beograd",
+        "time": 6.48
+      },
+      {
+        "station": "tosin bunar",
+        "time": 6.51
+      },
+      {
+        "station": "zemun",
+        "time": 6.54
+      },
+      {
+        "station": "altina",
+        "time": 6.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 6.56
+      },
+      {
+        "station": "kamendin",
+        "time": 6.58
+      },
+      {
+        "station": "batajnica",
+        "time": 7.02
+      }
     ]
   },
   "7901": {
@@ -136,10 +385,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "zemun", "time": 4.16 },
-      { "station": "tosin bunar", "time": 4.19 },
-      { "station": "novi beograd", "time": 4.22 },
-      { "station": "beograd centar", "time": 4.26 }
+      {
+        "station": "zemun",
+        "time": 4.16
+      },
+      {
+        "station": "tosin bunar",
+        "time": 4.19
+      },
+      {
+        "station": "novi beograd",
+        "time": 4.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 4.26
+      }
     ]
   },
   "7905": {
@@ -147,10 +408,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "zemun", "time": 16.34 },
-      { "station": "tosin bunar", "time": 16.37 },
-      { "station": "novi beograd", "time": 16.4 },
-      { "station": "beograd centar", "time": 16.52 }
+      {
+        "station": "zemun",
+        "time": 16.34
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.37
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.4
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.52
+      }
     ]
   },
   "8000": {
@@ -158,21 +431,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 5.36 },
-      { "station": "sebes", "time": 5.4 },
-      { "station": "krnjaca ukr", "time": 5.44 },
-      { "station": "krnjaca most", "time": 5.46 },
-      { "station": "pancevacki most", "time": 5.52 },
-      { "station": "vukov spomenik", "time": 5.55 },
-      { "station": "karadjordjev park", "time": 5.59 },
-      { "station": "beograd centar", "time": 6.02 },
-      { "station": "novi beograd", "time": 6.06 },
-      { "station": "tosin bunar", "time": 6.09 },
-      { "station": "zemun", "time": 6.13 },
-      { "station": "altina", "time": 6.16 },
-      { "station": "zemunsko polje", "time": 6.18 },
-      { "station": "kamendin", "time": 6.2 },
-      { "station": "batajnica", "time": 6.24 }
+      {
+        "station": "ovca",
+        "time": 5.36
+      },
+      {
+        "station": "sebes",
+        "time": 5.4
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 5.44
+      },
+      {
+        "station": "krnjaca most",
+        "time": 5.46
+      },
+      {
+        "station": "pancevacki most",
+        "time": 5.52
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 5.55
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 5.59
+      },
+      {
+        "station": "beograd centar",
+        "time": 6.02
+      },
+      {
+        "station": "novi beograd",
+        "time": 6.06
+      },
+      {
+        "station": "tosin bunar",
+        "time": 6.09
+      },
+      {
+        "station": "zemun",
+        "time": 6.13
+      },
+      {
+        "station": "altina",
+        "time": 6.16
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 6.18
+      },
+      {
+        "station": "kamendin",
+        "time": 6.2
+      },
+      {
+        "station": "batajnica",
+        "time": 6.24
+      }
     ]
   },
   "8001": {
@@ -180,21 +498,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 5.57 },
-      { "station": "kamendin", "time": 6.01 },
-      { "station": "zemunsko polje", "time": 6.03 },
-      { "station": "altina", "time": 6.05 },
-      { "station": "zemun", "time": 6.09 },
-      { "station": "tosin bunar", "time": 6.13 },
-      { "station": "novi beograd", "time": 6.16 },
-      { "station": "beograd centar", "time": 6.2 },
-      { "station": "karadjordjev park", "time": 6.24 },
-      { "station": "vukov spomenik", "time": 6.28 },
-      { "station": "pancevacki most", "time": 6.32 },
-      { "station": "krnjaca most", "time": 6.36 },
-      { "station": "krnjaca ukr", "time": 6.39 },
-      { "station": "sebes", "time": 6.42 },
-      { "station": "ovca", "time": 6.45 }
+      {
+        "station": "batajnica",
+        "time": 5.57
+      },
+      {
+        "station": "kamendin",
+        "time": 6.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 6.03
+      },
+      {
+        "station": "altina",
+        "time": 6.05
+      },
+      {
+        "station": "zemun",
+        "time": 6.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 6.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 6.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 6.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 6.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 6.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 6.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 6.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 6.39
+      },
+      {
+        "station": "sebes",
+        "time": 6.42
+      },
+      {
+        "station": "ovca",
+        "time": 6.45
+      }
     ]
   },
   "8002": {
@@ -202,10 +565,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "beograd centar", "time": 6.4 },
-      { "station": "novi beograd", "time": 6.44 },
-      { "station": "tosin bunar", "time": 6.47 },
-      { "station": "zemun", "time": 6.51 }
+      {
+        "station": "beograd centar",
+        "time": 6.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 6.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 6.47
+      },
+      {
+        "station": "zemun",
+        "time": 6.51
+      }
     ]
   },
   "8003": {
@@ -213,21 +588,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 6.27 },
-      { "station": "kamendin", "time": 6.31 },
-      { "station": "zemunsko polje", "time": 6.33 },
-      { "station": "altina", "time": 6.35 },
-      { "station": "zemun", "time": 6.39 },
-      { "station": "tosin bunar", "time": 6.43 },
-      { "station": "novi beograd", "time": 6.46 },
-      { "station": "beograd centar", "time": 6.5 },
-      { "station": "karadjordjev park", "time": 6.54 },
-      { "station": "vukov spomenik", "time": 6.58 },
-      { "station": "pancevacki most", "time": 7.02 },
-      { "station": "krnjaca most", "time": 7.06 },
-      { "station": "krnjaca ukr", "time": 7.09 },
-      { "station": "sebes", "time": 7.12 },
-      { "station": "ovca", "time": 7.15 }
+      {
+        "station": "batajnica",
+        "time": 6.27
+      },
+      {
+        "station": "kamendin",
+        "time": 6.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 6.33
+      },
+      {
+        "station": "altina",
+        "time": 6.35
+      },
+      {
+        "station": "zemun",
+        "time": 6.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 6.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 6.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 6.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 6.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 6.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 7.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 7.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.09
+      },
+      {
+        "station": "sebes",
+        "time": 7.12
+      },
+      {
+        "station": "ovca",
+        "time": 7.15
+      }
     ]
   },
   "8004": {
@@ -235,21 +655,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 6.44 },
-      { "station": "sebes", "time": 6.48 },
-      { "station": "krnjaca ukr", "time": 6.52 },
-      { "station": "krnjaca most", "time": 6.54 },
-      { "station": "pancevacki most", "time": 7 },
-      { "station": "vukov spomenik", "time": 7.03 },
-      { "station": "karadjordjev park", "time": 7.07 },
-      { "station": "beograd centar", "time": 7.1 },
-      { "station": "novi beograd", "time": 7.14 },
-      { "station": "tosin bunar", "time": 7.17 },
-      { "station": "zemun", "time": 7.21 },
-      { "station": "altina", "time": 7.24 },
-      { "station": "zemunsko polje", "time": 7.26 },
-      { "station": "kamendin", "time": 7.28 },
-      { "station": "batajnica", "time": 7.32 }
+      {
+        "station": "ovca",
+        "time": 6.44
+      },
+      {
+        "station": "sebes",
+        "time": 6.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 6.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 6.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 7
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 7.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 7.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 7.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 7.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 7.17
+      },
+      {
+        "station": "zemun",
+        "time": 7.21
+      },
+      {
+        "station": "altina",
+        "time": 7.24
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 7.26
+      },
+      {
+        "station": "kamendin",
+        "time": 7.28
+      },
+      {
+        "station": "batajnica",
+        "time": 7.32
+      }
     ]
   },
   "8005": {
@@ -257,21 +722,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 6.57 },
-      { "station": "kamendin", "time": 7.01 },
-      { "station": "zemunsko polje", "time": 7.03 },
-      { "station": "altina", "time": 7.05 },
-      { "station": "zemun", "time": 7.09 },
-      { "station": "tosin bunar", "time": 7.13 },
-      { "station": "novi beograd", "time": 7.16 },
-      { "station": "beograd centar", "time": 7.2 },
-      { "station": "karadjordjev park", "time": 7.24 },
-      { "station": "vukov spomenik", "time": 7.28 },
-      { "station": "pancevacki most", "time": 7.32 },
-      { "station": "krnjaca most", "time": 7.36 },
-      { "station": "krnjaca ukr", "time": 7.39 },
-      { "station": "sebes", "time": 7.42 },
-      { "station": "ovca", "time": 7.45 }
+      {
+        "station": "batajnica",
+        "time": 6.57
+      },
+      {
+        "station": "kamendin",
+        "time": 7.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 7.03
+      },
+      {
+        "station": "altina",
+        "time": 7.05
+      },
+      {
+        "station": "zemun",
+        "time": 7.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 7.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 7.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 7.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 7.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 7.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 7.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 7.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.39
+      },
+      {
+        "station": "sebes",
+        "time": 7.42
+      },
+      {
+        "station": "ovca",
+        "time": 7.45
+      }
     ]
   },
   "8006": {
@@ -279,21 +789,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 6.59 },
-      { "station": "sebes", "time": 7.03 },
-      { "station": "krnjaca ukr", "time": 7.07 },
-      { "station": "krnjaca most", "time": 7.09 },
-      { "station": "pancevacki most", "time": 7.15 },
-      { "station": "vukov spomenik", "time": 7.18 },
-      { "station": "karadjordjev park", "time": 7.22 },
-      { "station": "beograd centar", "time": 7.25 },
-      { "station": "novi beograd", "time": 7.29 },
-      { "station": "tosin bunar", "time": 7.32 },
-      { "station": "zemun", "time": 7.36 },
-      { "station": "altina", "time": 7.39 },
-      { "station": "zemunsko polje", "time": 7.41 },
-      { "station": "kamendin", "time": 7.43 },
-      { "station": "batajnica", "time": 7.47 }
+      {
+        "station": "ovca",
+        "time": 6.59
+      },
+      {
+        "station": "sebes",
+        "time": 7.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 7.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 7.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 7.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 7.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 7.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 7.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 7.32
+      },
+      {
+        "station": "zemun",
+        "time": 7.36
+      },
+      {
+        "station": "altina",
+        "time": 7.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 7.41
+      },
+      {
+        "station": "kamendin",
+        "time": 7.43
+      },
+      {
+        "station": "batajnica",
+        "time": 7.47
+      }
     ]
   },
   "8007": {
@@ -301,21 +856,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 7.27 },
-      { "station": "kamendin", "time": 7.31 },
-      { "station": "zemunsko polje", "time": 7.33 },
-      { "station": "altina", "time": 7.35 },
-      { "station": "zemun", "time": 7.39 },
-      { "station": "tosin bunar", "time": 7.43 },
-      { "station": "novi beograd", "time": 7.46 },
-      { "station": "beograd centar", "time": 7.5 },
-      { "station": "karadjordjev park", "time": 7.54 },
-      { "station": "vukov spomenik", "time": 7.58 },
-      { "station": "pancevacki most", "time": 8.02 },
-      { "station": "krnjaca most", "time": 8.06 },
-      { "station": "krnjaca ukr", "time": 8.09 },
-      { "station": "sebes", "time": 8.12 },
-      { "station": "ovca", "time": 8.15 }
+      {
+        "station": "batajnica",
+        "time": 7.27
+      },
+      {
+        "station": "kamendin",
+        "time": 7.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 7.33
+      },
+      {
+        "station": "altina",
+        "time": 7.35
+      },
+      {
+        "station": "zemun",
+        "time": 7.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 7.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 7.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 7.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 7.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 7.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 8.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 8.09
+      },
+      {
+        "station": "sebes",
+        "time": 8.12
+      },
+      {
+        "station": "ovca",
+        "time": 8.15
+      }
     ]
   },
   "8008": {
@@ -323,21 +923,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 7.44 },
-      { "station": "sebes", "time": 7.48 },
-      { "station": "krnjaca ukr", "time": 7.52 },
-      { "station": "krnjaca most", "time": 7.54 },
-      { "station": "pancevacki most", "time": 8 },
-      { "station": "vukov spomenik", "time": 8.03 },
-      { "station": "karadjordjev park", "time": 8.07 },
-      { "station": "beograd centar", "time": 8.13 },
-      { "station": "novi beograd", "time": 8.17 },
-      { "station": "tosin bunar", "time": 8.2 },
-      { "station": "zemun", "time": 8.24 },
-      { "station": "altina", "time": 8.27 },
-      { "station": "zemunsko polje", "time": 8.29 },
-      { "station": "kamendin", "time": 8.31 },
-      { "station": "batajnica", "time": 8.35 }
+      {
+        "station": "ovca",
+        "time": 7.44
+      },
+      {
+        "station": "sebes",
+        "time": 7.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 7.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 8.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 8.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 8.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 8.17
+      },
+      {
+        "station": "tosin bunar",
+        "time": 8.2
+      },
+      {
+        "station": "zemun",
+        "time": 8.24
+      },
+      {
+        "station": "altina",
+        "time": 8.27
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 8.29
+      },
+      {
+        "station": "kamendin",
+        "time": 8.31
+      },
+      {
+        "station": "batajnica",
+        "time": 8.35
+      }
     ]
   },
   "8009": {
@@ -345,21 +990,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 7.57 },
-      { "station": "kamendin", "time": 8.01 },
-      { "station": "zemunsko polje", "time": 8.03 },
-      { "station": "altina", "time": 8.05 },
-      { "station": "zemun", "time": 8.09 },
-      { "station": "tosin bunar", "time": 8.13 },
-      { "station": "novi beograd", "time": 8.16 },
-      { "station": "beograd centar", "time": 8.2 },
-      { "station": "karadjordjev park", "time": 8.24 },
-      { "station": "vukov spomenik", "time": 8.28 },
-      { "station": "pancevacki most", "time": 8.32 },
-      { "station": "krnjaca most", "time": 8.36 },
-      { "station": "krnjaca ukr", "time": 8.39 },
-      { "station": "sebes", "time": 8.42 },
-      { "station": "ovca", "time": 8.45 }
+      {
+        "station": "batajnica",
+        "time": 7.57
+      },
+      {
+        "station": "kamendin",
+        "time": 8.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 8.03
+      },
+      {
+        "station": "altina",
+        "time": 8.05
+      },
+      {
+        "station": "zemun",
+        "time": 8.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 8.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 8.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 8.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 8.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 8.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 8.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 8.39
+      },
+      {
+        "station": "sebes",
+        "time": 8.42
+      },
+      {
+        "station": "ovca",
+        "time": 8.45
+      }
     ]
   },
   "8010": {
@@ -367,21 +1057,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 8.14 },
-      { "station": "sebes", "time": 8.18 },
-      { "station": "krnjaca ukr", "time": 8.22 },
-      { "station": "krnjaca most", "time": 8.24 },
-      { "station": "pancevacki most", "time": 8.3 },
-      { "station": "vukov spomenik", "time": 8.33 },
-      { "station": "karadjordjev park", "time": 8.37 },
-      { "station": "beograd centar", "time": 8.4 },
-      { "station": "novi beograd", "time": 8.44 },
-      { "station": "tosin bunar", "time": 8.47 },
-      { "station": "zemun", "time": 8.51 },
-      { "station": "altina", "time": 8.54 },
-      { "station": "zemunsko polje", "time": 8.56 },
-      { "station": "kamendin", "time": 8.58 },
-      { "station": "batajnica", "time": 9.02 }
+      {
+        "station": "ovca",
+        "time": 8.14
+      },
+      {
+        "station": "sebes",
+        "time": 8.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 8.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 8.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 8.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 8.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 8.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 8.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 8.47
+      },
+      {
+        "station": "zemun",
+        "time": 8.51
+      },
+      {
+        "station": "altina",
+        "time": 8.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 8.56
+      },
+      {
+        "station": "kamendin",
+        "time": 8.58
+      },
+      {
+        "station": "batajnica",
+        "time": 9.02
+      }
     ]
   },
   "8011": {
@@ -389,21 +1124,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 8.1 },
-      { "station": "kamendin", "time": 8.14 },
-      { "station": "zemunsko polje", "time": 8.16 },
-      { "station": "altina", "time": 8.18 },
-      { "station": "zemun", "time": 8.22 },
-      { "station": "tosin bunar", "time": 8.26 },
-      { "station": "novi beograd", "time": 8.29 },
-      { "station": "beograd centar", "time": 8.33 },
-      { "station": "karadjordjev park", "time": 8.37 },
-      { "station": "vukov spomenik", "time": 8.41 },
-      { "station": "pancevacki most", "time": 8.45 },
-      { "station": "krnjaca most", "time": 8.49 },
-      { "station": "krnjaca ukr", "time": 8.52 },
-      { "station": "sebes", "time": 8.55 },
-      { "station": "ovca", "time": 8.58 }
+      {
+        "station": "batajnica",
+        "time": 8.1
+      },
+      {
+        "station": "kamendin",
+        "time": 8.14
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 8.16
+      },
+      {
+        "station": "altina",
+        "time": 8.18
+      },
+      {
+        "station": "zemun",
+        "time": 8.22
+      },
+      {
+        "station": "tosin bunar",
+        "time": 8.26
+      },
+      {
+        "station": "novi beograd",
+        "time": 8.29
+      },
+      {
+        "station": "beograd centar",
+        "time": 8.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 8.37
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 8.41
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8.45
+      },
+      {
+        "station": "krnjaca most",
+        "time": 8.49
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 8.52
+      },
+      {
+        "station": "sebes",
+        "time": 8.55
+      },
+      {
+        "station": "ovca",
+        "time": 8.58
+      }
     ]
   },
   "8012": {
@@ -411,21 +1191,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 8.44 },
-      { "station": "sebes", "time": 8.48 },
-      { "station": "krnjaca ukr", "time": 8.52 },
-      { "station": "krnjaca most", "time": 8.54 },
-      { "station": "pancevacki most", "time": 9 },
-      { "station": "vukov spomenik", "time": 9.03 },
-      { "station": "karadjordjev park", "time": 9.07 },
-      { "station": "beograd centar", "time": 9.1 },
-      { "station": "novi beograd", "time": 9.14 },
-      { "station": "tosin bunar", "time": 9.17 },
-      { "station": "zemun", "time": 9.21 },
-      { "station": "altina", "time": 9.24 },
-      { "station": "zemunsko polje", "time": 9.26 },
-      { "station": "kamendin", "time": 9.28 },
-      { "station": "batajnica", "time": 9.32 }
+      {
+        "station": "ovca",
+        "time": 8.44
+      },
+      {
+        "station": "sebes",
+        "time": 8.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 8.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 8.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 9
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 9.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 9.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 9.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 9.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 9.17
+      },
+      {
+        "station": "zemun",
+        "time": 9.21
+      },
+      {
+        "station": "altina",
+        "time": 9.24
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 9.26
+      },
+      {
+        "station": "kamendin",
+        "time": 9.28
+      },
+      {
+        "station": "batajnica",
+        "time": 9.32
+      }
     ]
   },
   "8013": {
@@ -433,21 +1258,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 8.57 },
-      { "station": "kamendin", "time": 9.01 },
-      { "station": "zemunsko polje", "time": 9.03 },
-      { "station": "altina", "time": 9.05 },
-      { "station": "zemun", "time": 9.09 },
-      { "station": "tosin bunar", "time": 9.13 },
-      { "station": "novi beograd", "time": 9.16 },
-      { "station": "beograd centar", "time": 9.2 },
-      { "station": "karadjordjev park", "time": 9.24 },
-      { "station": "vukov spomenik", "time": 9.28 },
-      { "station": "pancevacki most", "time": 9.32 },
-      { "station": "krnjaca most", "time": 9.36 },
-      { "station": "krnjaca ukr", "time": 9.39 },
-      { "station": "sebes", "time": 9.42 },
-      { "station": "ovca", "time": 9.45 }
+      {
+        "station": "batajnica",
+        "time": 8.57
+      },
+      {
+        "station": "kamendin",
+        "time": 9.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 9.03
+      },
+      {
+        "station": "altina",
+        "time": 9.05
+      },
+      {
+        "station": "zemun",
+        "time": 9.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 9.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 9.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 9.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 9.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 9.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 9.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 9.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 9.39
+      },
+      {
+        "station": "sebes",
+        "time": 9.42
+      },
+      {
+        "station": "ovca",
+        "time": 9.45
+      }
     ]
   },
   "8014": {
@@ -455,21 +1325,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 9.14 },
-      { "station": "sebes", "time": 9.18 },
-      { "station": "krnjaca ukr", "time": 9.22 },
-      { "station": "krnjaca most", "time": 9.24 },
-      { "station": "pancevacki most", "time": 9.3 },
-      { "station": "vukov spomenik", "time": 9.33 },
-      { "station": "karadjordjev park", "time": 9.37 },
-      { "station": "beograd centar", "time": 9.4 },
-      { "station": "novi beograd", "time": 9.44 },
-      { "station": "tosin bunar", "time": 9.47 },
-      { "station": "zemun", "time": 9.51 },
-      { "station": "altina", "time": 9.54 },
-      { "station": "zemunsko polje", "time": 9.56 },
-      { "station": "kamendin", "time": 9.58 },
-      { "station": "batajnica", "time": 10.02 }
+      {
+        "station": "ovca",
+        "time": 9.14
+      },
+      {
+        "station": "sebes",
+        "time": 9.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 9.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 9.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 9.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 9.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 9.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 9.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 9.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 9.47
+      },
+      {
+        "station": "zemun",
+        "time": 9.51
+      },
+      {
+        "station": "altina",
+        "time": 9.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 9.56
+      },
+      {
+        "station": "kamendin",
+        "time": 9.58
+      },
+      {
+        "station": "batajnica",
+        "time": 10.02
+      }
     ]
   },
   "8015": {
@@ -477,21 +1392,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 9.27 },
-      { "station": "kamendin", "time": 9.31 },
-      { "station": "zemunsko polje", "time": 9.33 },
-      { "station": "altina", "time": 9.35 },
-      { "station": "zemun", "time": 9.39 },
-      { "station": "tosin bunar", "time": 9.43 },
-      { "station": "novi beograd", "time": 9.46 },
-      { "station": "beograd centar", "time": 9.5 },
-      { "station": "karadjordjev park", "time": 9.54 },
-      { "station": "vukov spomenik", "time": 9.58 },
-      { "station": "pancevacki most", "time": 10.02 },
-      { "station": "krnjaca most", "time": 10.06 },
-      { "station": "krnjaca ukr", "time": 10.09 },
-      { "station": "sebes", "time": 10.12 },
-      { "station": "ovca", "time": 10.15 }
+      {
+        "station": "batajnica",
+        "time": 9.27
+      },
+      {
+        "station": "kamendin",
+        "time": 9.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 9.33
+      },
+      {
+        "station": "altina",
+        "time": 9.35
+      },
+      {
+        "station": "zemun",
+        "time": 9.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 9.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 9.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 9.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 9.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 9.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 10.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 10.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 10.09
+      },
+      {
+        "station": "sebes",
+        "time": 10.12
+      },
+      {
+        "station": "ovca",
+        "time": 10.15
+      }
     ]
   },
   "8016": {
@@ -499,21 +1459,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 9.59 },
-      { "station": "sebes", "time": 10.03 },
-      { "station": "krnjaca ukr", "time": 10.07 },
-      { "station": "krnjaca most", "time": 10.09 },
-      { "station": "pancevacki most", "time": 10.15 },
-      { "station": "vukov spomenik", "time": 10.18 },
-      { "station": "karadjordjev park", "time": 10.22 },
-      { "station": "beograd centar", "time": 11.25 },
-      { "station": "novi beograd", "time": 10.29 },
-      { "station": "tosin bunar", "time": 10.32 },
-      { "station": "zemun", "time": 10.36 },
-      { "station": "altina", "time": 10.39 },
-      { "station": "zemunsko polje", "time": 10.41 },
-      { "station": "kamendin", "time": 10.43 },
-      { "station": "batajnica", "time": 10.47 }
+      {
+        "station": "ovca",
+        "time": 9.59
+      },
+      {
+        "station": "sebes",
+        "time": 10.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 10.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 10.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 10.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 10.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 10.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 11.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 10.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 10.32
+      },
+      {
+        "station": "zemun",
+        "time": 10.36
+      },
+      {
+        "station": "altina",
+        "time": 10.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 10.41
+      },
+      {
+        "station": "kamendin",
+        "time": 10.43
+      },
+      {
+        "station": "batajnica",
+        "time": 10.47
+      }
     ]
   },
   "8017": {
@@ -521,21 +1526,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 9.57 },
-      { "station": "kamendin", "time": 10.01 },
-      { "station": "zemunsko polje", "time": 10.03 },
-      { "station": "altina", "time": 10.05 },
-      { "station": "zemun", "time": 10.09 },
-      { "station": "tosin bunar", "time": 10.13 },
-      { "station": "novi beograd", "time": 10.16 },
-      { "station": "beograd centar", "time": 10.2 },
-      { "station": "karadjordjev park", "time": 10.24 },
-      { "station": "vukov spomenik", "time": 10.28 },
-      { "station": "pancevacki most", "time": 10.32 },
-      { "station": "krnjaca most", "time": 10.36 },
-      { "station": "krnjaca ukr", "time": 10.39 },
-      { "station": "sebes", "time": 10.42 },
-      { "station": "ovca", "time": 10.45 }
+      {
+        "station": "batajnica",
+        "time": 9.57
+      },
+      {
+        "station": "kamendin",
+        "time": 10.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 10.03
+      },
+      {
+        "station": "altina",
+        "time": 10.05
+      },
+      {
+        "station": "zemun",
+        "time": 10.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 10.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 10.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 10.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 10.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 10.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 10.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 10.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 10.39
+      },
+      {
+        "station": "sebes",
+        "time": 10.42
+      },
+      {
+        "station": "ovca",
+        "time": 10.45
+      }
     ]
   },
   "8018": {
@@ -543,21 +1593,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 10.59 },
-      { "station": "sebes", "time": 11.03 },
-      { "station": "krnjaca ukr", "time": 11.07 },
-      { "station": "krnjaca most", "time": 11.09 },
-      { "station": "pancevacki most", "time": 11.15 },
-      { "station": "vukov spomenik", "time": 11.18 },
-      { "station": "karadjordjev park", "time": 11.22 },
-      { "station": "beograd centar", "time": 11.5 },
-      { "station": "novi beograd", "time": 11.29 },
-      { "station": "tosin bunar", "time": 11.32 },
-      { "station": "zemun", "time": 11.36 },
-      { "station": "altina", "time": 11.39 },
-      { "station": "zemunsko polje", "time": 11.41 },
-      { "station": "kamendin", "time": 11.43 },
-      { "station": "batajnica", "time": 11.47 }
+      {
+        "station": "ovca",
+        "time": 10.59
+      },
+      {
+        "station": "sebes",
+        "time": 11.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 11.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 11.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 11.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 11.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 11.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 11.5
+      },
+      {
+        "station": "novi beograd",
+        "time": 11.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 11.32
+      },
+      {
+        "station": "zemun",
+        "time": 11.36
+      },
+      {
+        "station": "altina",
+        "time": 11.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 11.41
+      },
+      {
+        "station": "kamendin",
+        "time": 11.43
+      },
+      {
+        "station": "batajnica",
+        "time": 11.47
+      }
     ]
   },
   "8019": {
@@ -565,21 +1660,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 10.57 },
-      { "station": "kamendin", "time": 11.01 },
-      { "station": "zemunsko polje", "time": 11.03 },
-      { "station": "altina", "time": 11.05 },
-      { "station": "zemun", "time": 11.09 },
-      { "station": "tosin bunar", "time": 11.13 },
-      { "station": "novi beograd", "time": 11.16 },
-      { "station": "beograd centar", "time": 11.2 },
-      { "station": "karadjordjev park", "time": 11.24 },
-      { "station": "vukov spomenik", "time": 11.28 },
-      { "station": "pancevacki most", "time": 11.32 },
-      { "station": "krnjaca most", "time": 11.36 },
-      { "station": "krnjaca ukr", "time": 11.39 },
-      { "station": "sebes", "time": 11.42 },
-      { "station": "ovca", "time": 11.45 }
+      {
+        "station": "batajnica",
+        "time": 10.57
+      },
+      {
+        "station": "kamendin",
+        "time": 11.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 11.03
+      },
+      {
+        "station": "altina",
+        "time": 11.05
+      },
+      {
+        "station": "zemun",
+        "time": 11.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 11.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 11.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 11.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 11.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 11.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 11.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 11.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 11.39
+      },
+      {
+        "station": "sebes",
+        "time": 11.42
+      },
+      {
+        "station": "ovca",
+        "time": 11.45
+      }
     ]
   },
   "8020": {
@@ -587,17 +1727,50 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 11.24 },
-      { "station": "sebes", "time": 11.28 },
-      { "station": "krnjaca ukr", "time": 11.32 },
-      { "station": "krnjaca most", "time": 11.34 },
-      { "station": "pancevacki most", "time": 11.4 },
-      { "station": "vukov spomenik", "time": 11.43 },
-      { "station": "karadjordjev park", "time": 11.47 },
-      { "station": "beograd centar", "time": 12.25 },
-      { "station": "novi beograd", "time": 11.54 },
-      { "station": "tosin bunar", "time": 11.57 },
-      { "station": "zemun", "time": 12 }
+      {
+        "station": "ovca",
+        "time": 11.24
+      },
+      {
+        "station": "sebes",
+        "time": 11.28
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 11.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 11.34
+      },
+      {
+        "station": "pancevacki most",
+        "time": 11.4
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 11.43
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 11.47
+      },
+      {
+        "station": "beograd centar",
+        "time": 12.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 11.54
+      },
+      {
+        "station": "tosin bunar",
+        "time": 11.57
+      },
+      {
+        "station": "zemun",
+        "time": 12
+      }
     ]
   },
   "8021": {
@@ -605,21 +1778,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 11.57 },
-      { "station": "kamendin", "time": 12.01 },
-      { "station": "zemunsko polje", "time": 12.03 },
-      { "station": "altina", "time": 12.05 },
-      { "station": "zemun", "time": 12.09 },
-      { "station": "tosin bunar", "time": 12.13 },
-      { "station": "novi beograd", "time": 12.16 },
-      { "station": "beograd centar", "time": 12.2 },
-      { "station": "karadjordjev park", "time": 12.24 },
-      { "station": "vukov spomenik", "time": 12.28 },
-      { "station": "pancevacki most", "time": 12.32 },
-      { "station": "krnjaca most", "time": 12.36 },
-      { "station": "krnjaca ukr", "time": 12.39 },
-      { "station": "sebes", "time": 12.42 },
-      { "station": "ovca", "time": 12.45 }
+      {
+        "station": "batajnica",
+        "time": 11.57
+      },
+      {
+        "station": "kamendin",
+        "time": 12.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 12.03
+      },
+      {
+        "station": "altina",
+        "time": 12.05
+      },
+      {
+        "station": "zemun",
+        "time": 12.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 12.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 12.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 12.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 12.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 12.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 12.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 12.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 12.39
+      },
+      {
+        "station": "sebes",
+        "time": 12.42
+      },
+      {
+        "station": "ovca",
+        "time": 12.45
+      }
     ]
   },
   "8022": {
@@ -627,21 +1845,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 11.59 },
-      { "station": "sebes", "time": 12.03 },
-      { "station": "krnjaca ukr", "time": 12.07 },
-      { "station": "krnjaca most", "time": 12.09 },
-      { "station": "pancevacki most", "time": 12.15 },
-      { "station": "vukov spomenik", "time": 12.18 },
-      { "station": "karadjordjev park", "time": 12.22 },
-      { "station": "beograd centar", "time": 13.25 },
-      { "station": "novi beograd", "time": 12.29 },
-      { "station": "tosin bunar", "time": 12.32 },
-      { "station": "zemun", "time": 12.36 },
-      { "station": "altina", "time": 12.39 },
-      { "station": "zemunsko polje", "time": 12.41 },
-      { "station": "kamendin", "time": 12.43 },
-      { "station": "batajnica", "time": 12.47 }
+      {
+        "station": "ovca",
+        "time": 11.59
+      },
+      {
+        "station": "sebes",
+        "time": 12.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 12.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 12.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 12.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 12.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 12.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 13.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 12.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 12.32
+      },
+      {
+        "station": "zemun",
+        "time": 12.36
+      },
+      {
+        "station": "altina",
+        "time": 12.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 12.41
+      },
+      {
+        "station": "kamendin",
+        "time": 12.43
+      },
+      {
+        "station": "batajnica",
+        "time": 12.47
+      }
     ]
   },
   "8023": {
@@ -649,21 +1912,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 12.57 },
-      { "station": "kamendin", "time": 13.01 },
-      { "station": "zemunsko polje", "time": 13.03 },
-      { "station": "altina", "time": 13.05 },
-      { "station": "zemun", "time": 13.09 },
-      { "station": "tosin bunar", "time": 13.13 },
-      { "station": "novi beograd", "time": 13.16 },
-      { "station": "beograd centar", "time": 13.2 },
-      { "station": "karadjordjev park", "time": 13.24 },
-      { "station": "vukov spomenik", "time": 13.28 },
-      { "station": "pancevacki most", "time": 13.32 },
-      { "station": "krnjaca most", "time": 13.36 },
-      { "station": "krnjaca ukr", "time": 13.39 },
-      { "station": "sebes", "time": 13.42 },
-      { "station": "ovca", "time": 13.45 }
+      {
+        "station": "batajnica",
+        "time": 12.57
+      },
+      {
+        "station": "kamendin",
+        "time": 13.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 13.03
+      },
+      {
+        "station": "altina",
+        "time": 13.05
+      },
+      {
+        "station": "zemun",
+        "time": 13.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 13.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 13.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 13.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 13.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 13.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 13.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 13.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 13.39
+      },
+      {
+        "station": "sebes",
+        "time": 13.42
+      },
+      {
+        "station": "ovca",
+        "time": 13.45
+      }
     ]
   },
   "8024": {
@@ -671,21 +1979,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 12.59 },
-      { "station": "sebes", "time": 13.03 },
-      { "station": "krnjaca ukr", "time": 13.07 },
-      { "station": "krnjaca most", "time": 13.09 },
-      { "station": "pancevacki most", "time": 13.15 },
-      { "station": "vukov spomenik", "time": 13.18 },
-      { "station": "karadjordjev park", "time": 13.22 },
-      { "station": "beograd centar", "time": 14.25 },
-      { "station": "novi beograd", "time": 13.29 },
-      { "station": "tosin bunar", "time": 13.32 },
-      { "station": "zemun", "time": 13.36 },
-      { "station": "altina", "time": 13.39 },
-      { "station": "zemunsko polje", "time": 13.41 },
-      { "station": "kamendin", "time": 13.43 },
-      { "station": "batajnica", "time": 13.47 }
+      {
+        "station": "ovca",
+        "time": 12.59
+      },
+      {
+        "station": "sebes",
+        "time": 13.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 13.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 13.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 13.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 13.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 13.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 14.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 13.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 13.32
+      },
+      {
+        "station": "zemun",
+        "time": 13.36
+      },
+      {
+        "station": "altina",
+        "time": 13.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 13.41
+      },
+      {
+        "station": "kamendin",
+        "time": 13.43
+      },
+      {
+        "station": "batajnica",
+        "time": 13.47
+      }
     ]
   },
   "8025": {
@@ -693,21 +2046,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 13.57 },
-      { "station": "kamendin", "time": 14.01 },
-      { "station": "zemunsko polje", "time": 14.03 },
-      { "station": "altina", "time": 14.05 },
-      { "station": "zemun", "time": 14.09 },
-      { "station": "tosin bunar", "time": 14.13 },
-      { "station": "novi beograd", "time": 14.16 },
-      { "station": "beograd centar", "time": 14.2 },
-      { "station": "karadjordjev park", "time": 14.24 },
-      { "station": "vukov spomenik", "time": 14.28 },
-      { "station": "pancevacki most", "time": 14.32 },
-      { "station": "krnjaca most", "time": 14.36 },
-      { "station": "krnjaca ukr", "time": 14.39 },
-      { "station": "sebes", "time": 14.42 },
-      { "station": "ovca", "time": 14.45 }
+      {
+        "station": "batajnica",
+        "time": 13.57
+      },
+      {
+        "station": "kamendin",
+        "time": 14.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 14.03
+      },
+      {
+        "station": "altina",
+        "time": 14.05
+      },
+      {
+        "station": "zemun",
+        "time": 14.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 14.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 14.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 14.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 14.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 14.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 14.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 14.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 14.39
+      },
+      {
+        "station": "sebes",
+        "time": 14.42
+      },
+      {
+        "station": "ovca",
+        "time": 14.45
+      }
     ]
   },
   "8026": {
@@ -715,21 +2113,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 13.59 },
-      { "station": "sebes", "time": 14.03 },
-      { "station": "krnjaca ukr", "time": 14.07 },
-      { "station": "krnjaca most", "time": 14.09 },
-      { "station": "pancevacki most", "time": 14.15 },
-      { "station": "vukov spomenik", "time": 14.18 },
-      { "station": "karadjordjev park", "time": 14.22 },
-      { "station": "beograd centar", "time": 15.05 },
-      { "station": "novi beograd", "time": 14.29 },
-      { "station": "tosin bunar", "time": 14.32 },
-      { "station": "zemun", "time": 14.36 },
-      { "station": "altina", "time": 14.39 },
-      { "station": "zemunsko polje", "time": 14.41 },
-      { "station": "kamendin", "time": 14.43 },
-      { "station": "batajnica", "time": 14.47 }
+      {
+        "station": "ovca",
+        "time": 13.59
+      },
+      {
+        "station": "sebes",
+        "time": 14.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 14.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 14.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 14.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 14.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 14.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.05
+      },
+      {
+        "station": "novi beograd",
+        "time": 14.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 14.32
+      },
+      {
+        "station": "zemun",
+        "time": 14.36
+      },
+      {
+        "station": "altina",
+        "time": 14.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 14.41
+      },
+      {
+        "station": "kamendin",
+        "time": 14.43
+      },
+      {
+        "station": "batajnica",
+        "time": 14.47
+      }
     ]
   },
   "8027": {
@@ -737,21 +2180,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 14.42 },
-      { "station": "kamendin", "time": 14.46 },
-      { "station": "zemunsko polje", "time": 14.48 },
-      { "station": "altina", "time": 14.5 },
-      { "station": "zemun", "time": 14.54 },
-      { "station": "tosin bunar", "time": 14.58 },
-      { "station": "novi beograd", "time": 15.01 },
-      { "station": "beograd centar", "time": 15.05 },
-      { "station": "karadjordjev park", "time": 15.09 },
-      { "station": "vukov spomenik", "time": 15.13 },
-      { "station": "pancevacki most", "time": 15.17 },
-      { "station": "krnjaca most", "time": 15.21 },
-      { "station": "krnjaca ukr", "time": 15.24 },
-      { "station": "sebes", "time": 15.27 },
-      { "station": "ovca", "time": 15.3 }
+      {
+        "station": "batajnica",
+        "time": 14.42
+      },
+      {
+        "station": "kamendin",
+        "time": 14.46
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 14.48
+      },
+      {
+        "station": "altina",
+        "time": 14.5
+      },
+      {
+        "station": "zemun",
+        "time": 14.54
+      },
+      {
+        "station": "tosin bunar",
+        "time": 14.58
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.01
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.05
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 15.09
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 15.13
+      },
+      {
+        "station": "pancevacki most",
+        "time": 15.17
+      },
+      {
+        "station": "krnjaca most",
+        "time": 15.21
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 15.24
+      },
+      {
+        "station": "sebes",
+        "time": 15.27
+      },
+      {
+        "station": "ovca",
+        "time": 15.3
+      }
     ]
   },
   "8028": {
@@ -759,21 +2247,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 15.14 },
-      { "station": "sebes", "time": 15.18 },
-      { "station": "krnjaca ukr", "time": 15.22 },
-      { "station": "krnjaca most", "time": 15.24 },
-      { "station": "pancevacki most", "time": 15.3 },
-      { "station": "vukov spomenik", "time": 15.33 },
-      { "station": "karadjordjev park", "time": 15.37 },
-      { "station": "beograd centar", "time": 15.4 },
-      { "station": "novi beograd", "time": 15.14 },
-      { "station": "tosin bunar", "time": 15.17 },
-      { "station": "zemun", "time": 15.21 },
-      { "station": "altina", "time": 15.54 },
-      { "station": "zemunsko polje", "time": 15.56 },
-      { "station": "kamendin", "time": 15.58 },
-      { "station": "batajnica", "time": 16.02 }
+      {
+        "station": "ovca",
+        "time": 15.14
+      },
+      {
+        "station": "sebes",
+        "time": 15.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 15.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 15.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 15.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 15.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 15.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.17
+      },
+      {
+        "station": "zemun",
+        "time": 15.21
+      },
+      {
+        "station": "altina",
+        "time": 15.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.56
+      },
+      {
+        "station": "kamendin",
+        "time": 15.58
+      },
+      {
+        "station": "batajnica",
+        "time": 16.02
+      }
     ]
   },
   "8029": {
@@ -781,21 +2314,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 14.59 },
-      { "station": "kamendin", "time": 15.03 },
-      { "station": "zemunsko polje", "time": 15.05 },
-      { "station": "altina", "time": 15.07 },
-      { "station": "zemun", "time": 15.11 },
-      { "station": "tosin bunar", "time": 15.15 },
-      { "station": "novi beograd", "time": 15.18 },
-      { "station": "beograd centar", "time": 15.22 },
-      { "station": "karadjordjev park", "time": 15.26 },
-      { "station": "vukov spomenik", "time": 15.3 },
-      { "station": "pancevacki most", "time": 15.34 },
-      { "station": "krnjaca most", "time": 15.38 },
-      { "station": "krnjaca ukr", "time": 15.41 },
-      { "station": "sebes", "time": 15.44 },
-      { "station": "ovca", "time": 15.47 }
+      {
+        "station": "batajnica",
+        "time": 14.59
+      },
+      {
+        "station": "kamendin",
+        "time": 15.03
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.05
+      },
+      {
+        "station": "altina",
+        "time": 15.07
+      },
+      {
+        "station": "zemun",
+        "time": 15.11
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.15
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.18
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.22
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 15.26
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 15.3
+      },
+      {
+        "station": "pancevacki most",
+        "time": 15.34
+      },
+      {
+        "station": "krnjaca most",
+        "time": 15.38
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 15.41
+      },
+      {
+        "station": "sebes",
+        "time": 15.44
+      },
+      {
+        "station": "ovca",
+        "time": 15.47
+      }
     ]
   },
   "8030": {
@@ -803,21 +2381,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 15.44 },
-      { "station": "sebes", "time": 15.48 },
-      { "station": "krnjaca ukr", "time": 15.52 },
-      { "station": "krnjaca most", "time": 15.54 },
-      { "station": "pancevacki most", "time": 16 },
-      { "station": "vukov spomenik", "time": 16.03 },
-      { "station": "karadjordjev park", "time": 16.07 },
-      { "station": "beograd centar", "time": 16.1 },
-      { "station": "novi beograd", "time": 15.44 },
-      { "station": "tosin bunar", "time": 15.47 },
-      { "station": "zemun", "time": 15.51 },
-      { "station": "altina", "time": 16.24 },
-      { "station": "zemunsko polje", "time": 16.26 },
-      { "station": "kamendin", "time": 16.28 },
-      { "station": "batajnica", "time": 16.32 }
+      {
+        "station": "ovca",
+        "time": 15.44
+      },
+      {
+        "station": "sebes",
+        "time": 15.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 15.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 15.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 16
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 16.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 16.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.47
+      },
+      {
+        "station": "zemun",
+        "time": 15.51
+      },
+      {
+        "station": "altina",
+        "time": 16.24
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 16.26
+      },
+      {
+        "station": "kamendin",
+        "time": 16.28
+      },
+      {
+        "station": "batajnica",
+        "time": 16.32
+      }
     ]
   },
   "8031": {
@@ -825,21 +2448,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 15.27 },
-      { "station": "kamendin", "time": 15.31 },
-      { "station": "zemunsko polje", "time": 15.33 },
-      { "station": "altina", "time": 15.35 },
-      { "station": "zemun", "time": 15.39 },
-      { "station": "tosin bunar", "time": 15.43 },
-      { "station": "novi beograd", "time": 15.46 },
-      { "station": "beograd centar", "time": 15.5 },
-      { "station": "karadjordjev park", "time": 15.54 },
-      { "station": "vukov spomenik", "time": 15.58 },
-      { "station": "pancevacki most", "time": 16.02 },
-      { "station": "krnjaca most", "time": 16.06 },
-      { "station": "krnjaca ukr", "time": 16.09 },
-      { "station": "sebes", "time": 16.12 },
-      { "station": "ovca", "time": 16.15 }
+      {
+        "station": "batajnica",
+        "time": 15.27
+      },
+      {
+        "station": "kamendin",
+        "time": 15.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.33
+      },
+      {
+        "station": "altina",
+        "time": 15.35
+      },
+      {
+        "station": "zemun",
+        "time": 15.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 15.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 15.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 16.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 16.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 16.09
+      },
+      {
+        "station": "sebes",
+        "time": 16.12
+      },
+      {
+        "station": "ovca",
+        "time": 16.15
+      }
     ]
   },
   "8032": {
@@ -847,10 +2515,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "beograd centar", "time": 16.19 },
-      { "station": "novi beograd", "time": 16.14 },
-      { "station": "tosin bunar", "time": 16.17 },
-      { "station": "zemun", "time": 16.21 }
+      {
+        "station": "beograd centar",
+        "time": 16.19
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.17
+      },
+      {
+        "station": "zemun",
+        "time": 16.21
+      }
     ]
   },
   "8033": {
@@ -858,10 +2538,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "zemun", "time": 16.03 },
-      { "station": "tosin bunar", "time": 16.07 },
-      { "station": "novi beograd", "time": 16.1 },
-      { "station": "beograd centar", "time": 16.14 }
+      {
+        "station": "zemun",
+        "time": 16.03
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.07
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.1
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.14
+      }
     ]
   },
   "8034": {
@@ -869,21 +2561,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 16.44 },
-      { "station": "sebes", "time": 16.48 },
-      { "station": "krnjaca ukr", "time": 16.52 },
-      { "station": "krnjaca most", "time": 16.54 },
-      { "station": "pancevacki most", "time": 17 },
-      { "station": "vukov spomenik", "time": 17.03 },
-      { "station": "karadjordjev park", "time": 17.07 },
-      { "station": "beograd centar", "time": 17.1 },
-      { "station": "novi beograd", "time": 16.44 },
-      { "station": "tosin bunar", "time": 16.47 },
-      { "station": "zemun", "time": 16.51 },
-      { "station": "altina", "time": 17.24 },
-      { "station": "zemunsko polje", "time": 17.26 },
-      { "station": "kamendin", "time": 17.28 },
-      { "station": "batajnica", "time": 17.32 }
+      {
+        "station": "ovca",
+        "time": 16.44
+      },
+      {
+        "station": "sebes",
+        "time": 16.48
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 16.52
+      },
+      {
+        "station": "krnjaca most",
+        "time": 16.54
+      },
+      {
+        "station": "pancevacki most",
+        "time": 17
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 17.03
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 17.07
+      },
+      {
+        "station": "beograd centar",
+        "time": 17.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.47
+      },
+      {
+        "station": "zemun",
+        "time": 16.51
+      },
+      {
+        "station": "altina",
+        "time": 17.24
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 17.26
+      },
+      {
+        "station": "kamendin",
+        "time": 17.28
+      },
+      {
+        "station": "batajnica",
+        "time": 17.32
+      }
     ]
   },
   "8035": {
@@ -891,21 +2628,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 16.27 },
-      { "station": "kamendin", "time": 16.31 },
-      { "station": "zemunsko polje", "time": 16.33 },
-      { "station": "altina", "time": 16.35 },
-      { "station": "zemun", "time": 16.39 },
-      { "station": "tosin bunar", "time": 16.43 },
-      { "station": "novi beograd", "time": 16.46 },
-      { "station": "beograd centar", "time": 16.5 },
-      { "station": "karadjordjev park", "time": 16.54 },
-      { "station": "vukov spomenik", "time": 16.58 },
-      { "station": "pancevacki most", "time": 17.02 },
-      { "station": "krnjaca most", "time": 17.06 },
-      { "station": "krnjaca ukr", "time": 17.09 },
-      { "station": "sebes", "time": 17.12 },
-      { "station": "ovca", "time": 17.15 }
+      {
+        "station": "batajnica",
+        "time": 16.27
+      },
+      {
+        "station": "kamendin",
+        "time": 16.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 16.33
+      },
+      {
+        "station": "altina",
+        "time": 16.35
+      },
+      {
+        "station": "zemun",
+        "time": 16.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 16.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 16.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 17.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 17.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 17.09
+      },
+      {
+        "station": "sebes",
+        "time": 17.12
+      },
+      {
+        "station": "ovca",
+        "time": 17.15
+      }
     ]
   },
   "8036": {
@@ -913,21 +2695,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 17.14 },
-      { "station": "sebes", "time": 17.18 },
-      { "station": "krnjaca ukr", "time": 17.22 },
-      { "station": "krnjaca most", "time": 17.24 },
-      { "station": "pancevacki most", "time": 17.3 },
-      { "station": "vukov spomenik", "time": 17.33 },
-      { "station": "karadjordjev park", "time": 17.37 },
-      { "station": "beograd centar", "time": 17.4 },
-      { "station": "novi beograd", "time": 17.14 },
-      { "station": "tosin bunar", "time": 17.17 },
-      { "station": "zemun", "time": 17.21 },
-      { "station": "altina", "time": 17.54 },
-      { "station": "zemunsko polje", "time": 17.56 },
-      { "station": "kamendin", "time": 17.58 },
-      { "station": "batajnica", "time": 18.02 }
+      {
+        "station": "ovca",
+        "time": 17.14
+      },
+      {
+        "station": "sebes",
+        "time": 17.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 17.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 17.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 17.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 17.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 17.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 17.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 17.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 17.17
+      },
+      {
+        "station": "zemun",
+        "time": 17.21
+      },
+      {
+        "station": "altina",
+        "time": 17.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 17.56
+      },
+      {
+        "station": "kamendin",
+        "time": 17.58
+      },
+      {
+        "station": "batajnica",
+        "time": 18.02
+      }
     ]
   },
   "8037": {
@@ -935,21 +2762,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 16.57 },
-      { "station": "kamendin", "time": 17.01 },
-      { "station": "zemunsko polje", "time": 17.03 },
-      { "station": "altina", "time": 17.05 },
-      { "station": "zemun", "time": 17.09 },
-      { "station": "tosin bunar", "time": 17.13 },
-      { "station": "novi beograd", "time": 17.16 },
-      { "station": "beograd centar", "time": 17.2 },
-      { "station": "karadjordjev park", "time": 17.24 },
-      { "station": "vukov spomenik", "time": 17.28 },
-      { "station": "pancevacki most", "time": 17.32 },
-      { "station": "krnjaca most", "time": 17.36 },
-      { "station": "krnjaca ukr", "time": 17.39 },
-      { "station": "sebes", "time": 17.42 },
-      { "station": "ovca", "time": 17.45 }
+      {
+        "station": "batajnica",
+        "time": 16.57
+      },
+      {
+        "station": "kamendin",
+        "time": 17.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 17.03
+      },
+      {
+        "station": "altina",
+        "time": 17.05
+      },
+      {
+        "station": "zemun",
+        "time": 17.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 17.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 17.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 17.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 17.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 17.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 17.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 17.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 17.39
+      },
+      {
+        "station": "sebes",
+        "time": 17.42
+      },
+      {
+        "station": "ovca",
+        "time": 17.45
+      }
     ]
   },
   "8038": {
@@ -957,21 +2829,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 17.59 },
-      { "station": "sebes", "time": 18.03 },
-      { "station": "krnjaca ukr", "time": 18.07 },
-      { "station": "krnjaca most", "time": 18.09 },
-      { "station": "pancevacki most", "time": 18.15 },
-      { "station": "vukov spomenik", "time": 18.18 },
-      { "station": "karadjordjev park", "time": 18.22 },
-      { "station": "beograd centar", "time": 18.25 },
-      { "station": "novi beograd", "time": 17.44 },
-      { "station": "tosin bunar", "time": 17.47 },
-      { "station": "zemun", "time": 17.51 },
-      { "station": "altina", "time": 18.39 },
-      { "station": "zemunsko polje", "time": 18.41 },
-      { "station": "kamendin", "time": 18.43 },
-      { "station": "batajnica", "time": 18.47 }
+      {
+        "station": "ovca",
+        "time": 17.59
+      },
+      {
+        "station": "sebes",
+        "time": 18.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 18.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 18.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 18.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 18.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 18.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 18.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 17.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 17.47
+      },
+      {
+        "station": "zemun",
+        "time": 17.51
+      },
+      {
+        "station": "altina",
+        "time": 18.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 18.41
+      },
+      {
+        "station": "kamendin",
+        "time": 18.43
+      },
+      {
+        "station": "batajnica",
+        "time": 18.47
+      }
     ]
   },
   "8039": {
@@ -979,21 +2896,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 17.27 },
-      { "station": "kamendin", "time": 17.31 },
-      { "station": "zemunsko polje", "time": 17.33 },
-      { "station": "altina", "time": 17.35 },
-      { "station": "zemun", "time": 17.39 },
-      { "station": "tosin bunar", "time": 17.43 },
-      { "station": "novi beograd", "time": 17.46 },
-      { "station": "beograd centar", "time": 17.5 },
-      { "station": "karadjordjev park", "time": 17.54 },
-      { "station": "vukov spomenik", "time": 17.58 },
-      { "station": "pancevacki most", "time": 18.02 },
-      { "station": "krnjaca most", "time": 18.06 },
-      { "station": "krnjaca ukr", "time": 18.09 },
-      { "station": "sebes", "time": 18.12 },
-      { "station": "ovca", "time": 18.15 }
+      {
+        "station": "batajnica",
+        "time": 17.27
+      },
+      {
+        "station": "kamendin",
+        "time": 17.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 17.33
+      },
+      {
+        "station": "altina",
+        "time": 17.35
+      },
+      {
+        "station": "zemun",
+        "time": 17.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 17.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 17.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 17.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 17.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 17.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 18.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 18.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 18.09
+      },
+      {
+        "station": "sebes",
+        "time": 18.12
+      },
+      {
+        "station": "ovca",
+        "time": 18.15
+      }
     ]
   },
   "8040": {
@@ -1001,21 +2963,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 18.39 },
-      { "station": "sebes", "time": 18.43 },
-      { "station": "krnjaca ukr", "time": 18.47 },
-      { "station": "krnjaca most", "time": 18.49 },
-      { "station": "pancevacki most", "time": 18.55 },
-      { "station": "vukov spomenik", "time": 18.58 },
-      { "station": "karadjordjev park", "time": 19.02 },
-      { "station": "beograd centar", "time": 19.05 },
-      { "station": "novi beograd", "time": 18.29 },
-      { "station": "tosin bunar", "time": 18.32 },
-      { "station": "zemun", "time": 18.36 },
-      { "station": "altina", "time": 19.39 },
-      { "station": "zemunsko polje", "time": 19.41 },
-      { "station": "kamendin", "time": 19.43 },
-      { "station": "batajnica", "time": 19.47 }
+      {
+        "station": "ovca",
+        "time": 18.39
+      },
+      {
+        "station": "sebes",
+        "time": 18.43
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 18.47
+      },
+      {
+        "station": "krnjaca most",
+        "time": 18.49
+      },
+      {
+        "station": "pancevacki most",
+        "time": 18.55
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 18.58
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 19.02
+      },
+      {
+        "station": "beograd centar",
+        "time": 19.05
+      },
+      {
+        "station": "novi beograd",
+        "time": 18.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 18.32
+      },
+      {
+        "station": "zemun",
+        "time": 18.36
+      },
+      {
+        "station": "altina",
+        "time": 19.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 19.41
+      },
+      {
+        "station": "kamendin",
+        "time": 19.43
+      },
+      {
+        "station": "batajnica",
+        "time": 19.47
+      }
     ]
   },
   "8041": {
@@ -1023,21 +3030,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 18.27 },
-      { "station": "kamendin", "time": 18.31 },
-      { "station": "zemunsko polje", "time": 18.33 },
-      { "station": "altina", "time": 18.35 },
-      { "station": "zemun", "time": 18.39 },
-      { "station": "tosin bunar", "time": 18.43 },
-      { "station": "novi beograd", "time": 18.46 },
-      { "station": "beograd centar", "time": 18.5 },
-      { "station": "karadjordjev park", "time": 18.54 },
-      { "station": "vukov spomenik", "time": 18.58 },
-      { "station": "pancevacki most", "time": 19.02 },
-      { "station": "krnjaca most", "time": 19.06 },
-      { "station": "krnjaca ukr", "time": 19.09 },
-      { "station": "sebes", "time": 19.12 },
-      { "station": "ovca", "time": 19.15 }
+      {
+        "station": "batajnica",
+        "time": 18.27
+      },
+      {
+        "station": "kamendin",
+        "time": 18.31
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 18.33
+      },
+      {
+        "station": "altina",
+        "time": 18.35
+      },
+      {
+        "station": "zemun",
+        "time": 18.39
+      },
+      {
+        "station": "tosin bunar",
+        "time": 18.43
+      },
+      {
+        "station": "novi beograd",
+        "time": 18.46
+      },
+      {
+        "station": "beograd centar",
+        "time": 18.5
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 18.54
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 18.58
+      },
+      {
+        "station": "pancevacki most",
+        "time": 19.02
+      },
+      {
+        "station": "krnjaca most",
+        "time": 19.06
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 19.09
+      },
+      {
+        "station": "sebes",
+        "time": 19.12
+      },
+      {
+        "station": "ovca",
+        "time": 19.15
+      }
     ]
   },
   "8042": {
@@ -1045,10 +3097,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "beograd centar", "time": 19.19 },
-      { "station": "novi beograd", "time": 19.09 },
-      { "station": "tosin bunar", "time": 19.12 },
-      { "station": "zemun", "time": 19.15 }
+      {
+        "station": "beograd centar",
+        "time": 19.19
+      },
+      {
+        "station": "novi beograd",
+        "time": 19.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 19.12
+      },
+      {
+        "station": "zemun",
+        "time": 19.15
+      }
     ]
   },
   "8043": {
@@ -1056,21 +3120,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "batajnica", "time": 18.57 },
-      { "station": "kamendin", "time": 19.01 },
-      { "station": "zemunsko polje", "time": 19.03 },
-      { "station": "altina", "time": 19.05 },
-      { "station": "zemun", "time": 19.09 },
-      { "station": "tosin bunar", "time": 19.13 },
-      { "station": "novi beograd", "time": 19.16 },
-      { "station": "beograd centar", "time": 19.2 },
-      { "station": "karadjordjev park", "time": 19.24 },
-      { "station": "vukov spomenik", "time": 19.28 },
-      { "station": "pancevacki most", "time": 19.32 },
-      { "station": "krnjaca most", "time": 19.36 },
-      { "station": "krnjaca ukr", "time": 19.39 },
-      { "station": "sebes", "time": 19.42 },
-      { "station": "ovca", "time": 19.45 }
+      {
+        "station": "batajnica",
+        "time": 18.57
+      },
+      {
+        "station": "kamendin",
+        "time": 19.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 19.03
+      },
+      {
+        "station": "altina",
+        "time": 19.05
+      },
+      {
+        "station": "zemun",
+        "time": 19.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 19.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 19.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 19.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 19.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 19.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 19.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 19.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 19.39
+      },
+      {
+        "station": "sebes",
+        "time": 19.42
+      },
+      {
+        "station": "ovca",
+        "time": 19.45
+      }
     ]
   },
   "8044": {
@@ -1078,10 +3187,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "beograd centar", "time": 20.03 },
-      { "station": "novi beograd", "time": 19.29 },
-      { "station": "tosin bunar", "time": 19.32 },
-      { "station": "zemun", "time": 19.36 }
+      {
+        "station": "beograd centar",
+        "time": 20.03
+      },
+      {
+        "station": "novi beograd",
+        "time": 19.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 19.32
+      },
+      {
+        "station": "zemun",
+        "time": 19.36
+      }
     ]
   },
   "8045": {
@@ -1089,21 +3210,66 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "batajnica", "time": 19.57 },
-      { "station": "kamendin", "time": 20.01 },
-      { "station": "zemunsko polje", "time": 20.03 },
-      { "station": "altina", "time": 20.05 },
-      { "station": "zemun", "time": 20.09 },
-      { "station": "tosin bunar", "time": 20.13 },
-      { "station": "novi beograd", "time": 20.16 },
-      { "station": "beograd centar", "time": 20.2 },
-      { "station": "karadjordjev park", "time": 20.24 },
-      { "station": "vukov spomenik", "time": 20.28 },
-      { "station": "pancevacki most", "time": 20.32 },
-      { "station": "krnjaca most", "time": 20.36 },
-      { "station": "krnjaca ukr", "time": 20.39 },
-      { "station": "sebes", "time": 20.42 },
-      { "station": "ovca", "time": 20.45 }
+      {
+        "station": "batajnica",
+        "time": 19.57
+      },
+      {
+        "station": "kamendin",
+        "time": 20.01
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 20.03
+      },
+      {
+        "station": "altina",
+        "time": 20.05
+      },
+      {
+        "station": "zemun",
+        "time": 20.09
+      },
+      {
+        "station": "tosin bunar",
+        "time": 20.13
+      },
+      {
+        "station": "novi beograd",
+        "time": 20.16
+      },
+      {
+        "station": "beograd centar",
+        "time": 20.2
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 20.24
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 20.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 20.32
+      },
+      {
+        "station": "krnjaca most",
+        "time": 20.36
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 20.39
+      },
+      {
+        "station": "sebes",
+        "time": 20.42
+      },
+      {
+        "station": "ovca",
+        "time": 20.45
+      }
     ]
   },
   "8046": {
@@ -1111,21 +3277,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 20.18 },
-      { "station": "sebes", "time": 20.22 },
-      { "station": "krnjaca ukr", "time": 20.26 },
-      { "station": "krnjaca most", "time": 20.28 },
-      { "station": "pancevacki most", "time": 20.34 },
-      { "station": "vukov spomenik", "time": 20.37 },
-      { "station": "karadjordjev park", "time": 20.41 },
-      { "station": "beograd centar", "time": 20.44 },
-      { "station": "novi beograd", "time": 20.29 },
-      { "station": "tosin bunar", "time": 20.32 },
-      { "station": "zemun", "time": 20.36 },
-      { "station": "altina", "time": 21.54 },
-      { "station": "zemunsko polje", "time": 21.56 },
-      { "station": "kamendin", "time": 21.58 },
-      { "station": "batajnica", "time": 22.02 }
+      {
+        "station": "ovca",
+        "time": 20.18
+      },
+      {
+        "station": "sebes",
+        "time": 20.22
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 20.26
+      },
+      {
+        "station": "krnjaca most",
+        "time": 20.28
+      },
+      {
+        "station": "pancevacki most",
+        "time": 20.34
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 20.37
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 20.41
+      },
+      {
+        "station": "beograd centar",
+        "time": 20.44
+      },
+      {
+        "station": "novi beograd",
+        "time": 20.29
+      },
+      {
+        "station": "tosin bunar",
+        "time": 20.32
+      },
+      {
+        "station": "zemun",
+        "time": 20.36
+      },
+      {
+        "station": "altina",
+        "time": 21.54
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 21.56
+      },
+      {
+        "station": "kamendin",
+        "time": 21.58
+      },
+      {
+        "station": "batajnica",
+        "time": 22.02
+      }
     ]
   },
   "8048": {
@@ -1133,17 +3344,50 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 21.14 },
-      { "station": "sebes", "time": 21.18 },
-      { "station": "krnjaca ukr", "time": 21.22 },
-      { "station": "krnjaca most", "time": 21.24 },
-      { "station": "pancevacki most", "time": 21.3 },
-      { "station": "vukov spomenik", "time": 21.33 },
-      { "station": "karadjordjev park", "time": 21.37 },
-      { "station": "beograd centar", "time": 21.37 },
-      { "station": "novi beograd", "time": 20.48 },
-      { "station": "tosin bunar", "time": 20.51 },
-      { "station": "zemun", "time": 20.55 }
+      {
+        "station": "ovca",
+        "time": 21.14
+      },
+      {
+        "station": "sebes",
+        "time": 21.18
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 21.22
+      },
+      {
+        "station": "krnjaca most",
+        "time": 21.24
+      },
+      {
+        "station": "pancevacki most",
+        "time": 21.3
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 21.33
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 21.37
+      },
+      {
+        "station": "beograd centar",
+        "time": 21.37
+      },
+      {
+        "station": "novi beograd",
+        "time": 20.48
+      },
+      {
+        "station": "tosin bunar",
+        "time": 20.51
+      },
+      {
+        "station": "zemun",
+        "time": 20.55
+      }
     ]
   },
   "8050": {
@@ -1151,21 +3395,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 22.25 },
-      { "station": "sebes", "time": 22.29 },
-      { "station": "krnjaca ukr", "time": 22.33 },
-      { "station": "krnjaca most", "time": 22.35 },
-      { "station": "pancevacki most", "time": 22.41 },
-      { "station": "vukov spomenik", "time": 22.44 },
-      { "station": "karadjordjev park", "time": 22.48 },
-      { "station": "beograd centar", "time": 22.51 },
-      { "station": "novi beograd", "time": 21.44 },
-      { "station": "tosin bunar", "time": 21.47 },
-      { "station": "zemun", "time": 21.51 },
-      { "station": "altina", "time": null },
-      { "station": "zemunsko polje", "time": null },
-      { "station": "kamendin", "time": null },
-      { "station": "batajnica", "time": null }
+      {
+        "station": "ovca",
+        "time": 22.25
+      },
+      {
+        "station": "sebes",
+        "time": 22.29
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 22.33
+      },
+      {
+        "station": "krnjaca most",
+        "time": 22.35
+      },
+      {
+        "station": "pancevacki most",
+        "time": 22.41
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 22.44
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 22.48
+      },
+      {
+        "station": "beograd centar",
+        "time": 22.51
+      },
+      {
+        "station": "novi beograd",
+        "time": 21.44
+      },
+      {
+        "station": "tosin bunar",
+        "time": 21.47
+      },
+      {
+        "station": "zemun",
+        "time": 21.51
+      },
+      {
+        "station": "altina",
+        "time": null
+      },
+      {
+        "station": "zemunsko polje",
+        "time": null
+      },
+      {
+        "station": "kamendin",
+        "time": null
+      },
+      {
+        "station": "batajnica",
+        "time": null
+      }
     ]
   },
   "8200": {
@@ -1173,10 +3462,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "beograd centar", "time": 9.19 },
-      { "station": "novi beograd", "time": 9.23 },
-      { "station": "tosin bunar", "time": 9.26 },
-      { "station": "zemun", "time": 9.3 }
+      {
+        "station": "beograd centar",
+        "time": 9.19
+      },
+      {
+        "station": "novi beograd",
+        "time": 9.23
+      },
+      {
+        "station": "tosin bunar",
+        "time": 9.26
+      },
+      {
+        "station": "zemun",
+        "time": 9.3
+      }
     ]
   },
   "8201": {
@@ -1184,10 +3485,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "zemun", "time": 7.03 },
-      { "station": "tosin bunar", "time": 7.06 },
-      { "station": "novi beograd", "time": 7.09 },
-      { "station": "beograd centar", "time": 7.13 }
+      {
+        "station": "zemun",
+        "time": 7.03
+      },
+      {
+        "station": "tosin bunar",
+        "time": 7.06
+      },
+      {
+        "station": "novi beograd",
+        "time": 7.09
+      },
+      {
+        "station": "beograd centar",
+        "time": 7.13
+      }
     ]
   },
   "8202": {
@@ -1195,21 +3508,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "ovca", "time": 18.59 },
-      { "station": "sebes", "time": 19.03 },
-      { "station": "krnjaca ukr", "time": 19.07 },
-      { "station": "krnjaca most", "time": 19.09 },
-      { "station": "pancevacki most", "time": 19.15 },
-      { "station": "vukov spomenik", "time": 19.18 },
-      { "station": "karadjordjev park", "time": 19.22 },
-      { "station": "beograd centar", "time": 19.25 },
-      { "station": "novi beograd", "time": 19.23 },
-      { "station": "tosin bunar", "time": 19.26 },
-      { "station": "zemun", "time": 19.3 },
-      { "station": "altina", "time": 20.39 },
-      { "station": "zemunsko polje", "time": 20.41 },
-      { "station": "kamendin", "time": 20.43 },
-      { "station": "batajnica", "time": 20.47 }
+      {
+        "station": "ovca",
+        "time": 18.59
+      },
+      {
+        "station": "sebes",
+        "time": 19.03
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 19.07
+      },
+      {
+        "station": "krnjaca most",
+        "time": 19.09
+      },
+      {
+        "station": "pancevacki most",
+        "time": 19.15
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 19.18
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 19.22
+      },
+      {
+        "station": "beograd centar",
+        "time": 19.25
+      },
+      {
+        "station": "novi beograd",
+        "time": 19.23
+      },
+      {
+        "station": "tosin bunar",
+        "time": 19.26
+      },
+      {
+        "station": "zemun",
+        "time": 19.3
+      },
+      {
+        "station": "altina",
+        "time": 20.39
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 20.41
+      },
+      {
+        "station": "kamendin",
+        "time": 20.43
+      },
+      {
+        "station": "batajnica",
+        "time": 20.47
+      }
     ]
   },
   "8203": {
@@ -1217,10 +3575,22 @@
     "directionId": 1,
     "activeOnWeekendsAndHolidays": false,
     "itinerary": [
-      { "station": "zemun", "time": 10.03 },
-      { "station": "tosin bunar", "time": 10.06 },
-      { "station": "novi beograd", "time": 10.09 },
-      { "station": "beograd centar", "time": 10.13 }
+      {
+        "station": "zemun",
+        "time": 10.03
+      },
+      {
+        "station": "tosin bunar",
+        "time": 10.06
+      },
+      {
+        "station": "novi beograd",
+        "time": 10.09
+      },
+      {
+        "station": "beograd centar",
+        "time": 10.13
+      }
     ]
   },
   "8204": {
@@ -1228,10 +3598,22 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": "w&h_only",
     "itinerary": [
-      { "station": "beograd centar", "time": 21.4 },
-      { "station": "novi beograd", "time": 21.41 },
-      { "station": "tosin bunar", "time": 21.44 },
-      { "station": "zemun", "time": 21.47 }
+      {
+        "station": "beograd centar",
+        "time": 21.4
+      },
+      {
+        "station": "novi beograd",
+        "time": 21.41
+      },
+      {
+        "station": "tosin bunar",
+        "time": 21.44
+      },
+      {
+        "station": "zemun",
+        "time": 21.47
+      }
     ]
   },
   "8310": {
@@ -1239,14 +3621,38 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": 9.52 },
-      { "station": "sebes", "time": 9.56 },
-      { "station": "krnjaca ukr", "time": 10 },
-      { "station": "krnjaca most", "time": 10.02 },
-      { "station": "pancevacki most", "time": 10.08 },
-      { "station": "vukov spomenik", "time": 10.11 },
-      { "station": "karadjordjev park", "time": 10.13 },
-      { "station": "beograd centar", "time": 10.25 }
+      {
+        "station": "ovca",
+        "time": 9.52
+      },
+      {
+        "station": "sebes",
+        "time": 9.56
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 10
+      },
+      {
+        "station": "krnjaca most",
+        "time": 10.02
+      },
+      {
+        "station": "pancevacki most",
+        "time": 10.08
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 10.11
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 10.13
+      },
+      {
+        "station": "beograd centar",
+        "time": 10.25
+      }
     ]
   },
   "8340": {
@@ -1254,21 +3660,66 @@
     "directionId": 2,
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
-      { "station": "ovca", "time": null },
-      { "station": "sebes", "time": null },
-      { "station": "krnjaca ukr", "time": null },
-      { "station": "krnjaca most", "time": null },
-      { "station": "pancevacki most", "time": null },
-      { "station": "vukov spomenik", "time": null },
-      { "station": "karadjordjev park", "time": null },
-      { "station": "beograd centar", "time": null },
-      { "station": "novi beograd", "time": 22.55 },
-      { "station": "tosin bunar", "time": 22.58 },
-      { "station": "zemun", "time": 23.01 },
-      { "station": "altina", "time": null },
-      { "station": "zemunsko polje", "time": null },
-      { "station": "kamendin", "time": null },
-      { "station": "batajnica", "time": null }
+      {
+        "station": "ovca",
+        "time": null
+      },
+      {
+        "station": "sebes",
+        "time": null
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": null
+      },
+      {
+        "station": "krnjaca most",
+        "time": null
+      },
+      {
+        "station": "pancevacki most",
+        "time": null
+      },
+      {
+        "station": "vukov spomenik",
+        "time": null
+      },
+      {
+        "station": "karadjordjev park",
+        "time": null
+      },
+      {
+        "station": "beograd centar",
+        "time": null
+      },
+      {
+        "station": "novi beograd",
+        "time": 22.55
+      },
+      {
+        "station": "tosin bunar",
+        "time": 22.58
+      },
+      {
+        "station": "zemun",
+        "time": 23.01
+      },
+      {
+        "station": "altina",
+        "time": null
+      },
+      {
+        "station": "zemunsko polje",
+        "time": null
+      },
+      {
+        "station": "kamendin",
+        "time": null
+      },
+      {
+        "station": "batajnica",
+        "time": null
+      }
     ]
   }
 }
