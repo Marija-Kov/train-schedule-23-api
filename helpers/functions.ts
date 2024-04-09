@@ -1,14 +1,11 @@
 import fs from "fs";
+import { Train, Station, StationDeparture, Time } from "../typeDefinitions/trainScheduleTypes";
 import {
-  TrainIdDirection1,
-  TrainIdDirection2,
-  Train,
   StationName,
   StationNameFormatted,
-  Station,
-  StationDeparture,
-  Time,
-} from "../trainScheduleTypes";
+  TrainIdDirection1,
+  TrainIdDirection2,
+} from "../typeDefinitions/boringTypes";
 
 export function extractDepartureTimes(dataStr: string): Time[][] {
   /*

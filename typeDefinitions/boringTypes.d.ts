@@ -1,4 +1,4 @@
-type StationName =
+export type StationName =
   | "batajnica"
   | "kamendin"
   | "zemunsko polje"
@@ -15,7 +15,7 @@ type StationName =
   | "sebes"
   | "ovca";
 
-type StationNameFormatted =
+export type StationNameFormatted =
   | "Batajnica"
   | "Kamendin"
   | "Zemunsko polje"
@@ -32,7 +32,7 @@ type StationNameFormatted =
   | "Sebeš"
   | "Ovča";
 
-type TrainIdDirection1 =
+export type TrainIdDirection1 =
   | 7101
   | 7901
   | 8001
@@ -63,7 +63,7 @@ type TrainIdDirection1 =
   | 8043
   | 8045;
 
-type TrainIdDirection2 =
+export type TrainIdDirection2 =
   | 8000
   | 7900
   | 8002
@@ -101,7 +101,7 @@ type TrainIdDirection2 =
   | 8050
   | 8340;
 
-type Hours =
+export type Hours =
   | "01"
   | "02"
   | "03"
@@ -136,7 +136,7 @@ type Hours =
   | 22
   | 23;
 
-type Minutes =
+export type Minutes =
   | "01"
   | "02"
   | "03"
@@ -206,42 +206,3 @@ type Minutes =
   | 57
   | 58
   | 59;
-
-type Time = `${Hours}.${Minutes}` | "n/a";
-
-type TrainDetails = {
-  id: TrainIdDirection1 | TrainIdDirection2;
-  directionId: GetDirectionId<
-    TrainIdDirection1,
-    TrainIdDirection2,
-    TrainDetails["id"]
-  >;
-  activeOnWeekendsAndHolidays: boolean | "w&h_only";
-};
-
-type GetDirectionId<T1, T2, Id extends T1 | T2> = Id extends T1 ? 1 : 2;
-
-type TrainItinerary = { station: StationName; time: number }[];
-
-type Train = TrainDetails & { itinerary: TrainItinerary };
-
-type StationDeparture = { time: number; trainDetails: TrainDetails };
-
-type Station = {
-  name: StationName;
-  nameFormatted: StationNameFormatted;
-  departures: StationDeparture[];
-};
-
-export {
-  TrainIdDirection1,
-  TrainIdDirection2,
-  TrainDetails,
-  TrainItinerary,
-  Train,
-  StationName,
-  StationNameFormatted,
-  Station,
-  StationDeparture,
-  Time,
-};
