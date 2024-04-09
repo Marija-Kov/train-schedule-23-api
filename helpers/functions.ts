@@ -7,9 +7,10 @@ import {
   StationNameFormatted,
   Station,
   StationDeparture,
+  Time,
 } from "../trainScheduleTypes";
 
-export function extractDepartureTimes(dataStr: string): string[][] {
+export function extractDepartureTimes(dataStr: string): Time[][] {
   /*
        Takes in data string extracted from the PDF 
        and returns all times of departures of any train in an array
@@ -17,7 +18,7 @@ export function extractDepartureTimes(dataStr: string): string[][] {
       */
   const len = dataStr.length + 1;
   let index = 0; // there's always a char at position 0
-  const arr: string[] = [];
+  const arr: Time[] = [];
   for (let i = 1; i < len - 1; ++i) {
     const prev = dataStr.charAt(i - 1);
     const curr = dataStr.charAt(i);
@@ -27,15 +28,19 @@ export function extractDepartureTimes(dataStr: string): string[][] {
         (prev.match(/[0-9]/) && !next.match(/[0-9]/)) ||
         (!prev.match(/[0-9]/) && next.match(/[0-9]/))
       ) {
-        arr.push(dataStr.slice(index, i));
+        const time: Time = dataStr.slice(index, i) as Time;
+        arr.push(time);
         index = i + 1;
       }
     }
     if (!next) {
-      arr.push(dataStr.slice(index, i + 1));
+      const time: Time = dataStr.slice(index, i + 1) as Time;
+      arr.push(time);
     }
   }
-  return arr.filter((a) => arr.indexOf(a) % 2 !== 0).map((a) => a.split(" "));
+  return arr
+    .filter((a) => arr.indexOf(a) % 2 !== 0)
+    .map((a) => a.split(" ")) as Time[][];
 }
 
 /*
@@ -45,10 +50,10 @@ export function extractDepartureTimes(dataStr: string): string[][] {
 */
 
 export function createTimetableMatrix_d1(
-  departureTimes: string[][],
+  departureTimes: Time[][],
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection1[]
-): string[][] {
+): Time[][] {
   let j = 0;
   let i = 1;
   while (j < trainIdArr.length) {
@@ -78,10 +83,10 @@ export function createTimetableMatrix_d1(
 }
 
 export function createTimetableMatrix_d2(
-  departureTimes: string[][],
+  departureTimes: Time[][],
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection2[]
-): string[][] {
+): Time[][] {
   let j = 0;
   let i = 1;
   while (j < trainIdArr.length) {
@@ -126,8 +131,8 @@ export function shapeTrainsData(
   weekendsAndHolidays1: (boolean | "w&h_only")[],
   weekendsAndHolidays2: (boolean | "w&h_only")[],
   stations: StationName[],
-  timetable1: string[][],
-  timetable2: string[][]
+  timetable1: Time[][],
+  timetable2: Time[][]
 ): Train[] {
   const len1 = trainIdsDir1.length;
   const len2 = trainIdsDir2.length;
