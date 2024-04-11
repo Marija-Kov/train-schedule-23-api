@@ -1,5 +1,5 @@
 import { ServerResponse } from "http";
-import { Station, Train } from "./trainScheduleTypes";
+import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
 import {
   stations as stationNames,
   trainId_d1,
