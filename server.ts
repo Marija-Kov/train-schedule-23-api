@@ -1,6 +1,12 @@
 import http from "http";
 import { promises as fs } from "fs";
 import { filterStationsData, filterTrainsData } from "./filterData";
+import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
+import {
+  StationName,
+  TrainIdDirection1,
+  TrainIdDirection2,
+} from "./typeDefinitions/boringTypes";
 
 const port = process.env.PORT || 3003;
 
@@ -39,13 +45,14 @@ const server = http.createServer(async (req, res) => {
     /*
      If there are additional parameters, parse the .json file and filter the data:
     */
-    const directionOrTrainId = Number(splitUrl[2]);
-    const frequency = splitUrl[3];
+    const directionOrTrainId: TrainIdDirection1 | TrainIdDirection2 | 1 | 2 =
+      Number(splitUrl[2]) as TrainIdDirection1 | TrainIdDirection2 | 1 | 2;
+    const frequency: "ed" | "wd" | "wh" | undefined = splitUrl[3] as "ed" | "wd" | "wh" | undefined;
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     try {
       const json = await fs.readFile("./trains.json", "utf-8");
-      const data = JSON.parse(json);
+      const data: Train[] = JSON.parse(json) as Train[];
       return filterTrainsData(res, data, directionOrTrainId, frequency);
     } catch (error) {
       console.error("Error reading/filtering trains data:", error);
@@ -72,15 +79,15 @@ const server = http.createServer(async (req, res) => {
      Multi-part station names are separated with '-' in the URL and with ' ' in .json files
      so they have to be formatted before being passed to the filter function:
     */
-    const station = splitUrl[2].split("-").join(" ");
-    const direction = splitUrl[3] ? Number(splitUrl[3]) : undefined;
-    const frequency = splitUrl[4];
+    const stationName: StationName = splitUrl[2].split("-").join(" ") as StationName;
+    const direction: 1 | 2 | undefined = (splitUrl[3] ? Number(splitUrl[3]) : undefined) as 1 | 2 | undefined;
+    const frequency: "ed" | "wd" | "wh" | undefined = splitUrl[4] as "ed" | "wd" | "wh" | undefined;
     res.statusCode = 200;
     res.setHeader("Content-Type", "application/json");
     try {
       const json = await fs.readFile("./stations.json", "utf-8");
-      const data = JSON.parse(json).stations;
-      return filterStationsData(res, data, station, direction, frequency);
+      const data: Station[] = JSON.parse(json).stations;
+      return filterStationsData(res, data, stationName, direction, frequency);
     } catch (error) {
       console.error("Error reading/filtering stations data:", error);
       res.statusCode = 500;

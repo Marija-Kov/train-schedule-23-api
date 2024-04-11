@@ -1,5 +1,6 @@
 import { ServerResponse } from "http";
 import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
+import { StationName, TrainIdDirection1, TrainIdDirection2 } from "./typeDefinitions/boringTypes";
 import {
   stations as stationNames,
   trainId_d1,
@@ -9,9 +10,9 @@ import {
 export const filterStationsData = (
   res: ServerResponse,
   stations: Station[],
-  station: string,
-  direction: number | undefined,
-  frequency: string
+  station: StationName,
+  direction: 1 | 2 | undefined,
+  frequency: "ed" | "wd" | "wh" | undefined
 ) => {
   if (!stationNames.includes(station)) {
     res.statusCode = 400;
@@ -99,8 +100,8 @@ export const filterStationsData = (
 export const filterTrainsData = (
   res: ServerResponse,
   trains: Train[],
-  directionOrTrainId: number,
-  frequency: string
+  directionOrTrainId: TrainIdDirection1 | TrainIdDirection2 | 1 | 2,
+  frequency: "ed" | "wd" | "wh" | undefined
 ) => {
   /*
    When the parameter could be a train id:
@@ -111,7 +112,7 @@ export const filterTrainsData = (
     */
     if (
       directionOrTrainId.toString().length !== 4 ||
-      ![...trainId_d1, ...trainId_d2].includes(directionOrTrainId)
+      ![...trainId_d1, ...trainId_d2].includes(directionOrTrainId as TrainIdDirection1 | TrainIdDirection2)
     ) {
       res.statusCode = 400;
       res.setHeader("Content-Type", "application/json");
@@ -155,7 +156,7 @@ export const filterTrainsData = (
         );
       }
       const activeOnWeekendsAndHolidays = activity(frequency);
-      let result: any[] = [];
+      let result: Train[] = [];
       /*
        Filter the trains by direction and activity:
       */
@@ -173,7 +174,7 @@ export const filterTrainsData = (
     /*
      Filter the trains by direction id only:
     */
-      let result: any[] = [];
+      let result: Train[] = [];
       for (let train in trains) {
         if (trains[train].directionId === directionOrTrainId) {
           result.push(trains[train]);
@@ -184,7 +185,7 @@ export const filterTrainsData = (
   }
 };
 
-function activity(frequency: string) {
+function activity(frequency: "ed" | "wd" | "wh"): boolean | "w&h_only" | undefined {
   let active: any;
   switch (frequency) {
     case "wh":

@@ -3,7 +3,7 @@ import {
   TrainIdDirection2,
   StationName,
   StationNameFormatted,
-} from "../trainScheduleTypes";
+} from "../typeDefinitions/boringTypes";
 
 // SOURCE: https://www.srbvoz.rs/wp-content/redvoznje/rv_bg_voza_za_2022.pdf  (page 1)
 
