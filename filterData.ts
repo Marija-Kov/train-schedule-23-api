@@ -1,6 +1,10 @@
 import { ServerResponse } from "http";
 import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
-import { StationName, TrainIdDirection1, TrainIdDirection2 } from "./typeDefinitions/boringTypes";
+import {
+  StationName,
+  TrainIdDirection1,
+  TrainIdDirection2,
+} from "./typeDefinitions/boringTypes";
 import {
   stations as stationNames,
   trainId_d1,
@@ -40,9 +44,9 @@ export const filterStationsData = (
         );
       }
       /*
-       Get the corresponding activity value to use for filtering:
+       Get the corresponding getFrequency value to use for filtering:
       */
-      const activeOnWeekendsAndHolidays = activity(frequency);
+      const activeOnWeekendsAndHolidays = getFrequency(frequency);
       /*
        After validating all the parameters, find the station:
       */
@@ -97,95 +101,107 @@ export const filterStationsData = (
   }
 };
 
-export const filterTrainsData = (
+export const filterTrainsByDirectionAndFrequency = (
   res: ServerResponse,
   trains: Train[],
-  directionOrTrainId: TrainIdDirection1 | TrainIdDirection2 | 1 | 2,
+  direction: "1" | "2" | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
-  /*
-   When the parameter could be a train id:
-  */
-  if (directionOrTrainId.toString().length > 1) {
-    /*
-     Check if it's a valid train id:
-    */
-    if (
-      directionOrTrainId.toString().length !== 4 ||
-      ![...trainId_d1, ...trainId_d2].includes(directionOrTrainId as TrainIdDirection1 | TrainIdDirection2)
-    ) {
-      res.statusCode = 400;
+  if (!res)
+    throw Error(
+      "filterData > filterTrainsByDirectionAndFrequency(): argument 'res' is missing"
+    );
+  if (!trains)
+    throw Error(
+      "filterData > filterTrainsByDirectionAndFrequency(): argument 'trains' is missing"
+    );
+  if (direction && direction.toString().length === 1) {
+    if (!["1", "2"].includes(direction)) {
+      res.statusCode = 422;
       res.setHeader("Content-Type", "application/json");
-      return res.end(
-        JSON.stringify({ error: "Invalid train id or direction parameter" })
-      );
-    }
-    /*
-     Frequency parameter is not particularly useful in combination with train id parameter
-     so it should return an error:
-    */
-    if (frequency) {
-      res.statusCode = 400;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(
-        JSON.stringify({
-          error: "Invalid route: cannot use frequency parameter with train id",
-        })
-      );
-    } else {
-      return res.end(JSON.stringify(trains[directionOrTrainId], null, 2));
-    }
-  }
-  /*
-   When the parameter could be a direction:
-  */
-  if (directionOrTrainId.toString().length === 1) {
-    if (![1, 2].includes(directionOrTrainId)) {
-      res.statusCode = 400;
-      res.setHeader("Content-Type", "application/json");
-      return res.end(
-        JSON.stringify({ error: "Invalid train id or direction parameter" })
-      );
+      return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
-        res.statusCode = 400;
+        res.statusCode = 422;
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({ error: "Invalid frequency parameter" })
         );
       }
-      const activeOnWeekendsAndHolidays = activity(frequency);
+      const activeOnWeekendsAndHolidays = getFrequency(frequency);
       let result: Train[] = [];
       /*
-       Filter the trains by direction and activity:
+       Filter the trains by direction and frequency:
       */
       for (let train in trains) {
         if (
-          trains[train].directionId === directionOrTrainId &&
+          trains[train].directionId === Number(direction) &&
           trains[train].activeOnWeekendsAndHolidays ===
             activeOnWeekendsAndHolidays
         ) {
           result.push(trains[train]);
         }
       }
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(result, null, 2));
     } else {
-    /*
-     Filter the trains by direction id only:
-    */
+      /*
+       Filter the trains by direction id only:
+      */
       let result: Train[] = [];
       for (let train in trains) {
-        if (trains[train].directionId === directionOrTrainId) {
+        if (trains[train].directionId === Number(direction)) {
           result.push(trains[train]);
         }
       }
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(result, null, 2));
     }
   }
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "application/json");
+  return res.end(JSON.stringify(trains, null, 2));
 };
 
-function activity(frequency: "ed" | "wd" | "wh"): boolean | "w&h_only" | undefined {
+export const filterTrainsById = (
+  res: ServerResponse,
+  trains: Train[],
+  trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
+) => {
+  if (!res)
+    throw Error(
+      "filterData > filterTrainsByDirectionAndFrequency(): argument 'res' is missing"
+    );
+  if (!trains)
+    throw Error(
+      "filterData > filterTrainsByDirectionAndFrequency(): argument 'trains' is missing"
+    );
+  if (!trainId) {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify(trains, null, 2));
+  }
+  if (
+    trainId.toString().length !== 4 ||
+    ![...trainId_d1, ...trainId_d2].includes(
+      trainId as TrainIdDirection1 | TrainIdDirection2
+    )
+  ) {
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "Invalid train id" }));
+  }
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "application/json");
+  return res.end(JSON.stringify(trains[trainId], null, 2));
+};
+
+function getFrequency(
+  frequency: "ed" | "wd" | "wh"
+): boolean | "w&h_only" | undefined {
   let active: any;
   switch (frequency) {
     case "wh":
