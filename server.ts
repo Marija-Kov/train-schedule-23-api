@@ -5,7 +5,7 @@ import {
   filterTrainsById,
   filterTrainsByDirectionAndFrequency,
 } from "./filterData";
-import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
+import { Station, Train, YyyyMmDd } from "./typeDefinitions/trainScheduleTypes";
 import {
   StationName,
   TrainIdDirection1,
