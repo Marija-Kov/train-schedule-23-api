@@ -1,5 +1,11 @@
 import { ServerResponse } from "http";
-import { Station, Train } from "./typeDefinitions/trainScheduleTypes";
+import {
+  Station,
+  StationDeparture,
+  Train,
+  Time,
+  YyyyMmDd,
+} from "./typeDefinitions/trainScheduleTypes";
 import {
   StationName,
   TrainIdDirection1,
@@ -14,20 +20,23 @@ import {
 export const filterStationsData = (
   res: ServerResponse,
   stations: Station[],
-  station: StationName,
+  station: StationName | undefined,
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
   if (!res)
-    throw Error(
-      "filterData > filterStationsData(): argument 'res' is missing"
-    );
+    throw Error("filterData > filterStationsData(): argument 'res' is missing");
   if (!stations)
     throw Error(
       "filterData > filterStationsData(): argument 'stations' is missing"
     );
-  if (!stationNames.includes(station)) {
-    res.statusCode = 400;
+  if (!station) {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify(stations, null, 2));
+  }
+  if (station && !stationNames.includes(station)) {
+    res.statusCode = 422;
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Invalid station name" }));
   }
@@ -39,20 +48,20 @@ export const filterStationsData = (
   */
   if (typeof direction === "number") {
     if (![1, 2].includes(direction)) {
-      res.statusCode = 400;
+      res.statusCode = 422;
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
-        res.statusCode = 400;
+        res.statusCode = 422;
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({ error: "Invalid frequency parameter" })
         );
       }
       /*
-       Get the corresponding getFrequency value to use for filtering:
+       Get the corresponding value with getFrequency to use for filtering:
       */
       const activeOnWeekendsAndHolidays = getFrequency(frequency);
       /*
@@ -64,7 +73,7 @@ export const filterStationsData = (
            Then get inside the station object:
           */
           return (() => {
-            let departures: any[] = [];
+            let departures: StationDeparture[] = [];
             /*
              Filter the departures within the specified station:
             */
@@ -77,33 +86,40 @@ export const filterStationsData = (
                 departures.push(departure);
               }
             }
+            res.statusCode = 200;
+            res.setHeader("Content-Type", "application/json");
             return res.end(JSON.stringify(departures, null, 2));
           })();
         }
       }
     }
     /*
-     If no frequency parameter is provided:
+     If no frequency parameter is provided, return all the departures 
+     from the specified station, in the specified direction:
     */
     for (let s of stations) {
       if (s.name === station) {
         return (() => {
-          let departures: any[] = [];
+          let departures: StationDeparture[] = [];
           for (let departure of s.departures) {
             if (departure.trainDetails.directionId === direction) {
               departures.push(departure);
             }
           }
+          res.statusCode = 200;
+          res.setHeader("Content-Type", "application/json");
           return res.end(JSON.stringify(departures, null, 2));
         })();
       }
     }
   }
   /*
-   If no direction parameter is provided:
+   If no direction parameter is provided, all specified station data is returned:
   */
   for (let s of stations) {
     if (s.name === station) {
+      res.statusCode = 200;
+      res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(s, null, 2));
     }
   }
