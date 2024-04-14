@@ -18,6 +18,14 @@ export const filterStationsData = (
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
+  if (!res)
+    throw Error(
+      "filterData > filterStationsData(): argument 'res' is missing"
+    );
+  if (!stations)
+    throw Error(
+      "filterData > filterStationsData(): argument 'stations' is missing"
+    );
   if (!stationNames.includes(station)) {
     res.statusCode = 400;
     res.setHeader("Content-Type", "application/json");
@@ -173,11 +181,11 @@ export const filterTrainsById = (
 ) => {
   if (!res)
     throw Error(
-      "filterData > filterTrainsByDirectionAndFrequency(): argument 'res' is missing"
+      "filterData > filterTrainsById(): argument 'res' is missing"
     );
   if (!trains)
     throw Error(
-      "filterData > filterTrainsByDirectionAndFrequency(): argument 'trains' is missing"
+      "filterData > filterTrainsById(): argument 'trains' is missing"
     );
   if (!trainId) {
     res.statusCode = 200;
