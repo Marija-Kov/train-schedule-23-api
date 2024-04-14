@@ -37,3 +37,11 @@ export type Station = {
   nameFormatted: StationNameFormatted;
   departures: StationDeparture[];
 };
+
+export type DepartureFormattedForReturn = {
+  departureTime: Time;
+  arrivalTime: Time;
+  trainId: TrainIdDirection1 | TrainIdDirection2;
+  from: StationNameFormatted;
+  to: StationNameFormatted;
+}

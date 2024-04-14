@@ -2,6 +2,7 @@ import { ServerResponse } from "http";
 import {
   Station,
   StationDeparture,
+  DepartureFormattedForReturn,
   Train,
   Time,
   YyyyMmDd,
@@ -15,7 +16,148 @@ import {
   stations as stationNames,
   trainId_d1,
   trainId_d2,
+  holidays,
 } from "./helpers/extractedData";
+
+export const getDeparturesAndArrivalsByDepartureDateAndTime = (
+  res: ServerResponse,
+  stations: Station[],
+  from: StationName | undefined,
+  to: StationName | undefined,
+  date: YyyyMmDd | undefined,
+  time: Time | undefined
+) => {
+  if (!res)
+    throw Error(
+      "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'res' is missing"
+    );
+  if (!stations)
+    throw Error(
+      "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'stations' is missing"
+    );
+  if (!from) {
+    // TODO: validate input type
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({ error: "Departure station parameter is required" })
+    );
+  }
+  if (!to) {
+    // TODO: validate input type
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({ error: "Arrival station parameter is required" })
+    );
+  }
+  if (!date) {
+    // TODO: validate input type
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "Date parameter is required" }));
+  }
+  if (!time) {
+    // TODO: validate input type
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(JSON.stringify({ error: "Time parameter is required" }));
+  }
+  const day = new Date(date).getDay();
+  const frequency =
+    day === 0 || day === 6 || holidays.includes(date)
+      ? [true, "w&h_only"]
+      : [true, false];
+  let [indexFrom] = stations
+    .filter((station: Station) => station.name === from)
+    .map((station: Station) => stations.indexOf(station));
+  let [indexTo] = stations
+    .filter((station: Station) => station.name === to)
+    .map((station: Station) => stations.indexOf(station));
+  const departureStationNameFormatted = stations[indexFrom].nameFormatted;
+  const arrivalStationNameFormatted = stations[indexTo].nameFormatted;
+  const direction = indexFrom > indexTo ? 2 : 1;
+  if (direction === 2) {
+    indexFrom = stations.length - 1 - indexFrom;
+    indexTo = stations.length - 1 - indexTo;
+  }
+  /*
+   Narrow down to the departures whose time is equal to or later than the specified departure time,
+   that go in the derived direction and that operate on the derived day type (every day, weekday, weekend/holiday);
+   Not all of these departures necessarily end up on the specified arrival station.
+  */
+  const narrowedDownSelectionOfDepartures = stations[
+    indexFrom
+  ].departures.filter((d: StationDeparture) => {
+    return (
+      d.time >= Number(time) &&
+      d.trainDetails.directionId === direction &&
+      frequency.includes(d.trainDetails.activeOnWeekendsAndHolidays)
+    );
+  });
+
+  if (!narrowedDownSelectionOfDepartures.length) {
+    res.statusCode = 404;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({ error: "No departures found for specified parameters" })
+    );
+  }
+
+  const narrowedDownSelectionOfDeparturesFormatted =
+    narrowedDownSelectionOfDepartures.map((d: StationDeparture) => {
+      return {
+        departureTime: d.time.toFixed(2),
+        arrivalTime: "0.10", // placeholder
+        trainId: d.trainDetails.id,
+        from: departureStationNameFormatted,
+        to: arrivalStationNameFormatted,
+      } as DepartureFormattedForReturn;
+    });
+
+  /*
+   Narrow down arrivals to specified arrival station;
+   Not all of these arrivals necessarily start on the specified departure station:
+  */
+  const narrowedDownSelectionOfArrivals = stations[indexTo].departures.filter(
+    (d: StationDeparture) => {
+      return (
+        d.time >= Number(time) &&
+        d.trainDetails.directionId === direction &&
+        frequency.includes(d.trainDetails.activeOnWeekendsAndHolidays)
+      );
+    }
+  );
+
+  const departures: DepartureFormattedForReturn[] = [];
+
+  for (let i = 0; i < narrowedDownSelectionOfDeparturesFormatted.length; ++i) {
+    for (let j = 0; j < narrowedDownSelectionOfArrivals.length; ++j) {
+      if (
+        narrowedDownSelectionOfDeparturesFormatted[i].trainId ===
+        narrowedDownSelectionOfArrivals[j].trainDetails.id
+      ) {
+        const time: Time = String(
+          narrowedDownSelectionOfArrivals[j].time
+        ) as Time;
+        narrowedDownSelectionOfDeparturesFormatted[i].arrivalTime = time;
+        departures.push(narrowedDownSelectionOfDeparturesFormatted[i]);
+      }
+    }
+  }
+
+  if (!departures.length) {
+    res.statusCode = 404;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({ error: "No departures found for specified parameters" })
+    );
+  }
+
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "application/json");
+  return res.end(JSON.stringify(departures, null, 2));
+};
 
 export const filterStationsData = (
   res: ServerResponse,
@@ -196,9 +338,7 @@ export const filterTrainsById = (
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
   if (!res)
-    throw Error(
-      "filterData > filterTrainsById(): argument 'res' is missing"
-    );
+    throw Error("filterData > filterTrainsById(): argument 'res' is missing");
   if (!trains)
     throw Error(
       "filterData > filterTrainsById(): argument 'trains' is missing"

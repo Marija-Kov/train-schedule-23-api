@@ -4,8 +4,14 @@ import {
   filterStationsData,
   filterTrainsById,
   filterTrainsByDirectionAndFrequency,
+  getDeparturesAndArrivalsByDepartureDateAndTime,
 } from "./filterData";
-import { Station, Train, YyyyMmDd } from "./typeDefinitions/trainScheduleTypes";
+import {
+  Station,
+  Train,
+  YyyyMmDd,
+  Time,
+} from "./typeDefinitions/trainScheduleTypes";
 import {
   StationName,
   TrainIdDirection1,
@@ -133,6 +139,29 @@ const server = http.createServer(async (req, res) => {
       const json = await fs.readFile("./stations.json", "utf-8");
       const data: Station[] = JSON.parse(json).stations;
       return filterStationsData(res, data, stationName, direction, frequency);
+    } catch (error) {
+      console.error("Error reading/filtering stations data:", error);
+      res.statusCode = 500;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(JSON.stringify({ error: "Internal server error" }));
+    }
+  } else if (url && url.startsWith("/departures")) {
+    const splitUrl = url.split("/");
+    const from: StationName | undefined = splitUrl[2] ? splitUrl[2].split("-").join(" ") as StationName : undefined;
+    const to: StationName | undefined = splitUrl[3] ? splitUrl[3].split("-").join(" ") as StationName : undefined;
+    const date = splitUrl[4] as YyyyMmDd | undefined;
+    const time = splitUrl[5] as Time | undefined;
+    try {
+      const json = await fs.readFile("./stations.json", "utf-8");
+      const data: Station[] = JSON.parse(json).stations;
+      return getDeparturesAndArrivalsByDepartureDateAndTime(
+        res,
+        data,
+        from,
+        to,
+        date,
+        time
+      );
     } catch (error) {
       console.error("Error reading/filtering stations data:", error);
       res.statusCode = 500;
