@@ -3,11 +3,16 @@ import {
   StationNameFormatted,
   TrainIdDirection1,
   TrainIdDirection2,
+  Year,
+  Month,
+  Day,
   Hours,
   Minutes,
 } from "./boringTypes";
 
 export type Time = `${Hours}.${Minutes}` | "n/a";
+
+export type YyyyMmDd = `${Year}-${Month}-${Day}`;
 
 export type TrainDetails = {
   id: TrainIdDirection1 | TrainIdDirection2;
@@ -32,3 +37,11 @@ export type Station = {
   nameFormatted: StationNameFormatted;
   departures: StationDeparture[];
 };
+
+export type DepartureFormattedForReturn = {
+  departureTime: Time;
+  arrivalTime: Time;
+  trainId: TrainIdDirection1 | TrainIdDirection2;
+  from: StationNameFormatted;
+  to: StationNameFormatted;
+}
