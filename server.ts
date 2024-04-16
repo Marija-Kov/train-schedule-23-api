@@ -147,10 +147,19 @@ const server = http.createServer(async (req, res) => {
     }
   } else if (url && url.startsWith("/departures")) {
     const splitUrl = url.split("/");
-    const from: StationName | undefined = splitUrl[2] ? splitUrl[2].split("-").join(" ") as StationName : undefined;
-    const to: StationName | undefined = splitUrl[3] ? splitUrl[3].split("-").join(" ") as StationName : undefined;
-    const date = splitUrl[4] as YyyyMmDd | undefined;
-    const time = splitUrl[5] as Time | undefined;
+    if (!splitUrl[2] || !splitUrl[3] || !splitUrl[4] || !splitUrl[5]) {
+      res.statusCode = 422;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({
+          error: "Please include all required parameters",
+        })
+      );
+    }
+    const from = splitUrl[2].split("-").join(" ") as StationName;
+    const to = splitUrl[3].split("-").join(" ") as StationName;
+    const date = splitUrl[4] as YyyyMmDd;
+    const time = splitUrl[5] as Time;
     try {
       const json = await fs.readFile("./stations.json", "utf-8");
       const data: Station[] = JSON.parse(json).stations;

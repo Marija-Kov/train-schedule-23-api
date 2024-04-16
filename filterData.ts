@@ -17,15 +17,16 @@ import {
   trainId_d1,
   trainId_d2,
   holidays,
+  year,
 } from "./helpers/extractedData";
 
 export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   res: ServerResponse,
   stations: Station[],
-  from: StationName | undefined,
-  to: StationName | undefined,
-  date: YyyyMmDd | undefined,
-  time: Time | undefined
+  from: StationName,
+  to: StationName,
+  date: YyyyMmDd,
+  time: Time
 ) => {
   if (!res)
     throw Error(
@@ -36,7 +37,6 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
       "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'stations' is missing"
     );
   if (!from) {
-    // TODO: validate input type
     res.statusCode = 422;
     res.setHeader("Content-Type", "application/json");
     return res.end(
@@ -44,24 +44,83 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     );
   }
   if (!to) {
-    // TODO: validate input type
     res.statusCode = 422;
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ error: "Arrival station parameter is required" })
     );
   }
+  if (
+    (from && !stationNames.includes(from)) ||
+    (to && !stationNames.includes(to))
+  ) {
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({
+        error: "Invalid departure and/or arrival station parameter",
+      })
+    );
+  }
+  if (from && to && from === to) {
+    res.statusCode = 422;
+    res.setHeader("Content-Type", "application/json");
+    return res.end(
+      JSON.stringify({
+        error: "Departure and arrival station must be different",
+      })
+    );
+  }
   if (!date) {
-    // TODO: validate input type
     res.statusCode = 422;
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Date parameter is required" }));
+  } else {
+    const pattern = `^${year}-(0[1-9]|1[0-2])-([0][1-9]|[1-2][0-9]|3[01])$`;
+    const r = new RegExp(pattern);
+    if (!date.match(r)) {
+      res.statusCode = 422;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({
+          error: "Invalid date format",
+        })
+      );
+    } else {
+      const dateArr = date.split("-");
+      if (
+        (Number(dateArr[0]) % 2 !== 0 &&
+          dateArr[1] === "02" &&
+          Number(dateArr[2]) > 28) ||
+        (dateArr[1] === "02" && Number(dateArr[2]) > 29) ||
+        (["04", "06", "09", "11"].includes(dateArr[1]) && dateArr[2] === "31")
+      ) {
+        res.statusCode = 422;
+        res.setHeader("Content-Type", "application/json");
+        return res.end(
+          JSON.stringify({
+            error: "Invalid date value",
+          })
+        );
+      }
+    }
   }
   if (!time) {
-    // TODO: validate input type
     res.statusCode = 422;
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Time parameter is required" }));
+  } else {
+    const pattern = `^([0-1][0-9]|2[0-3]).([0-5][0-9])$`;
+    const r = new RegExp(pattern);
+    if (!time.match(r)) {
+      res.statusCode = 422;
+      res.setHeader("Content-Type", "application/json");
+      return res.end(
+        JSON.stringify({
+          error: "Invalid time format or value",
+        })
+      );
+    }
   }
   const day = new Date(date).getDay();
   const frequency =
