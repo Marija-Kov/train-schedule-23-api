@@ -28,8 +28,7 @@ const server = http.createServer(async (req, res) => {
     return res.end(JSON.stringify({ error: "405 Method Not Allowed" }));
   }
   /*
-   There are 2 main resource URLs, '/trains' and '/stations'.
-   All subresource URLs start with either of them:
+   All URLs start with either '/trains', '/stations' or './departures':
   */
   if (url && url.startsWith("/trains")) {
     /*
