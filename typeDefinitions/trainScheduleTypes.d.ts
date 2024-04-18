@@ -40,10 +40,8 @@ export type Station = {
   departures: StationDeparture[];
 };
 
-export type DepartureFormattedForReturn = {
+export type OutputDeparture = {
   departureTime: TimeOutput;
   arrivalTime: TimeOutput;
   trainId: TrainIdDirection1 | TrainIdDirection2;
-  from: StationNameFormatted;
-  to: StationNameFormatted;
 }

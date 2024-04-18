@@ -2,7 +2,7 @@ import { ServerResponse } from "http";
 import {
   Station,
   StationDeparture,
-  DepartureFormattedForReturn,
+  OutputDeparture,
   Train,
   Time,
   TimeOutput,
@@ -164,15 +164,13 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     );
   }
 
-  const narrowedDownSelectionOfDeparturesFormatted =
+  const narrowedDownSelectionOfOutputDepartures =
     narrowedDownSelectionOfDepartures.map((d: StationDeparture) => {
       return {
         departureTime: d.time.toFixed(2).split(".").join(":") as TimeOutput,
         arrivalTime: "0:10", // placeholder
         trainId: d.trainDetails.id,
-        from: departureStationNameFormatted,
-        to: arrivalStationNameFormatted,
-      } as DepartureFormattedForReturn;
+      } as OutputDeparture;
     });
 
   /*
@@ -189,20 +187,20 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     }
   );
 
-  const departures: DepartureFormattedForReturn[] = [];
+  const departures: OutputDeparture[] = [];
 
-  for (let i = 0; i < narrowedDownSelectionOfDeparturesFormatted.length; ++i) {
+  for (let i = 0; i < narrowedDownSelectionOfOutputDepartures.length; ++i) {
     for (let j = 0; j < narrowedDownSelectionOfArrivals.length; ++j) {
       if (
-        narrowedDownSelectionOfDeparturesFormatted[i].trainId ===
+        narrowedDownSelectionOfOutputDepartures[i].trainId ===
         narrowedDownSelectionOfArrivals[j].trainDetails.id
       ) {
         const time = narrowedDownSelectionOfArrivals[j].time
           .toFixed(2)
           .split(".")
           .join(":") as TimeOutput;
-        narrowedDownSelectionOfDeparturesFormatted[i].arrivalTime = time;
-        departures.push(narrowedDownSelectionOfDeparturesFormatted[i]);
+        narrowedDownSelectionOfOutputDepartures[i].arrivalTime = time;
+        departures.push(narrowedDownSelectionOfOutputDepartures[i]);
       }
     }
   }
@@ -214,10 +212,14 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
       JSON.stringify({ error: "No departures found for specified parameters" })
     );
   }
-
+  const result = {
+    departureStation: departureStationNameFormatted,
+    arrivalStation: arrivalStationNameFormatted,
+    departures: departures
+  }
   res.statusCode = 200;
   res.setHeader("Content-Type", "application/json");
-  return res.end(JSON.stringify(departures, null, 2));
+  return res.end(JSON.stringify(result, null, 2));
 };
 
 export const filterStationsData = (
