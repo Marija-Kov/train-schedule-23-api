@@ -12,6 +12,8 @@ import {
 
 export type Time = `${Hours}.${Minutes}` | "n/a";
 
+export type TimeOutput = `${Hours}:${Minutes}`;
+
 export type YyyyMmDd = `${Year}-${Month}-${Day}`;
 
 export type TrainDetails = {
@@ -39,8 +41,8 @@ export type Station = {
 };
 
 export type DepartureFormattedForReturn = {
-  departureTime: Time;
-  arrivalTime: Time;
+  departureTime: TimeOutput;
+  arrivalTime: TimeOutput;
   trainId: TrainIdDirection1 | TrainIdDirection2;
   from: StationNameFormatted;
   to: StationNameFormatted;

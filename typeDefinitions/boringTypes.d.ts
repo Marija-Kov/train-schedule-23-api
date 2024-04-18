@@ -151,6 +151,7 @@ export type Day =
   | "31";
 
 export type Hours =
+  | "00"
   | "01"
   | "02"
   | "03"
@@ -186,6 +187,7 @@ export type Hours =
   | 23;
 
 export type Minutes =
+  | "00"
   | "01"
   | "02"
   | "03"
@@ -195,7 +197,7 @@ export type Minutes =
   | "07"
   | "08"
   | "09"
-  | "0"
+  | 0
   | 1
   | 2
   | 3

@@ -5,6 +5,7 @@ import {
   DepartureFormattedForReturn,
   Train,
   Time,
+  TimeOutput,
   YyyyMmDd,
 } from "./typeDefinitions/trainScheduleTypes";
 import {
@@ -166,8 +167,8 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   const narrowedDownSelectionOfDeparturesFormatted =
     narrowedDownSelectionOfDepartures.map((d: StationDeparture) => {
       return {
-        departureTime: d.time.toFixed(2),
-        arrivalTime: "0.10", // placeholder
+        departureTime: d.time.toFixed(2).split(".").join(":") as TimeOutput,
+        arrivalTime: "0:10", // placeholder
         trainId: d.trainDetails.id,
         from: departureStationNameFormatted,
         to: arrivalStationNameFormatted,
@@ -196,9 +197,10 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
         narrowedDownSelectionOfDeparturesFormatted[i].trainId ===
         narrowedDownSelectionOfArrivals[j].trainDetails.id
       ) {
-        const time: Time = String(
-          narrowedDownSelectionOfArrivals[j].time
-        ) as Time;
+        const time = narrowedDownSelectionOfArrivals[j].time
+          .toFixed(2)
+          .split(".")
+          .join(":") as TimeOutput;
         narrowedDownSelectionOfDeparturesFormatted[i].arrivalTime = time;
         departures.push(narrowedDownSelectionOfDeparturesFormatted[i]);
       }
