@@ -39,6 +39,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     );
   if (!from) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ error: "Departure station parameter is required" })
@@ -46,6 +47,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   }
   if (!to) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ error: "Arrival station parameter is required" })
@@ -56,6 +58,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     (to && !stationNames.includes(to))
   ) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({
@@ -65,6 +68,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   }
   if (from && to && from === to) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({
@@ -74,6 +78,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   }
   if (!date) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Date parameter is required" }));
   } else {
@@ -81,6 +86,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     const r = new RegExp(pattern);
     if (!date.match(r)) {
       res.statusCode = 422;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(
         JSON.stringify({
@@ -97,6 +103,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
         (["04", "06", "09", "11"].includes(dateArr[1]) && dateArr[2] === "31")
       ) {
         res.statusCode = 422;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({
@@ -108,6 +115,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   }
   if (!time) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Time parameter is required" }));
   } else {
@@ -115,6 +123,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     const r = new RegExp(pattern);
     if (!time.match(r)) {
       res.statusCode = 422;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(
         JSON.stringify({
@@ -158,6 +167,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
 
   if (!narrowedDownSelectionOfDepartures.length) {
     res.statusCode = 404;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ error: "No departures found for specified parameters" })
@@ -207,6 +217,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
 
   if (!departures.length) {
     res.statusCode = 404;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ error: "No departures found for specified parameters" })
@@ -218,6 +229,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
     departures: departures
   }
   res.statusCode = 200;
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Content-Type", "application/json");
   return res.end(JSON.stringify(result, null, 2));
 };
@@ -237,11 +249,13 @@ export const filterStationsData = (
     );
   if (!station) {
     res.statusCode = 200;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify(stations, null, 2));
   }
   if (station && !stationNames.includes(station)) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Invalid station name" }));
   }
@@ -254,12 +268,14 @@ export const filterStationsData = (
   if (typeof direction === "number") {
     if (![1, 2].includes(direction)) {
       res.statusCode = 422;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
         res.statusCode = 422;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({ error: "Invalid frequency parameter" })
@@ -292,6 +308,7 @@ export const filterStationsData = (
               }
             }
             res.statusCode = 200;
+            res.setHeader("Access-Control-Allow-Origin", "*");
             res.setHeader("Content-Type", "application/json");
             return res.end(JSON.stringify(departures, null, 2));
           })();
@@ -312,6 +329,7 @@ export const filterStationsData = (
             }
           }
           res.statusCode = 200;
+          res.setHeader("Access-Control-Allow-Origin", "*");
           res.setHeader("Content-Type", "application/json");
           return res.end(JSON.stringify(departures, null, 2));
         })();
@@ -324,6 +342,7 @@ export const filterStationsData = (
   for (let s of stations) {
     if (s.name === station) {
       res.statusCode = 200;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(s, null, 2));
     }
@@ -347,12 +366,14 @@ export const filterTrainsByDirectionAndFrequency = (
   if (direction && direction.toString().length === 1) {
     if (!["1", "2"].includes(direction)) {
       res.statusCode = 422;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
         res.statusCode = 422;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({ error: "Invalid frequency parameter" })
@@ -373,6 +394,7 @@ export const filterTrainsByDirectionAndFrequency = (
         }
       }
       res.statusCode = 200;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(result, null, 2));
     } else {
@@ -386,11 +408,13 @@ export const filterTrainsByDirectionAndFrequency = (
         }
       }
       res.statusCode = 200;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify(result, null, 2));
     }
   }
   res.statusCode = 200;
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Content-Type", "application/json");
   return res.end(JSON.stringify(trains, null, 2));
 };
@@ -408,6 +432,7 @@ export const filterTrainsById = (
     );
   if (!trainId) {
     res.statusCode = 200;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify(trains, null, 2));
   }
@@ -418,10 +443,12 @@ export const filterTrainsById = (
     )
   ) {
     res.statusCode = 422;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Invalid train id" }));
   }
   res.statusCode = 200;
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Content-Type", "application/json");
   return res.end(JSON.stringify(trains[trainId], null, 2));
 };

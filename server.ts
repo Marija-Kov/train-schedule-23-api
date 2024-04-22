@@ -40,11 +40,13 @@ const server = http.createServer(async (req, res) => {
         const json = await fs.readFile("./trains.json", "utf-8");
         const data: Train[] = JSON.parse(json) as Train[];
         res.statusCode = 200;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(JSON.stringify(data, null, 2));
       } catch (error) {
         console.error("Error reading/filtering trains data:", error);
         res.statusCode = 500;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(JSON.stringify({ error: "Internal server error" }));
       }
@@ -56,6 +58,7 @@ const server = http.createServer(async (req, res) => {
       const direction: "1" | "2" = splitUrl[2] as "1" | "2";
       if (direction !== "1" && direction !== "2") {
         res.statusCode = 422;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(
           JSON.stringify({ error: "Invalid direction - 1 or 2 only" })
@@ -78,6 +81,7 @@ const server = http.createServer(async (req, res) => {
         } catch (error) {
           console.error("Error reading/filtering trains data:", error);
           res.statusCode = 500;
+          res.setHeader("Access-Control-Allow-Origin", "*");
           res.setHeader("Content-Type", "application/json");
           return res.end(JSON.stringify({ error: "Internal server error" }));
         }
@@ -93,11 +97,13 @@ const server = http.createServer(async (req, res) => {
         const json = await fs.readFile("./trains.json", "utf-8");
         const data: Train[] = JSON.parse(json) as Train[];
         res.statusCode = 200;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return filterTrainsById(res, data, trainId);
       } catch (error) {
         console.error("Error reading/filtering trains data:", error);
         res.statusCode = 500;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(JSON.stringify({ error: "Internal server error" }));
       }
@@ -106,6 +112,7 @@ const server = http.createServer(async (req, res) => {
     const splitUrl = url.split("/");
     if (!splitUrl[2]) {
       res.statusCode = 200;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       try {
         const json = await fs.readFile("./stations.json", "utf-8");
@@ -113,6 +120,7 @@ const server = http.createServer(async (req, res) => {
       } catch (error) {
         console.error("Error reading stations.json:", error);
         res.statusCode = 500;
+        res.setHeader("Access-Control-Allow-Origin", "*");
         res.setHeader("Content-Type", "application/json");
         return res.end(JSON.stringify({ error: "Internal server error" }));
       }
@@ -133,6 +141,7 @@ const server = http.createServer(async (req, res) => {
       | "wh"
       | undefined;
     res.statusCode = 200;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     try {
       const json = await fs.readFile("./stations.json", "utf-8");
@@ -141,6 +150,7 @@ const server = http.createServer(async (req, res) => {
     } catch (error) {
       console.error("Error reading/filtering stations data:", error);
       res.statusCode = 500;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Internal server error" }));
     }
@@ -148,6 +158,7 @@ const server = http.createServer(async (req, res) => {
     const splitUrl = url.split("/");
     if (!splitUrl[2] || !splitUrl[3] || !splitUrl[4] || !splitUrl[5]) {
       res.statusCode = 422;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(
         JSON.stringify({
@@ -173,17 +184,20 @@ const server = http.createServer(async (req, res) => {
     } catch (error) {
       console.error("Error reading/filtering stations data:", error);
       res.statusCode = 500;
+      res.setHeader("Access-Control-Allow-Origin", "*");
       res.setHeader("Content-Type", "application/json");
       return res.end(JSON.stringify({ error: "Internal server error" }));
     }
   } else if (url === "/") {
     res.statusCode = 200;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(
       JSON.stringify({ message: "Welcome to the train schedule API!" })
     );
   } else {
     res.statusCode = 404;
+    res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     return res.end(JSON.stringify({ error: "Not found" }));
   }
