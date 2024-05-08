@@ -1,4 +1,3 @@
-import { ServerResponse } from "http";
 import {
   Station,
   StationDeparture,
@@ -20,9 +19,10 @@ import {
   holidays,
   year,
 } from "./helpers/extractedData";
+import { ExtendedServerRes } from "./framework";
 
 export const getDeparturesAndArrivalsByDepartureDateAndTime = (
-  res: ServerResponse,
+  res: ExtendedServerRes,
   stations: Station[],
   from: StationName,
   to: StationName,
@@ -38,61 +38,35 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
       "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'stations' is missing"
     );
   if (!from) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({ error: "Departure station parameter is required" })
-    );
+    return res.sendJson(422, {
+      error: "Departure station parameter is required",
+    });
   }
   if (!to) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({ error: "Arrival station parameter is required" })
-    );
+    return res.sendJson(422, {
+      error: "Arrival station parameter is required",
+    });
   }
   if (
     (from && !stationNames.includes(from)) ||
     (to && !stationNames.includes(to))
   ) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({
-        error: "Invalid departure and/or arrival station parameter",
-      })
-    );
+    return res.sendJson(422, {
+      error: "Invalid departure and/or arrival station parameter",
+    });
   }
   if (from && to && from === to) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({
-        error: "Departure and arrival station must be different",
-      })
-    );
+    return res.sendJson(422, {
+      error: "Departure and arrival station must be different",
+    });
   }
   if (!date) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify({ error: "Date parameter is required" }));
+    return res.sendJson(422, { error: "Date parameter is required" });
   } else {
     const pattern = `^${year}-(0[1-9]|1[0-2])-([0][1-9]|[1-2][0-9]|3[01])$`;
     const r = new RegExp(pattern);
     if (!date.match(r)) {
-      res.statusCode = 422;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(
-        JSON.stringify({
-          error: "Invalid date format",
-        })
-      );
+      return res.sendJson(422, { error: "Invalid date value" });
     } else {
       const dateArr = date.split("-");
       if (
@@ -102,34 +76,17 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
         (dateArr[1] === "02" && Number(dateArr[2]) > 29) ||
         (["04", "06", "09", "11"].includes(dateArr[1]) && dateArr[2] === "31")
       ) {
-        res.statusCode = 422;
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Content-Type", "application/json");
-        return res.end(
-          JSON.stringify({
-            error: "Invalid date value",
-          })
-        );
+        return res.sendJson(422, { error: "Invalid date value" });
       }
     }
   }
   if (!time) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify({ error: "Time parameter is required" }));
+    return res.sendJson(422, { error: "Time parameter is required" });
   } else {
     const pattern = `^([0-1][0-9]|2[0-3]).([0-5][0-9])$`;
     const r = new RegExp(pattern);
     if (!time.match(r)) {
-      res.statusCode = 422;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(
-        JSON.stringify({
-          error: "Invalid time format or value",
-        })
-      );
+      return res.sendJson(422, { error: "Invalid time format or value" });
     }
   }
   const day = new Date(date).getDay();
@@ -166,12 +123,9 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   });
 
   if (!narrowedDownSelectionOfDepartures.length) {
-    res.statusCode = 404;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({ error: "No departures found for specified parameters" })
-    );
+    return res.sendJson(404, {
+      error: "No departures found for specified parameters",
+    });
   }
 
   const narrowedDownSelectionOfOutputDepartures =
@@ -216,26 +170,20 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   }
 
   if (!departures.length) {
-    res.statusCode = 404;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(
-      JSON.stringify({ error: "No departures found for specified parameters" })
-    );
+    return res.sendJson(404, {
+      error: "No departures found for specified parameters",
+    });
   }
   const result = {
     departureStation: departureStationNameFormatted,
     arrivalStation: arrivalStationNameFormatted,
-    departures: departures
-  }
-  res.statusCode = 200;
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Content-Type", "application/json");
-  return res.end(JSON.stringify(result, null, 2));
+    departures: departures,
+  };
+  return res.sendJson(200, result);
 };
 
 export const filterStationsData = (
-  res: ServerResponse,
+  res: ExtendedServerRes,
   stations: Station[],
   station: StationName | undefined,
   direction: 1 | 2 | undefined,
@@ -248,16 +196,10 @@ export const filterStationsData = (
       "filterData > filterStationsData(): argument 'stations' is missing"
     );
   if (!station) {
-    res.statusCode = 200;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify(stations, null, 2));
+    return res.sendJson(200, stations);
   }
   if (station && !stationNames.includes(station)) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify({ error: "Invalid station name" }));
+    return res.sendJson(422, { error: "Invalid station name" });
   }
   /*
    Checking whether direction is truthy will not work properly 
@@ -267,19 +209,11 @@ export const filterStationsData = (
   */
   if (typeof direction === "number") {
     if (![1, 2].includes(direction)) {
-      res.statusCode = 422;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
+      return res.sendJson(422, { error: "Invalid direction parameter" });
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
-        res.statusCode = 422;
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Content-Type", "application/json");
-        return res.end(
-          JSON.stringify({ error: "Invalid frequency parameter" })
-        );
+        return res.sendJson(422, { error: "Invalid frequency parameter" });
       }
       /*
        Get the corresponding value with getFrequency to use for filtering:
@@ -307,10 +241,7 @@ export const filterStationsData = (
                 departures.push(departure);
               }
             }
-            res.statusCode = 200;
-            res.setHeader("Access-Control-Allow-Origin", "*");
-            res.setHeader("Content-Type", "application/json");
-            return res.end(JSON.stringify(departures, null, 2));
+            return res.sendJson(200, departures);
           })();
         }
       }
@@ -328,10 +259,7 @@ export const filterStationsData = (
               departures.push(departure);
             }
           }
-          res.statusCode = 200;
-          res.setHeader("Access-Control-Allow-Origin", "*");
-          res.setHeader("Content-Type", "application/json");
-          return res.end(JSON.stringify(departures, null, 2));
+          return res.sendJson(200, departures);
         })();
       }
     }
@@ -341,16 +269,13 @@ export const filterStationsData = (
   */
   for (let s of stations) {
     if (s.name === station) {
-      res.statusCode = 200;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify(s, null, 2));
+      return res.sendJson(200, s);
     }
   }
 };
 
 export const filterTrainsByDirectionAndFrequency = (
-  res: ServerResponse,
+  res: ExtendedServerRes,
   trains: Train[],
   direction: "1" | "2" | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
@@ -365,19 +290,11 @@ export const filterTrainsByDirectionAndFrequency = (
     );
   if (direction && direction.toString().length === 1) {
     if (!["1", "2"].includes(direction)) {
-      res.statusCode = 422;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify({ error: "Invalid direction parameter" }));
+      return res.sendJson(422, { error: "Invalid direction parameter" });
     }
     if (frequency) {
       if (!["wh", "wd", "ed"].includes(frequency)) {
-        res.statusCode = 422;
-        res.setHeader("Access-Control-Allow-Origin", "*");
-        res.setHeader("Content-Type", "application/json");
-        return res.end(
-          JSON.stringify({ error: "Invalid frequency parameter" })
-        );
+        return res.sendJson(422, { error: "Invalid frequency parameter" });
       }
       const activeOnWeekendsAndHolidays = getFrequency(frequency);
       let result: Train[] = [];
@@ -393,10 +310,7 @@ export const filterTrainsByDirectionAndFrequency = (
           result.push(trains[train]);
         }
       }
-      res.statusCode = 200;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify(result, null, 2));
+      return res.sendJson(200, result);
     } else {
       /*
        Filter the trains by direction id only:
@@ -407,20 +321,14 @@ export const filterTrainsByDirectionAndFrequency = (
           result.push(trains[train]);
         }
       }
-      res.statusCode = 200;
-      res.setHeader("Access-Control-Allow-Origin", "*");
-      res.setHeader("Content-Type", "application/json");
-      return res.end(JSON.stringify(result, null, 2));
+      return res.sendJson(200, result);
     }
   }
-  res.statusCode = 200;
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Content-Type", "application/json");
-  return res.end(JSON.stringify(trains, null, 2));
+  return res.sendJson(200, trains);
 };
 
 export const filterTrainsById = (
-  res: ServerResponse,
+  res: ExtendedServerRes,
   trains: Train[],
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
@@ -431,10 +339,7 @@ export const filterTrainsById = (
       "filterData > filterTrainsById(): argument 'trains' is missing"
     );
   if (!trainId) {
-    res.statusCode = 200;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify(trains, null, 2));
+    return res.sendJson(200, trains);
   }
   if (
     trainId.toString().length !== 4 ||
@@ -442,15 +347,9 @@ export const filterTrainsById = (
       trainId as TrainIdDirection1 | TrainIdDirection2
     )
   ) {
-    res.statusCode = 422;
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Content-Type", "application/json");
-    return res.end(JSON.stringify({ error: "Invalid train id" }));
+    return res.sendJson(422, { error: "Invalid train id" });
   }
-  res.statusCode = 200;
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Content-Type", "application/json");
-  return res.end(JSON.stringify(trains[trainId], null, 2));
+  return res.sendJson(200, trains[trainId]);
 };
 
 function getFrequency(
