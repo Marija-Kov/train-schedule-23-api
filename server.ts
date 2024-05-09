@@ -1,22 +1,12 @@
 import { promises as fs } from "fs";
+import filter from "./utils/filterData";
+import { Station, Train, YyyyMmDd, Time } from "./types/trainScheduleTypes";
+import F from "./framework";
 import {
-  filterStationsData,
-  filterTrainsById,
-  filterTrainsByDirectionAndFrequency,
-  getDeparturesAndArrivalsByDepartureDateAndTime,
-} from "./filterData";
-import {
-  Station,
-  Train,
-  YyyyMmDd,
-  Time,
-} from "./typeDefinitions/trainScheduleTypes";
-import {
-  StationName,
   TrainIdDirection1,
   TrainIdDirection2,
-} from "./typeDefinitions/boringTypes";
-import F from "./framework";
+  StationName,
+} from "./types/boringTypes";
 
 const port = process.env.PORT || 3003;
 
@@ -55,7 +45,7 @@ server.route("/trains", async (req, res) => {
       try {
         const json = await fs.readFile("./trains.json", "utf-8");
         const data: Train[] = (await JSON.parse(json)) as Train[];
-        return filterTrainsByDirectionAndFrequency(
+        return filter.trainsByDirectionAndFrequency(
           res,
           data,
           direction,
@@ -76,7 +66,7 @@ server.route("/trains", async (req, res) => {
     try {
       const json = await fs.readFile("./trains.json", "utf-8");
       const data: Train[] = JSON.parse(json) as Train[];
-      return filterTrainsById(res, data, trainId);
+      return filter.trainsById(res, data, trainId);
     } catch (error) {
       console.error("Error reading/filtering trains data:", error);
       return res.sendJson(500, { error: "Internal server error" });
@@ -119,7 +109,7 @@ server.route("/stations", async (req, res) => {
   try {
     const json = await fs.readFile("./stations.json", "utf-8");
     const data: Station[] = JSON.parse(json).stations;
-    return filterStationsData(res, data, stationName, direction, frequency);
+    return filter.stationsData(res, data, stationName, direction, frequency);
   } catch (error) {
     console.error("Error reading/filtering stations data:", error);
     return res.sendJson(500, { error: "Internal server error" });
@@ -145,14 +135,7 @@ server.route("/departures", async (req, res) => {
   try {
     const json = await fs.readFile("./stations.json", "utf-8");
     const data: Station[] = JSON.parse(json).stations;
-    return getDeparturesAndArrivalsByDepartureDateAndTime(
-      res,
-      data,
-      from,
-      to,
-      date,
-      time
-    );
+    return filter.departures(res, data, from, to, date, time);
   } catch (error) {
     console.error("Error reading/filtering stations data:", error);
     return res.sendJson(500, { error: "Internal server error" });

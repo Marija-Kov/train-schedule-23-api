@@ -1,13 +1,18 @@
-import fs from "fs";
-import { Train, Station, StationDeparture, Time } from "../typeDefinitions/trainScheduleTypes";
+import * as fs from "fs";
+import {
+  Train,
+  Station,
+  StationDeparture,
+  Time,
+} from "../../types/trainScheduleTypes";
 import {
   StationName,
-  StationNameFormatted,
   TrainIdDirection1,
   TrainIdDirection2,
-} from "../typeDefinitions/boringTypes";
+  StationNameFormatted,
+} from "../../types/boringTypes";
 
-export function extractDepartureTimes(dataStr: string): Time[][] {
+function extractDepartureTimes(dataStr: string): Time[][] {
   /*
        Takes in data string extracted from the PDF 
        and returns all times of departures of any train in an array
@@ -46,7 +51,7 @@ export function extractDepartureTimes(dataStr: string): Time[][] {
  They differ for each of the 2 directions.
 */
 
-export function createTimetableMatrix_d1(
+function createTimetableMatrixDirection1(
   departureTimes: Time[][],
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection1[]
@@ -79,7 +84,7 @@ export function createTimetableMatrix_d1(
   return departureTimes;
 }
 
-export function createTimetableMatrix_d2(
+function createTimetableMatrixDirection2(
   departureTimes: Time[][],
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection2[]
@@ -122,7 +127,7 @@ export function createTimetableMatrix_d2(
   return departureTimes;
 }
 
-export function shapeTrainsData(
+function trainsData(
   trainIdsDir1: TrainIdDirection1[],
   trainIdsDir2: TrainIdDirection2[],
   weekendsAndHolidays1: (boolean | "w&h_only")[],
@@ -186,7 +191,7 @@ export function shapeTrainsData(
   return arr;
 }
 
-export function writeTrainsEndpoint(arr: Train[]) {
+function writeTrainsEndpoint(arr: Train[]) {
   const trains: any = {};
   for (let train of arr) {
     trains[train.id] = train;
@@ -200,7 +205,7 @@ export function writeTrainsEndpoint(arr: Train[]) {
   );
 }
 
-export function shapeStationsData(
+function stationsData(
   stations: StationName[],
   stationsFormatted: StationNameFormatted[],
   trainsData: Train[]
@@ -242,7 +247,7 @@ export function shapeStationsData(
   return arr;
 }
 
-export function writeStationsEndpoint(stationsData: Station[]): void {
+function writeStationsEndpoint(stationsData: Station[]): void {
   const { holidays } = require("./extractedData");
   const data = {
     holidays: holidays,
@@ -256,3 +261,15 @@ export function writeStationsEndpoint(stationsData: Station[]): void {
     }
   );
 }
+
+const shape = {
+  extractDepartureTimes,
+  createTimetableMatrixDirection1,
+  createTimetableMatrixDirection2,
+  trainsData,
+  stationsData,
+  writeTrainsEndpoint,
+  writeStationsEndpoint,
+};
+
+export default shape;

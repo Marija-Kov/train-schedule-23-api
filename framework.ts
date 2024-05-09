@@ -1,4 +1,5 @@
-import http, { IncomingMessage, ServerResponse, Server } from "node:http";
+import * as http from "node:http";
+import { IncomingMessage, ServerResponse, Server } from "node:http";
 
 export interface ExtendedServerRes extends ServerResponse {
   sendJson: (statusCode: number, data: Object) => void;

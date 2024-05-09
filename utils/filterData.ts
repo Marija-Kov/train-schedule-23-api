@@ -6,22 +6,22 @@ import {
   Time,
   TimeOutput,
   YyyyMmDd,
-} from "./typeDefinitions/trainScheduleTypes";
+} from "../types/trainScheduleTypes";
+import {
+  stations as stationNames,
+  trainIdDirection1,
+  trainIdDirection2,
+  holidays,
+  year,
+} from "./dataShapers/data/extractedData";
+import { ExtendedServerRes } from "../framework";
 import {
   StationName,
   TrainIdDirection1,
   TrainIdDirection2,
-} from "./typeDefinitions/boringTypes";
-import {
-  stations as stationNames,
-  trainId_d1,
-  trainId_d2,
-  holidays,
-  year,
-} from "./helpers/extractedData";
-import { ExtendedServerRes } from "./framework";
+} from "../types/boringTypes";
 
-export const getDeparturesAndArrivalsByDepartureDateAndTime = (
+const departures = (
   res: ExtendedServerRes,
   stations: Station[],
   from: StationName,
@@ -29,14 +29,9 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   date: YyyyMmDd,
   time: Time
 ) => {
-  if (!res)
-    throw Error(
-      "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'res' is missing"
-    );
+  if (!res) throw Error("filterData > departures(): argument 'res' is missing");
   if (!stations)
-    throw Error(
-      "filterData > getDeparturesAndArrivalsByDepartureDateAndTime(): argument 'stations' is missing"
-    );
+    throw Error("filterData > departures(): argument 'stations' is missing");
   if (!from) {
     return res.sendJson(422, {
       error: "Departure station parameter is required",
@@ -182,7 +177,7 @@ export const getDeparturesAndArrivalsByDepartureDateAndTime = (
   return res.sendJson(200, result);
 };
 
-export const filterStationsData = (
+const stationsData = (
   res: ExtendedServerRes,
   stations: Station[],
   station: StationName | undefined,
@@ -274,7 +269,7 @@ export const filterStationsData = (
   }
 };
 
-export const filterTrainsByDirectionAndFrequency = (
+const trainsByDirectionAndFrequency = (
   res: ExtendedServerRes,
   trains: Train[],
   direction: "1" | "2" | undefined,
@@ -282,11 +277,11 @@ export const filterTrainsByDirectionAndFrequency = (
 ) => {
   if (!res)
     throw Error(
-      "filterData > filterTrainsByDirectionAndFrequency(): argument 'res' is missing"
+      "filterData > trainsByDirectionAndFrequency(): argument 'res' is missing"
     );
   if (!trains)
     throw Error(
-      "filterData > filterTrainsByDirectionAndFrequency(): argument 'trains' is missing"
+      "filterData > trainsByDirectionAndFrequency(): argument 'trains' is missing"
     );
   if (direction && direction.toString().length === 1) {
     if (!["1", "2"].includes(direction)) {
@@ -327,23 +322,20 @@ export const filterTrainsByDirectionAndFrequency = (
   return res.sendJson(200, trains);
 };
 
-export const filterTrainsById = (
+const trainsById = (
   res: ExtendedServerRes,
   trains: Train[],
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
-  if (!res)
-    throw Error("filterData > filterTrainsById(): argument 'res' is missing");
+  if (!res) throw Error("filterData > trainsById(): argument 'res' is missing");
   if (!trains)
-    throw Error(
-      "filterData > filterTrainsById(): argument 'trains' is missing"
-    );
+    throw Error("filterData > trainsById(): argument 'trains' is missing");
   if (!trainId) {
     return res.sendJson(200, trains);
   }
   if (
     trainId.toString().length !== 4 ||
-    ![...trainId_d1, ...trainId_d2].includes(
+    ![...trainIdDirection1, ...trainIdDirection2].includes(
       trainId as TrainIdDirection1 | TrainIdDirection2
     )
   ) {
@@ -371,3 +363,12 @@ function getFrequency(
   }
   return active;
 }
+
+const filter = {
+  departures,
+  stationsData,
+  trainsByDirectionAndFrequency,
+  trainsById,
+};
+
+export default filter;

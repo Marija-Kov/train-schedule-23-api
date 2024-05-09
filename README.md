@@ -14,10 +14,11 @@ To try it out locally:
 
 1. Install <a href="https://nodejs.org/en">Node.js</a> on your machine;
 2. Clone the repository;
-3. Install dependencies - ` npm install`
+3. Install dependencies - `npm install`
 4. In the root directory, running:
    ```
-   cd helpers && ts-node runFunctions.ts
+   cd utils/dataShapers
+   ts-node runShapeData.ts
    ```
    will generate `stations.json` and `trains.json` .
 
@@ -25,7 +26,7 @@ To try it out locally:
 
 The API exposes endpoints for accessing data related to trains and train stations.
 
-To try it out locally, navigate to the root directory and run: `nodemon server.ts` .
+To try it out locally, navigate to the root directory and run: `ts-node server.ts` .
 
 #### Train routes
 
