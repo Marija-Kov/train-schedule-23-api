@@ -33,7 +33,7 @@ To try it out locally, navigate to the root directory and run: `ts-node server.t
 - `/trains` will expose all trains with details;
 - `/trains/[trainId]`, where trainId is a <a href="https://github.com/Marija-Kov/train-schedule-23-api/blob/build-api/helpers/extractedData.ts">4-digit number</a>, will get a single train;
 - `/trains/[directionId]`, where [directionId](#directionId) is either number 1 or 2, will get all trains that go in the given direction;
-- `/trains/[directionId]/[activity]`, where activity can be either `ed` (every day), `wd` (weekday - Monday to Friday) or `wh` (weekends and holidays only), will get trains going in the given direction on specified days;
+- `/trains/[directionId]/[frequency]`, where frequency can be either `ed` (every day), `wd` (weekday - Monday to Friday) or `wh` (weekends and holidays only), will get trains going in the given direction on specified days;
 
 Example: `localhost:3003/trains/2/ed` will get all trains going in direction 2 every day.
 
@@ -42,7 +42,7 @@ Example: `localhost:3003/trains/2/ed` will get all trains going in direction 2 e
 - `/stations` will expose the details of every station;
 - `/stations/[stationName]`, where stationName can be any station from the [list](#listOfStations), will get the details of a single station. In the URL, station name must be specified in lowercase, letter-only and hyphenated if consisting of more than 1 word.;
 - `/stations/[stationName]/[directionId]` will get all the departures from the specified station in the specified direction;
-- `/stations/[stationName]/[directionId]/[activity]` will get the departures from the specified station in the specified direction on specified days;
+- `/stations/[stationName]/[directionId]/[frequency]` will get the departures from the specified station in the specified direction on specified days;
 
 Example: `localhost:3003/stations/novi-beograd/2/wd` will get all the weekday departures from Novi Beograd station in direction 2.
 
