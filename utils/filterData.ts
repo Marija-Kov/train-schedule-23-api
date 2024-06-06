@@ -1,18 +1,14 @@
 import {
   Station,
   StationDeparture,
-  OutputDeparture,
   Train,
   Time,
-  TimeOutput,
   YyyyMmDd,
 } from "../types/trainScheduleTypes";
 import {
   stations as stationNames,
   trainIdDirection1,
   trainIdDirection2,
-  holidays,
-  year,
 } from "./dataShapers/data/extractedData";
 import { ExtendedServerRes } from "../framework";
 import {
@@ -20,6 +16,16 @@ import {
   TrainIdDirection1,
   TrainIdDirection2,
 } from "../types/boringTypes";
+import {
+  isDatePatternValid,
+  isTimePatternValid,
+  getFrequencyArray,
+  formatStationNameForOutput,
+  getDirectionAndStationIndexes,
+  narrowDownSelection,
+  shapeToOutputFormat,
+  getResultFromTrainIdOverlaps,
+} from "./getDeparturesHelpers";
 
 const departures = (
   res: ExtendedServerRes,
@@ -50,6 +56,7 @@ const departures = (
       error: "Invalid departure and/or arrival station parameter",
     });
   }
+
   if (from && to && from === to) {
     return res.sendJson(422, {
       error: "Departure and arrival station must be different",
@@ -57,65 +64,34 @@ const departures = (
   }
   if (!date) {
     return res.sendJson(422, { error: "Date parameter is required" });
-  } else {
-    const pattern = `^${year}-(0[1-9]|1[0-2])-([0][1-9]|[1-2][0-9]|3[01])$`;
-    const r = new RegExp(pattern);
-    if (!date.match(r)) {
-      return res.sendJson(422, { error: "Invalid date value" });
-    } else {
-      const dateArr = date.split("-");
-      if (
-        (Number(dateArr[0]) % 2 !== 0 &&
-          dateArr[1] === "02" &&
-          Number(dateArr[2]) > 28) ||
-        (dateArr[1] === "02" && Number(dateArr[2]) > 29) ||
-        (["04", "06", "09", "11"].includes(dateArr[1]) && dateArr[2] === "31")
-      ) {
-        return res.sendJson(422, { error: "Invalid date value" });
-      }
-    }
   }
   if (!time) {
     return res.sendJson(422, { error: "Time parameter is required" });
-  } else {
-    const pattern = `^([0-1][0-9]|2[0-3]).([0-5][0-9])$`;
-    const r = new RegExp(pattern);
-    if (!time.match(r)) {
-      return res.sendJson(422, { error: "Invalid time format or value" });
-    }
   }
-  const day = new Date(date).getDay();
-  const frequency =
-    day === 0 || day === 6 || holidays.includes(date)
-      ? [true, "w&h_only"]
-      : [true, false];
-  let [indexFrom] = stations
-    .filter((station: Station) => station.name === from)
-    .map((station: Station) => stations.indexOf(station));
-  let [indexTo] = stations
-    .filter((station: Station) => station.name === to)
-    .map((station: Station) => stations.indexOf(station));
-  const departureStationNameFormatted = stations[indexFrom].nameFormatted;
-  const arrivalStationNameFormatted = stations[indexTo].nameFormatted;
-  const direction = indexFrom > indexTo ? 2 : 1;
-  if (direction === 2) {
-    indexFrom = stations.length - 1 - indexFrom;
-    indexTo = stations.length - 1 - indexTo;
+
+  if (!isDatePatternValid(date)) {
+    return res.sendJson(422, { error: "Invalid date value" });
   }
-  /*
-   Narrow down to the departures whose time is equal to or later than the specified departure time,
-   that go in the derived direction and that operate on the derived day type (every day, weekday, weekend/holiday);
-   Not all of these departures necessarily end up on the specified arrival station.
-  */
-  const narrowedDownSelectionOfDepartures = stations[
-    indexFrom
-  ].departures.filter((d: StationDeparture) => {
-    return (
-      d.time >= Number(time) &&
-      d.trainDetails.directionId === direction &&
-      frequency.includes(d.trainDetails.activeOnWeekendsAndHolidays)
-    );
-  });
+
+  if (!isTimePatternValid(time)) {
+    return res.sendJson(422, { error: "Invalid time format or value" });
+  }
+
+  const { indexFrom, indexTo, direction } = getDirectionAndStationIndexes(
+    from,
+    to,
+    stations
+  );
+
+  const frequency = getFrequencyArray(date);
+
+  const narrowedDownSelectionOfDepartures = narrowDownSelection(
+    indexFrom,
+    time,
+    stations,
+    direction,
+    frequency
+  );
 
   if (!narrowedDownSelectionOfDepartures.length) {
     return res.sendJson(404, {
@@ -123,58 +99,34 @@ const departures = (
     });
   }
 
-  const narrowedDownSelectionOfOutputDepartures =
-    narrowedDownSelectionOfDepartures.map((d: StationDeparture) => {
-      return {
-        departureTime: d.time.toFixed(2).split(".").join(":") as TimeOutput,
-        arrivalTime: "0:10", // placeholder
-        trainId: d.trainDetails.id,
-      } as OutputDeparture;
-    });
-
-  /*
-   Narrow down arrivals to specified arrival station;
-   Not all of these arrivals necessarily start on the specified departure station:
-  */
-  const narrowedDownSelectionOfArrivals = stations[indexTo].departures.filter(
-    (d: StationDeparture) => {
-      return (
-        d.time >= Number(time) &&
-        d.trainDetails.directionId === direction &&
-        frequency.includes(d.trainDetails.activeOnWeekendsAndHolidays)
-      );
-    }
+  const outputDepartures = shapeToOutputFormat(
+    narrowedDownSelectionOfDepartures
   );
 
-  const departures: OutputDeparture[] = [];
+  const narrowedDownSelectionOfArrivals = narrowDownSelection(
+    indexTo,
+    time,
+    stations,
+    direction,
+    frequency
+  );
 
-  for (let i = 0; i < narrowedDownSelectionOfOutputDepartures.length; ++i) {
-    for (let j = 0; j < narrowedDownSelectionOfArrivals.length; ++j) {
-      if (
-        narrowedDownSelectionOfOutputDepartures[i].trainId ===
-        narrowedDownSelectionOfArrivals[j].trainDetails.id
-      ) {
-        const time = narrowedDownSelectionOfArrivals[j].time
-          .toFixed(2)
-          .split(".")
-          .join(":") as TimeOutput;
-        narrowedDownSelectionOfOutputDepartures[i].arrivalTime = time;
-        departures.push(narrowedDownSelectionOfOutputDepartures[i]);
-      }
-    }
-  }
+  const departures = getResultFromTrainIdOverlaps(
+    outputDepartures,
+    narrowedDownSelectionOfArrivals
+  );
 
   if (!departures.length) {
     return res.sendJson(404, {
       error: "No departures found for specified parameters",
     });
   }
-  const result = {
-    departureStation: departureStationNameFormatted,
-    arrivalStation: arrivalStationNameFormatted,
+
+  return res.sendJson(200, {
+    departureStation: formatStationNameForOutput(indexFrom, stations),
+    arrivalStation: formatStationNameForOutput(indexTo, stations),
     departures: departures,
-  };
-  return res.sendJson(200, result);
+  });
 };
 
 const stationsData = (
