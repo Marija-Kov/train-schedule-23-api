@@ -7,27 +7,17 @@ import {
   TimeOutput,
   YyyyMmDd,
 } from "../types/trainScheduleTypes";
-import { holidays, year } from "./dataShapers/data/extractedData";
+import { holidays } from "./dataShapers/data/extractedData";
 
 export function isDatePatternValid(date: YyyyMmDd) {
-  const pattern = `^${year}-(0[1-9]|1[0-2])-([0][1-9]|[1-2][0-9]|3[01])$`;
+  const pattern =
+    "^[0-9]{4}-(((0[13578]|(10|12))-(0[1-9]|[1-2][0-9]|3[0-1]))|(02-(0[1-9]|[1-2][0-9]))|((0[469]|11)-(0[1-9]|[1-2][0-9]|30)))$";
   const r = new RegExp(pattern);
   return date.match(r);
 }
 
-export function areMonthAndDayValid(date: YyyyMmDd) {
-  const dateArr = date.split("-");
-  const invalidDate =
-    (Number(dateArr[0]) % 2 !== 0 &&
-      dateArr[1] === "02" &&
-      Number(dateArr[2]) > 28) ||
-    (dateArr[1] === "02" && Number(dateArr[2]) > 29) ||
-    (["04", "06", "09", "11"].includes(dateArr[1]) && dateArr[2] === "31");
-  return !invalidDate;
-}
-
 export function isTimePatternValid(time: Time) {
-  const pattern = `^([0-1][0-9]|2[0-3]).([0-5][0-9])$`;
+  const pattern = `^([0-1][0-9]|2[0-3])\\.([0-5][0-9])$`;
   const r = new RegExp(pattern);
   return time.match(r);
 }
@@ -98,11 +88,11 @@ export function getResultFromTrainIdOverlaps(
   return result;
 }
 
-function getTimeOutputFormat(arrival: StationDeparture) {
+export function getTimeOutputFormat(arrival: StationDeparture) {
   return arrival.time.toFixed(2).split(".").join(":") as TimeOutput;
 }
 
-function getIndexOfSelectedStation(
+export function getIndexOfSelectedStation(
   stationName: StationName,
   stations: Station[]
 ) {
@@ -111,7 +101,7 @@ function getIndexOfSelectedStation(
     .map((station: Station) => stations.indexOf(station))[0];
 }
 
-function getStationIndexesIfDirectionIs2(
+export function getStationIndexesIfDirectionIs2(
   direction: 1 | 2,
   indexFrom: number,
   indexTo: number,
@@ -121,8 +111,9 @@ function getStationIndexesIfDirectionIs2(
     indexFrom = stations.length - 1 - indexFrom;
     indexTo = stations.length - 1 - indexTo;
   }
+  return { indexFrom, indexTo };
 }
 
-function getDirection(indexFrom: number, indexTo: number) {
+export function getDirection(indexFrom: number, indexTo: number) {
   return (indexFrom > indexTo ? 2 : 1) as 1 | 2;
 }

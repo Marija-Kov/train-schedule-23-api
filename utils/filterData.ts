@@ -18,7 +18,6 @@ import {
 } from "../types/boringTypes";
 import {
   isDatePatternValid,
-  areMonthAndDayValid,
   isTimePatternValid,
   getFrequencyArray,
   formatStationNameForOutput,
@@ -71,10 +70,6 @@ const departures = (
   }
 
   if (!isDatePatternValid(date)) {
-    return res.sendJson(422, { error: "Invalid date value" });
-  }
-
-  if (!areMonthAndDayValid(date)) {
     return res.sendJson(422, { error: "Invalid date value" });
   }
 
