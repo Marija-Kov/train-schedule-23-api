@@ -15,8 +15,7 @@ import {
 function extractDepartureTimes(dataStr: string): Time[][] {
   /*
        Takes in data string extracted from the PDF 
-       and returns all times of departures of any train in an array
-       for each station in the given direction.
+       and, for each station, returns all times of departures in the given direction.
       */
   const len = dataStr.length + 1;
   let index = 0; // there's always a char at position 0
@@ -48,7 +47,7 @@ function extractDepartureTimes(dataStr: string): Time[][] {
 /*
  Timetable matrix creators modify departureTimes which is 
  the return value of extractDepartureTimes. 
- They differ for each of the 2 directions.
+ The algorithm differs for each of the 2 directions.
 */
 
 function createTimetableMatrixDirection1(
@@ -56,24 +55,51 @@ function createTimetableMatrixDirection1(
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection1[]
 ): Time[][] {
-  let j = 0;
-  let i = 1;
+  let j = 0; // subarray index ('column')
+  let i = 1; // array index ('row')
   while (j < trainIdArr.length) {
-    if (Number(departureTimes[i][j]) < Number(departureTimes[i - 1][j])) {
+    /*
+     In departureTimes matrix compared to the PDF timetable, we can observe that 
+     values in each column (t[i+n][j]) are not sorted in ascending order nor 
+     associated with the same train id because some rows are shorter than others.
+     We want to fill up the shorter rows so that all the rows are the same length
+     and all the columns sorted in the ascending order AND 
+     all values associated with one train id end up in one column.
+     
+     When we run into a t[i][j] < t[i-1][j], we want to do something so that
+     eventually every t[i][j] > t[i-1][j] AND 
+     have all values associated with one train id end up in one column.
+    */
+    const currRow = Number(departureTimes[i][j]);
+    const rowAbove = Number(departureTimes[i - 1][j]);
+    if (currRow < rowAbove || (currRow === 16.17 && rowAbove === 15.59)) {
+      /*
+      Go back upwards and insert n/a until we reach the top of the column (t[0][j]):
+     */
       while (--i + 1) {
         departureTimes[i].splice(j, 0, "n/a");
       }
     }
     ++i;
+    /*
+     When we finish iterating through a column, we move on to the next one:
+    */
     if (i === 15 || i === 0) {
       i = 1;
       ++j;
     }
   }
+  /*
+   Once we reach the last column, we finished filling up the top part of the table.
+   We then reiterate every column 
+   using inserted n/a values and the destination index of the shorter routes 
+    (relative to the total number of rows in the table) 
+   as guides to fill up the bottom part of the table.
+  */
   j = 0;
   while (j < trainIdArr.length) {
     if (departureTimes[0][j] === "n/a") {
-      i = 8; // stations.indexOf the destination of shorter routes (Beograd centar)
+      i = 8; // index of the destination station of shorter routes (Beograd centar)
       while (i < stationsArr.length) {
         departureTimes[i].splice(j, 0, "n/a");
         ++i;
@@ -197,7 +223,7 @@ function writeTrainsEndpoint(arr: Train[]) {
     trains[train.id] = train;
   }
   return fs.writeFile(
-    "../trains.json",
+    "../../trains.json",
     JSON.stringify(trains, null, 2),
     (err) => {
       console.log(err);
@@ -248,13 +274,13 @@ function stationsData(
 }
 
 function writeStationsEndpoint(stationsData: Station[]): void {
-  const { holidays } = require("./extractedData");
+  const { holidays } = require("./data/extractedData");
   const data = {
     holidays: holidays,
     stations: stationsData,
   };
   return fs.writeFile(
-    "../stations.json",
+    "../../stations.json",
     JSON.stringify(data, null, 2),
     (err) => {
       console.log(err);

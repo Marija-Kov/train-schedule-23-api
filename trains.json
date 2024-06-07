@@ -162,22 +162,6 @@
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
       {
-        "station": "batajnica",
-        "time": 15.51
-      },
-      {
-        "station": "kamendin",
-        "time": 15.55
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 15.57
-      },
-      {
-        "station": "altina",
-        "time": 15.59
-      },
-      {
         "station": "zemun",
         "time": 16.17
       },
@@ -192,34 +176,6 @@
       {
         "station": "beograd centar",
         "time": 16.26
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 16.18
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 16.22
-      },
-      {
-        "station": "pancevacki most",
-        "time": 16.26
-      },
-      {
-        "station": "krnjaca most",
-        "time": 16.3
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 16.33
-      },
-      {
-        "station": "sebes",
-        "time": 16.36
-      },
-      {
-        "station": "ovca",
-        "time": 16.39
       }
     ]
   },
@@ -2539,6 +2495,22 @@
     "activeOnWeekendsAndHolidays": true,
     "itinerary": [
       {
+        "station": "batajnica",
+        "time": 15.51
+      },
+      {
+        "station": "kamendin",
+        "time": 15.55
+      },
+      {
+        "station": "zemunsko polje",
+        "time": 15.57
+      },
+      {
+        "station": "altina",
+        "time": 15.59
+      },
+      {
         "station": "zemun",
         "time": 16.03
       },
@@ -2553,6 +2525,34 @@
       {
         "station": "beograd centar",
         "time": 16.14
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 16.18
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 16.22
+      },
+      {
+        "station": "pancevacki most",
+        "time": 16.26
+      },
+      {
+        "station": "krnjaca most",
+        "time": 16.3
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 16.33
+      },
+      {
+        "station": "sebes",
+        "time": 16.36
+      },
+      {
+        "station": "ovca",
+        "time": 16.39
       }
     ]
   },
