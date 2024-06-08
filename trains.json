@@ -33,31 +33,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 15.14
+        "time": 15.09
       },
       {
         "station": "tosin bunar",
-        "time": 15.17
+        "time": 15.12
       },
       {
         "station": "zemun",
-        "time": 15.21
-      },
-      {
-        "station": "altina",
-        "time": 17.24
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 17.26
-      },
-      {
-        "station": "kamendin",
-        "time": 17.28
-      },
-      {
-        "station": "batajnica",
-        "time": 17.32
+        "time": 15.15
       }
     ]
   },
@@ -72,31 +56,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 16.44
+        "time": 16.23
       },
       {
         "station": "tosin bunar",
-        "time": 16.47
+        "time": 16.26
       },
       {
         "station": "zemun",
-        "time": 16.51
-      },
-      {
-        "station": "altina",
-        "time": 20.39
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 20.41
-      },
-      {
-        "station": "kamendin",
-        "time": 20.43
-      },
-      {
-        "station": "batajnica",
-        "time": 20.47
+        "time": 16.29
       }
     ]
   },
@@ -134,31 +102,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 20.29
+        "time": 20.07
       },
       {
         "station": "tosin bunar",
-        "time": 20.32
+        "time": 20.1
       },
       {
         "station": "zemun",
-        "time": 20.36
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
+        "time": 20.14
       }
     ]
   },
@@ -182,22 +134,6 @@
       {
         "station": "zemun",
         "time": 21.47
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
       }
     ]
   },
@@ -221,22 +157,6 @@
       {
         "station": "zemun",
         "time": 6.54
-      },
-      {
-        "station": "altina",
-        "time": 6.54
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 6.56
-      },
-      {
-        "station": "kamendin",
-        "time": 6.58
-      },
-      {
-        "station": "batajnica",
-        "time": 7.02
       }
     ]
   },
@@ -471,19 +391,19 @@
       },
       {
         "station": "altina",
-        "time": 7.24
+        "time": 6.54
       },
       {
         "station": "zemunsko polje",
-        "time": 7.26
+        "time": 6.56
       },
       {
         "station": "kamendin",
-        "time": 7.28
+        "time": 6.58
       },
       {
         "station": "batajnica",
-        "time": 7.32
+        "time": 7.02
       }
     ]
   },
@@ -605,19 +525,19 @@
       },
       {
         "station": "altina",
-        "time": 7.39
+        "time": 7.24
       },
       {
         "station": "zemunsko polje",
-        "time": 7.41
+        "time": 7.26
       },
       {
         "station": "kamendin",
-        "time": 7.43
+        "time": 7.28
       },
       {
         "station": "batajnica",
-        "time": 7.47
+        "time": 7.32
       }
     ]
   },
@@ -739,19 +659,19 @@
       },
       {
         "station": "altina",
-        "time": 8.27
+        "time": 7.39
       },
       {
         "station": "zemunsko polje",
-        "time": 8.29
+        "time": 7.41
       },
       {
         "station": "kamendin",
-        "time": 8.31
+        "time": 7.43
       },
       {
         "station": "batajnica",
-        "time": 8.35
+        "time": 7.47
       }
     ]
   },
@@ -873,19 +793,19 @@
       },
       {
         "station": "altina",
-        "time": 8.54
+        "time": 8.27
       },
       {
         "station": "zemunsko polje",
-        "time": 8.56
+        "time": 8.29
       },
       {
         "station": "kamendin",
-        "time": 8.58
+        "time": 8.31
       },
       {
         "station": "batajnica",
-        "time": 9.02
+        "time": 8.35
       }
     ]
   },
@@ -1007,19 +927,19 @@
       },
       {
         "station": "altina",
-        "time": 9.24
+        "time": 8.54
       },
       {
         "station": "zemunsko polje",
-        "time": 9.26
+        "time": 8.56
       },
       {
         "station": "kamendin",
-        "time": 9.28
+        "time": 8.58
       },
       {
         "station": "batajnica",
-        "time": 9.32
+        "time": 9.02
       }
     ]
   },
@@ -1141,19 +1061,19 @@
       },
       {
         "station": "altina",
-        "time": 9.54
+        "time": 9.24
       },
       {
         "station": "zemunsko polje",
-        "time": 9.56
+        "time": 9.26
       },
       {
         "station": "kamendin",
-        "time": 9.58
+        "time": 9.28
       },
       {
         "station": "batajnica",
-        "time": 10.02
+        "time": 9.32
       }
     ]
   },
@@ -1275,19 +1195,19 @@
       },
       {
         "station": "altina",
-        "time": 11.39
+        "time": 9.54
       },
       {
         "station": "zemunsko polje",
-        "time": 11.41
+        "time": 9.56
       },
       {
         "station": "kamendin",
-        "time": 11.43
+        "time": 9.58
       },
       {
         "station": "batajnica",
-        "time": 11.47
+        "time": 10.02
       }
     ]
   },
@@ -1397,31 +1317,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 11.29
+        "time": 10.29
       },
       {
         "station": "tosin bunar",
-        "time": 11.32
+        "time": 10.32
       },
       {
         "station": "zemun",
-        "time": 11.36
+        "time": 10.36
       },
       {
         "station": "altina",
-        "time": 13.39
+        "time": 10.39
       },
       {
         "station": "zemunsko polje",
-        "time": 13.41
+        "time": 10.41
       },
       {
         "station": "kamendin",
-        "time": 13.43
+        "time": 10.43
       },
       {
         "station": "batajnica",
-        "time": 13.47
+        "time": 10.47
       }
     ]
   },
@@ -1531,31 +1451,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 11.54
+        "time": 11.29
       },
       {
         "station": "tosin bunar",
-        "time": 11.57
+        "time": 11.32
       },
       {
         "station": "zemun",
-        "time": 12
+        "time": 11.36
       },
       {
         "station": "altina",
-        "time": 14.39
+        "time": 11.39
       },
       {
         "station": "zemunsko polje",
-        "time": 14.41
+        "time": 11.41
       },
       {
         "station": "kamendin",
-        "time": 14.43
+        "time": 11.43
       },
       {
         "station": "batajnica",
-        "time": 14.47
+        "time": 11.47
       }
     ]
   },
@@ -1665,31 +1585,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 12.29
+        "time": 11.54
       },
       {
         "station": "tosin bunar",
-        "time": 12.32
+        "time": 11.57
       },
       {
         "station": "zemun",
-        "time": 12.36
-      },
-      {
-        "station": "altina",
-        "time": 15.24
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 15.26
-      },
-      {
-        "station": "kamendin",
-        "time": 15.28
-      },
-      {
-        "station": "batajnica",
-        "time": 15.32
+        "time": 12
       }
     ]
   },
@@ -1799,31 +1703,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 13.29
+        "time": 12.29
       },
       {
         "station": "tosin bunar",
-        "time": 13.32
+        "time": 12.32
       },
       {
         "station": "zemun",
-        "time": 13.36
+        "time": 12.36
       },
       {
         "station": "altina",
-        "time": 15.54
+        "time": 12.39
       },
       {
         "station": "zemunsko polje",
-        "time": 15.56
+        "time": 12.41
       },
       {
         "station": "kamendin",
-        "time": 15.58
+        "time": 12.43
       },
       {
         "station": "batajnica",
-        "time": 16.02
+        "time": 12.47
       }
     ]
   },
@@ -1933,31 +1837,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 14.29
+        "time": 13.29
       },
       {
         "station": "tosin bunar",
-        "time": 14.32
+        "time": 13.32
       },
       {
         "station": "zemun",
-        "time": 14.36
+        "time": 13.36
       },
       {
         "station": "altina",
-        "time": 16.24
+        "time": 13.39
       },
       {
         "station": "zemunsko polje",
-        "time": 16.26
+        "time": 13.41
       },
       {
         "station": "kamendin",
-        "time": 16.28
+        "time": 13.43
       },
       {
         "station": "batajnica",
-        "time": 16.32
+        "time": 13.47
       }
     ]
   },
@@ -2067,31 +1971,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 15.09
+        "time": 14.29
       },
       {
         "station": "tosin bunar",
-        "time": 15.12
+        "time": 14.32
       },
       {
         "station": "zemun",
-        "time": 15.15
+        "time": 14.36
       },
       {
         "station": "altina",
-        "time": 16.54
+        "time": 14.39
       },
       {
         "station": "zemunsko polje",
-        "time": 16.56
+        "time": 14.41
       },
       {
         "station": "kamendin",
-        "time": 16.58
+        "time": 14.43
       },
       {
         "station": "batajnica",
-        "time": 17.02
+        "time": 14.47
       }
     ]
   },
@@ -2201,31 +2105,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 15.44
+        "time": 15.14
       },
       {
         "station": "tosin bunar",
-        "time": 15.47
+        "time": 15.17
       },
       {
         "station": "zemun",
-        "time": 15.51
+        "time": 15.21
       },
       {
         "station": "altina",
-        "time": 17.54
+        "time": 15.24
       },
       {
         "station": "zemunsko polje",
-        "time": 17.56
+        "time": 15.26
       },
       {
         "station": "kamendin",
-        "time": 17.58
+        "time": 15.28
       },
       {
         "station": "batajnica",
-        "time": 18.02
+        "time": 15.32
       }
     ]
   },
@@ -2335,31 +2239,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 16.14
+        "time": 15.44
       },
       {
         "station": "tosin bunar",
-        "time": 16.17
+        "time": 15.47
       },
       {
         "station": "zemun",
-        "time": 16.21
+        "time": 15.51
       },
       {
         "station": "altina",
-        "time": 18.39
+        "time": 15.54
       },
       {
         "station": "zemunsko polje",
-        "time": 18.41
+        "time": 15.56
       },
       {
         "station": "kamendin",
-        "time": 18.43
+        "time": 15.58
       },
       {
         "station": "batajnica",
-        "time": 18.47
+        "time": 16.02
       }
     ]
   },
@@ -2469,31 +2373,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 16.23
+        "time": 16.14
       },
       {
         "station": "tosin bunar",
-        "time": 16.26
+        "time": 16.17
       },
       {
         "station": "zemun",
-        "time": 16.29
+        "time": 16.21
       },
       {
         "station": "altina",
-        "time": 19.39
+        "time": 16.24
       },
       {
         "station": "zemunsko polje",
-        "time": 19.41
+        "time": 16.26
       },
       {
         "station": "kamendin",
-        "time": 19.43
+        "time": 16.28
       },
       {
         "station": "batajnica",
-        "time": 19.47
+        "time": 16.32
       }
     ]
   },
@@ -2603,31 +2507,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 17.14
+        "time": 16.44
       },
       {
         "station": "tosin bunar",
-        "time": 17.17
+        "time": 16.47
       },
       {
         "station": "zemun",
-        "time": 17.21
+        "time": 16.51
       },
       {
         "station": "altina",
-        "time": 20.58
+        "time": 16.54
       },
       {
         "station": "zemunsko polje",
-        "time": 21
+        "time": 16.56
       },
       {
         "station": "kamendin",
-        "time": 21.02
+        "time": 16.58
       },
       {
         "station": "batajnica",
-        "time": 21.06
+        "time": 17.02
       }
     ]
   },
@@ -2737,31 +2641,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 17.44
+        "time": 17.14
       },
       {
         "station": "tosin bunar",
-        "time": 17.47
+        "time": 17.17
       },
       {
         "station": "zemun",
-        "time": 17.51
+        "time": 17.21
       },
       {
         "station": "altina",
-        "time": 21.54
+        "time": 17.24
       },
       {
         "station": "zemunsko polje",
-        "time": 21.56
+        "time": 17.26
       },
       {
         "station": "kamendin",
-        "time": 21.58
+        "time": 17.28
       },
       {
         "station": "batajnica",
-        "time": 22.02
+        "time": 17.32
       }
     ]
   },
@@ -2871,31 +2775,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 18.29
+        "time": 17.44
       },
       {
         "station": "tosin bunar",
-        "time": 18.32
+        "time": 17.47
       },
       {
         "station": "zemun",
-        "time": 18.36
+        "time": 17.51
       },
       {
         "station": "altina",
-        "time": null
+        "time": 17.54
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 17.56
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 17.58
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 18.02
       }
     ]
   },
@@ -3005,31 +2909,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 19.09
+        "time": 18.29
       },
       {
         "station": "tosin bunar",
-        "time": 19.12
+        "time": 18.32
       },
       {
         "station": "zemun",
-        "time": 19.15
+        "time": 18.36
       },
       {
         "station": "altina",
-        "time": null
+        "time": 18.39
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 18.41
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 18.43
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 18.47
       }
     ]
   },
@@ -3139,31 +3043,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 19.23
+        "time": 19.09
       },
       {
         "station": "tosin bunar",
-        "time": 19.26
+        "time": 19.12
       },
       {
         "station": "zemun",
-        "time": 19.3
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
+        "time": 19.15
       }
     ]
   },
@@ -3273,31 +3161,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 20.07
+        "time": 19.29
       },
       {
         "station": "tosin bunar",
-        "time": 20.1
+        "time": 19.32
       },
       {
         "station": "zemun",
-        "time": 20.14
+        "time": 19.36
       },
       {
         "station": "altina",
-        "time": null
+        "time": 19.39
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 19.41
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 19.43
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 19.47
       }
     ]
   },
@@ -3407,31 +3295,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 20.48
+        "time": 20.29
       },
       {
         "station": "tosin bunar",
-        "time": 20.51
+        "time": 20.32
       },
       {
         "station": "zemun",
-        "time": 20.55
+        "time": 20.36
       },
       {
         "station": "altina",
-        "time": null
+        "time": 20.39
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 20.41
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 20.43
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 20.47
       }
     ]
   },
@@ -3474,31 +3362,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 21.41
+        "time": 20.48
       },
       {
         "station": "tosin bunar",
-        "time": 21.44
+        "time": 20.51
       },
       {
         "station": "zemun",
-        "time": 21.47
+        "time": 20.55
       },
       {
         "station": "altina",
-        "time": null
+        "time": 20.58
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 21
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 21.02
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 21.06
       }
     ]
   },
@@ -3541,31 +3429,31 @@
       },
       {
         "station": "novi beograd",
-        "time": 22.55
+        "time": 21.44
       },
       {
         "station": "tosin bunar",
-        "time": 22.58
+        "time": 21.47
       },
       {
         "station": "zemun",
-        "time": 23.01
+        "time": 21.51
       },
       {
         "station": "altina",
-        "time": null
+        "time": 21.54
       },
       {
         "station": "zemunsko polje",
-        "time": null
+        "time": 21.56
       },
       {
         "station": "kamendin",
-        "time": null
+        "time": 21.58
       },
       {
         "station": "batajnica",
-        "time": null
+        "time": 22.02
       }
     ]
   },
@@ -3589,22 +3477,6 @@
       {
         "station": "zemun",
         "time": 9.3
-      },
-      {
-        "station": "altina",
-        "time": 10.39
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 10.41
-      },
-      {
-        "station": "kamendin",
-        "time": 10.43
-      },
-      {
-        "station": "batajnica",
-        "time": 10.47
       }
     ]
   },
@@ -3642,31 +3514,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 19.29
+        "time": 19.23
       },
       {
         "station": "tosin bunar",
-        "time": 19.32
+        "time": 19.26
       },
       {
         "station": "zemun",
-        "time": 19.36
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
+        "time": 19.3
       }
     ]
   },
@@ -3704,31 +3560,15 @@
       },
       {
         "station": "novi beograd",
-        "time": 21.44
+        "time": 21.41
       },
       {
         "station": "tosin bunar",
-        "time": 21.47
+        "time": 21.44
       },
       {
         "station": "zemun",
-        "time": 21.51
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
+        "time": 21.47
       }
     ]
   },
@@ -3768,34 +3608,6 @@
       {
         "station": "beograd centar",
         "time": 10.15
-      },
-      {
-        "station": "novi beograd",
-        "time": 10.29
-      },
-      {
-        "station": "tosin bunar",
-        "time": 10.32
-      },
-      {
-        "station": "zemun",
-        "time": 10.36
-      },
-      {
-        "station": "altina",
-        "time": 12.39
-      },
-      {
-        "station": "zemunsko polje",
-        "time": 12.41
-      },
-      {
-        "station": "kamendin",
-        "time": 12.43
-      },
-      {
-        "station": "batajnica",
-        "time": 12.47
       }
     ]
   },
@@ -3838,31 +3650,15 @@
       },
       {
         "station": "novi beograd",
-        "time": null
+        "time": 22.55
       },
       {
         "station": "tosin bunar",
-        "time": null
+        "time": 22.58
       },
       {
         "station": "zemun",
-        "time": null
-      },
-      {
-        "station": "altina",
-        "time": null
-      },
-      {
-        "station": "zemunsko polje",
-        "time": null
-      },
-      {
-        "station": "kamendin",
-        "time": null
-      },
-      {
-        "station": "batajnica",
-        "time": null
+        "time": 23.01
       }
     ]
   }

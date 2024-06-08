@@ -4,6 +4,7 @@ import {
   Station,
   StationDeparture,
   Time,
+  TrainItinerary,
 } from "../../types/trainScheduleTypes";
 import {
   StationName,
@@ -112,7 +113,7 @@ function createTimetableMatrixDirection1(
 
 function createTimetableMatrixDirection2(
   departureTimes: Time[][],
-  stationsLength: number,
+  stationsLength: number
 ): Time[][] {
   for (let i = 0; i < 7; ++i) {
     departureTimes[i].splice(1, 0, "n/a");
@@ -153,59 +154,66 @@ function trainsData(
   timetable1: Time[][],
   timetable2: Time[][]
 ): Train[] {
-  const len1 = trainIdsDir1.length;
-  const len2 = trainIdsDir2.length;
-  const arr: Train[] = [];
-  for (let i = 0; i < len1; ++i) {
-    const obj: Train = {
-      id: 8003,
-      directionId: 1,
-      activeOnWeekendsAndHolidays: false,
-      itinerary: [],
-    };
-    obj.id = trainIdsDir1[i];
-    obj.directionId = 1;
-    obj.activeOnWeekendsAndHolidays = weekendsAndHolidays1[i];
-    obj.itinerary = [];
-    for (let j = 0; j < stations.length; ++j) {
-      if (timetable1[j][i] !== "n/a") {
-        const objD: { station: StationName; time: number } = {
-          station: "batajnica",
-          time: 0,
-        };
-        objD.station = stations[j];
-        objD.time = Number(timetable1[j][i]);
-        obj.itinerary.push(objD);
-      }
-    }
-    arr.push(obj);
+  const result: Train[] = [];
+  for (let i = 0; i < trainIdsDir1.length; ++i) {
+    result.push(
+      createTrainObject(
+        i,
+        trainIdsDir1,
+        weekendsAndHolidays1,
+        timetable1,
+        stations,
+        1
+      )
+    );
   }
-  for (let i = 0; i < len2; ++i) {
-    const obj: Train = {
-      id: 8003,
-      directionId: 1,
-      activeOnWeekendsAndHolidays: false,
-      itinerary: [],
-    };
-    obj.id = trainIdsDir2[i];
-    obj.directionId = 2;
-    obj.activeOnWeekendsAndHolidays = weekendsAndHolidays2[i];
-    obj.itinerary = [];
-    const stLen = stations.length;
-    for (let j = 0; j < stLen; ++j) {
-      if (timetable2[j][i] !== "n/a") {
-        const objD: { station: StationName; time: number } = {
-          station: "batajnica",
-          time: 0,
-        };
-        objD.station = stations[stLen - 1 - j];
-        objD.time = Number(timetable2[j][i]);
-        obj.itinerary.push(objD);
-      }
-    }
-    arr.push(obj);
+  for (let i = 0; i < trainIdsDir2.length; ++i) {
+    result.push(
+      createTrainObject(
+        i,
+        trainIdsDir2,
+        weekendsAndHolidays2,
+        timetable2,
+        stations.slice().reverse(),
+        2
+      )
+    );
   }
-  return arr;
+  return result;
+}
+
+function createTrainObject(
+  index: number,
+  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
+  frequencies: (boolean | "w&h_only")[],
+  matrix: Time[][],
+  stations: StationName[],
+  directionId: 1 | 2
+) {
+  const train: Train = {
+    id: trainIds[index],
+    directionId: directionId,
+    activeOnWeekendsAndHolidays: frequencies[index],
+    itinerary: [],
+  };
+  for (let i = 0; i < stations.length; ++i) {
+    addDeparture(stations[i], matrix[i][index], train.itinerary);
+  }
+  return train;
+}
+
+function addDeparture(
+  station: StationName,
+  time: Time,
+  itinerary: TrainItinerary
+) {
+  if (time !== "n/a") {
+    itinerary.push({
+      station: station,
+      time: Number(time),
+    });
+  }
+  return;
 }
 
 function writeTrainsEndpoint(arr: Train[]) {
@@ -284,6 +292,8 @@ const shape = {
   createTimetableMatrixDirection1,
   createTimetableMatrixDirection2,
   trainsData,
+  createTrainObject,
+  addDeparture,
   stationsData,
   writeTrainsEndpoint,
   writeStationsEndpoint,

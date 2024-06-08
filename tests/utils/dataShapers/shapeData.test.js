@@ -1,4 +1,8 @@
-const { shape } = require("../index.js");
+const {
+  shape,
+  trainIdActiveOnWeekendsAndHolidaysDirection1,
+  trainIdActiveOnWeekendsAndHolidaysDirection2,
+} = require("../index.js");
 const {
   dataStrDirection1,
   dataStrDirection2,
@@ -9,9 +13,7 @@ const {
 
 function test(title, callback) {
   console.log(title);
-  console.log();
   callback();
-  console.log();
 }
 
 test("extractDepartureTimes()", () => {
@@ -580,5 +582,89 @@ test("createTimetableMatrix2()", () => {
       console.log(`  batajnica ❌`);
       console.log(data[14].join(","));
     }
+  });
+});
+
+test("trainsData()", () => {
+  const data = shape.default.trainsData(
+    trainIdDirection1,
+    trainIdDirection2,
+    trainIdActiveOnWeekendsAndHolidaysDirection1,
+    trainIdActiveOnWeekendsAndHolidaysDirection2,
+    stations,
+    shape.default.createTimetableMatrixDirection1(
+      shape.default.extractDepartureTimes(dataStrDirection1),
+      stations,
+      trainIdDirection1
+    ),
+    shape.default.createTimetableMatrixDirection2(
+      shape.default.extractDepartureTimes(dataStrDirection2),
+      stations.length
+    )
+  );
+  function getItinerary(trainId) {
+    return data.filter((train) => train.id === trainId)[0].itinerary;
+  }
+  test(` writes correct itinerary`, () => {
+    test(`  8003`, () => {
+      const i = getItinerary(8003);
+      if (
+        i.length === 15 &&
+        i[0].station === "batajnica" &&
+        i[0].time === 6.27 &&
+        i[14].station === "ovca" &&
+        i[14].time === 7.15
+      ) {
+        console.log(`  ✅`);
+      } else {
+        console.log(`  ❌`);
+        console.log(i);
+      }
+    });
+    test(`  7900`, () => {
+      const i = getItinerary(7900);
+      if (
+        i.length === 4 &&
+        i[0].station === "beograd centar" &&
+        i[0].time === 6.44 &&
+        i[3].station === "zemun" &&
+        i[3].time === 6.54
+      ) {
+        console.log(`  ✅`);
+      } else {
+        console.log(`  ❌`);
+        console.log(i);
+      }
+    });
+    test(`  8002`, () => {
+      const i = getItinerary(8002);
+      if (
+        i.length === 15 &&
+        i[0].station === "ovca" &&
+        i[0].time === 6.14 &&
+        i[14].station === "batajnica" &&
+        i[14].time === 7.02
+      ) {
+        console.log(`  ✅`);
+      } else {
+        console.log(`  ❌`);
+        console.log(i);
+      }
+    });
+    test(`  8310`, () => {
+      const i = getItinerary(8310);
+      if (
+        i.length === 8 &&
+        i[0].station === "ovca" &&
+        i[0].time === 9.52 &&
+        i[7].station === "beograd centar" &&
+        i[7].time === 10.15
+      ) {
+        console.log(`  ✅`);
+      } else {
+        console.log(`  ❌`);
+        console.log(i);
+      }
+    });
   });
 });
