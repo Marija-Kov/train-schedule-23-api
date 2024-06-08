@@ -259,7 +259,7 @@
           }
         },
         {
-          "time": 6.14,
+          "time": 6.44,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
@@ -267,7 +267,7 @@
           }
         },
         {
-          "time": 6.4,
+          "time": 6.14,
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
@@ -387,7 +387,7 @@
           }
         },
         {
-          "time": 14.44,
+          "time": 15.05,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -395,7 +395,7 @@
           }
         },
         {
-          "time": 15.14,
+          "time": 14.44,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -403,7 +403,7 @@
           }
         },
         {
-          "time": 15.44,
+          "time": 15.14,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -411,7 +411,7 @@
           }
         },
         {
-          "time": 16.19,
+          "time": 15.44,
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
@@ -419,7 +419,7 @@
           }
         },
         {
-          "time": 16.14,
+          "time": 16.19,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -427,7 +427,7 @@
           }
         },
         {
-          "time": 16.44,
+          "time": 16.14,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -435,7 +435,7 @@
           }
         },
         {
-          "time": 17.14,
+          "time": 16.44,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -443,7 +443,7 @@
           }
         },
         {
-          "time": 17.59,
+          "time": 17.14,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -451,7 +451,7 @@
           }
         },
         {
-          "time": 18.39,
+          "time": 17.59,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -459,7 +459,7 @@
           }
         },
         {
-          "time": 19.19,
+          "time": 18.39,
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
@@ -467,7 +467,7 @@
           }
         },
         {
-          "time": 18.59,
+          "time": 19.19,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -475,7 +475,7 @@
           }
         },
         {
-          "time": 20.03,
+          "time": 18.59,
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
@@ -483,7 +483,7 @@
           }
         },
         {
-          "time": 19.59,
+          "time": 20.03,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -491,7 +491,7 @@
           }
         },
         {
-          "time": 20.18,
+          "time": 19.59,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -499,7 +499,7 @@
           }
         },
         {
-          "time": 21.14,
+          "time": 20.18,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -515,7 +515,7 @@
           }
         },
         {
-          "time": 21.4,
+          "time": 21.37,
           "trainDetails": {
             "id": 8204,
             "directionId": 2,
@@ -523,7 +523,7 @@
           }
         },
         {
-          "time": 22.25,
+          "time": 21.14,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -531,7 +531,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.25,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -785,7 +785,7 @@
           }
         },
         {
-          "time": 6.18,
+          "time": 6.48,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
@@ -793,7 +793,7 @@
           }
         },
         {
-          "time": 6.44,
+          "time": 6.18,
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
@@ -913,7 +913,7 @@
           }
         },
         {
-          "time": 14.48,
+          "time": 15.14,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -921,7 +921,7 @@
           }
         },
         {
-          "time": 15.18,
+          "time": 14.48,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -929,7 +929,7 @@
           }
         },
         {
-          "time": 15.48,
+          "time": 15.18,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -937,7 +937,7 @@
           }
         },
         {
-          "time": 16.14,
+          "time": 15.48,
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
@@ -945,7 +945,7 @@
           }
         },
         {
-          "time": 16.18,
+          "time": 16.44,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -953,7 +953,7 @@
           }
         },
         {
-          "time": 16.48,
+          "time": 16.18,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -961,7 +961,7 @@
           }
         },
         {
-          "time": 17.18,
+          "time": 16.48,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -969,7 +969,7 @@
           }
         },
         {
-          "time": 18.03,
+          "time": 17.18,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -977,7 +977,7 @@
           }
         },
         {
-          "time": 18.43,
+          "time": 18.03,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -985,7 +985,7 @@
           }
         },
         {
-          "time": 19.09,
+          "time": 18.43,
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
@@ -993,7 +993,7 @@
           }
         },
         {
-          "time": 19.03,
+          "time": 19.29,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -1001,7 +1001,7 @@
           }
         },
         {
-          "time": 19.29,
+          "time": 19.03,
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
@@ -1009,7 +1009,7 @@
           }
         },
         {
-          "time": 20.03,
+          "time": 20.29,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -1017,7 +1017,7 @@
           }
         },
         {
-          "time": 20.22,
+          "time": 20.03,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -1025,7 +1025,7 @@
           }
         },
         {
-          "time": 21.18,
+          "time": 20.22,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -1041,7 +1041,7 @@
           }
         },
         {
-          "time": 21.41,
+          "time": 21.44,
           "trainDetails": {
             "id": 8204,
             "directionId": 2,
@@ -1049,7 +1049,7 @@
           }
         },
         {
-          "time": 22.29,
+          "time": 21.18,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -1057,7 +1057,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.29,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -1311,7 +1311,7 @@
           }
         },
         {
-          "time": 6.22,
+          "time": 6.51,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
@@ -1319,7 +1319,7 @@
           }
         },
         {
-          "time": 6.47,
+          "time": 6.22,
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
@@ -1439,7 +1439,7 @@
           }
         },
         {
-          "time": 14.52,
+          "time": 15.17,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -1447,7 +1447,7 @@
           }
         },
         {
-          "time": 15.22,
+          "time": 14.52,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -1455,7 +1455,7 @@
           }
         },
         {
-          "time": 15.52,
+          "time": 15.22,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -1463,7 +1463,7 @@
           }
         },
         {
-          "time": 16.17,
+          "time": 15.52,
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
@@ -1471,7 +1471,7 @@
           }
         },
         {
-          "time": 16.22,
+          "time": 16.47,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -1479,7 +1479,7 @@
           }
         },
         {
-          "time": 16.52,
+          "time": 16.22,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -1487,7 +1487,7 @@
           }
         },
         {
-          "time": 17.22,
+          "time": 16.52,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -1495,7 +1495,7 @@
           }
         },
         {
-          "time": 18.07,
+          "time": 17.22,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -1503,7 +1503,7 @@
           }
         },
         {
-          "time": 18.47,
+          "time": 18.07,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -1511,7 +1511,7 @@
           }
         },
         {
-          "time": 19.12,
+          "time": 18.47,
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
@@ -1519,7 +1519,7 @@
           }
         },
         {
-          "time": 19.07,
+          "time": 19.32,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -1527,7 +1527,7 @@
           }
         },
         {
-          "time": 19.32,
+          "time": 19.07,
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
@@ -1535,7 +1535,7 @@
           }
         },
         {
-          "time": 20.07,
+          "time": 20.32,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -1543,7 +1543,7 @@
           }
         },
         {
-          "time": 20.26,
+          "time": 20.07,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -1551,7 +1551,7 @@
           }
         },
         {
-          "time": 21.22,
+          "time": 20.26,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -1567,7 +1567,7 @@
           }
         },
         {
-          "time": 21.44,
+          "time": 21.47,
           "trainDetails": {
             "id": 8204,
             "directionId": 2,
@@ -1575,7 +1575,7 @@
           }
         },
         {
-          "time": 22.33,
+          "time": 21.22,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -1583,7 +1583,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.33,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -1837,7 +1837,7 @@
           }
         },
         {
-          "time": 6.24,
+          "time": 6.54,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
@@ -1845,7 +1845,7 @@
           }
         },
         {
-          "time": 6.51,
+          "time": 6.24,
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
@@ -1965,7 +1965,7 @@
           }
         },
         {
-          "time": 14.54,
+          "time": 15.21,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -1973,7 +1973,7 @@
           }
         },
         {
-          "time": 15.24,
+          "time": 14.54,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -1981,7 +1981,7 @@
           }
         },
         {
-          "time": 15.54,
+          "time": 15.24,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -1989,7 +1989,7 @@
           }
         },
         {
-          "time": 16.21,
+          "time": 15.54,
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
@@ -1997,7 +1997,7 @@
           }
         },
         {
-          "time": 16.24,
+          "time": 16.51,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -2005,7 +2005,7 @@
           }
         },
         {
-          "time": 16.54,
+          "time": 16.24,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -2013,7 +2013,7 @@
           }
         },
         {
-          "time": 17.24,
+          "time": 16.54,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -2021,7 +2021,7 @@
           }
         },
         {
-          "time": 18.09,
+          "time": 17.24,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -2029,7 +2029,7 @@
           }
         },
         {
-          "time": 18.49,
+          "time": 18.09,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -2037,7 +2037,7 @@
           }
         },
         {
-          "time": 19.15,
+          "time": 18.49,
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
@@ -2045,7 +2045,7 @@
           }
         },
         {
-          "time": 19.09,
+          "time": 19.36,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -2053,7 +2053,7 @@
           }
         },
         {
-          "time": 19.36,
+          "time": 19.09,
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
@@ -2061,7 +2061,7 @@
           }
         },
         {
-          "time": 20.09,
+          "time": 20.36,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -2069,7 +2069,7 @@
           }
         },
         {
-          "time": 20.28,
+          "time": 20.09,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -2077,7 +2077,7 @@
           }
         },
         {
-          "time": 21.24,
+          "time": 20.28,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -2093,7 +2093,7 @@
           }
         },
         {
-          "time": 21.47,
+          "time": 21.51,
           "trainDetails": {
             "id": 8204,
             "directionId": 2,
@@ -2101,7 +2101,7 @@
           }
         },
         {
-          "time": 22.35,
+          "time": 21.24,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -2109,7 +2109,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.35,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -2315,11 +2315,19 @@
           }
         },
         {
-          "time": 6.3,
+          "time": 6.54,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.3,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -2358,6 +2366,14 @@
           "time": 9,
           "trainDetails": {
             "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.39,
+          "trainDetails": {
+            "id": 8200,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -2427,7 +2443,7 @@
           }
         },
         {
-          "time": 15,
+          "time": 17.24,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -2435,7 +2451,7 @@
           }
         },
         {
-          "time": 15.3,
+          "time": 15,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -2443,7 +2459,7 @@
           }
         },
         {
-          "time": 16,
+          "time": 15.3,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -2451,7 +2467,15 @@
           }
         },
         {
-          "time": 16.3,
+          "time": 16,
+          "trainDetails": {
+            "id": 8032,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.39,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -2459,7 +2483,7 @@
           }
         },
         {
-          "time": 17,
+          "time": 16.3,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -2467,7 +2491,7 @@
           }
         },
         {
-          "time": 17.3,
+          "time": 17,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -2475,7 +2499,7 @@
           }
         },
         {
-          "time": 18.15,
+          "time": 17.3,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -2483,7 +2507,7 @@
           }
         },
         {
-          "time": 18.55,
+          "time": 18.15,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -2491,7 +2515,15 @@
           }
         },
         {
-          "time": 19.15,
+          "time": 18.55,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -2499,7 +2531,15 @@
           }
         },
         {
-          "time": 20.15,
+          "time": 19.15,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -2507,7 +2547,7 @@
           }
         },
         {
-          "time": 20.34,
+          "time": 20.15,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -2515,7 +2555,7 @@
           }
         },
         {
-          "time": 21.3,
+          "time": 20.34,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -2523,7 +2563,23 @@
           }
         },
         {
-          "time": 22.41,
+          "time": null,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8204,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.3,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -2531,7 +2587,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.41,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -2737,11 +2793,19 @@
           }
         },
         {
-          "time": 6.33,
+          "time": 6.56,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.33,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -2780,6 +2844,14 @@
           "time": 9.03,
           "trainDetails": {
             "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.41,
+          "trainDetails": {
+            "id": 8200,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -2849,7 +2921,7 @@
           }
         },
         {
-          "time": 15.03,
+          "time": 17.26,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -2857,7 +2929,7 @@
           }
         },
         {
-          "time": 15.33,
+          "time": 15.03,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -2865,7 +2937,7 @@
           }
         },
         {
-          "time": 16.03,
+          "time": 15.33,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -2873,7 +2945,15 @@
           }
         },
         {
-          "time": 16.33,
+          "time": 16.03,
+          "trainDetails": {
+            "id": 8032,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.41,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -2881,7 +2961,7 @@
           }
         },
         {
-          "time": 17.03,
+          "time": 16.33,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -2889,7 +2969,7 @@
           }
         },
         {
-          "time": 17.33,
+          "time": 17.03,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -2897,7 +2977,7 @@
           }
         },
         {
-          "time": 18.18,
+          "time": 17.33,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -2905,7 +2985,7 @@
           }
         },
         {
-          "time": 18.58,
+          "time": 18.18,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -2913,7 +2993,15 @@
           }
         },
         {
-          "time": 19.18,
+          "time": 18.58,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -2921,7 +3009,15 @@
           }
         },
         {
-          "time": 20.18,
+          "time": 19.18,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -2929,7 +3025,7 @@
           }
         },
         {
-          "time": 20.37,
+          "time": 20.18,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -2937,7 +3033,7 @@
           }
         },
         {
-          "time": 21.33,
+          "time": 20.37,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -2945,7 +3041,23 @@
           }
         },
         {
-          "time": 22.44,
+          "time": null,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8204,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.33,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -2953,7 +3065,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.44,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -3159,11 +3271,19 @@
           }
         },
         {
-          "time": 6.37,
+          "time": 6.58,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.37,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -3202,6 +3322,14 @@
           "time": 9.07,
           "trainDetails": {
             "id": 8012,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 10.43,
+          "trainDetails": {
+            "id": 8200,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -3271,7 +3399,7 @@
           }
         },
         {
-          "time": 15.07,
+          "time": 17.28,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -3279,7 +3407,7 @@
           }
         },
         {
-          "time": 15.37,
+          "time": 15.07,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -3287,7 +3415,7 @@
           }
         },
         {
-          "time": 16.07,
+          "time": 15.37,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -3295,7 +3423,15 @@
           }
         },
         {
-          "time": 16.37,
+          "time": 16.07,
+          "trainDetails": {
+            "id": 8032,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.43,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -3303,7 +3439,7 @@
           }
         },
         {
-          "time": 17.07,
+          "time": 16.37,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -3311,7 +3447,7 @@
           }
         },
         {
-          "time": 17.37,
+          "time": 17.07,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -3319,7 +3455,7 @@
           }
         },
         {
-          "time": 18.22,
+          "time": 17.37,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -3327,7 +3463,7 @@
           }
         },
         {
-          "time": 19.02,
+          "time": 18.22,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -3335,7 +3471,15 @@
           }
         },
         {
-          "time": 19.22,
+          "time": 19.02,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -3343,7 +3487,15 @@
           }
         },
         {
-          "time": 20.22,
+          "time": 19.22,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -3351,7 +3503,7 @@
           }
         },
         {
-          "time": 20.41,
+          "time": 20.22,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -3359,7 +3511,7 @@
           }
         },
         {
-          "time": 21.37,
+          "time": 20.41,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -3367,7 +3519,23 @@
           }
         },
         {
-          "time": 22.48,
+          "time": null,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8204,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.37,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -3375,7 +3543,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.48,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -3581,11 +3749,19 @@
           }
         },
         {
-          "time": 6.44,
+          "time": 7.02,
           "trainDetails": {
             "id": 7900,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 6.4,
+          "trainDetails": {
+            "id": 8002,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -3629,6 +3805,14 @@
           }
         },
         {
+          "time": 10.47,
+          "trainDetails": {
+            "id": 8200,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
           "time": 9.4,
           "trainDetails": {
             "id": 8014,
@@ -3637,7 +3821,7 @@
           }
         },
         {
-          "time": 10.25,
+          "time": 10.15,
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
@@ -3645,7 +3829,7 @@
           }
         },
         {
-          "time": 11.25,
+          "time": 10.25,
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
@@ -3653,7 +3837,7 @@
           }
         },
         {
-          "time": 11.5,
+          "time": 11.25,
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
@@ -3661,7 +3845,7 @@
           }
         },
         {
-          "time": 12.25,
+          "time": 11.5,
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
@@ -3669,7 +3853,7 @@
           }
         },
         {
-          "time": 13.25,
+          "time": 12.25,
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
@@ -3677,7 +3861,7 @@
           }
         },
         {
-          "time": 14.25,
+          "time": 13.25,
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
@@ -3685,7 +3869,7 @@
           }
         },
         {
-          "time": 15.05,
+          "time": 14.25,
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
@@ -3693,7 +3877,7 @@
           }
         },
         {
-          "time": 15.1,
+          "time": 17.32,
           "trainDetails": {
             "id": 7108,
             "directionId": 2,
@@ -3701,7 +3885,7 @@
           }
         },
         {
-          "time": 15.4,
+          "time": 15.1,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -3709,7 +3893,7 @@
           }
         },
         {
-          "time": 16.1,
+          "time": 15.4,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -3717,7 +3901,15 @@
           }
         },
         {
-          "time": 16.4,
+          "time": 16.1,
+          "trainDetails": {
+            "id": 8032,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": 20.47,
           "trainDetails": {
             "id": 7110,
             "directionId": 2,
@@ -3725,7 +3917,7 @@
           }
         },
         {
-          "time": 17.1,
+          "time": 16.4,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -3733,7 +3925,7 @@
           }
         },
         {
-          "time": 17.4,
+          "time": 17.1,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -3741,7 +3933,7 @@
           }
         },
         {
-          "time": 18.25,
+          "time": 17.4,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -3749,7 +3941,7 @@
           }
         },
         {
-          "time": 19.05,
+          "time": 18.25,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -3757,7 +3949,15 @@
           }
         },
         {
-          "time": 19.25,
+          "time": 19.05,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
@@ -3765,7 +3965,15 @@
           }
         },
         {
-          "time": 20.25,
+          "time": 19.25,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
           "trainDetails": {
             "id": 7114,
             "directionId": 2,
@@ -3773,7 +3981,7 @@
           }
         },
         {
-          "time": 20.44,
+          "time": 20.25,
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
@@ -3781,7 +3989,7 @@
           }
         },
         {
-          "time": 21.37,
+          "time": 20.44,
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
@@ -3789,7 +3997,23 @@
           }
         },
         {
-          "time": 22.51,
+          "time": null,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8204,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": "w&h_only"
+          }
+        },
+        {
+          "time": 21.4,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -3797,7 +4021,7 @@
           }
         },
         {
-          "time": null,
+          "time": 22.51,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -4003,11 +4227,11 @@
           }
         },
         {
-          "time": 6.48,
+          "time": 6.44,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -4061,7 +4285,7 @@
         {
           "time": 10.29,
           "trainDetails": {
-            "id": 8016,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4069,7 +4293,7 @@
         {
           "time": 11.29,
           "trainDetails": {
-            "id": 8018,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4077,13 +4301,21 @@
         {
           "time": 11.54,
           "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.29,
+          "trainDetails": {
             "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 12.29,
+          "time": 13.29,
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
@@ -4091,7 +4323,7 @@
           }
         },
         {
-          "time": 13.29,
+          "time": 14.29,
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
@@ -4099,7 +4331,7 @@
           }
         },
         {
-          "time": 14.29,
+          "time": 15.09,
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
@@ -4107,15 +4339,7 @@
           }
         },
         {
-          "time": 15.09,
-          "trainDetails": {
-            "id": 7108,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
-          }
-        },
-        {
-          "time": 15.14,
+          "time": 15.44,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -4123,7 +4347,7 @@
           }
         },
         {
-          "time": 15.44,
+          "time": 16.14,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -4133,13 +4357,13 @@
         {
           "time": 16.23,
           "trainDetails": {
-            "id": 7110,
+            "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 16.44,
+          "time": 17.14,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -4147,7 +4371,7 @@
           }
         },
         {
-          "time": 17.14,
+          "time": 17.44,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -4155,7 +4379,7 @@
           }
         },
         {
-          "time": 17.44,
+          "time": 18.29,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -4163,7 +4387,7 @@
           }
         },
         {
-          "time": 18.29,
+          "time": 19.09,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -4173,7 +4397,7 @@
         {
           "time": 19.23,
           "trainDetails": {
-            "id": 8202,
+            "id": 8042,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -4181,15 +4405,7 @@
         {
           "time": 20.07,
           "trainDetails": {
-            "id": 7114,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.29,
-          "trainDetails": {
-            "id": 8046,
+            "id": 8044,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4197,13 +4413,21 @@
         {
           "time": 20.48,
           "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21.41,
+          "trainDetails": {
             "id": 8048,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 21.44,
+          "time": 22.55,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -4211,7 +4435,7 @@
           }
         },
         {
-          "time": 22.55,
+          "time": null,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -4417,11 +4641,11 @@
           }
         },
         {
-          "time": 6.51,
+          "time": 6.47,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -4475,7 +4699,7 @@
         {
           "time": 10.32,
           "trainDetails": {
-            "id": 8016,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4483,7 +4707,7 @@
         {
           "time": 11.32,
           "trainDetails": {
-            "id": 8018,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4491,13 +4715,21 @@
         {
           "time": 11.57,
           "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.32,
+          "trainDetails": {
             "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 12.32,
+          "time": 13.32,
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
@@ -4505,7 +4737,7 @@
           }
         },
         {
-          "time": 13.32,
+          "time": 14.32,
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
@@ -4513,7 +4745,7 @@
           }
         },
         {
-          "time": 14.32,
+          "time": 15.12,
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
@@ -4521,15 +4753,7 @@
           }
         },
         {
-          "time": 15.12,
-          "trainDetails": {
-            "id": 7108,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
-          }
-        },
-        {
-          "time": 15.17,
+          "time": 15.47,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -4537,7 +4761,7 @@
           }
         },
         {
-          "time": 15.47,
+          "time": 16.17,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -4547,13 +4771,13 @@
         {
           "time": 16.26,
           "trainDetails": {
-            "id": 7110,
+            "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 16.47,
+          "time": 17.17,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -4561,7 +4785,7 @@
           }
         },
         {
-          "time": 17.17,
+          "time": 17.47,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -4569,7 +4793,7 @@
           }
         },
         {
-          "time": 17.47,
+          "time": 18.32,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -4577,7 +4801,7 @@
           }
         },
         {
-          "time": 18.32,
+          "time": 19.12,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -4587,7 +4811,7 @@
         {
           "time": 19.26,
           "trainDetails": {
-            "id": 8202,
+            "id": 8042,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -4595,15 +4819,7 @@
         {
           "time": 20.1,
           "trainDetails": {
-            "id": 7114,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.32,
-          "trainDetails": {
-            "id": 8046,
+            "id": 8044,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4611,13 +4827,21 @@
         {
           "time": 20.51,
           "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21.44,
+          "trainDetails": {
             "id": 8048,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 21.47,
+          "time": 22.58,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -4625,7 +4849,7 @@
           }
         },
         {
-          "time": 22.58,
+          "time": null,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -4831,11 +5055,11 @@
           }
         },
         {
-          "time": 6.54,
+          "time": 6.51,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
@@ -4889,7 +5113,7 @@
         {
           "time": 10.36,
           "trainDetails": {
-            "id": 8016,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4897,7 +5121,7 @@
         {
           "time": 11.36,
           "trainDetails": {
-            "id": 8018,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -4905,13 +5129,21 @@
         {
           "time": 12,
           "trainDetails": {
+            "id": 8018,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 12.36,
+          "trainDetails": {
             "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 12.36,
+          "time": 13.36,
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
@@ -4919,7 +5151,7 @@
           }
         },
         {
-          "time": 13.36,
+          "time": 14.36,
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
@@ -4927,7 +5159,7 @@
           }
         },
         {
-          "time": 14.36,
+          "time": 15.15,
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
@@ -4935,15 +5167,7 @@
           }
         },
         {
-          "time": 15.15,
-          "trainDetails": {
-            "id": 7108,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
-          }
-        },
-        {
-          "time": 15.21,
+          "time": 15.51,
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
@@ -4951,7 +5175,7 @@
           }
         },
         {
-          "time": 15.51,
+          "time": 16.21,
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
@@ -4961,13 +5185,13 @@
         {
           "time": 16.29,
           "trainDetails": {
-            "id": 7110,
+            "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 16.51,
+          "time": 17.21,
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
@@ -4975,7 +5199,7 @@
           }
         },
         {
-          "time": 17.21,
+          "time": 17.51,
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
@@ -4983,7 +5207,7 @@
           }
         },
         {
-          "time": 17.51,
+          "time": 18.36,
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
@@ -4991,7 +5215,7 @@
           }
         },
         {
-          "time": 18.36,
+          "time": 19.15,
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
@@ -5001,7 +5225,7 @@
         {
           "time": 19.3,
           "trainDetails": {
-            "id": 8202,
+            "id": 8042,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5009,15 +5233,7 @@
         {
           "time": 20.14,
           "trainDetails": {
-            "id": 7114,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.36,
-          "trainDetails": {
-            "id": 8046,
+            "id": 8044,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5025,13 +5241,21 @@
         {
           "time": 20.55,
           "trainDetails": {
+            "id": 8046,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": 21.47,
+          "trainDetails": {
             "id": 8048,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
         },
         {
-          "time": 21.51,
+          "time": 23.01,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
@@ -5039,7 +5263,7 @@
           }
         },
         {
-          "time": 23.01,
+          "time": null,
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
@@ -5245,15 +5469,15 @@
           }
         },
         {
-          "time": 6.54,
+          "time": 7.24,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
-          "time": 7.24,
+          "time": 7.39,
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
@@ -5261,7 +5485,7 @@
           }
         },
         {
-          "time": 7.39,
+          "time": 8.27,
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
@@ -5269,7 +5493,7 @@
           }
         },
         {
-          "time": 8.27,
+          "time": 8.54,
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
@@ -5277,7 +5501,7 @@
           }
         },
         {
-          "time": 8.54,
+          "time": 9.24,
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
@@ -5285,7 +5509,7 @@
           }
         },
         {
-          "time": 9.24,
+          "time": 9.54,
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
@@ -5293,7 +5517,7 @@
           }
         },
         {
-          "time": 9.54,
+          "time": 11.39,
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
@@ -5301,25 +5525,9 @@
           }
         },
         {
-          "time": 10.39,
-          "trainDetails": {
-            "id": 8016,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 11.39,
-          "trainDetails": {
-            "id": 8018,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
           "time": 12.39,
           "trainDetails": {
-            "id": 8022,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5327,7 +5535,7 @@
         {
           "time": 13.39,
           "trainDetails": {
-            "id": 8024,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5335,7 +5543,7 @@
         {
           "time": 14.39,
           "trainDetails": {
-            "id": 8026,
+            "id": 8018,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5343,7 +5551,7 @@
         {
           "time": 15.24,
           "trainDetails": {
-            "id": 7108,
+            "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5351,15 +5559,15 @@
         {
           "time": 15.54,
           "trainDetails": {
-            "id": 8028,
+            "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
           "time": 16.24,
           "trainDetails": {
-            "id": 8030,
+            "id": 8024,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5367,15 +5575,7 @@
         {
           "time": 16.54,
           "trainDetails": {
-            "id": 7110,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 17.24,
-          "trainDetails": {
-            "id": 8034,
+            "id": 8026,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5383,7 +5583,7 @@
         {
           "time": 17.54,
           "trainDetails": {
-            "id": 8036,
+            "id": 8028,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5391,7 +5591,7 @@
         {
           "time": 18.39,
           "trainDetails": {
-            "id": 8038,
+            "id": 8030,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5399,15 +5599,7 @@
         {
           "time": 19.39,
           "trainDetails": {
-            "id": 8040,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.39,
-          "trainDetails": {
-            "id": 8202,
+            "id": 8032,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5415,7 +5607,7 @@
         {
           "time": 20.58,
           "trainDetails": {
-            "id": 7114,
+            "id": 8034,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5423,9 +5615,57 @@
         {
           "time": 21.54,
           "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
             "id": 8046,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
@@ -5643,15 +5883,15 @@
           }
         },
         {
-          "time": 6.56,
+          "time": 7.26,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
-          "time": 7.26,
+          "time": 7.41,
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
@@ -5659,7 +5899,7 @@
           }
         },
         {
-          "time": 7.41,
+          "time": 8.29,
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
@@ -5667,7 +5907,7 @@
           }
         },
         {
-          "time": 8.29,
+          "time": 8.56,
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
@@ -5675,7 +5915,7 @@
           }
         },
         {
-          "time": 8.56,
+          "time": 9.26,
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
@@ -5683,7 +5923,7 @@
           }
         },
         {
-          "time": 9.26,
+          "time": 9.56,
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
@@ -5691,7 +5931,7 @@
           }
         },
         {
-          "time": 9.56,
+          "time": 11.41,
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
@@ -5699,25 +5939,9 @@
           }
         },
         {
-          "time": 10.41,
-          "trainDetails": {
-            "id": 8016,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 11.41,
-          "trainDetails": {
-            "id": 8018,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
           "time": 12.41,
           "trainDetails": {
-            "id": 8022,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5725,7 +5949,7 @@
         {
           "time": 13.41,
           "trainDetails": {
-            "id": 8024,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5733,7 +5957,7 @@
         {
           "time": 14.41,
           "trainDetails": {
-            "id": 8026,
+            "id": 8018,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5741,7 +5965,7 @@
         {
           "time": 15.26,
           "trainDetails": {
-            "id": 7108,
+            "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5749,15 +5973,15 @@
         {
           "time": 15.56,
           "trainDetails": {
-            "id": 8028,
+            "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
           "time": 16.26,
           "trainDetails": {
-            "id": 8030,
+            "id": 8024,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5765,15 +5989,7 @@
         {
           "time": 16.56,
           "trainDetails": {
-            "id": 7110,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 17.26,
-          "trainDetails": {
-            "id": 8034,
+            "id": 8026,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5781,7 +5997,7 @@
         {
           "time": 17.56,
           "trainDetails": {
-            "id": 8036,
+            "id": 8028,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5789,7 +6005,7 @@
         {
           "time": 18.41,
           "trainDetails": {
-            "id": 8038,
+            "id": 8030,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5797,15 +6013,7 @@
         {
           "time": 19.41,
           "trainDetails": {
-            "id": 8040,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.41,
-          "trainDetails": {
-            "id": 8202,
+            "id": 8032,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -5813,7 +6021,7 @@
         {
           "time": 21,
           "trainDetails": {
-            "id": 7114,
+            "id": 8034,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -5821,9 +6029,57 @@
         {
           "time": 21.56,
           "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
             "id": 8046,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
@@ -6041,15 +6297,15 @@
           }
         },
         {
-          "time": 6.58,
+          "time": 7.28,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
-          "time": 7.28,
+          "time": 7.43,
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
@@ -6057,7 +6313,7 @@
           }
         },
         {
-          "time": 7.43,
+          "time": 8.31,
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
@@ -6065,7 +6321,7 @@
           }
         },
         {
-          "time": 8.31,
+          "time": 8.58,
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
@@ -6073,7 +6329,7 @@
           }
         },
         {
-          "time": 8.58,
+          "time": 9.28,
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
@@ -6081,7 +6337,7 @@
           }
         },
         {
-          "time": 9.28,
+          "time": 9.58,
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
@@ -6089,7 +6345,7 @@
           }
         },
         {
-          "time": 9.58,
+          "time": 11.43,
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
@@ -6097,25 +6353,9 @@
           }
         },
         {
-          "time": 10.43,
-          "trainDetails": {
-            "id": 8016,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 11.43,
-          "trainDetails": {
-            "id": 8018,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
           "time": 12.43,
           "trainDetails": {
-            "id": 8022,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6123,7 +6363,7 @@
         {
           "time": 13.43,
           "trainDetails": {
-            "id": 8024,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6131,7 +6371,7 @@
         {
           "time": 14.43,
           "trainDetails": {
-            "id": 8026,
+            "id": 8018,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6139,7 +6379,7 @@
         {
           "time": 15.28,
           "trainDetails": {
-            "id": 7108,
+            "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6147,15 +6387,15 @@
         {
           "time": 15.58,
           "trainDetails": {
-            "id": 8028,
+            "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
           "time": 16.28,
           "trainDetails": {
-            "id": 8030,
+            "id": 8024,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6163,15 +6403,7 @@
         {
           "time": 16.58,
           "trainDetails": {
-            "id": 7110,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 17.28,
-          "trainDetails": {
-            "id": 8034,
+            "id": 8026,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6179,7 +6411,7 @@
         {
           "time": 17.58,
           "trainDetails": {
-            "id": 8036,
+            "id": 8028,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6187,7 +6419,7 @@
         {
           "time": 18.43,
           "trainDetails": {
-            "id": 8038,
+            "id": 8030,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6195,15 +6427,7 @@
         {
           "time": 19.43,
           "trainDetails": {
-            "id": 8040,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.43,
-          "trainDetails": {
-            "id": 8202,
+            "id": 8032,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6211,7 +6435,7 @@
         {
           "time": 21.02,
           "trainDetails": {
-            "id": 7114,
+            "id": 8034,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6219,9 +6443,57 @@
         {
           "time": 21.58,
           "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
             "id": 8046,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {
@@ -6439,15 +6711,15 @@
           }
         },
         {
-          "time": 7.02,
+          "time": 7.32,
           "trainDetails": {
-            "id": 7900,
+            "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
-          "time": 7.32,
+          "time": 7.47,
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
@@ -6455,7 +6727,7 @@
           }
         },
         {
-          "time": 7.47,
+          "time": 8.35,
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
@@ -6463,7 +6735,7 @@
           }
         },
         {
-          "time": 8.35,
+          "time": 9.02,
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
@@ -6471,7 +6743,7 @@
           }
         },
         {
-          "time": 9.02,
+          "time": 9.32,
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
@@ -6479,7 +6751,7 @@
           }
         },
         {
-          "time": 9.32,
+          "time": 10.02,
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
@@ -6487,7 +6759,7 @@
           }
         },
         {
-          "time": 10.02,
+          "time": 11.47,
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
@@ -6495,25 +6767,9 @@
           }
         },
         {
-          "time": 10.47,
-          "trainDetails": {
-            "id": 8016,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 11.47,
-          "trainDetails": {
-            "id": 8018,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
           "time": 12.47,
           "trainDetails": {
-            "id": 8022,
+            "id": 8310,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6521,7 +6777,7 @@
         {
           "time": 13.47,
           "trainDetails": {
-            "id": 8024,
+            "id": 8016,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6529,7 +6785,7 @@
         {
           "time": 14.47,
           "trainDetails": {
-            "id": 8026,
+            "id": 8018,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6537,7 +6793,7 @@
         {
           "time": 15.32,
           "trainDetails": {
-            "id": 7108,
+            "id": 8020,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6545,15 +6801,15 @@
         {
           "time": 16.02,
           "trainDetails": {
-            "id": 8028,
+            "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "activeOnWeekendsAndHolidays": true
           }
         },
         {
           "time": 16.32,
           "trainDetails": {
-            "id": 8030,
+            "id": 8024,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6561,15 +6817,7 @@
         {
           "time": 17.02,
           "trainDetails": {
-            "id": 7110,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 17.32,
-          "trainDetails": {
-            "id": 8034,
+            "id": 8026,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6577,7 +6825,7 @@
         {
           "time": 18.02,
           "trainDetails": {
-            "id": 8036,
+            "id": 8028,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6585,7 +6833,7 @@
         {
           "time": 18.47,
           "trainDetails": {
-            "id": 8038,
+            "id": 8030,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6593,15 +6841,7 @@
         {
           "time": 19.47,
           "trainDetails": {
-            "id": 8040,
-            "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
-          }
-        },
-        {
-          "time": 20.47,
-          "trainDetails": {
-            "id": 8202,
+            "id": 8032,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": false
           }
@@ -6609,7 +6849,7 @@
         {
           "time": 21.06,
           "trainDetails": {
-            "id": 7114,
+            "id": 8034,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
           }
@@ -6617,9 +6857,57 @@
         {
           "time": 22.02,
           "trainDetails": {
+            "id": 8036,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8038,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8040,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8042,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8044,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
             "id": 8046,
             "directionId": 2,
             "activeOnWeekendsAndHolidays": true
+          }
+        },
+        {
+          "time": null,
+          "trainDetails": {
+            "id": 8048,
+            "directionId": 2,
+            "activeOnWeekendsAndHolidays": false
           }
         },
         {

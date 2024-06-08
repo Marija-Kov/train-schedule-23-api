@@ -112,43 +112,34 @@ function createTimetableMatrixDirection1(
 
 function createTimetableMatrixDirection2(
   departureTimes: Time[][],
-  stationsArr: StationName[],
-  trainIdArr: TrainIdDirection2[]
+  stationsLength: number,
 ): Time[][] {
-  let j = 0;
-  let i = 1;
-  while (j < trainIdArr.length) {
-    if (
-      departureTimes[i] &&
-      Number(departureTimes[i][j]) < Number(departureTimes[i - 1][j])
-    ) {
-      while (--i + 1) {
-        departureTimes[i].splice(j, 0, "n/a");
-      }
-    }
-    ++i;
-    if (i === 15 || i === 0) {
-      i = 1;
-      ++j;
-    }
+  for (let i = 0; i < 7; ++i) {
+    departureTimes[i].splice(1, 0, "n/a");
+    departureTimes[i].splice(8, 0, "n/a");
+    departureTimes[i].splice(17, 0, "n/a");
+    departureTimes[i].splice(21, 0, "n/a");
+    departureTimes[i].splice(27, 0, "n/a");
+    departureTimes[i].splice(29, 0, "n/a");
+    departureTimes[i].splice(32, 0, "n/a");
+    departureTimes[i].splice(33, 0, "n/a");
   }
-  j = 0;
-  while (j < trainIdArr.length) {
-    if (j === 10) {
-      i = 8; // stations.indexOf the stations right after the destination of second shortest routes (Novi Beograd)
-      while (i < stationsArr.length) {
-        departureTimes[i].splice(j, 0, "n/a");
-        ++i;
-      }
-    }
-    if (departureTimes[0][j] === "n/a" || j === 13 || j === 26 || j === 35) {
-      i = 11; // stations.indexOf the stations right after the destination of shortest routes (Altina)
-      while (i < stationsArr.length) {
-        departureTimes[i].splice(j, 0, "n/a");
-        ++i;
-      }
-    }
-    ++j;
+  for (let i = 8; i < 11; ++i) {
+    departureTimes[i].splice(10, 0, "n/a");
+  }
+  for (let i = 11; i < stationsLength; ++i) {
+    departureTimes[i].splice(1, 0, "n/a");
+    departureTimes[i].splice(8, 0, "n/a");
+    departureTimes[i].splice(10, 0, "n/a");
+    departureTimes[i].splice(13, 0, "n/a");
+    departureTimes[i].splice(17, 0, "n/a");
+    departureTimes[i].splice(21, 0, "n/a");
+    departureTimes[i].splice(26, 0, "n/a");
+    departureTimes[i].splice(27, 0, "n/a");
+    departureTimes[i].splice(29, 0, "n/a");
+    departureTimes[i].splice(32, 0, "n/a");
+    departureTimes[i].splice(33, 0, "n/a");
+    departureTimes[i].splice(35, 0, "n/a");
   }
   return departureTimes;
 }
