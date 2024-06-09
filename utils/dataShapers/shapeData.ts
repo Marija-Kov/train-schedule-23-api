@@ -237,9 +237,7 @@ function stationsData(
 ): Station[] {
   const result: Station[] = [];
   for (let i = 0; i < stations.length; ++i) {
-    result.push(
-      createStationObject(stations[i], stationsFormatted[i], trains)
-    );
+    result.push(createStationObject(stations[i], stationsFormatted[i], trains));
   }
   return result;
 }
@@ -249,37 +247,20 @@ function createStationObject(
   stationFormatted: StationNameFormatted,
   trains: Train[]
 ) {
-  // const dir2Index = stations.length - 1 - index;
   const result: Station = {
     name: station,
     nameFormatted: stationFormatted,
-    departures: [],
+    departures: [], // TODO: this array contains data about trains found on the station at certain times, not all of them are technically departures.
   };
   for (let i = 0; i < trains.length; ++i) {
-    if (
-      // trains[i].itinerary[index] && //NOT PICKING UP ON DEP. TIMES ON SHORTER ROUTES
-      //  trains[i].itinerary[index].station === stations[index]
-      //FILTER BY STATION NAME
-      // WE ARE LOOKING FOR TRAINS WHOSE ITINERARIES CONTAIN THE STATION NAME, STATIONS(INDEX)
-      // THEN PUSH THE ITINERARIES TO STATIONS(INDEX) DEPARTURES
-      trains[i].itinerary.filter((i) => i.station === station).length
-    ) {
-      result.departures.push(
-        addDepartureToStation(trains[i], station)
-      );
+    if (trains[i].itinerary.filter((i) => i.station === station).length) {
+      result.departures.push(addDepartureToStation(trains[i], station));
     }
-    // if (
-    //   trains[i].itinerary[dir2Index] &&
-    //   trains[i].itinerary[dir2Index].station === stations[index]
-    // ) {
-    //   station.departures.push(addDepartureToStation(trains[i], dir2Index));
-    // }
   }
   return result;
 }
 
 function addDepartureToStation(train: Train, station: StationName) {
-  //INDEX IS NOT NEEDED HERE
   const time = train.itinerary.filter((i) => i.station === station)[0].time;
   return {
     time: time,
