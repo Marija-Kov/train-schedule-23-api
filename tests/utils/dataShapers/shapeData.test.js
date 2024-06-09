@@ -7,6 +7,7 @@ const {
   dataStrDirection1,
   dataStrDirection2,
   stations,
+  stationsFormatted,
   trainIdDirection1,
   trainIdDirection2,
 } = require("../index.js");
@@ -666,5 +667,59 @@ test("trainsData()", () => {
         console.log(i);
       }
     });
+  });
+});
+
+test("stationsData()", () => {
+  const data = shape.default.stationsData(
+    stations,
+    stationsFormatted,
+    shape.default.trainsData(
+      trainIdDirection1,
+      trainIdDirection2,
+      trainIdActiveOnWeekendsAndHolidaysDirection1,
+      trainIdActiveOnWeekendsAndHolidaysDirection2,
+      stations,
+      shape.default.createTimetableMatrixDirection1(
+        shape.default.extractDepartureTimes(dataStrDirection1),
+        stations,
+        trainIdDirection1
+      ),
+      shape.default.createTimetableMatrixDirection2(
+        shape.default.extractDepartureTimes(dataStrDirection2),
+        stations.length
+      )
+    )
+  );
+  test(` writes all stops correctly`, () => {
+    function checkStopsAt(stationName, targetLength, earliest, latest) {
+      const stationIndex = stations.indexOf(stationName);
+      if (
+        data[stationIndex].departures.length === targetLength &&
+        data[stationIndex].departures[0].time === earliest &&
+        data[stationIndex].departures[targetLength - 1].time === latest
+      ) {
+        console.log(`  ${stationName} ✅`);
+      } else {
+        console.log(`  ${stationName} ❌`);
+        console.log(data[stationIndex].departures);
+        console.log(data[stationIndex].departures.length);
+      }
+    }
+    checkStopsAt("batajnica", 47, 5.57, 22.02);
+    checkStopsAt("kamendin", 47, 6.01, 21.58);
+    checkStopsAt("zemunsko polje", 47, 6.03, 21.56);
+    checkStopsAt("altina", 47, 6.05, 21.54);
+    checkStopsAt("zemun", 64, 4.11, 23.01);
+    checkStopsAt("tosin bunar", 64, 4.14, 22.58);
+    checkStopsAt("novi beograd", 64, 4.17, 22.55);
+    checkStopsAt("beograd centar", 65, 4.22, 22.51);
+    checkStopsAt("karadjordjev park", 51, 6.24, 22.48);
+    checkStopsAt("vukov spomenik", 51, 6.28, 22.44);
+    checkStopsAt("pancevacki most", 51, 6.32, 22.41);
+    checkStopsAt("krnjaca most", 51, 6.36, 22.35);
+    checkStopsAt("krnjaca ukr", 51, 6.39, 22.33);
+    checkStopsAt("sebes", 51, 6.42, 22.29);
+    checkStopsAt("ovca", 51, 6.45, 22.25);
   });
 });

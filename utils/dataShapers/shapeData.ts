@@ -233,43 +233,62 @@ function writeTrainsEndpoint(arr: Train[]) {
 function stationsData(
   stations: StationName[],
   stationsFormatted: StationNameFormatted[],
-  trainsData: Train[]
+  trains: Train[]
 ): Station[] {
-  const arr: Station[] = [];
-  const stLen = stations.length;
-  for (let i = 0; i < stLen; ++i) {
-    const obj: Station = {
-      name: "batajnica",
-      nameFormatted: "Batajnica",
-      departures: [],
-    };
-    obj.name = stations[i];
-    obj.nameFormatted = stationsFormatted[i];
-    obj.departures = [];
-    const trLen = trainsData.length;
-    for (let j = 0; j < trLen; ++j) {
-      if (trainsData[j].itinerary[i]) {
-        const departure: StationDeparture = {
-          time: 0,
-          trainDetails: {
-            id: 7101,
-            directionId: 1,
-            activeOnWeekendsAndHolidays: false,
-          },
-        };
-        departure.time = trainsData[j].itinerary[i].time;
-        departure.trainDetails = {
-          id: trainsData[j].id,
-          directionId: trainsData[j].directionId,
-          activeOnWeekendsAndHolidays:
-            trainsData[j].activeOnWeekendsAndHolidays,
-        };
-        obj.departures.push(departure);
-      }
-    }
-    arr.push(obj);
+  const result: Station[] = [];
+  for (let i = 0; i < stations.length; ++i) {
+    result.push(
+      createStationObject(stations[i], stationsFormatted[i], trains)
+    );
   }
-  return arr;
+  return result;
+}
+
+function createStationObject(
+  station: StationName,
+  stationFormatted: StationNameFormatted,
+  trains: Train[]
+) {
+  // const dir2Index = stations.length - 1 - index;
+  const result: Station = {
+    name: station,
+    nameFormatted: stationFormatted,
+    departures: [],
+  };
+  for (let i = 0; i < trains.length; ++i) {
+    if (
+      // trains[i].itinerary[index] && //NOT PICKING UP ON DEP. TIMES ON SHORTER ROUTES
+      //  trains[i].itinerary[index].station === stations[index]
+      //FILTER BY STATION NAME
+      // WE ARE LOOKING FOR TRAINS WHOSE ITINERARIES CONTAIN THE STATION NAME, STATIONS(INDEX)
+      // THEN PUSH THE ITINERARIES TO STATIONS(INDEX) DEPARTURES
+      trains[i].itinerary.filter((i) => i.station === station).length
+    ) {
+      result.departures.push(
+        addDepartureToStation(trains[i], station)
+      );
+    }
+    // if (
+    //   trains[i].itinerary[dir2Index] &&
+    //   trains[i].itinerary[dir2Index].station === stations[index]
+    // ) {
+    //   station.departures.push(addDepartureToStation(trains[i], dir2Index));
+    // }
+  }
+  return result;
+}
+
+function addDepartureToStation(train: Train, station: StationName) {
+  //INDEX IS NOT NEEDED HERE
+  const time = train.itinerary.filter((i) => i.station === station)[0].time;
+  return {
+    time: time,
+    trainDetails: {
+      id: train.id,
+      directionId: train.directionId,
+      activeOnWeekendsAndHolidays: train.activeOnWeekendsAndHolidays,
+    },
+  } as StationDeparture;
 }
 
 function writeStationsEndpoint(stationsData: Station[]): void {
