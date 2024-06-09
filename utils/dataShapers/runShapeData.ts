@@ -22,8 +22,7 @@ const timetableMatrixDirection1 = shape.createTimetableMatrixDirection1(
 
 const timetableMatrixDirection2 = shape.createTimetableMatrixDirection2(
   departureTimesDirection2,
-  stations,
-  trainIdDirection2
+  stations.length,
 );
 
 const trainsDataShaped = shape.trainsData(

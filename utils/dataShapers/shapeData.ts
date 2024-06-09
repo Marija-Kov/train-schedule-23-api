@@ -4,6 +4,7 @@ import {
   Station,
   StationDeparture,
   Time,
+  TrainItinerary,
 } from "../../types/trainScheduleTypes";
 import {
   StationName,
@@ -15,8 +16,7 @@ import {
 function extractDepartureTimes(dataStr: string): Time[][] {
   /*
        Takes in data string extracted from the PDF 
-       and returns all times of departures of any train in an array
-       for each station in the given direction.
+       and, for each station, returns all times of departures in the given direction.
       */
   const len = dataStr.length + 1;
   let index = 0; // there's always a char at position 0
@@ -48,7 +48,7 @@ function extractDepartureTimes(dataStr: string): Time[][] {
 /*
  Timetable matrix creators modify departureTimes which is 
  the return value of extractDepartureTimes. 
- They differ for each of the 2 directions.
+ The algorithm differs for each of the 2 directions.
 */
 
 function createTimetableMatrixDirection1(
@@ -56,24 +56,51 @@ function createTimetableMatrixDirection1(
   stationsArr: StationName[],
   trainIdArr: TrainIdDirection1[]
 ): Time[][] {
-  let j = 0;
-  let i = 1;
+  let j = 0; // subarray index ('column')
+  let i = 1; // array index ('row')
   while (j < trainIdArr.length) {
-    if (Number(departureTimes[i][j]) < Number(departureTimes[i - 1][j])) {
+    /*
+     In departureTimes matrix compared to the PDF timetable, we can observe that 
+     values in each column (t[i+n][j]) are not sorted in ascending order nor 
+     associated with the same train id because some rows are shorter than others.
+     We want to fill up the shorter rows so that all the rows are the same length
+     and all the columns sorted in the ascending order AND 
+     all values associated with one train id end up in one column.
+     
+     When we run into a t[i][j] < t[i-1][j], we want to do something so that
+     eventually every t[i][j] > t[i-1][j] AND 
+     have all values associated with one train id end up in one column.
+    */
+    const currRow = Number(departureTimes[i][j]);
+    const rowAbove = Number(departureTimes[i - 1][j]);
+    if (currRow < rowAbove || (currRow === 16.17 && rowAbove === 15.59)) {
+      /*
+      Go back upwards and insert n/a until we reach the top of the column (t[0][j]):
+     */
       while (--i + 1) {
         departureTimes[i].splice(j, 0, "n/a");
       }
     }
     ++i;
+    /*
+     When we finish iterating through a column, we move on to the next one:
+    */
     if (i === 15 || i === 0) {
       i = 1;
       ++j;
     }
   }
+  /*
+   Once we reach the last column, we finished filling up the top part of the table.
+   We then reiterate every column 
+   using inserted n/a values and the destination index of the shorter routes 
+    (relative to the total number of rows in the table) 
+   as guides to fill up the bottom part of the table.
+  */
   j = 0;
   while (j < trainIdArr.length) {
     if (departureTimes[0][j] === "n/a") {
-      i = 8; // stations.indexOf the destination of shorter routes (Beograd centar)
+      i = 8; // index of the destination station of shorter routes (Beograd centar)
       while (i < stationsArr.length) {
         departureTimes[i].splice(j, 0, "n/a");
         ++i;
@@ -86,43 +113,34 @@ function createTimetableMatrixDirection1(
 
 function createTimetableMatrixDirection2(
   departureTimes: Time[][],
-  stationsArr: StationName[],
-  trainIdArr: TrainIdDirection2[]
+  stationsLength: number
 ): Time[][] {
-  let j = 0;
-  let i = 1;
-  while (j < trainIdArr.length) {
-    if (
-      departureTimes[i] &&
-      Number(departureTimes[i][j]) < Number(departureTimes[i - 1][j])
-    ) {
-      while (--i + 1) {
-        departureTimes[i].splice(j, 0, "n/a");
-      }
-    }
-    ++i;
-    if (i === 15 || i === 0) {
-      i = 1;
-      ++j;
-    }
+  for (let i = 0; i < 7; ++i) {
+    departureTimes[i].splice(1, 0, "n/a");
+    departureTimes[i].splice(8, 0, "n/a");
+    departureTimes[i].splice(17, 0, "n/a");
+    departureTimes[i].splice(21, 0, "n/a");
+    departureTimes[i].splice(27, 0, "n/a");
+    departureTimes[i].splice(29, 0, "n/a");
+    departureTimes[i].splice(32, 0, "n/a");
+    departureTimes[i].splice(33, 0, "n/a");
   }
-  j = 0;
-  while (j < trainIdArr.length) {
-    if (j === 10) {
-      i = 8; // stations.indexOf the stations right after the destination of second shortest routes (Novi Beograd)
-      while (i < stationsArr.length) {
-        departureTimes[i].splice(j, 0, "n/a");
-        ++i;
-      }
-    }
-    if (departureTimes[0][j] === "n/a" || j === 13 || j === 26 || j === 35) {
-      i = 11; // stations.indexOf the stations right after the destination of shortest routes (Altina)
-      while (i < stationsArr.length) {
-        departureTimes[i].splice(j, 0, "n/a");
-        ++i;
-      }
-    }
-    ++j;
+  for (let i = 8; i < 11; ++i) {
+    departureTimes[i].splice(10, 0, "n/a");
+  }
+  for (let i = 11; i < stationsLength; ++i) {
+    departureTimes[i].splice(1, 0, "n/a");
+    departureTimes[i].splice(8, 0, "n/a");
+    departureTimes[i].splice(10, 0, "n/a");
+    departureTimes[i].splice(13, 0, "n/a");
+    departureTimes[i].splice(17, 0, "n/a");
+    departureTimes[i].splice(21, 0, "n/a");
+    departureTimes[i].splice(26, 0, "n/a");
+    departureTimes[i].splice(27, 0, "n/a");
+    departureTimes[i].splice(29, 0, "n/a");
+    departureTimes[i].splice(32, 0, "n/a");
+    departureTimes[i].splice(33, 0, "n/a");
+    departureTimes[i].splice(35, 0, "n/a");
   }
   return departureTimes;
 }
@@ -136,59 +154,66 @@ function trainsData(
   timetable1: Time[][],
   timetable2: Time[][]
 ): Train[] {
-  const len1 = trainIdsDir1.length;
-  const len2 = trainIdsDir2.length;
-  const arr: Train[] = [];
-  for (let i = 0; i < len1; ++i) {
-    const obj: Train = {
-      id: 8003,
-      directionId: 1,
-      activeOnWeekendsAndHolidays: false,
-      itinerary: [],
-    };
-    obj.id = trainIdsDir1[i];
-    obj.directionId = 1;
-    obj.activeOnWeekendsAndHolidays = weekendsAndHolidays1[i];
-    obj.itinerary = [];
-    for (let j = 0; j < stations.length; ++j) {
-      if (timetable1[j][i] !== "n/a") {
-        const objD: { station: StationName; time: number } = {
-          station: "batajnica",
-          time: 0,
-        };
-        objD.station = stations[j];
-        objD.time = Number(timetable1[j][i]);
-        obj.itinerary.push(objD);
-      }
-    }
-    arr.push(obj);
+  const result: Train[] = [];
+  for (let i = 0; i < trainIdsDir1.length; ++i) {
+    result.push(
+      createTrainObject(
+        i,
+        trainIdsDir1,
+        weekendsAndHolidays1,
+        timetable1,
+        stations,
+        1
+      )
+    );
   }
-  for (let i = 0; i < len2; ++i) {
-    const obj: Train = {
-      id: 8003,
-      directionId: 1,
-      activeOnWeekendsAndHolidays: false,
-      itinerary: [],
-    };
-    obj.id = trainIdsDir2[i];
-    obj.directionId = 2;
-    obj.activeOnWeekendsAndHolidays = weekendsAndHolidays2[i];
-    obj.itinerary = [];
-    const stLen = stations.length;
-    for (let j = 0; j < stLen; ++j) {
-      if (timetable2[j][i] !== "n/a") {
-        const objD: { station: StationName; time: number } = {
-          station: "batajnica",
-          time: 0,
-        };
-        objD.station = stations[stLen - 1 - j];
-        objD.time = Number(timetable2[j][i]);
-        obj.itinerary.push(objD);
-      }
-    }
-    arr.push(obj);
+  for (let i = 0; i < trainIdsDir2.length; ++i) {
+    result.push(
+      createTrainObject(
+        i,
+        trainIdsDir2,
+        weekendsAndHolidays2,
+        timetable2,
+        stations.slice().reverse(),
+        2
+      )
+    );
   }
-  return arr;
+  return result;
+}
+
+function createTrainObject(
+  index: number,
+  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
+  frequencies: (boolean | "w&h_only")[],
+  matrix: Time[][],
+  stations: StationName[],
+  directionId: 1 | 2
+) {
+  const train: Train = {
+    id: trainIds[index],
+    directionId: directionId,
+    activeOnWeekendsAndHolidays: frequencies[index],
+    itinerary: [],
+  };
+  for (let i = 0; i < stations.length; ++i) {
+    addDeparture(stations[i], matrix[i][index], train.itinerary);
+  }
+  return train;
+}
+
+function addDeparture(
+  station: StationName,
+  time: Time,
+  itinerary: TrainItinerary
+) {
+  if (time !== "n/a") {
+    itinerary.push({
+      station: station,
+      time: Number(time),
+    });
+  }
+  return;
 }
 
 function writeTrainsEndpoint(arr: Train[]) {
@@ -197,7 +222,7 @@ function writeTrainsEndpoint(arr: Train[]) {
     trains[train.id] = train;
   }
   return fs.writeFile(
-    "../trains.json",
+    "../../trains.json",
     JSON.stringify(trains, null, 2),
     (err) => {
       console.log(err);
@@ -208,53 +233,72 @@ function writeTrainsEndpoint(arr: Train[]) {
 function stationsData(
   stations: StationName[],
   stationsFormatted: StationNameFormatted[],
-  trainsData: Train[]
+  trains: Train[]
 ): Station[] {
-  const arr: Station[] = [];
-  const stLen = stations.length;
-  for (let i = 0; i < stLen; ++i) {
-    const obj: Station = {
-      name: "batajnica",
-      nameFormatted: "Batajnica",
-      departures: [],
-    };
-    obj.name = stations[i];
-    obj.nameFormatted = stationsFormatted[i];
-    obj.departures = [];
-    const trLen = trainsData.length;
-    for (let j = 0; j < trLen; ++j) {
-      if (trainsData[j].itinerary[i]) {
-        const departure: StationDeparture = {
-          time: 0,
-          trainDetails: {
-            id: 7101,
-            directionId: 1,
-            activeOnWeekendsAndHolidays: false,
-          },
-        };
-        departure.time = trainsData[j].itinerary[i].time;
-        departure.trainDetails = {
-          id: trainsData[j].id,
-          directionId: trainsData[j].directionId,
-          activeOnWeekendsAndHolidays:
-            trainsData[j].activeOnWeekendsAndHolidays,
-        };
-        obj.departures.push(departure);
-      }
-    }
-    arr.push(obj);
+  const result: Station[] = [];
+  for (let i = 0; i < stations.length; ++i) {
+    result.push(
+      createStationObject(stations[i], stationsFormatted[i], trains)
+    );
   }
-  return arr;
+  return result;
+}
+
+function createStationObject(
+  station: StationName,
+  stationFormatted: StationNameFormatted,
+  trains: Train[]
+) {
+  // const dir2Index = stations.length - 1 - index;
+  const result: Station = {
+    name: station,
+    nameFormatted: stationFormatted,
+    departures: [],
+  };
+  for (let i = 0; i < trains.length; ++i) {
+    if (
+      // trains[i].itinerary[index] && //NOT PICKING UP ON DEP. TIMES ON SHORTER ROUTES
+      //  trains[i].itinerary[index].station === stations[index]
+      //FILTER BY STATION NAME
+      // WE ARE LOOKING FOR TRAINS WHOSE ITINERARIES CONTAIN THE STATION NAME, STATIONS(INDEX)
+      // THEN PUSH THE ITINERARIES TO STATIONS(INDEX) DEPARTURES
+      trains[i].itinerary.filter((i) => i.station === station).length
+    ) {
+      result.departures.push(
+        addDepartureToStation(trains[i], station)
+      );
+    }
+    // if (
+    //   trains[i].itinerary[dir2Index] &&
+    //   trains[i].itinerary[dir2Index].station === stations[index]
+    // ) {
+    //   station.departures.push(addDepartureToStation(trains[i], dir2Index));
+    // }
+  }
+  return result;
+}
+
+function addDepartureToStation(train: Train, station: StationName) {
+  //INDEX IS NOT NEEDED HERE
+  const time = train.itinerary.filter((i) => i.station === station)[0].time;
+  return {
+    time: time,
+    trainDetails: {
+      id: train.id,
+      directionId: train.directionId,
+      activeOnWeekendsAndHolidays: train.activeOnWeekendsAndHolidays,
+    },
+  } as StationDeparture;
 }
 
 function writeStationsEndpoint(stationsData: Station[]): void {
-  const { holidays } = require("./extractedData");
+  const { holidays } = require("./data/extractedData");
   const data = {
     holidays: holidays,
     stations: stationsData,
   };
   return fs.writeFile(
-    "../stations.json",
+    "../../stations.json",
     JSON.stringify(data, null, 2),
     (err) => {
       console.log(err);
@@ -267,6 +311,8 @@ const shape = {
   createTimetableMatrixDirection1,
   createTimetableMatrixDirection2,
   trainsData,
+  createTrainObject,
+  addDeparture,
   stationsData,
   writeTrainsEndpoint,
   writeStationsEndpoint,
