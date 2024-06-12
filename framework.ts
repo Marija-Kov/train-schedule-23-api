@@ -38,6 +38,9 @@ export default class F {
          its root route and find it in this.routes register. 
         */
           const root = "/" + url.split("/")[1];
+          if (!this.routes[root]) {
+            return res.sendJson(404, { error: "Not found" });
+          }
           this.routes[root](req, res);
         };
         url && goToRoute(url);
