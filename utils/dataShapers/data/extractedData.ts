@@ -95,7 +95,7 @@ export const trainIdActiveOnWeekendsAndHolidaysDirection2: (
   true,
 ];
 
-export const stations: StationName[] = [
+export const stationsNames: StationName[] = [
   "batajnica",
   "kamendin",
   "zemunsko polje",

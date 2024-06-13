@@ -6,7 +6,7 @@ import {
   YyyyMmDd,
 } from "../types/trainScheduleTypes";
 import {
-  stations as stationNames,
+  stationsNames,
   trainIdDirection1,
   trainIdDirection2,
 } from "./dataShapers/data/extractedData";
@@ -49,8 +49,8 @@ const departures = (
     });
   }
   if (
-    (from && !stationNames.includes(from)) ||
-    (to && !stationNames.includes(to))
+    (from && !stationsNames.includes(from)) ||
+    (to && !stationsNames.includes(to))
   ) {
     return res.sendJson(422, {
       error: "Invalid departure and/or arrival station parameter",

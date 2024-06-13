@@ -6,7 +6,7 @@ const {
   trainIdDirection2,
   trainIdActiveOnWeekendsAndHolidaysDirection1,
   trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stations,
+  stationsNames,
   stationsFormatted,
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
@@ -18,6 +18,6 @@ module.exports = {
   trainIdDirection2,
   trainIdActiveOnWeekendsAndHolidaysDirection1,
   trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stations,
+  stationsNames,
   stationsFormatted,
 };
