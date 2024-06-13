@@ -10,6 +10,19 @@ const {
   stationsFormatted,
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
+const fs = require("node:fs");
+const stationsJson = fs.readFileSync("../../stations.json", "utf-8");
+const trainsJson = fs.readFileSync("../../trains.json", "utf-8");
+
+const {
+  isStationNameValid,
+  getStation,
+  isDirectionValid,
+  isFrequencyValid,
+  getDeparturesInDirection,
+  getDeparturesByFrequency,
+} = require("../../dist/utils/getStationsAndTrainsDataHelpers");
+
 module.exports = {
   shape,
   dataStrDirection1,
@@ -20,4 +33,12 @@ module.exports = {
   trainIdActiveOnWeekendsAndHolidaysDirection2,
   stationsNames,
   stationsFormatted,
+  stationsJson,
+  trainsJson,
+  isStationNameValid,
+  getStation,
+  isDirectionValid,
+  isFrequencyValid,
+  getDeparturesInDirection,
+  getDeparturesByFrequency,
 };

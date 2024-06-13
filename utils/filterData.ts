@@ -1,6 +1,5 @@
 import {
   Station,
-  StationDeparture,
   Train,
   Time,
   YyyyMmDd,
@@ -26,6 +25,15 @@ import {
   shapeToOutputFormat,
   getResultFromTrainIdOverlaps,
 } from "./getDeparturesHelpers";
+
+import {
+  isStationNameValid,
+  getStation,
+  isDirectionValid,
+  isFrequencyValid,
+  getDeparturesInDirection,
+  getDeparturesByFrequency,
+} from "./getStationsAndTrainsDataHelpers";
 
 const departures = (
   res: ExtendedServerRes,
@@ -147,40 +155,6 @@ const stationsData = (
   }
   if (station && !isStationNameValid(station)) {
     return res.sendJson(422, { error: "Invalid station name" });
-  }
-  /*
-   Checking whether direction is truthy will not work properly 
-   because '0' is a falsy value and it will lead to returning 
-   all station data instead of invalid direction parameter error.
-   All numbers have to be considered:
-  */
-  function isStationNameValid(station: StationName) {
-    return stationNames.includes(station);
-  }
-  function getStation(station: string, stations: Station[]) {
-    return stations.filter((s) => s.name === station)[0];
-  }
-  function isDirectionValid(direction: number) {
-    return [1, 2].includes(direction);
-  }
-  function isFrequencyValid(frequency: string) {
-    return ["wh", "wd", "ed"].includes(frequency);
-  }
-
-  function getDeparturesInDirection(
-    departures: StationDeparture[],
-    direction: number
-  ) {
-    return departures.filter((d) => d.trainDetails.directionId === direction);
-  }
-
-  function getDeparturesByFrequency(
-    departures: StationDeparture[],
-    frequency: boolean | "w&h_only" | undefined
-  ) {
-    return departures.filter(
-      (d) => d.trainDetails.activeOnWeekendsAndHolidays === frequency
-    );
   }
 
   if (direction === undefined) {
