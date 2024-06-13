@@ -145,7 +145,7 @@ const stationsData = (
   if (!station) {
     return res.sendJson(200, stations);
   }
-  if (station && !stationNames.includes(station)) {
+  if (station && !isStationNameValid(station)) {
     return res.sendJson(422, { error: "Invalid station name" });
   }
   /*
@@ -154,71 +154,70 @@ const stationsData = (
    all station data instead of invalid direction parameter error.
    All numbers have to be considered:
   */
-  if (typeof direction === "number") {
-    if (![1, 2].includes(direction)) {
-      return res.sendJson(422, { error: "Invalid direction parameter" });
+  function isStationNameValid(station: StationName) {
+    return stationNames.includes(station);
+  }
+  function getStation(station: string, stations: Station[]) {
+    return stations.filter((s) => s.name === station)[0];
+  }
+  function isDirectionValid(direction: number) {
+    return [1, 2].includes(direction);
+  }
+  function isFrequencyValid(frequency: string) {
+    return ["wh", "wd", "ed"].includes(frequency);
+  }
+
+  function getDeparturesInDirection(
+    departures: StationDeparture[],
+    direction: number
+  ) {
+    return departures.filter((d) => d.trainDetails.directionId === direction);
+  }
+
+  function getDeparturesByFrequency(
+    departures: StationDeparture[],
+    frequency: boolean | "w&h_only" | undefined
+  ) {
+    return departures.filter(
+      (d) => d.trainDetails.activeOnWeekendsAndHolidays === frequency
+    );
+  }
+
+  if (direction === undefined) {
+    return res.sendJson(200, getStation(station, stations));
+  }
+
+  if (!isDirectionValid(direction)) {
+    return res.sendJson(422, { error: "Invalid direction parameter" });
+  }
+
+  if (frequency) {
+    if (!isFrequencyValid(frequency)) {
+      return res.sendJson(422, { error: "Invalid frequency parameter" });
     }
-    if (frequency) {
-      if (!["wh", "wd", "ed"].includes(frequency)) {
-        return res.sendJson(422, { error: "Invalid frequency parameter" });
-      }
-      /*
-       Get the corresponding value with getFrequency to use for filtering:
-      */
-      const activeOnWeekendsAndHolidays = getFrequency(frequency);
-      /*
-       After validating all the parameters, find the station:
-      */
-      for (let s of stations) {
-        if (s.name === station) {
-          /*
-           Then get inside the station object:
-          */
-          return (() => {
-            let departures: StationDeparture[] = [];
-            /*
-             Filter the departures within the specified station:
-            */
-            for (let departure of s.departures) {
-              if (
-                departure.trainDetails.directionId === direction &&
-                departure.trainDetails.activeOnWeekendsAndHolidays ===
-                  activeOnWeekendsAndHolidays
-              ) {
-                departures.push(departure);
-              }
-            }
-            return res.sendJson(200, departures);
-          })();
-        }
-      }
-    }
-    /*
+
+    return res.sendJson(
+      200,
+      getDeparturesByFrequency(
+        getDeparturesInDirection(
+          getStation(station, stations).departures,
+          direction
+        ),
+        getFrequency(frequency)
+      )
+    );
+  }
+  /*
      If no frequency parameter is provided, return all the departures 
      from the specified station, in the specified direction:
     */
-    for (let s of stations) {
-      if (s.name === station) {
-        return (() => {
-          let departures: StationDeparture[] = [];
-          for (let departure of s.departures) {
-            if (departure.trainDetails.directionId === direction) {
-              departures.push(departure);
-            }
-          }
-          return res.sendJson(200, departures);
-        })();
-      }
-    }
-  }
-  /*
-   If no direction parameter is provided, all specified station data is returned:
-  */
-  for (let s of stations) {
-    if (s.name === station) {
-      return res.sendJson(200, s);
-    }
-  }
+  return res.sendJson(
+    200,
+    getDeparturesInDirection(
+      getStation(station, stations).departures,
+      direction
+    )
+  );
 };
 
 const trainsByDirectionAndFrequency = (
