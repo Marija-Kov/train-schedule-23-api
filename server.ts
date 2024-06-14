@@ -1,6 +1,12 @@
 import { promises as fs } from "fs";
 import filter from "./utils/filterData";
-import { Station, Train, YyyyMmDd, Time } from "./types/trainScheduleTypes";
+import {
+  Station,
+  Train,
+  YyyyMmDd,
+  Time,
+  TrainsObject,
+} from "./types/trainScheduleTypes";
 import F from "./framework";
 import {
   TrainIdDirection1,
@@ -44,13 +50,8 @@ server.route("/trains", async (req, res) => {
         | undefined;
       try {
         const json = await fs.readFile("./trains.json", "utf-8");
-        const data: Train[] = (await JSON.parse(json)) as Train[];
-        return filter.trainsByDirectionAndFrequency(
-          res,
-          data,
-          direction,
-          frequency
-        );
+        const data: TrainsObject = await JSON.parse(json);
+        return filter.trainsData(res, data, direction, frequency);
       } catch (error) {
         console.error("Error reading/filtering trains data:", error);
         return res.sendJson(500, { error: "Internal server error" });
@@ -65,8 +66,8 @@ server.route("/trains", async (req, res) => {
     ) as TrainIdDirection1 | TrainIdDirection2;
     try {
       const json = await fs.readFile("./trains.json", "utf-8");
-      const data: Train[] = JSON.parse(json) as Train[];
-      return filter.trainsById(res, data, trainId);
+      const data: TrainsObject = await JSON.parse(json);
+      return filter.aTrainData(res, data, trainId);
     } catch (error) {
       console.error("Error reading/filtering trains data:", error);
       return res.sendJson(500, { error: "Internal server error" });

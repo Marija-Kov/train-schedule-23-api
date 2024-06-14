@@ -3,6 +3,7 @@ import {
   Train,
   Time,
   YyyyMmDd,
+  TrainsObject,
 } from "../types/trainScheduleTypes";
 import {
   stationsNames,
@@ -194,9 +195,9 @@ const stationsData = (
   );
 };
 
-const trainsByDirectionAndFrequency = (
+const trainsData = (
   res: ExtendedServerRes,
-  trains: Train[],
+  trains: TrainsObject,
   direction: "1" | "2" | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
@@ -247,9 +248,10 @@ const trainsByDirectionAndFrequency = (
   return res.sendJson(200, trains);
 };
 
-const trainsById = (
+
+const aTrainData = (
   res: ExtendedServerRes,
-  trains: Train[],
+  trains: TrainsObject,
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
   if (!res) throw Error("filterData > trainsById(): argument 'res' is missing");
@@ -292,8 +294,8 @@ function getFrequency(
 const filter = {
   departures,
   stationsData,
-  trainsByDirectionAndFrequency,
-  trainsById,
+  trainsData,
+  aTrainData,
 };
 
 export default filter;

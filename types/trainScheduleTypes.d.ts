@@ -32,6 +32,10 @@ export type TrainItinerary = { station: StationName; time: number }[];
 
 export type Train = TrainDetails & { itinerary: TrainItinerary };
 
+export type TrainsObject = {
+  [key in TrainIdDirection1 | TrainIdDirection2]: Train;
+};
+
 export type StationDeparture = { time: number; trainDetails: TrainDetails };
 
 export type Station = {
