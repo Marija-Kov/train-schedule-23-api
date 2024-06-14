@@ -7,6 +7,12 @@ const {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
+  getFrequency,
+  getTrainsByFrequency,
+  getTrainsByDirection,
+  isTrainIdValid,
+  trainIdDirection1,
+  trainIdDirection2,
 } = require("./index");
 
 function test(title, callback) {
@@ -121,6 +127,74 @@ test("getDeparturesByFrequency()", () => {
     } else {
       console.log(`  ❌`);
       console.log(departures[0].trainDetails.activeOnWeekendsAndHolidays);
+    }
+  });
+});
+
+test("getFrequency()", () => {
+  test(` gets right frequency`, () => {
+    const f = getFrequency("ed");
+    if (f === true) {
+      console.log(`  ✅`);
+    } else {
+      console.log(`  ❌`);
+      console.log(f);
+    }
+  });
+});
+
+test("getTrainsByFrequency()", () => {
+  test(` gets trains by frequency correctly`, () => {
+    const frequency = "wh";
+    const result = getTrainsByFrequency(
+      getTrainsByDirection(trains, 2),
+      frequency
+    );
+    if (result[0].activeOnWeekendsAndHolidays === "w&h_only") {
+      console.log(`  ✅`);
+    } else {
+      console.log(`  ❌`);
+      console.log(result[0].activeOnWeekendsAndHolidays);
+    }
+  });
+});
+
+test("getTrainsByDirection()", () => {
+  test(` gets trains by direction correctly`, () => {
+    const direction = 2;
+    const result = getTrainsByDirection(trains, direction);
+    if (result[0].directionId === direction) {
+      console.log(`  ✅`);
+    } else {
+      console.log(`  ❌`);
+      console.log(result[0].directionId);
+    }
+  });
+});
+
+test("isTrainIdValid()", () => {
+  test(` invalid train id`, () => {
+    const result = isTrainIdValid(
+      [...trainIdDirection1, ...trainIdDirection2],
+      2222
+    );
+    if (!result) {
+      console.log(`  ✅`);
+    } else {
+      console.log(`  ❌`);
+      console.log(result);
+    }
+  });
+  test(` valid train id`, () => {
+    const result = isTrainIdValid(
+      [...trainIdDirection1, ...trainIdDirection2],
+      8003
+    );
+    if (result) {
+      console.log(`  ✅`);
+    } else {
+      console.log(`  ❌`);
+      console.log(result);
     }
   });
 });

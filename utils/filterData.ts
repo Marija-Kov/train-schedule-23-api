@@ -34,6 +34,10 @@ import {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
+  getFrequency,
+  getTrainsByFrequency,
+  getTrainsByDirection,
+  isTrainIdValid,
 } from "./getStationsAndTrainsDataHelpers";
 
 const departures = (
@@ -238,45 +242,6 @@ const aTrainData = (
   }
   return res.sendJson(200, trains[trainId]);
 };
-
-function getTrainsByFrequency(trains: Train[], frequency: "ed" | "wd" | "wh") {
-  return Object.values(trains).filter(
-    (train) => train.activeOnWeekendsAndHolidays === getFrequency(frequency)
-  );
-}
-
-function getTrainsByDirection(trains: TrainsObject, direction: "1" | "2") {
-  return Object.values(trains).filter(
-    (train) => train.directionId === Number(direction)
-  );
-}
-
-function isTrainIdValid(
-  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
-  id: TrainIdDirection1 | TrainIdDirection2
-) {
-  return trainIds.includes(id);
-}
-
-function getFrequency(
-  frequency: "ed" | "wd" | "wh"
-): boolean | "w&h_only" | undefined {
-  let active: any;
-  switch (frequency) {
-    case "wh":
-      active = "w&h_only";
-      break;
-    case "ed":
-      active = true;
-      break;
-    case "wd":
-      active = false;
-      break;
-    default:
-      undefined;
-  }
-  return active;
-}
 
 const filter = {
   departures,

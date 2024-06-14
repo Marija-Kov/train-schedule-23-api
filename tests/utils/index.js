@@ -21,6 +21,10 @@ const {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
+  getTrainsByFrequency,
+  getTrainsByDirection,
+  isTrainIdValid,
+  getFrequency
 } = require("../../dist/utils/getStationsAndTrainsDataHelpers");
 
 module.exports = {
@@ -41,4 +45,8 @@ module.exports = {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
+  getTrainsByFrequency,
+  getTrainsByDirection,
+  isTrainIdValid,
+  getFrequency
 };
