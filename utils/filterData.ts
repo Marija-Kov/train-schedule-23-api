@@ -201,75 +201,62 @@ const trainsData = (
   direction: "1" | "2" | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
-  if (!res)
-    throw Error(
-      "filterData > trainsByDirectionAndFrequency(): argument 'res' is missing"
-    );
+  if (!res) throw Error("filterData > trainsData(): argument 'res' is missing");
   if (!trains)
-    throw Error(
-      "filterData > trainsByDirectionAndFrequency(): argument 'trains' is missing"
-    );
-  if (direction && direction.toString().length === 1) {
-    if (!["1", "2"].includes(direction)) {
-      return res.sendJson(422, { error: "Invalid direction parameter" });
-    }
-    if (frequency) {
-      if (!["wh", "wd", "ed"].includes(frequency)) {
-        return res.sendJson(422, { error: "Invalid frequency parameter" });
-      }
-      const activeOnWeekendsAndHolidays = getFrequency(frequency);
-      let result: Train[] = [];
-      /*
-       Filter the trains by direction and frequency:
-      */
-      for (let train in trains) {
-        if (
-          trains[train].directionId === Number(direction) &&
-          trains[train].activeOnWeekendsAndHolidays ===
-            activeOnWeekendsAndHolidays
-        ) {
-          result.push(trains[train]);
-        }
-      }
-      return res.sendJson(200, result);
-    } else {
-      /*
-       Filter the trains by direction id only:
-      */
-      let result: Train[] = [];
-      for (let train in trains) {
-        if (trains[train].directionId === Number(direction)) {
-          result.push(trains[train]);
-        }
-      }
-      return res.sendJson(200, result);
-    }
+    throw Error("filterData > trainsData(): argument 'trains' is missing");
+  if (direction === undefined) return res.sendJson(200, trains);
+  if (direction && !isDirectionValid(Number(direction))) {
+    return res.sendJson(422, { error: "Invalid direction parameter" });
   }
-  return res.sendJson(200, trains);
-};
+  if (!frequency) {
+    return res.sendJson(200, getTrainsByDirection(trains, direction));
+  }
+  if (frequency && !isFrequencyValid(frequency)) {
+    return res.sendJson(422, { error: "Invalid frequency parameter" });
+  }
 
+  return res.sendJson(
+    200,
+    getTrainsByFrequency(getTrainsByDirection(trains, direction), frequency)
+  );
+};
 
 const aTrainData = (
   res: ExtendedServerRes,
   trains: TrainsObject,
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
-  if (!res) throw Error("filterData > trainsById(): argument 'res' is missing");
-  if (!trains)
-    throw Error("filterData > trainsById(): argument 'trains' is missing");
+  if (!res) throw Error("filterData > aTrainData(): argument 'res' is missing");
+  if (!trains) {
+    throw Error("filterData > aTrainData(): argument 'trains' is missing");
+  }
   if (!trainId) {
     return res.sendJson(200, trains);
   }
-  if (
-    trainId.toString().length !== 4 ||
-    ![...trainIdDirection1, ...trainIdDirection2].includes(
-      trainId as TrainIdDirection1 | TrainIdDirection2
-    )
-  ) {
+  if (!isTrainIdValid([...trainIdDirection1, ...trainIdDirection2], trainId)) {
     return res.sendJson(422, { error: "Invalid train id" });
   }
   return res.sendJson(200, trains[trainId]);
 };
+
+function getTrainsByFrequency(trains: Train[], frequency: "ed" | "wd" | "wh") {
+  return Object.values(trains).filter(
+    (train) => train.activeOnWeekendsAndHolidays === getFrequency(frequency)
+  );
+}
+
+function getTrainsByDirection(trains: TrainsObject, direction: "1" | "2") {
+  return Object.values(trains).filter(
+    (train) => train.directionId === Number(direction)
+  );
+}
+
+function isTrainIdValid(
+  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
+  id: TrainIdDirection1 | TrainIdDirection2
+) {
+  return trainIds.includes(id);
+}
 
 function getFrequency(
   frequency: "ed" | "wd" | "wh"
