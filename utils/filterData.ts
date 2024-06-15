@@ -1,6 +1,5 @@
 import {
   Station,
-  Train,
   Time,
   YyyyMmDd,
   TrainsObject,
@@ -43,8 +42,8 @@ import {
 const departures = (
   res: ExtendedServerRes,
   stations: Station[],
-  from: StationName,
-  to: StationName,
+  from: StationName | undefined,
+  to: StationName | undefined,
   date: YyyyMmDd,
   time: Time
 ) => {
@@ -202,14 +201,14 @@ const stationsData = (
 const trainsData = (
   res: ExtendedServerRes,
   trains: TrainsObject,
-  direction: "1" | "2" | undefined,
+  direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
   if (!res) throw Error("filterData > trainsData(): argument 'res' is missing");
   if (!trains)
     throw Error("filterData > trainsData(): argument 'trains' is missing");
   if (direction === undefined) return res.sendJson(200, trains);
-  if (direction && !isDirectionValid(Number(direction))) {
+  if (direction && !isDirectionValid(direction)) {
     return res.sendJson(422, { error: "Invalid direction parameter" });
   }
   if (!frequency) {
@@ -235,6 +234,7 @@ const aTrainData = (
     throw Error("filterData > aTrainData(): argument 'trains' is missing");
   }
   if (!trainId) {
+    // DO NOT RETURN ALL ON trains/sfewfw/
     return res.sendJson(200, trains);
   }
   if (!isTrainIdValid([...trainIdDirection1, ...trainIdDirection2], trainId)) {

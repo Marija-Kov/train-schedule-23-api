@@ -40,7 +40,7 @@ export function getTrainsByFrequency(trains: Train[], frequency: "ed" | "wd" | "
   );
 }
 
-export function getTrainsByDirection(trains: TrainsObject, direction: "1" | "2") {
+export function getTrainsByDirection(trains: TrainsObject, direction: 1 | 2) {
   return Object.values(trains).filter(
     (train) => train.directionId === Number(direction)
   );
