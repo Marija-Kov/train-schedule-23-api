@@ -6,7 +6,7 @@ const {
 const {
   dataStrDirection1,
   dataStrDirection2,
-  stations,
+  stationsNames,
   stationsFormatted,
   trainIdDirection1,
   trainIdDirection2,
@@ -301,7 +301,7 @@ test("createTimetableMatrix1()", () => {
   test(` matrix created correctly for direction 1`, () => {
     const data = shape.default.createTimetableMatrixDirection1(
       shape.default.extractDepartureTimes(dataStrDirection1),
-      stations,
+      stationsNames,
       trainIdDirection1
     );
     if (
@@ -446,7 +446,7 @@ test("createTimetableMatrix2()", () => {
   test(` matrix created correctly for direction 2`, () => {
     const data = shape.default.createTimetableMatrixDirection2(
       shape.default.extractDepartureTimes(dataStrDirection2),
-      stations.length
+      stationsNames.length
     );
     if (
       data[0].join(",") ===
@@ -592,15 +592,15 @@ test("trainsData()", () => {
     trainIdDirection2,
     trainIdActiveOnWeekendsAndHolidaysDirection1,
     trainIdActiveOnWeekendsAndHolidaysDirection2,
-    stations,
+    stationsNames,
     shape.default.createTimetableMatrixDirection1(
       shape.default.extractDepartureTimes(dataStrDirection1),
-      stations,
+      stationsNames,
       trainIdDirection1
     ),
     shape.default.createTimetableMatrixDirection2(
       shape.default.extractDepartureTimes(dataStrDirection2),
-      stations.length
+      stationsNames.length
     )
   );
   function getItinerary(trainId) {
@@ -672,28 +672,28 @@ test("trainsData()", () => {
 
 test("stationsData()", () => {
   const data = shape.default.stationsData(
-    stations,
+    stationsNames,
     stationsFormatted,
     shape.default.trainsData(
       trainIdDirection1,
       trainIdDirection2,
       trainIdActiveOnWeekendsAndHolidaysDirection1,
       trainIdActiveOnWeekendsAndHolidaysDirection2,
-      stations,
+      stationsNames,
       shape.default.createTimetableMatrixDirection1(
         shape.default.extractDepartureTimes(dataStrDirection1),
-        stations,
+        stationsNames,
         trainIdDirection1
       ),
       shape.default.createTimetableMatrixDirection2(
         shape.default.extractDepartureTimes(dataStrDirection2),
-        stations.length
+        stationsNames.length
       )
     )
   );
   test(` writes all stops correctly`, () => {
     function checkStopsAt(stationName, targetLength, earliest, latest) {
-      const stationIndex = stations.indexOf(stationName);
+      const stationIndex = stationsNames.indexOf(stationName);
       if (
         data[stationIndex].departures.length === targetLength &&
         data[stationIndex].departures[0].time === earliest &&

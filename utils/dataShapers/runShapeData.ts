@@ -5,7 +5,7 @@ import {
   trainIdDirection2,
   trainIdActiveOnWeekendsAndHolidaysDirection1,
   trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stations,
+  stationsNames,
   stationsFormatted,
 } from "./data/extractedData";
 
@@ -16,13 +16,13 @@ const departureTimesDirection2 = shape.extractDepartureTimes(dataStrDirection2);
 
 const timetableMatrixDirection1 = shape.createTimetableMatrixDirection1(
   departureTimesDirection1,
-  stations,
+  stationsNames,
   trainIdDirection1
 );
 
 const timetableMatrixDirection2 = shape.createTimetableMatrixDirection2(
   departureTimesDirection2,
-  stations.length,
+  stationsNames.length,
 );
 
 const trainsDataShaped = shape.trainsData(
@@ -30,13 +30,13 @@ const trainsDataShaped = shape.trainsData(
   trainIdDirection2,
   trainIdActiveOnWeekendsAndHolidaysDirection1,
   trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stations,
+  stationsNames,
   timetableMatrixDirection1,
   timetableMatrixDirection2
 );
 
 const stationsDataShaped = shape.stationsData(
-  stations,
+  stationsNames,
   stationsFormatted,
   trainsDataShaped
 );

@@ -1,12 +1,11 @@
 import {
   Station,
-  StationDeparture,
-  Train,
   Time,
   YyyyMmDd,
+  TrainsObject,
 } from "../types/trainScheduleTypes";
 import {
-  stations as stationNames,
+  stationsNames,
   trainIdDirection1,
   trainIdDirection2,
 } from "./dataShapers/data/extractedData";
@@ -27,11 +26,24 @@ import {
   getResultFromTrainIdOverlaps,
 } from "./getDeparturesHelpers";
 
+import {
+  isStationNameValid,
+  getStation,
+  isDirectionValid,
+  isFrequencyValid,
+  getDeparturesInDirection,
+  getDeparturesByFrequency,
+  getFrequency,
+  getTrainsByFrequency,
+  getTrainsByDirection,
+  isTrainIdValid,
+} from "./getStationsAndTrainsDataHelpers";
+
 const departures = (
   res: ExtendedServerRes,
   stations: Station[],
-  from: StationName,
-  to: StationName,
+  from: StationName | undefined,
+  to: StationName | undefined,
   date: YyyyMmDd,
   time: Time
 ) => {
@@ -49,8 +61,8 @@ const departures = (
     });
   }
   if (
-    (from && !stationNames.includes(from)) ||
-    (to && !stationNames.includes(to))
+    (from && !stationsNames.includes(from)) ||
+    (to && !stationsNames.includes(to))
   ) {
     return res.sendJson(422, {
       error: "Invalid departure and/or arrival station parameter",
@@ -145,182 +157,97 @@ const stationsData = (
   if (!station) {
     return res.sendJson(200, stations);
   }
-  if (station && !stationNames.includes(station)) {
+  if (station && !isStationNameValid(station)) {
     return res.sendJson(422, { error: "Invalid station name" });
   }
+
+  if (direction === undefined) {
+    return res.sendJson(200, getStation(station, stations));
+  }
+
+  if (!isDirectionValid(direction)) {
+    return res.sendJson(422, { error: "Invalid direction parameter" });
+  }
+
+  if (frequency) {
+    if (!isFrequencyValid(frequency)) {
+      return res.sendJson(422, { error: "Invalid frequency parameter" });
+    }
+
+    return res.sendJson(
+      200,
+      getDeparturesByFrequency(
+        getDeparturesInDirection(
+          getStation(station, stations).departures,
+          direction
+        ),
+        getFrequency(frequency)
+      )
+    );
+  }
   /*
-   Checking whether direction is truthy will not work properly 
-   because '0' is a falsy value and it will lead to returning 
-   all station data instead of invalid direction parameter error.
-   All numbers have to be considered:
-  */
-  if (typeof direction === "number") {
-    if (![1, 2].includes(direction)) {
-      return res.sendJson(422, { error: "Invalid direction parameter" });
-    }
-    if (frequency) {
-      if (!["wh", "wd", "ed"].includes(frequency)) {
-        return res.sendJson(422, { error: "Invalid frequency parameter" });
-      }
-      /*
-       Get the corresponding value with getFrequency to use for filtering:
-      */
-      const activeOnWeekendsAndHolidays = getFrequency(frequency);
-      /*
-       After validating all the parameters, find the station:
-      */
-      for (let s of stations) {
-        if (s.name === station) {
-          /*
-           Then get inside the station object:
-          */
-          return (() => {
-            let departures: StationDeparture[] = [];
-            /*
-             Filter the departures within the specified station:
-            */
-            for (let departure of s.departures) {
-              if (
-                departure.trainDetails.directionId === direction &&
-                departure.trainDetails.activeOnWeekendsAndHolidays ===
-                  activeOnWeekendsAndHolidays
-              ) {
-                departures.push(departure);
-              }
-            }
-            return res.sendJson(200, departures);
-          })();
-        }
-      }
-    }
-    /*
      If no frequency parameter is provided, return all the departures 
      from the specified station, in the specified direction:
     */
-    for (let s of stations) {
-      if (s.name === station) {
-        return (() => {
-          let departures: StationDeparture[] = [];
-          for (let departure of s.departures) {
-            if (departure.trainDetails.directionId === direction) {
-              departures.push(departure);
-            }
-          }
-          return res.sendJson(200, departures);
-        })();
-      }
-    }
-  }
-  /*
-   If no direction parameter is provided, all specified station data is returned:
-  */
-  for (let s of stations) {
-    if (s.name === station) {
-      return res.sendJson(200, s);
-    }
-  }
+  return res.sendJson(
+    200,
+    getDeparturesInDirection(
+      getStation(station, stations).departures,
+      direction
+    )
+  );
 };
 
-const trainsByDirectionAndFrequency = (
+const trainsData = (
   res: ExtendedServerRes,
-  trains: Train[],
-  direction: "1" | "2" | undefined,
+  trains: TrainsObject,
+  direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
-  if (!res)
-    throw Error(
-      "filterData > trainsByDirectionAndFrequency(): argument 'res' is missing"
-    );
+  if (!res) throw Error("filterData > trainsData(): argument 'res' is missing");
   if (!trains)
-    throw Error(
-      "filterData > trainsByDirectionAndFrequency(): argument 'trains' is missing"
-    );
-  if (direction && direction.toString().length === 1) {
-    if (!["1", "2"].includes(direction)) {
-      return res.sendJson(422, { error: "Invalid direction parameter" });
-    }
-    if (frequency) {
-      if (!["wh", "wd", "ed"].includes(frequency)) {
-        return res.sendJson(422, { error: "Invalid frequency parameter" });
-      }
-      const activeOnWeekendsAndHolidays = getFrequency(frequency);
-      let result: Train[] = [];
-      /*
-       Filter the trains by direction and frequency:
-      */
-      for (let train in trains) {
-        if (
-          trains[train].directionId === Number(direction) &&
-          trains[train].activeOnWeekendsAndHolidays ===
-            activeOnWeekendsAndHolidays
-        ) {
-          result.push(trains[train]);
-        }
-      }
-      return res.sendJson(200, result);
-    } else {
-      /*
-       Filter the trains by direction id only:
-      */
-      let result: Train[] = [];
-      for (let train in trains) {
-        if (trains[train].directionId === Number(direction)) {
-          result.push(trains[train]);
-        }
-      }
-      return res.sendJson(200, result);
-    }
+    throw Error("filterData > trainsData(): argument 'trains' is missing");
+  if (direction === undefined) return res.sendJson(200, trains);
+  if (direction && !isDirectionValid(direction)) {
+    return res.sendJson(422, { error: "Invalid direction parameter" });
   }
-  return res.sendJson(200, trains);
+  if (!frequency) {
+    return res.sendJson(200, getTrainsByDirection(trains, direction));
+  }
+  if (frequency && !isFrequencyValid(frequency)) {
+    return res.sendJson(422, { error: "Invalid frequency parameter" });
+  }
+
+  return res.sendJson(
+    200,
+    getTrainsByFrequency(getTrainsByDirection(trains, direction), frequency)
+  );
 };
 
-const trainsById = (
+const aTrainData = (
   res: ExtendedServerRes,
-  trains: Train[],
+  trains: TrainsObject,
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
-  if (!res) throw Error("filterData > trainsById(): argument 'res' is missing");
-  if (!trains)
-    throw Error("filterData > trainsById(): argument 'trains' is missing");
+  if (!res) throw Error("filterData > aTrainData(): argument 'res' is missing");
+  if (!trains) {
+    throw Error("filterData > aTrainData(): argument 'trains' is missing");
+  }
   if (!trainId) {
+    // DO NOT RETURN ALL ON trains/sfewfw/
     return res.sendJson(200, trains);
   }
-  if (
-    trainId.toString().length !== 4 ||
-    ![...trainIdDirection1, ...trainIdDirection2].includes(
-      trainId as TrainIdDirection1 | TrainIdDirection2
-    )
-  ) {
+  if (!isTrainIdValid([...trainIdDirection1, ...trainIdDirection2], trainId)) {
     return res.sendJson(422, { error: "Invalid train id" });
   }
   return res.sendJson(200, trains[trainId]);
 };
 
-function getFrequency(
-  frequency: "ed" | "wd" | "wh"
-): boolean | "w&h_only" | undefined {
-  let active: any;
-  switch (frequency) {
-    case "wh":
-      active = "w&h_only";
-      break;
-    case "ed":
-      active = true;
-      break;
-    case "wd":
-      active = false;
-      break;
-    default:
-      undefined;
-  }
-  return active;
-}
-
 const filter = {
   departures,
   stationsData,
-  trainsByDirectionAndFrequency,
-  trainsById,
+  trainsData,
+  aTrainData,
 };
 
 export default filter;
