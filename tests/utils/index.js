@@ -1,3 +1,6 @@
+const path = require("node:path");
+const fs = require("node:fs");
+
 const shape = require("../../dist/utils/dataShapers/shapeData");
 const {
   dataStrDirection1,
@@ -10,9 +13,14 @@ const {
   stationsFormatted,
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
-const fs = require("node:fs");
-const stationsJson = fs.readFileSync("../../stations.json", "utf-8");
-const trainsJson = fs.readFileSync("../../trains.json", "utf-8");
+const stationsJson = fs.readFileSync(
+  path.join(__dirname, "../../stations.json"),
+  "utf-8"
+);
+const trainsJson = fs.readFileSync(
+  path.join(__dirname, "../../trains.json"),
+  "utf-8"
+);
 
 const {
   isStationNameValid,
