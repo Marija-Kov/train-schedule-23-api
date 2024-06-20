@@ -4,17 +4,19 @@ import {
   YyyyMmDd,
   TrainsObject,
 } from "../types/trainScheduleTypes";
+
 import {
   stationsNames,
   trainIdDirection1,
   trainIdDirection2,
 } from "./dataShapers/data/extractedData";
-import { ExtendedServerRes } from "../framework";
+
 import {
   StationName,
   TrainIdDirection1,
   TrainIdDirection2,
 } from "../types/boringTypes";
+
 import {
   isDatePatternValid,
   isTimePatternValid,
@@ -40,53 +42,51 @@ import {
 } from "./getStationsAndTrainsDataHelpers";
 
 const departures = (
-  res: ExtendedServerRes,
   stations: Station[],
   from: StationName | undefined,
   to: StationName | undefined,
   date: YyyyMmDd,
   time: Time
 ) => {
-  if (!res) throw Error("filterData > departures(): argument 'res' is missing");
   if (!stations)
     throw Error("filterData > departures(): argument 'stations' is missing");
   if (!from) {
-    return res.sendJson(422, {
+    return {
       error: "Departure station parameter is required",
-    });
+    };
   }
   if (!to) {
-    return res.sendJson(422, {
+    return {
       error: "Arrival station parameter is required",
-    });
+    };
   }
   if (
     (from && !stationsNames.includes(from)) ||
     (to && !stationsNames.includes(to))
   ) {
-    return res.sendJson(422, {
+    return {
       error: "Invalid departure and/or arrival station parameter",
-    });
+    };
   }
 
   if (from && to && from === to) {
-    return res.sendJson(422, {
+    return {
       error: "Departure and arrival station must be different",
-    });
+    };
   }
   if (!date) {
-    return res.sendJson(422, { error: "Date parameter is required" });
+    return { error: "Date parameter is required" };
   }
   if (!time) {
-    return res.sendJson(422, { error: "Time parameter is required" });
+    return { error: "Time parameter is required" };
   }
 
   if (!isDatePatternValid(date)) {
-    return res.sendJson(422, { error: "Invalid date value" });
+    return { error: "Invalid date value" };
   }
 
   if (!isTimePatternValid(time)) {
-    return res.sendJson(422, { error: "Invalid time format or value" });
+    return { error: "Invalid time format or value" };
   }
 
   const { indexFrom, indexTo, direction } = getDirectionAndStationIndexes(
@@ -106,9 +106,9 @@ const departures = (
   );
 
   if (!narrowedDownSelectionOfDepartures.length) {
-    return res.sendJson(404, {
+    return {
       error: "No departures found for specified parameters",
-    });
+    };
   }
 
   const outputDepartures = shapeToOutputFormat(
@@ -129,118 +129,105 @@ const departures = (
   );
 
   if (!departures.length) {
-    return res.sendJson(404, {
+    return {
       error: "No departures found for specified parameters",
-    });
+    };
   }
 
-  return res.sendJson(200, {
+  return {
     departureStation: formatStationNameForOutput(indexFrom, stations),
     arrivalStation: formatStationNameForOutput(indexTo, stations),
     departures: departures,
-  });
+  };
 };
 
 const stationsData = (
-  res: ExtendedServerRes,
   stations: Station[],
   station: StationName | undefined,
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
-  if (!res)
-    throw Error("filterData > filterStationsData(): argument 'res' is missing");
   if (!stations)
     throw Error(
       "filterData > filterStationsData(): argument 'stations' is missing"
     );
   if (!station) {
-    return res.sendJson(200, stations);
+    return stations;
   }
   if (station && !isStationNameValid(station)) {
-    return res.sendJson(422, { error: "Invalid station name" });
+    return { error: "Invalid station name" };
   }
 
   if (direction === undefined) {
-    return res.sendJson(200, getStation(station, stations));
+    return getStation(station, stations);
   }
 
   if (!isDirectionValid(direction)) {
-    return res.sendJson(422, { error: "Invalid direction parameter" });
+    return { error: "Invalid direction parameter" };
   }
 
   if (frequency) {
     if (!isFrequencyValid(frequency)) {
-      return res.sendJson(422, { error: "Invalid frequency parameter" });
+      return { error: "Invalid frequency parameter" };
     }
 
-    return res.sendJson(
-      200,
-      getDeparturesByFrequency(
-        getDeparturesInDirection(
-          getStation(station, stations).departures,
-          direction
-        ),
-        getFrequency(frequency)
-      )
+    return getDeparturesByFrequency(
+      getDeparturesInDirection(
+        getStation(station, stations).departures,
+        direction
+      ),
+      getFrequency(frequency)
     );
   }
   /*
      If no frequency parameter is provided, return all the departures 
      from the specified station, in the specified direction:
     */
-  return res.sendJson(
-    200,
-    getDeparturesInDirection(
-      getStation(station, stations).departures,
-      direction
-    )
+  return getDeparturesInDirection(
+    getStation(station, stations).departures,
+    direction
   );
 };
 
 const trainsData = (
-  res: ExtendedServerRes,
   trains: TrainsObject,
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
-  if (!res) throw Error("filterData > trainsData(): argument 'res' is missing");
   if (!trains)
     throw Error("filterData > trainsData(): argument 'trains' is missing");
-  if (direction === undefined) return res.sendJson(200, trains);
+  if (direction === undefined) return trains;
   if (direction && !isDirectionValid(direction)) {
-    return res.sendJson(422, { error: "Invalid direction parameter" });
+    return { error: "Invalid direction parameter" };
   }
   if (!frequency) {
-    return res.sendJson(200, getTrainsByDirection(trains, direction));
+    return getTrainsByDirection(trains, direction);
   }
   if (frequency && !isFrequencyValid(frequency)) {
-    return res.sendJson(422, { error: "Invalid frequency parameter" });
+    return { error: "Invalid frequency parameter" };
   }
 
-  return res.sendJson(
-    200,
-    getTrainsByFrequency(getTrainsByDirection(trains, direction), frequency)
+  return getTrainsByFrequency(
+    getTrainsByDirection(trains, direction),
+    frequency
   );
 };
 
 const aTrainData = (
-  res: ExtendedServerRes,
   trains: TrainsObject,
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
-  if (!res) throw Error("filterData > aTrainData(): argument 'res' is missing");
   if (!trains) {
     throw Error("filterData > aTrainData(): argument 'trains' is missing");
   }
   if (!trainId) {
     // DO NOT RETURN ALL ON trains/sfewfw/
-    return res.sendJson(200, trains);
+    return trains;
   }
   if (!isTrainIdValid([...trainIdDirection1, ...trainIdDirection2], trainId)) {
-    return res.sendJson(422, { error: "Invalid train id" });
+    return { error: "Invalid train id" };
   }
-  return res.sendJson(200, trains[trainId]);
+  return trains[trainId];
 };
 
 const filter = {
