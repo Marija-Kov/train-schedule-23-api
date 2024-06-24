@@ -1,16 +1,4 @@
-const {
-  shape,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
-} = require("../index.js");
-const {
-  dataStrDirection1,
-  dataStrDirection2,
-  stationsNames,
-  stationsFormatted,
-  trainIdDirection1,
-  trainIdDirection2,
-} = require("../index.js");
+const { shape, extracted } = require("../index.js");
 
 function test(title, callback) {
   console.log(title);
@@ -19,7 +7,9 @@ function test(title, callback) {
 
 test("extractDepartureTimes()", () => {
   test(` data extracted correctly for direction 1`, () => {
-    const data = shape.default.extractDepartureTimes(dataStrDirection1);
+    const data = shape.default.extractDepartureTimes(
+      extracted.dataStrDirection1
+    );
     if (
       data[0].join(",") ===
       "5.57,6.27,6.57,7.27,7.57,8.10,8.57,9.27,9.57,10.57,11.57,12.57,13.57,14.42,14.59,15.27,15.51,16.27,16.57,17.27,18.27,18.57,19.57"
@@ -158,7 +148,7 @@ test("extractDepartureTimes()", () => {
   });
 
   test(` data extracted correctly for direction 2`, () => {
-    const data = shape.default.extractDepartureTimes(dataStrDirection2);
+    const data = shape.default.extractDepartureTimes(extracted.dataStrDirection2);
     if (
       data[0].join(",") ===
       "5.36,6.14,6.44,6.59,7.44,8.14,8.44,9.14,9.52,9.59,10.59,11.24,11.59,12.59,13.59,14.44,15.14,15.44,16.14,16.44,17.14,17.59,18.39,18.59,19.59,20.18,21.14,22.25"
@@ -300,9 +290,9 @@ test("extractDepartureTimes()", () => {
 test("createTimetableMatrix1()", () => {
   test(` matrix created correctly for direction 1`, () => {
     const data = shape.default.createTimetableMatrixDirection1(
-      shape.default.extractDepartureTimes(dataStrDirection1),
-      stationsNames,
-      trainIdDirection1
+      shape.default.extractDepartureTimes(extracted.dataStrDirection1),
+      extracted.stationsNames,
+      extracted.trainIdDirection1
     );
     if (
       data[0].join(",") ===
@@ -445,8 +435,8 @@ test("createTimetableMatrix1()", () => {
 test("createTimetableMatrix2()", () => {
   test(` matrix created correctly for direction 2`, () => {
     const data = shape.default.createTimetableMatrixDirection2(
-      shape.default.extractDepartureTimes(dataStrDirection2),
-      stationsNames.length
+      shape.default.extractDepartureTimes(extracted.dataStrDirection2),
+      extracted.stationsNames.length
     );
     if (
       data[0].join(",") ===
@@ -588,19 +578,19 @@ test("createTimetableMatrix2()", () => {
 
 test("trainsData()", () => {
   const data = shape.default.trainsData(
-    trainIdDirection1,
-    trainIdDirection2,
-    trainIdActiveOnWeekendsAndHolidaysDirection1,
-    trainIdActiveOnWeekendsAndHolidaysDirection2,
-    stationsNames,
+    extracted.trainIdDirection1,
+    extracted.trainIdDirection2,
+    extracted.trainIdActiveOnWeekendsAndHolidaysDirection1,
+    extracted.trainIdActiveOnWeekendsAndHolidaysDirection2,
+    extracted.stationsNames,
     shape.default.createTimetableMatrixDirection1(
-      shape.default.extractDepartureTimes(dataStrDirection1),
-      stationsNames,
-      trainIdDirection1
+      shape.default.extractDepartureTimes(extracted.dataStrDirection1),
+      extracted.stationsNames,
+      extracted.trainIdDirection1
     ),
     shape.default.createTimetableMatrixDirection2(
-      shape.default.extractDepartureTimes(dataStrDirection2),
-      stationsNames.length
+      shape.default.extractDepartureTimes(extracted.dataStrDirection2),
+      extracted.stationsNames.length
     )
   );
   function getItinerary(trainId) {
@@ -672,28 +662,28 @@ test("trainsData()", () => {
 
 test("stationsData()", () => {
   const data = shape.default.stationsData(
-    stationsNames,
-    stationsFormatted,
+    extracted.stationsNames,
+    extracted.stationsFormatted,
     shape.default.trainsData(
-      trainIdDirection1,
-      trainIdDirection2,
-      trainIdActiveOnWeekendsAndHolidaysDirection1,
-      trainIdActiveOnWeekendsAndHolidaysDirection2,
-      stationsNames,
+      extracted.trainIdDirection1,
+      extracted.trainIdDirection2,
+      extracted.trainIdActiveOnWeekendsAndHolidaysDirection1,
+      extracted.trainIdActiveOnWeekendsAndHolidaysDirection2,
+      extracted.stationsNames,
       shape.default.createTimetableMatrixDirection1(
-        shape.default.extractDepartureTimes(dataStrDirection1),
-        stationsNames,
-        trainIdDirection1
+        shape.default.extractDepartureTimes(extracted.dataStrDirection1),
+        extracted.stationsNames,
+        extracted.trainIdDirection1
       ),
       shape.default.createTimetableMatrixDirection2(
-        shape.default.extractDepartureTimes(dataStrDirection2),
-        stationsNames.length
+        shape.default.extractDepartureTimes(extracted.dataStrDirection2),
+        extracted.stationsNames.length
       )
     )
   );
   test(` writes all stops correctly`, () => {
     function checkStopsAt(stationName, targetLength, earliest, latest) {
-      const stationIndex = stationsNames.indexOf(stationName);
+      const stationIndex = extracted.stationsNames.indexOf(stationName);
       if (
         data[stationIndex].departures.length === targetLength &&
         data[stationIndex].departures[0].time === earliest &&

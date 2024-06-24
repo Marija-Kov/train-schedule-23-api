@@ -1,16 +1,5 @@
 const fs = require("node:fs");
-const {
-  isDatePatternValid,
-  isTimePatternValid,
-  getFrequencyArray,
-  getIndexOfSelectedStation,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
-  getTimeOutputFormat,
-  getStationIndexesIfDirectionIs2,
-} = require("../../dist/utils/getDeparturesHelpers.js");
+const { departureHelp } = require("./index.js");
 
 function test(title, callback) {
   console.log(title);
@@ -20,37 +9,37 @@ function test(title, callback) {
 const json = fs.readFileSync("../../stations.json", "utf-8");
 let stations = JSON.parse(json).stations;
 
-test("isDatePatternValid()", () => {
+test("departureHelp.isDatePatternValid()", () => {
   test(` invalid day of month`, () => {
     const invalidDay = "2024-02-30";
-    if (!isDatePatternValid(invalidDay)) {
+    if (!departureHelp.isDatePatternValid(invalidDay)) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(isDatePatternValid(invalidDay));
+      console.log(departureHelp.isDatePatternValid(invalidDay));
     }
   });
   test(` invalid month`, () => {
-    if (!isDatePatternValid("2024-33-30")) {
+    if (!departureHelp.isDatePatternValid("2024-33-30")) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(isDatePatternValid("2024-33-30"));
+      console.log(departureHelp.isDatePatternValid("2024-33-30"));
     }
   });
 });
 
-test("isTimePatternValid()", () => {
+test("departureHelp.isTimePatternValid()", () => {
   test(` invalid time pattern`, () => {
-    if (!isTimePatternValid("00:01")) {
+    if (!departureHelp.isTimePatternValid("00:01")) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(isTimePatternValid("00:01"));
+      console.log(departureHelp.isTimePatternValid("00:01"));
     }
   });
   test(` valid time pattern`, () => {
-    if (isTimePatternValid("00.01")) {
+    if (departureHelp.isTimePatternValid("00.01")) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
@@ -58,16 +47,21 @@ test("isTimePatternValid()", () => {
   });
 });
 
-test("getFrequencyArray()", () => {
+test("departureHelp.getFrequencyArray()", () => {
   test(` for weekends and holidays`, () => {
-    if (getFrequencyArray("2024-01-07").join(",") === "true,w&h_only") {
+    if (
+      departureHelp.getFrequencyArray("2024-01-07").join(",") ===
+      "true,w&h_only"
+    ) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
     }
   });
   test(` for work days`, () => {
-    if (getFrequencyArray("2024-02-01").join(",") === "true,false") {
+    if (
+      departureHelp.getFrequencyArray("2024-02-01").join(",") === "true,false"
+    ) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
@@ -75,9 +69,9 @@ test("getFrequencyArray()", () => {
   });
 });
 
-test("getDirectionAndStationIndexes()", () => {
+test("departureHelp.getDirectionAndStationIndexes()", () => {
   test(` gets correct indexes and direction`, () => {
-    const result = getDirectionAndStationIndexes(
+    const result = departureHelp.getDirectionAndStationIndexes(
       "altina",
       "kamendin",
       stations
@@ -95,9 +89,9 @@ test("getDirectionAndStationIndexes()", () => {
   });
 });
 
-test("getIndexOfSelectedStation()", () => {
+test("departureHelp.getIndexOfSelectedStation()", () => {
   test(` gets correct index`, () => {
-    const index = getIndexOfSelectedStation("altina", stations);
+    const index = departureHelp.getIndexOfSelectedStation("altina", stations);
     if (index === 3) {
       console.log(`  ✅`);
     } else {
@@ -107,9 +101,12 @@ test("getIndexOfSelectedStation()", () => {
   });
 });
 
-test("narrowDownSelection()", () => {
+test("departureHelp.narrowDownSelection()", () => {
   test(` narrows down selection by given criteria`, () => {
-    const result = narrowDownSelection(3, "19.05", stations, 2, [true, false]);
+    const result = departureHelp.narrowDownSelection(3, "19.05", stations, 2, [
+      true,
+      false,
+    ]);
     if (
       result.length < stations.length &&
       result[0].time >= 19.05 &&
@@ -123,9 +120,9 @@ test("narrowDownSelection()", () => {
   });
 });
 
-test("shapeToOutputFormat()", () => {
+test("departureHelp.shapeToOutputFormat()", () => {
   test(` shapes output object correctly`, () => {
-    const result = shapeToOutputFormat([
+    const result = departureHelp.shapeToOutputFormat([
       {
         time: 21.47,
         trainDetails: {
@@ -144,9 +141,9 @@ test("shapeToOutputFormat()", () => {
   });
 });
 
-test("getResultFromTrainIdOverlaps()", () => {
+test("departureHelp.getResultFromTrainIdOverlaps()", () => {
   test(` gets correct final search result`, () => {
-    const result = getResultFromTrainIdOverlaps(
+    const result = departureHelp.getResultFromTrainIdOverlaps(
       [
         {
           departureTime: "11:00",
@@ -182,10 +179,10 @@ test("getResultFromTrainIdOverlaps()", () => {
   });
 });
 
-test("getTimeOutputFormat()", () => {
+test("departureHelp.getTimeOutputFormat()", () => {
   test(` formats time correctly`, () => {
     if (
-      getTimeOutputFormat({
+      departureHelp.getTimeOutputFormat({
         time: 11.2,
         trainDetails: {
           id: 8003,
@@ -201,12 +198,12 @@ test("getTimeOutputFormat()", () => {
   });
 });
 
-test("getStationIndexesIfDirectionIs2()", () => {
+test("departureHelp.getStationIndexesIfDirectionIs2()", () => {
   test(` gets indexes of given stations in direction 2`, () => {
     let indexFrom = 4;
     let indexTo = 1;
     let stationsCount = 15;
-    const result = getStationIndexesIfDirectionIs2(
+    const result = departureHelp.getStationIndexesIfDirectionIs2(
       2,
       indexFrom,
       indexTo,

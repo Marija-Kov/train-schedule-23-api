@@ -1,60 +1,20 @@
 const path = require("node:path");
 const fs = require("node:fs");
 
-const shape = require("../../dist/utils/dataShapers/shapeData");
-const {
-  dataStrDirection1,
-  dataStrDirection2,
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stationsNames,
-  stationsFormatted,
-} = require("../../dist/utils/dataShapers/data/extractedData");
+module.exports.shape = require("../../dist/utils/dataShapers/shapeData");
 
-const stationsJson = fs.readFileSync(
+module.exports.extracted = require("../../dist/utils/dataShapers/data/extractedData");
+
+module.exports.departureHelp = require("../../dist/utils/getDeparturesHelpers.js");
+
+module.exports.trainStationHelp = require("../../dist/utils/getStationsAndTrainsDataHelpers.js");
+
+module.exports.stationsJson = fs.readFileSync(
   path.join(__dirname, "../../stations.json"),
   "utf-8"
 );
-const trainsJson = fs.readFileSync(
+
+module.exports.trainsJson = fs.readFileSync(
   path.join(__dirname, "../../trains.json"),
   "utf-8"
 );
-
-const {
-  isStationNameValid,
-  getStation,
-  isDirectionValid,
-  isFrequencyValid,
-  getDeparturesInDirection,
-  getDeparturesByFrequency,
-  getTrainsByFrequency,
-  getTrainsByDirection,
-  isTrainIdValid,
-  getFrequency
-} = require("../../dist/utils/getStationsAndTrainsDataHelpers");
-
-module.exports = {
-  shape,
-  dataStrDirection1,
-  dataStrDirection2,
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
-  stationsNames,
-  stationsFormatted,
-  stationsJson,
-  trainsJson,
-  isStationNameValid,
-  getStation,
-  isDirectionValid,
-  isFrequencyValid,
-  getDeparturesInDirection,
-  getDeparturesByFrequency,
-  getTrainsByFrequency,
-  getTrainsByDirection,
-  isTrainIdValid,
-  getFrequency
-};
