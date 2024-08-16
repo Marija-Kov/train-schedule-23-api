@@ -1,5 +1,6 @@
 import * as http from "node:http";
 import { IncomingMessage, ServerResponse, Server } from "node:http";
+import { gzip } from "node:zlib";
 
 export interface ExtendedServerRes extends ServerResponse {
   sendJson: (statusCode: number, data: Object) => void;
@@ -29,7 +30,14 @@ export default class F {
           res.statusCode = statusCode;
           res.setHeader("Access-Control-Allow-Origin", "*");
           res.setHeader("Content-Type", "application/json");
-          res.end(JSON.stringify(data, null, 2));
+          res.setHeader("Content-Encoding", "gzip");
+          gzip(JSON.stringify(data), (err, buffer) => {
+            if (err) {
+              console.error(err);
+              return res.end();
+            }
+            res.end(buffer);
+          });
         };
         const goToRoute = (url: string) => {
           /*
