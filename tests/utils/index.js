@@ -35,6 +35,19 @@ const {
   getFrequency
 } = require("../../dist/utils/getStationsAndTrainsDataHelpers");
 
+const {
+  isDatePatternValid,
+  isTimePatternValid,
+  getFrequencyArray,
+  getIndexOfSelectedStation,
+  getDirectionAndStationIndexes,
+  narrowDownSelection,
+  shapeToOutputFormat,
+  getResultFromTrainIdOverlaps,
+  getTimeOutputFormat,
+  getStationIndexesIfDirectionIs2,
+} = require("../../dist/utils/getDeparturesHelpers.js");
+
 module.exports = {
   shape,
   dataStrDirection1,
@@ -56,5 +69,15 @@ module.exports = {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  getFrequency
+  getFrequency,
+  isDatePatternValid,
+  isTimePatternValid,
+  getFrequencyArray,
+  getIndexOfSelectedStation,
+  getDirectionAndStationIndexes,
+  narrowDownSelection,
+  shapeToOutputFormat,
+  getResultFromTrainIdOverlaps,
+  getTimeOutputFormat,
+  getStationIndexesIfDirectionIs2,
 };

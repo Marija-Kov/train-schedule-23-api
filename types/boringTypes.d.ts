@@ -101,7 +101,7 @@ export type TrainIdDirection2 =
   | 8050
   | 8340;
 
-export type Year = "2024";
+export type Year = "2025";
 
 export type Month =
   | "01"

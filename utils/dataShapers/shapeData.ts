@@ -45,105 +45,19 @@ function extractDepartureTimes(dataStr: string): Time[][] {
     .map((a) => a.split(" ")) as Time[][];
 }
 
-/*
- Timetable matrix creators modify departureTimes which is 
- the return value of extractDepartureTimes. 
- The algorithm differs for each of the 2 directions.
-*/
-
-function createTimetableMatrixDirection1(
+function createTimetableMatrix(
   departureTimes: Time[][],
-  stationsArr: StationName[],
-  trainIdArr: TrainIdDirection1[]
 ): Time[][] {
-  let j = 0; // subarray index ('column')
-  let i = 1; // array index ('row')
-  while (j < trainIdArr.length) {
-    /*
-     In departureTimes matrix compared to the PDF timetable, we can observe that 
-     values in each column (t[i+n][j]) are not sorted in ascending order nor 
-     associated with the same train id because some rows are shorter than others.
-     We want to fill up the shorter rows so that all the rows are the same length
-     and all the columns sorted in the ascending order AND 
-     all values associated with one train id end up in one column.
-     
-     When we run into a t[i][j] < t[i-1][j], we want to do something so that
-     eventually every t[i][j] > t[i-1][j] AND 
-     have all values associated with one train id end up in one column.
-    */
-    const currRow = Number(departureTimes[i][j]);
-    const rowAbove = Number(departureTimes[i - 1][j]);
-    if (currRow < rowAbove || (currRow === 16.17 && rowAbove === 15.59)) {
-      /*
-      Go back upwards and insert n/a until we reach the top of the column (t[0][j]):
-     */
-      while (--i + 1) {
-        departureTimes[i].splice(j, 0, "n/a");
+  for (let i = 0; i < departureTimes.length; i++) {
+    for (let j = 0; j < departureTimes[i].length; j++) {
+      if (departureTimes[i][j] as Time | "0" === "0") {
+        departureTimes[i][j] = "n/a";
       }
     }
-    ++i;
-    /*
-     When we finish iterating through a column, we move on to the next one:
-    */
-    if (i === 15 || i === 0) {
-      i = 1;
-      ++j;
-    }
-  }
-  /*
-   Once we reach the last column, we finished filling up the top part of the table.
-   We then reiterate every column 
-   using inserted n/a values and the destination index of the shorter routes 
-    (relative to the total number of rows in the table) 
-   as guides to fill up the bottom part of the table.
-  */
-  j = 0;
-  while (j < trainIdArr.length) {
-    if (departureTimes[0][j] === "n/a") {
-      i = 8; // index of the destination station of shorter routes (Beograd centar)
-      while (i < stationsArr.length) {
-        departureTimes[i].splice(j, 0, "n/a");
-        ++i;
-      }
-    }
-    ++j;
   }
   return departureTimes;
 }
 
-function createTimetableMatrixDirection2(
-  departureTimes: Time[][],
-  stationsLength: number
-): Time[][] {
-  for (let i = 0; i < 7; ++i) {
-    departureTimes[i].splice(1, 0, "n/a");
-    departureTimes[i].splice(8, 0, "n/a");
-    departureTimes[i].splice(17, 0, "n/a");
-    departureTimes[i].splice(21, 0, "n/a");
-    departureTimes[i].splice(27, 0, "n/a");
-    departureTimes[i].splice(29, 0, "n/a");
-    departureTimes[i].splice(32, 0, "n/a");
-    departureTimes[i].splice(33, 0, "n/a");
-  }
-  for (let i = 8; i < 11; ++i) {
-    departureTimes[i].splice(10, 0, "n/a");
-  }
-  for (let i = 11; i < stationsLength; ++i) {
-    departureTimes[i].splice(1, 0, "n/a");
-    departureTimes[i].splice(8, 0, "n/a");
-    departureTimes[i].splice(10, 0, "n/a");
-    departureTimes[i].splice(13, 0, "n/a");
-    departureTimes[i].splice(17, 0, "n/a");
-    departureTimes[i].splice(21, 0, "n/a");
-    departureTimes[i].splice(26, 0, "n/a");
-    departureTimes[i].splice(27, 0, "n/a");
-    departureTimes[i].splice(29, 0, "n/a");
-    departureTimes[i].splice(32, 0, "n/a");
-    departureTimes[i].splice(33, 0, "n/a");
-    departureTimes[i].splice(35, 0, "n/a");
-  }
-  return departureTimes;
-}
 
 function trainsData(
   trainIdsDir1: TrainIdDirection1[],
@@ -289,8 +203,7 @@ function writeStationsEndpoint(stationsData: Station[]): void {
 
 const shape = {
   extractDepartureTimes,
-  createTimetableMatrixDirection1,
-  createTimetableMatrixDirection2,
+  createTimetableMatrix,
   trainsData,
   createTrainObject,
   addDeparture,

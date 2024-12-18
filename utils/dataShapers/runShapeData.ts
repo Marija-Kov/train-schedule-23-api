@@ -14,16 +14,8 @@ import shape from "./shapeData";
 const departureTimesDirection1 = shape.extractDepartureTimes(dataStrDirection1);
 const departureTimesDirection2 = shape.extractDepartureTimes(dataStrDirection2);
 
-const timetableMatrixDirection1 = shape.createTimetableMatrixDirection1(
-  departureTimesDirection1,
-  stationsNames,
-  trainIdDirection1
-);
-
-const timetableMatrixDirection2 = shape.createTimetableMatrixDirection2(
-  departureTimesDirection2,
-  stationsNames.length,
-);
+const timetableMatrixDirection1 = shape.createTimetableMatrix(departureTimesDirection1);
+const timetableMatrixDirection2 = shape.createTimetableMatrix(departureTimesDirection2);
 
 const trainsDataShaped = shape.trainsData(
   trainIdDirection1,

@@ -10,7 +10,7 @@ const {
   getResultFromTrainIdOverlaps,
   getTimeOutputFormat,
   getStationIndexesIfDirectionIs2,
-} = require("../../dist/utils/getDeparturesHelpers.js");
+} = require("./index");
 
 function test(title, callback) {
   console.log(title);
@@ -22,7 +22,7 @@ let stations = JSON.parse(json).stations;
 
 test("isDatePatternValid()", () => {
   test(` invalid day of month`, () => {
-    const invalidDay = "2024-02-30";
+    const invalidDay = "2025-02-30";
     if (!isDatePatternValid(invalidDay)) {
       console.log(`  ✅`);
     } else {
@@ -31,11 +31,11 @@ test("isDatePatternValid()", () => {
     }
   });
   test(` invalid month`, () => {
-    if (!isDatePatternValid("2024-33-30")) {
+    if (!isDatePatternValid("2025-33-30")) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(isDatePatternValid("2024-33-30"));
+      console.log(isDatePatternValid("2025-33-30"));
     }
   });
 });
@@ -60,14 +60,15 @@ test("isTimePatternValid()", () => {
 
 test("getFrequencyArray()", () => {
   test(` for weekends and holidays`, () => {
-    if (getFrequencyArray("2024-01-07").join(",") === "true,w&h_only") {
+    if (getFrequencyArray("2025-01-07").join(",") === "true,w&h_only") {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
     }
   });
   test(` for work days`, () => {
-    if (getFrequencyArray("2024-02-01").join(",") === "true,false") {
+    const mondayToFridayDate = "2025-02-03";
+    if (getFrequencyArray(mondayToFridayDate).join(",") === "true,false") {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
