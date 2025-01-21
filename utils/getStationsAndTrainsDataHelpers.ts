@@ -1,4 +1,4 @@
-import { StationName, TrainIdDirection1, TrainIdDirection2 } from "../types/boringTypes";
+import { StationName, TrainIdDirection1, TrainIdDirection2 } from "../types/aliases";
 import { Station, StationDeparture, Train, TrainsObject } from "../types/trainScheduleTypes";
 import { stationsNames } from "./dataShapers/data/extractedData";
 

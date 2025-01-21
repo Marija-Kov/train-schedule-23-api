@@ -11,7 +11,7 @@ import {
   TrainIdDirection1,
   TrainIdDirection2,
   StationNameFormatted,
-} from "../../types/boringTypes";
+} from "../../types/aliases";
 
 function extractDepartureTimes(dataStr: string): Time[][] {
   /*

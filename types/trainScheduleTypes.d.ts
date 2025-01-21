@@ -8,7 +8,7 @@ import {
   TrainIdDirection2,
   StationName,
   StationNameFormatted,
-} from "./boringTypes";
+} from "./aliases";
 
 export type Time = `${Hours}.${Minutes}` | "n/a";
 
@@ -18,7 +18,7 @@ export type YyyyMmDd = `${Year}-${Month}-${Day}`;
 
 export type TrainDetails = {
   id: TrainIdDirection1 | TrainIdDirection2;
-  directionId: GetDirectionId<
+  directionId: DirectionId<
     TrainIdDirection1,
     TrainIdDirection2,
     TrainDetails["id"]
@@ -26,7 +26,7 @@ export type TrainDetails = {
   activeOnWeekendsAndHolidays: boolean | "w&h_only";
 };
 
-export type GetDirectionId<T1, T2, Id extends T1 | T2> = Id extends T1 ? 1 : 2;
+export type DirectionId<T1, T2, Id extends T1 | T2> = Id extends T1 ? 1 : 2;
 
 export type TrainItinerary = { station: StationName; time: number }[];
 

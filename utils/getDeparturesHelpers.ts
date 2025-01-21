@@ -1,4 +1,4 @@
-import { StationName } from "../types/boringTypes";
+import { StationName } from "../types/aliases";
 import {
   Station,
   StationDeparture,
