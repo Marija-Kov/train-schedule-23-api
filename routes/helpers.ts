@@ -3,7 +3,7 @@ import {
   StationName,
   TrainIdDirection1,
   TrainIdDirection2,
-} from "../types/boringTypes";
+} from "../types/aliases";
 import { YyyyMmDd, Time } from "../types/trainScheduleTypes";
 
 /**
