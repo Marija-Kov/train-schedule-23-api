@@ -1,12 +1,12 @@
-import { StationName } from "../types/aliases";
 import {
   Station,
-  StationDeparture,
-  OutputDeparture,
-  Time,
+  StationName,
+  StationDepartureDetails,
+  DepartureOutput,
+  TimeInput,
   TimeOutput,
   YyyyMmDd,
-} from "../types/trainScheduleTypes";
+} from "train-schedule-types";
 import { holidays } from "./dataShapers/data/extractedData";
 
 export function isDatePatternValid(date: YyyyMmDd) {
@@ -16,7 +16,7 @@ export function isDatePatternValid(date: YyyyMmDd) {
   return date.match(r);
 }
 
-export function isTimePatternValid(time: Time) {
+export function isTimePatternValid(time: TimeInput) {
   const pattern = `^([0-1][0-9]|2[0-3])\\.([0-5][0-9])$`;
   const r = new RegExp(pattern);
   return time.match(r);
@@ -48,12 +48,12 @@ export function formatStationNameForOutput(index: number, stations: Station[]) {
 
 export function narrowDownSelection(
   index: number,
-  time: Time,
+  time: TimeInput,
   stations: Station[],
   direction: 1 | 2,
   frequency: (string | boolean)[]
 ) {
-  return stations[index].departures.filter((d: StationDeparture) => {
+  return stations[index].departures.filter((d: StationDepartureDetails) => {
     return (
       d.time >= Number(time) &&
       d.trainDetails.directionId === direction &&
@@ -62,21 +62,21 @@ export function narrowDownSelection(
   });
 }
 
-export function shapeToOutputFormat(departures: StationDeparture[]) {
-  return departures.map((d: StationDeparture) => {
+export function shapeToOutputFormat(departures: StationDepartureDetails[]) {
+  return departures.map((d: StationDepartureDetails) => {
     return {
       departureTime: d.time.toFixed(2).split(".").join(":") as TimeOutput,
       arrivalTime: "0:10", // placeholder
       trainId: d.trainDetails.id,
-    } as OutputDeparture;
+    } as DepartureOutput;
   });
 }
 
 export function getResultFromTrainIdOverlaps(
-  departures: OutputDeparture[],
-  arrivals: StationDeparture[]
+  departures: DepartureOutput[],
+  arrivals: StationDepartureDetails[]
 ) {
-  const result: OutputDeparture[] = [];
+  const result: DepartureOutput[] = [];
   for (let departure of departures) {
     for (let arrival of arrivals) {
       if (departure.trainId === arrival.trainDetails.id) {
@@ -88,7 +88,7 @@ export function getResultFromTrainIdOverlaps(
   return result;
 }
 
-export function getTimeOutputFormat(arrival: StationDeparture) {
+export function getTimeOutputFormat(arrival: StationDepartureDetails) {
   return arrival.time.toFixed(2).split(".").join(":") as TimeOutput;
 }
 

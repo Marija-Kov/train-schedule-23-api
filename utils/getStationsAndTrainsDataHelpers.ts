@@ -1,5 +1,4 @@
-import { StationName, TrainIdDirection1, TrainIdDirection2 } from "../types/aliases";
-import { Station, StationDeparture, Train, TrainsObject } from "../types/trainScheduleTypes";
+import { Station, StationName, StationDepartureDetails, TrainDetails, TrainsMap, TrainIdDirection1, TrainIdDirection2 } from "train-schedule-types";
 import { stationsNames } from "./dataShapers/data/extractedData";
 
 export function isStationNameValid(station: StationName) {
@@ -19,14 +18,14 @@ export function isFrequencyValid(frequency: string) {
 }
 
 export function getDeparturesInDirection(
-  departures: StationDeparture[],
+  departures: StationDepartureDetails[],
   direction: number
 ) {
   return departures.filter((d) => d.trainDetails.directionId === direction);
 }
 
 export function getDeparturesByFrequency(
-  departures: StationDeparture[],
+  departures: StationDepartureDetails[],
   frequency: boolean | "w&h_only" | undefined
 ) {
   return departures.filter(
@@ -34,13 +33,13 @@ export function getDeparturesByFrequency(
   );
 }
 
-export function getTrainsByFrequency(trains: Train[], frequency: "ed" | "wd" | "wh") {
+export function getTrainsByFrequency(trains: TrainDetails[], frequency: "ed" | "wd" | "wh") {
   return Object.values(trains).filter(
     (train) => train.activeOnWeekendsAndHolidays === getFrequency(frequency)
   );
 }
 
-export function getTrainsByDirection(trains: TrainsObject, direction: 1 | 2) {
+export function getTrainsByDirection(trains: TrainsMap, direction: 1 | 2) {
   return Object.values(trains).filter(
     (train) => train.directionId === Number(direction)
   );

@@ -1,10 +1,11 @@
 import { promises as fs } from "fs";
 import {
+  TimeInput,
+  YyyyMmDd,
   StationName,
   TrainIdDirection1,
   TrainIdDirection2,
-} from "../types/aliases";
-import { YyyyMmDd, Time } from "../types/trainScheduleTypes";
+} from "train-schedule-types";
 
 /**
  * Gets a parameter from the url where parameters are separated by '/' by order number .
@@ -71,7 +72,7 @@ export function aDateParam(dateParam: string) {
  * @returns
  */
 export function aTimeParam(timeParam: string) {
-  return timeParam as Time;
+  return timeParam as TimeInput;
 }
 
 /**

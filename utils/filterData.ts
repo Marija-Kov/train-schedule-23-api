@@ -1,21 +1,18 @@
 import {
   Station,
-  Time,
+  StationName,
+  TimeInput,
   YyyyMmDd,
-  TrainsObject,
-} from "../types/trainScheduleTypes";
+  TrainIdDirection1,
+  TrainIdDirection2,
+  TrainsMap,
+} from "train-schedule-types";
 
 import {
   stationsNames,
   trainIdDirection1,
   trainIdDirection2,
 } from "./dataShapers/data/extractedData";
-
-import {
-  StationName,
-  TrainIdDirection1,
-  TrainIdDirection2,
-} from "../types/aliases";
 
 import {
   isDatePatternValid,
@@ -46,7 +43,7 @@ const departures = (
   from: StationName | undefined,
   to: StationName | undefined,
   date: YyyyMmDd,
-  time: Time
+  time: TimeInput
 ) => {
   if (!stations)
     throw Error("filterData > departures(): argument 'stations' is missing");
@@ -190,7 +187,7 @@ const stationsData = (
 };
 
 const trainsData = (
-  trains: TrainsObject,
+  trains: TrainsMap,
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
@@ -214,7 +211,7 @@ const trainsData = (
 };
 
 const aTrainData = (
-  trains: TrainsObject,
+  trains: TrainsMap,
   trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
 ) => {
   if (!trains) {

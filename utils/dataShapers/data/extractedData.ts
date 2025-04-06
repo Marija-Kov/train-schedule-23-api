@@ -4,7 +4,7 @@ import {
   TrainIdDirection2,
   StationName,
   StationNameFormatted,
-} from "../../../types/aliases";
+} from "train-schedule-types";
 
 // zeros entered manually to denote no departure
 export const dataStrDirection1 =

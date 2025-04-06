@@ -2,25 +2,23 @@ import * as fs from "fs";
 import {
   Train,
   Station,
-  StationDeparture,
-  Time,
-  TrainItinerary,
-} from "../../types/trainScheduleTypes";
-import {
+  StationDepartureDetails,
   StationName,
   TrainIdDirection1,
   TrainIdDirection2,
   StationNameFormatted,
-} from "../../types/aliases";
+  TimeInput,
+  TrainItinerary,
+} from "train-schedule-types";
 
-function extractDepartureTimes(dataStr: string): Time[][] {
+function extractDepartureTimes(dataStr: string): TimeInput[][] {
   /*
        Takes in data string extracted from the PDF 
        and, for each station, returns all times of departures in the given direction.
       */
   const len = dataStr.length + 1;
   let index = 0; // there's always a char at position 0
-  const arr: Time[] = [];
+  const arr: TimeInput[] = [];
   for (let i = 1; i < len - 1; ++i) {
     const prev = dataStr.charAt(i - 1);
     const curr = dataStr.charAt(i);
@@ -30,27 +28,27 @@ function extractDepartureTimes(dataStr: string): Time[][] {
         (prev.match(/[0-9]/) && !next.match(/[0-9]/)) ||
         (!prev.match(/[0-9]/) && next.match(/[0-9]/))
       ) {
-        const time: Time = dataStr.slice(index, i) as Time;
+        const time: TimeInput = dataStr.slice(index, i) as TimeInput;
         arr.push(time);
         index = i + 1;
       }
     }
     if (!next) {
-      const time: Time = dataStr.slice(index, i + 1) as Time;
+      const time: TimeInput = dataStr.slice(index, i + 1) as TimeInput;
       arr.push(time);
     }
   }
   return arr
     .filter((a) => arr.indexOf(a) % 2 !== 0)
-    .map((a) => a.split(" ")) as Time[][];
+    .map((a) => a.split(" ")) as TimeInput[][];
 }
 
 function createTimetableMatrix(
-  departureTimes: Time[][],
-): Time[][] {
+  departureTimes: TimeInput[][],
+): TimeInput[][] {
   for (let i = 0; i < departureTimes.length; i++) {
     for (let j = 0; j < departureTimes[i].length; j++) {
-      if (departureTimes[i][j] as Time | "0" === "0") {
+      if (departureTimes[i][j] as TimeInput | "0" === "0") {
         departureTimes[i][j] = "n/a";
       }
     }
@@ -65,8 +63,8 @@ function trainsData(
   weekendsAndHolidays1: (boolean | "w&h_only")[],
   weekendsAndHolidays2: (boolean | "w&h_only")[],
   stations: StationName[],
-  timetable1: Time[][],
-  timetable2: Time[][]
+  timetable1: TimeInput[][],
+  timetable2: TimeInput[][]
 ): Train[] {
   const result: Train[] = [];
   for (let i = 0; i < trainIdsDir1.length; ++i) {
@@ -100,7 +98,7 @@ function createTrainObject(
   index: number,
   trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
   frequencies: (boolean | "w&h_only")[],
-  matrix: Time[][],
+  matrix: TimeInput[][],
   stations: StationName[],
   directionId: 1 | 2
 ) {
@@ -118,7 +116,7 @@ function createTrainObject(
 
 function addDeparture(
   station: StationName,
-  time: Time,
+  time: TimeInput,
   itinerary: TrainItinerary
 ) {
   if (time !== "n/a") {
@@ -183,7 +181,7 @@ function addDepartureToStation(train: Train, station: StationName) {
       directionId: train.directionId,
       activeOnWeekendsAndHolidays: train.activeOnWeekendsAndHolidays,
     },
-  } as StationDeparture;
+  } as StationDepartureDetails;
 }
 
 function writeStationsEndpoint(stationsData: Station[]): void {

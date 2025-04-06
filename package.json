@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.7.0"
+    "@types/node": "^20.7.0",
+    "train-schedule-types": "^1.0.0"
   },
   "dependencies": {
     "ts-node": "^10.9.1",
