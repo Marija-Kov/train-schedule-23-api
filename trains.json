@@ -1738,63 +1738,63 @@
     "itinerary": [
       {
         "station": "batajnica",
-        "time": 13.1
+        "time": 12.53
       },
       {
         "station": "kamendin",
-        "time": 13.14
+        "time": 12.57
       },
       {
         "station": "zemunsko polje",
-        "time": 13.16
+        "time": 12.59
       },
       {
         "station": "altina",
-        "time": 13.18
+        "time": 13.01
       },
       {
         "station": "zemun",
-        "time": 13.22
+        "time": 13.05
       },
       {
         "station": "tosin bunar",
-        "time": 13.26
+        "time": 13.09
       },
       {
         "station": "novi beograd",
-        "time": 13.29
+        "time": 13.12
       },
       {
         "station": "beograd centar",
-        "time": 13.33
+        "time": 13.16
       },
       {
         "station": "karadjordjev park",
-        "time": 13.37
+        "time": 13.2
       },
       {
         "station": "vukov spomenik",
-        "time": 13.41
+        "time": 13.24
       },
       {
         "station": "pancevacki most",
-        "time": 13.45
+        "time": 13.28
       },
       {
         "station": "krnjaca most",
-        "time": 13.49
+        "time": 13.32
       },
       {
         "station": "krnjaca ukr",
-        "time": 13.52
+        "time": 13.35
       },
       {
         "station": "sebes",
-        "time": 13.55
+        "time": 13.38
       },
       {
         "station": "ovca",
-        "time": 13.58
+        "time": 13.41
       }
     ]
   },
