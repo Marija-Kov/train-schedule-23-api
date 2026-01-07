@@ -145,12 +145,12 @@ test("getFrequency()", () => {
 
 test("getTrainsByFrequency()", () => {
   test(` gets trains by frequency correctly`, () => {
-    const frequency = "wh";
+    const frequency = "wd";
     const result = getTrainsByFrequency(
       getTrainsByDirection(trains, 2),
       frequency
     );
-    if (result[0].activeOnWeekendsAndHolidays === "w&h_only") {
+    if (result[0].activeOnWeekendsAndHolidays === false) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);

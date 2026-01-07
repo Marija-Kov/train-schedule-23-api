@@ -22,98 +22,6 @@
       }
     ]
   },
-  "7108": {
-    "id": 7108,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 15.1
-      },
-      {
-        "station": "novi beograd",
-        "time": 15.14
-      },
-      {
-        "station": "tosin bunar",
-        "time": 15.17
-      },
-      {
-        "station": "zemun",
-        "time": 15.2
-      }
-    ]
-  },
-  "7110": {
-    "id": 7110,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 15.41
-      },
-      {
-        "station": "novi beograd",
-        "time": 15.45
-      },
-      {
-        "station": "tosin bunar",
-        "time": 15.48
-      },
-      {
-        "station": "zemun",
-        "time": 15.51
-      }
-    ]
-  },
-  "7113": {
-    "id": 7113,
-    "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
-    "itinerary": [
-      {
-        "station": "zemun",
-        "time": 16.16
-      },
-      {
-        "station": "tosin bunar",
-        "time": 16.2
-      },
-      {
-        "station": "novi beograd",
-        "time": 16.23
-      },
-      {
-        "station": "beograd centar",
-        "time": 16.27
-      }
-    ]
-  },
-  "7114": {
-    "id": 7114,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 20.1
-      },
-      {
-        "station": "novi beograd",
-        "time": 20.14
-      },
-      {
-        "station": "tosin bunar",
-        "time": 20.17
-      },
-      {
-        "station": "zemun",
-        "time": 20.2
-      }
-    ]
-  },
   "7116": {
     "id": 7116,
     "directionId": 2,
@@ -137,29 +45,6 @@
       }
     ]
   },
-  "7900": {
-    "id": 7900,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 6.25
-      },
-      {
-        "station": "novi beograd",
-        "time": 6.28
-      },
-      {
-        "station": "tosin bunar",
-        "time": 6.31
-      },
-      {
-        "station": "zemun",
-        "time": 6.34
-      }
-    ]
-  },
   "7901": {
     "id": 7901,
     "directionId": 1,
@@ -180,29 +65,6 @@
       {
         "station": "beograd centar",
         "time": 3.54
-      }
-    ]
-  },
-  "7905": {
-    "id": 7905,
-    "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "zemun",
-        "time": 16.37
-      },
-      {
-        "station": "tosin bunar",
-        "time": 16.4
-      },
-      {
-        "station": "novi beograd",
-        "time": 16.43
-      },
-      {
-        "station": "beograd centar",
-        "time": 16.47
       }
     ]
   },
@@ -3007,7 +2869,7 @@
   "8042": {
     "id": 8042,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "activeOnWeekendsAndHolidays": false,
     "itinerary": [
       {
         "station": "ovca",
@@ -3457,56 +3319,10 @@
       }
     ]
   },
-  "8200": {
-    "id": 8200,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 9.13
-      },
-      {
-        "station": "novi beograd",
-        "time": 9.17
-      },
-      {
-        "station": "tosin bunar",
-        "time": 9.2
-      },
-      {
-        "station": "zemun",
-        "time": 9.23
-      }
-    ]
-  },
-  "8201": {
-    "id": 8201,
-    "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "zemun",
-        "time": 7.15
-      },
-      {
-        "station": "tosin bunar",
-        "time": 7.18
-      },
-      {
-        "station": "novi beograd",
-        "time": 7.21
-      },
-      {
-        "station": "beograd centar",
-        "time": 7.24
-      }
-    ]
-  },
   "8202": {
     "id": 8202,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "activeOnWeekendsAndHolidays": true,
     "itinerary": [
       {
         "station": "beograd centar",
@@ -3523,52 +3339,6 @@
       {
         "station": "zemun",
         "time": 19.28
-      }
-    ]
-  },
-  "8203": {
-    "id": 8203,
-    "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
-    "itinerary": [
-      {
-        "station": "zemun",
-        "time": 9.47
-      },
-      {
-        "station": "tosin bunar",
-        "time": 9.5
-      },
-      {
-        "station": "novi beograd",
-        "time": 9.53
-      },
-      {
-        "station": "beograd centar",
-        "time": 9.57
-      }
-    ]
-  },
-  "8204": {
-    "id": 8204,
-    "directionId": 2,
-    "activeOnWeekendsAndHolidays": "w&h_only",
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 21.48
-      },
-      {
-        "station": "novi beograd",
-        "time": 21.52
-      },
-      {
-        "station": "tosin bunar",
-        "time": 21.55
-      },
-      {
-        "station": "zemun",
-        "time": 21.58
       }
     ]
   },
@@ -3595,11 +3365,11 @@
       },
       {
         "station": "pancevacki most",
-        "time": 10.16
+        "time": 10.15
       },
       {
         "station": "vukov spomenik",
-        "time": 10.19
+        "time": 10.18
       },
       {
         "station": "karadjordjev park",

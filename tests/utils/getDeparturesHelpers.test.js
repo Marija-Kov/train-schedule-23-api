@@ -17,12 +17,12 @@ function test(title, callback) {
   callback();
 }
 
-const json = fs.readFileSync("../../stations.json", "utf-8");
+const json = fs.readFileSync("stations.json", "utf-8");
 let stations = JSON.parse(json).stations;
 
 test("isDatePatternValid()", () => {
   test(` invalid day of month`, () => {
-    const invalidDay = "2025-02-30";
+    const invalidDay = "2026-02-30";
     if (!isDatePatternValid(invalidDay)) {
       console.log(`  ✅`);
     } else {
@@ -31,11 +31,11 @@ test("isDatePatternValid()", () => {
     }
   });
   test(` invalid month`, () => {
-    if (!isDatePatternValid("2025-33-30")) {
+    if (!isDatePatternValid("2026-33-30")) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(isDatePatternValid("2025-33-30"));
+      console.log(isDatePatternValid("2026-33-30"));
     }
   });
 });
@@ -59,15 +59,16 @@ test("isTimePatternValid()", () => {
 });
 
 test("getFrequencyArray()", () => {
-  test(` for weekends and holidays`, () => {
-    if (getFrequencyArray("2025-01-07").join(",") === "true,w&h_only") {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-    }
-  });
+  // NOTE: Currently obsolete, no departures for weekends and holidays exclusively
+  // test(` for weekends and holidays`, () => {
+  //   if (getFrequencyArray("2026-01-07").join(",") === "true,w&h_only") {
+  //     console.log(`  ✅`);
+  //   } else {
+  //     console.log(`  ❌`);
+  //   }
+  // });
   test(` for work days`, () => {
-    const mondayToFridayDate = "2025-02-03";
+    const mondayToFridayDate = "2026-02-03";
     if (getFrequencyArray(mondayToFridayDate).join(",") === "true,false") {
       console.log(`  ✅`);
     } else {
