@@ -1,4 +1,4 @@
-// SOURCE: https://www.srbvoz.rs/wp-content/redvoznje/rv_bg_voza_za_2022.pdf  (page 1) - it's for the current year, although it says 2022.
+// SOURCE: https://www.srbvoz.rs/wp-content/redvoznje/rv_bg_voza_za_2025.pdf  (page 1)
 import {
   TrainIdDirection1,
   TrainIdDirection2,
