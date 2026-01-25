@@ -3,22 +3,22 @@ import {
   StationName,
   TimeInput,
   YyyyMmDd,
-  TrainIdDirection1,
-  TrainIdDirection2,
+  TrainIdBatajnicaOvca,
+  TrainIdOvcaBatajnica,
   TrainsMap,
 } from "train-schedule-types";
 
 import {
   stationsNames,
-  trainIdDirection1,
-  trainIdDirection2,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
 } from "./dataShapers/data/extractedData";
 
 import {
   isDatePatternValid,
   isTimePatternValid,
-  getFrequencyArray,
-  formatStationNameForOutput,
+  getServiceFrequencyArray,
+  getStationNameDisplay,
   getDirectionAndStationIndexes,
   narrowDownSelection,
   shapeToOutputFormat,
@@ -32,7 +32,6 @@ import {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
-  getFrequency,
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
@@ -92,7 +91,7 @@ const departures = (
     stations
   );
 
-  const frequency = getFrequencyArray(date);
+  const frequency = getServiceFrequencyArray(date);
 
   const narrowedDownSelectionOfDepartures = narrowDownSelection(
     indexFrom,
@@ -132,15 +131,15 @@ const departures = (
   }
 
   return {
-    departureStation: formatStationNameForOutput(indexFrom, stations),
-    arrivalStation: formatStationNameForOutput(indexTo, stations),
+    departureStation: getStationNameDisplay(indexFrom, stations),
+    arrivalStation: getStationNameDisplay(indexTo, stations),
     departures: departures,
   };
 };
 
 const stationsData = (
   stations: Station[],
-  station: StationName | undefined,
+  aStation: StationName | undefined,
   direction: 1 | 2 | undefined,
   frequency: "ed" | "wd" | "wh" | undefined
 ) => {
@@ -148,15 +147,15 @@ const stationsData = (
     throw Error(
       "filterData > filterStationsData(): argument 'stations' is missing"
     );
-  if (!station) {
+  if (!aStation) {
     return stations;
   }
-  if (station && !isStationNameValid(station)) {
+  if (aStation && !isStationNameValid(aStation)) {
     return { error: "Invalid station name" };
   }
 
   if (direction === undefined) {
-    return getStation(station, stations);
+    return getStation(aStation, stations);
   }
 
   if (!isDirectionValid(direction)) {
@@ -170,10 +169,10 @@ const stationsData = (
 
     return getDeparturesByFrequency(
       getDeparturesInDirection(
-        getStation(station, stations).departures,
+        getStation(aStation, stations).departures,
         direction
       ),
-      getFrequency(frequency)
+      frequency
     );
   }
   /*
@@ -181,7 +180,7 @@ const stationsData = (
      from the specified station, in the specified direction:
     */
   return getDeparturesInDirection(
-    getStation(station, stations).departures,
+    getStation(aStation, stations).departures,
     direction
   );
 };
@@ -212,7 +211,7 @@ const trainsData = (
 
 const aTrainData = (
   trains: TrainsMap,
-  trainId: TrainIdDirection1 | TrainIdDirection2 | undefined
+  trainId: TrainIdBatajnicaOvca | TrainIdOvcaBatajnica | undefined
 ) => {
   if (!trains) {
     throw Error("filterData > aTrainData(): argument 'trains' is missing");
@@ -221,7 +220,7 @@ const aTrainData = (
     // DO NOT RETURN ALL ON trains/sfewfw/
     return trains;
   }
-  if (!isTrainIdValid([...trainIdDirection1, ...trainIdDirection2], trainId)) {
+  if (!isTrainIdValid([...train_id_batajnica_ovca, ...train_id_ovca_batajnica], trainId)) {
     return { error: "Invalid train id" };
   }
   return trains[trainId];

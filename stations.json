@@ -16,14 +16,14 @@
   "stations": [
     {
       "name": "batajnica",
-      "nameFormatted": "Batajnica",
+      "nameDisplay": "Batajnica",
       "departures": [
         {
           "time": 6,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -31,7 +31,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -39,7 +39,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -47,7 +47,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -55,7 +55,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -63,7 +63,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -71,7 +71,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -79,7 +79,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -87,7 +87,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -95,7 +95,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -103,7 +103,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -111,7 +111,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -119,7 +119,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -127,7 +127,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -135,7 +135,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -143,7 +143,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -151,7 +151,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -159,7 +159,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -167,7 +167,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -175,7 +175,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -183,7 +183,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -191,7 +191,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -199,7 +199,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -207,7 +207,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -215,7 +215,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -223,7 +223,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -231,7 +231,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -239,7 +239,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -247,7 +247,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -255,7 +255,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -263,7 +263,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -271,7 +271,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -279,7 +279,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -287,7 +287,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -295,7 +295,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -303,7 +303,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -311,7 +311,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -319,7 +319,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -327,7 +327,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -335,7 +335,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -343,7 +343,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -351,7 +351,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -359,7 +359,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -367,7 +367,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -375,7 +375,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -383,7 +383,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -391,21 +391,21 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "kamendin",
-      "nameFormatted": "Kamendin",
+      "nameDisplay": "Kamendin",
       "departures": [
         {
           "time": 6.04,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -413,7 +413,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -421,7 +421,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -429,7 +429,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -437,7 +437,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -445,7 +445,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -453,7 +453,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -461,7 +461,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -469,7 +469,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -477,7 +477,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -485,7 +485,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -493,7 +493,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -501,7 +501,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -509,7 +509,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -517,7 +517,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -525,7 +525,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -533,7 +533,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -541,7 +541,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -549,7 +549,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -557,7 +557,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -565,7 +565,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -573,7 +573,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -581,7 +581,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -589,7 +589,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -597,7 +597,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -605,7 +605,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -613,7 +613,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -621,7 +621,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -629,7 +629,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -637,7 +637,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -645,7 +645,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -653,7 +653,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -661,7 +661,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -669,7 +669,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -677,7 +677,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -685,7 +685,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -693,7 +693,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -701,7 +701,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -709,7 +709,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -717,7 +717,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -725,7 +725,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -733,7 +733,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -741,7 +741,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -749,7 +749,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -757,7 +757,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -765,7 +765,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -773,21 +773,21 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "zemunsko polje",
-      "nameFormatted": "Zemunsko polje",
+      "nameDisplay": "Zemunsko polje",
       "departures": [
         {
           "time": 6.06,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -795,7 +795,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -803,7 +803,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -811,7 +811,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -819,7 +819,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -827,7 +827,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -835,7 +835,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -843,7 +843,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -851,7 +851,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -859,7 +859,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -867,7 +867,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -875,7 +875,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -883,7 +883,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -891,7 +891,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -899,7 +899,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -907,7 +907,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -915,7 +915,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -923,7 +923,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -931,7 +931,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -939,7 +939,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -947,7 +947,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -955,7 +955,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -963,7 +963,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -971,7 +971,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -979,7 +979,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -987,7 +987,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -995,7 +995,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1003,7 +1003,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1011,7 +1011,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1019,7 +1019,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1027,7 +1027,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1035,7 +1035,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1043,7 +1043,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1051,7 +1051,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1059,7 +1059,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1067,7 +1067,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1075,7 +1075,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1083,7 +1083,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1091,7 +1091,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1099,7 +1099,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1107,7 +1107,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1115,7 +1115,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1123,7 +1123,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1131,7 +1131,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1139,7 +1139,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1147,7 +1147,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1155,21 +1155,21 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "altina",
-      "nameFormatted": "Altina",
+      "nameDisplay": "Altina",
       "departures": [
         {
           "time": 6.08,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1177,7 +1177,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1185,7 +1185,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1193,7 +1193,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1201,7 +1201,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1209,7 +1209,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1217,7 +1217,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1225,7 +1225,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1233,7 +1233,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1241,7 +1241,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1249,7 +1249,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1257,7 +1257,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1265,7 +1265,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1273,7 +1273,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1281,7 +1281,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1289,7 +1289,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1297,7 +1297,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1305,7 +1305,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1313,7 +1313,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1321,7 +1321,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1329,7 +1329,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1337,7 +1337,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1345,7 +1345,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1353,7 +1353,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1361,7 +1361,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1369,7 +1369,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1377,7 +1377,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1385,7 +1385,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1393,7 +1393,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1401,7 +1401,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1409,7 +1409,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1417,7 +1417,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1425,7 +1425,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1433,7 +1433,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1441,7 +1441,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1449,7 +1449,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1457,7 +1457,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1465,7 +1465,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1473,7 +1473,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1481,7 +1481,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1489,7 +1489,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1497,7 +1497,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1505,7 +1505,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1513,7 +1513,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1521,7 +1521,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1529,7 +1529,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1537,21 +1537,21 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "zemun",
-      "nameFormatted": "Zemun",
+      "nameDisplay": "Zemun",
       "departures": [
         {
           "time": 3.44,
           "trainDetails": {
             "id": 7901,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1559,7 +1559,7 @@
           "trainDetails": {
             "id": 7101,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1567,7 +1567,7 @@
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1575,7 +1575,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1583,7 +1583,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1591,7 +1591,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1599,7 +1599,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1607,7 +1607,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1615,7 +1615,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1623,7 +1623,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1631,7 +1631,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1639,7 +1639,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1647,7 +1647,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1655,7 +1655,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1663,7 +1663,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1671,7 +1671,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1679,7 +1679,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1687,7 +1687,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1695,7 +1695,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1703,7 +1703,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1711,7 +1711,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1719,7 +1719,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1727,7 +1727,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1735,7 +1735,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1743,7 +1743,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1751,7 +1751,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1759,7 +1759,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1767,7 +1767,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1775,7 +1775,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1783,7 +1783,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1791,7 +1791,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1799,7 +1799,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1807,7 +1807,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1815,7 +1815,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1823,7 +1823,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1831,7 +1831,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1839,7 +1839,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1847,7 +1847,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1855,7 +1855,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1863,7 +1863,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1871,7 +1871,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1879,7 +1879,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1887,7 +1887,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1895,7 +1895,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1903,7 +1903,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1911,7 +1911,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1919,7 +1919,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1927,7 +1927,7 @@
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1935,7 +1935,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1943,7 +1943,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1951,7 +1951,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1959,7 +1959,7 @@
           "trainDetails": {
             "id": 7116,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1967,7 +1967,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1975,21 +1975,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "tosin bunar",
-      "nameFormatted": "Tošin bunar",
+      "nameDisplay": "Tošin bunar",
       "departures": [
         {
           "time": 3.47,
           "trainDetails": {
             "id": 7901,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -1997,7 +1997,7 @@
           "trainDetails": {
             "id": 7101,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2005,7 +2005,7 @@
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2013,7 +2013,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2021,7 +2021,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2029,7 +2029,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2037,7 +2037,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2045,7 +2045,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2053,7 +2053,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2061,7 +2061,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2069,7 +2069,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2077,7 +2077,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2085,7 +2085,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2093,7 +2093,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2101,7 +2101,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2109,7 +2109,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2117,7 +2117,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2125,7 +2125,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2133,7 +2133,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2141,7 +2141,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2149,7 +2149,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2157,7 +2157,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2165,7 +2165,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2173,7 +2173,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2181,7 +2181,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2189,7 +2189,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2197,7 +2197,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2205,7 +2205,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2213,7 +2213,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2221,7 +2221,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2229,7 +2229,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2237,7 +2237,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2245,7 +2245,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2253,7 +2253,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2261,7 +2261,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2269,7 +2269,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2277,7 +2277,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2285,7 +2285,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2293,7 +2293,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2301,7 +2301,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2309,7 +2309,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2317,7 +2317,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2325,7 +2325,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2333,7 +2333,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2341,7 +2341,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2349,7 +2349,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2357,7 +2357,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2365,7 +2365,7 @@
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2373,7 +2373,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2381,7 +2381,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2389,7 +2389,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2397,7 +2397,7 @@
           "trainDetails": {
             "id": 7116,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2405,7 +2405,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2413,21 +2413,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "novi beograd",
-      "nameFormatted": "Novi Beograd",
+      "nameDisplay": "Novi Beograd",
       "departures": [
         {
           "time": 3.49,
           "trainDetails": {
             "id": 7901,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2435,7 +2435,7 @@
           "trainDetails": {
             "id": 7101,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2443,7 +2443,7 @@
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2451,7 +2451,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2459,7 +2459,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2467,7 +2467,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2475,7 +2475,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2483,7 +2483,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2491,7 +2491,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2499,7 +2499,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2507,7 +2507,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2515,7 +2515,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2523,7 +2523,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2531,7 +2531,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2539,7 +2539,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2547,7 +2547,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2555,7 +2555,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2563,7 +2563,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2571,7 +2571,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2579,7 +2579,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2587,7 +2587,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2595,7 +2595,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2603,7 +2603,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2611,7 +2611,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2619,7 +2619,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2627,7 +2627,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2635,7 +2635,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2643,7 +2643,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2651,7 +2651,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2659,7 +2659,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2667,7 +2667,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2675,7 +2675,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2683,7 +2683,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2691,7 +2691,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2699,7 +2699,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2707,7 +2707,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2715,7 +2715,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2723,7 +2723,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2731,7 +2731,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2739,7 +2739,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2747,7 +2747,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2755,7 +2755,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2763,7 +2763,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2771,7 +2771,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2779,7 +2779,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2787,7 +2787,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2795,7 +2795,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2803,7 +2803,7 @@
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2811,7 +2811,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2819,7 +2819,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2827,7 +2827,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2835,7 +2835,7 @@
           "trainDetails": {
             "id": 7116,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2843,7 +2843,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2851,21 +2851,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "beograd centar",
-      "nameFormatted": "Beograd centar",
+      "nameDisplay": "Beograd centar",
       "departures": [
         {
           "time": 3.54,
           "trainDetails": {
             "id": 7901,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2873,7 +2873,7 @@
           "trainDetails": {
             "id": 7101,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2881,7 +2881,7 @@
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2889,7 +2889,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2897,7 +2897,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2905,7 +2905,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2913,7 +2913,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2921,7 +2921,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2929,7 +2929,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2937,7 +2937,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2945,7 +2945,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2953,7 +2953,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2961,7 +2961,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2969,7 +2969,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2977,7 +2977,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -2985,7 +2985,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2993,7 +2993,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3001,7 +3001,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3009,7 +3009,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3017,7 +3017,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3025,7 +3025,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3033,7 +3033,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3041,7 +3041,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3049,7 +3049,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3057,7 +3057,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3065,7 +3065,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3073,7 +3073,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3081,7 +3081,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3089,7 +3089,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3097,7 +3097,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3105,7 +3105,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3113,7 +3113,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3121,7 +3121,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3129,7 +3129,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3137,7 +3137,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3145,7 +3145,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3153,7 +3153,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3161,7 +3161,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3169,7 +3169,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3177,7 +3177,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3185,7 +3185,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3193,7 +3193,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3201,7 +3201,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3209,7 +3209,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3217,7 +3217,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3225,7 +3225,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3233,7 +3233,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3241,7 +3241,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3249,7 +3249,7 @@
           "trainDetails": {
             "id": 8202,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3257,7 +3257,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3265,7 +3265,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3273,7 +3273,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3281,7 +3281,7 @@
           "trainDetails": {
             "id": 7116,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3289,7 +3289,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3297,21 +3297,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "karadjordjev park",
-      "nameFormatted": "Karađorđev park",
+      "nameDisplay": "Karađorđev park",
       "departures": [
         {
           "time": 6.27,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3319,7 +3319,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3327,7 +3327,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3335,7 +3335,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3343,7 +3343,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3351,7 +3351,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3359,7 +3359,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3367,7 +3367,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3375,7 +3375,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3383,7 +3383,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3391,7 +3391,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3399,7 +3399,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3407,7 +3407,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3415,7 +3415,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3423,7 +3423,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3431,7 +3431,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3439,7 +3439,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3447,7 +3447,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3455,7 +3455,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3463,7 +3463,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3471,7 +3471,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3479,7 +3479,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3487,7 +3487,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3495,7 +3495,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3503,7 +3503,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3511,7 +3511,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3519,7 +3519,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3527,7 +3527,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3535,7 +3535,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3543,7 +3543,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3551,7 +3551,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3559,7 +3559,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3567,7 +3567,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3575,7 +3575,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3583,7 +3583,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3591,7 +3591,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3599,7 +3599,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3607,7 +3607,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3615,7 +3615,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3623,7 +3623,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3631,7 +3631,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3639,7 +3639,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3647,7 +3647,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3655,7 +3655,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3663,7 +3663,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3671,7 +3671,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3679,7 +3679,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3687,7 +3687,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3695,7 +3695,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3703,7 +3703,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3711,21 +3711,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "vukov spomenik",
-      "nameFormatted": "Vukov spomenik",
+      "nameDisplay": "Vukov spomenik",
       "departures": [
         {
           "time": 6.31,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3733,7 +3733,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3741,7 +3741,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3749,7 +3749,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3757,7 +3757,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3765,7 +3765,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3773,7 +3773,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3781,7 +3781,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3789,7 +3789,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3797,7 +3797,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3805,7 +3805,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3813,7 +3813,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3821,7 +3821,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3829,7 +3829,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3837,7 +3837,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3845,7 +3845,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3853,7 +3853,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3861,7 +3861,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3869,7 +3869,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3877,7 +3877,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3885,7 +3885,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3893,7 +3893,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3901,7 +3901,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3909,7 +3909,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3917,7 +3917,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3925,7 +3925,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3933,7 +3933,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3941,7 +3941,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3949,7 +3949,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3957,7 +3957,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3965,7 +3965,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3973,7 +3973,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3981,7 +3981,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3989,7 +3989,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -3997,7 +3997,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4005,7 +4005,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4013,7 +4013,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4021,7 +4021,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4029,7 +4029,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4037,7 +4037,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4045,7 +4045,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4053,7 +4053,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4061,7 +4061,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4069,7 +4069,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4077,7 +4077,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4085,7 +4085,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4093,7 +4093,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4101,7 +4101,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4109,7 +4109,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4117,7 +4117,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4125,21 +4125,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "pancevacki most",
-      "nameFormatted": "Pančevački most",
+      "nameDisplay": "Pančevački most",
       "departures": [
         {
           "time": 6.35,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4147,7 +4147,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4155,7 +4155,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4163,7 +4163,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4171,7 +4171,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4179,7 +4179,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4187,7 +4187,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4195,7 +4195,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4203,7 +4203,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4211,7 +4211,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4219,7 +4219,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4227,7 +4227,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4235,7 +4235,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4243,7 +4243,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4251,7 +4251,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4259,7 +4259,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4267,7 +4267,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4275,7 +4275,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4283,7 +4283,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4291,7 +4291,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4299,7 +4299,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4307,7 +4307,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4315,7 +4315,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4323,7 +4323,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4331,7 +4331,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4339,7 +4339,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4347,7 +4347,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4355,7 +4355,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4363,7 +4363,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4371,7 +4371,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4379,7 +4379,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4387,7 +4387,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4395,7 +4395,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4403,7 +4403,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4411,7 +4411,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4419,7 +4419,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4427,7 +4427,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4435,7 +4435,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4443,7 +4443,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4451,7 +4451,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4459,7 +4459,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4467,7 +4467,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4475,7 +4475,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4483,7 +4483,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4491,7 +4491,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4499,7 +4499,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4507,7 +4507,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4515,7 +4515,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4523,7 +4523,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4531,7 +4531,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4539,21 +4539,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "krnjaca most",
-      "nameFormatted": "Krnjača most",
+      "nameDisplay": "Krnjača most",
       "departures": [
         {
           "time": 6.39,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4561,7 +4561,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4569,7 +4569,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4577,7 +4577,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4585,7 +4585,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4593,7 +4593,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4601,7 +4601,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4609,7 +4609,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4617,7 +4617,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4625,7 +4625,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4633,7 +4633,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4641,7 +4641,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4649,7 +4649,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4657,7 +4657,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4665,7 +4665,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4673,7 +4673,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4681,7 +4681,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4689,7 +4689,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4697,7 +4697,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4705,7 +4705,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4713,7 +4713,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4721,7 +4721,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4729,7 +4729,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4737,7 +4737,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4745,7 +4745,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4753,7 +4753,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4761,7 +4761,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4769,7 +4769,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4777,7 +4777,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4785,7 +4785,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4793,7 +4793,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4801,7 +4801,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4809,7 +4809,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4817,7 +4817,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4825,7 +4825,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4833,7 +4833,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4841,7 +4841,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4849,7 +4849,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4857,7 +4857,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4865,7 +4865,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4873,7 +4873,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4881,7 +4881,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4889,7 +4889,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4897,7 +4897,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4905,7 +4905,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4913,7 +4913,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4921,7 +4921,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4929,7 +4929,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4937,7 +4937,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4945,7 +4945,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4953,21 +4953,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "krnjaca ukr",
-      "nameFormatted": "Krnjača ukr.",
+      "nameDisplay": "Krnjača ukr.",
       "departures": [
         {
           "time": 6.42,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4975,7 +4975,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4983,7 +4983,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -4991,7 +4991,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4999,7 +4999,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5007,7 +5007,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5015,7 +5015,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5023,7 +5023,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5031,7 +5031,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5039,7 +5039,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5047,7 +5047,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5055,7 +5055,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5063,7 +5063,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5071,7 +5071,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5079,7 +5079,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5087,7 +5087,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5095,7 +5095,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5103,7 +5103,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5111,7 +5111,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5119,7 +5119,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5127,7 +5127,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5135,7 +5135,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5143,7 +5143,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5151,7 +5151,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5159,7 +5159,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5167,7 +5167,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5175,7 +5175,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5183,7 +5183,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5191,7 +5191,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5199,7 +5199,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5207,7 +5207,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5215,7 +5215,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5223,7 +5223,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5231,7 +5231,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5239,7 +5239,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5247,7 +5247,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5255,7 +5255,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5263,7 +5263,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5271,7 +5271,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5279,7 +5279,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5287,7 +5287,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5295,7 +5295,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5303,7 +5303,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5311,7 +5311,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5319,7 +5319,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5327,7 +5327,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5335,7 +5335,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5343,7 +5343,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5351,7 +5351,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5359,7 +5359,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5367,21 +5367,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "sebes",
-      "nameFormatted": "Sebeš",
+      "nameDisplay": "Sebeš",
       "departures": [
         {
           "time": 6.45,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5389,7 +5389,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5397,7 +5397,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5405,7 +5405,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5413,7 +5413,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5421,7 +5421,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5429,7 +5429,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5437,7 +5437,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5445,7 +5445,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5453,7 +5453,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5461,7 +5461,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5469,7 +5469,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5477,7 +5477,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5485,7 +5485,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5493,7 +5493,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5501,7 +5501,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5509,7 +5509,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5517,7 +5517,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5525,7 +5525,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5533,7 +5533,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5541,7 +5541,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5549,7 +5549,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5557,7 +5557,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5565,7 +5565,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5573,7 +5573,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5581,7 +5581,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5589,7 +5589,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5597,7 +5597,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5605,7 +5605,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5613,7 +5613,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5621,7 +5621,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5629,7 +5629,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5637,7 +5637,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5645,7 +5645,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5653,7 +5653,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5661,7 +5661,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5669,7 +5669,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5677,7 +5677,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5685,7 +5685,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5693,7 +5693,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5701,7 +5701,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5709,7 +5709,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5717,7 +5717,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5725,7 +5725,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5733,7 +5733,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5741,7 +5741,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5749,7 +5749,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5757,7 +5757,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5765,7 +5765,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5773,7 +5773,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5781,21 +5781,21 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]
     },
     {
       "name": "ovca",
-      "nameFormatted": "Ovča",
+      "nameDisplay": "Ovča",
       "departures": [
         {
           "time": 6.48,
           "trainDetails": {
             "id": 8001,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5803,7 +5803,7 @@
           "trainDetails": {
             "id": 8003,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5811,7 +5811,7 @@
           "trainDetails": {
             "id": 8005,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5819,7 +5819,7 @@
           "trainDetails": {
             "id": 8007,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5827,7 +5827,7 @@
           "trainDetails": {
             "id": 8009,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5835,7 +5835,7 @@
           "trainDetails": {
             "id": 8011,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5843,7 +5843,7 @@
           "trainDetails": {
             "id": 8013,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5851,7 +5851,7 @@
           "trainDetails": {
             "id": 8015,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5859,7 +5859,7 @@
           "trainDetails": {
             "id": 8017,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5867,7 +5867,7 @@
           "trainDetails": {
             "id": 8019,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5875,7 +5875,7 @@
           "trainDetails": {
             "id": 8021,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5883,7 +5883,7 @@
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5891,7 +5891,7 @@
           "trainDetails": {
             "id": 8025,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5899,7 +5899,7 @@
           "trainDetails": {
             "id": 8027,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5907,7 +5907,7 @@
           "trainDetails": {
             "id": 8029,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5915,7 +5915,7 @@
           "trainDetails": {
             "id": 8031,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5923,7 +5923,7 @@
           "trainDetails": {
             "id": 8033,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5931,7 +5931,7 @@
           "trainDetails": {
             "id": 8035,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5939,7 +5939,7 @@
           "trainDetails": {
             "id": 8037,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5947,7 +5947,7 @@
           "trainDetails": {
             "id": 8039,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5955,7 +5955,7 @@
           "trainDetails": {
             "id": 8041,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5963,7 +5963,7 @@
           "trainDetails": {
             "id": 8043,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5971,7 +5971,7 @@
           "trainDetails": {
             "id": 8045,
             "directionId": 1,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5979,7 +5979,7 @@
           "trainDetails": {
             "id": 8000,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5987,7 +5987,7 @@
           "trainDetails": {
             "id": 8002,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -5995,7 +5995,7 @@
           "trainDetails": {
             "id": 8004,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6003,7 +6003,7 @@
           "trainDetails": {
             "id": 8006,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6011,7 +6011,7 @@
           "trainDetails": {
             "id": 8008,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6019,7 +6019,7 @@
           "trainDetails": {
             "id": 8010,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6027,7 +6027,7 @@
           "trainDetails": {
             "id": 8012,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6035,7 +6035,7 @@
           "trainDetails": {
             "id": 8014,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6043,7 +6043,7 @@
           "trainDetails": {
             "id": 8016,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6051,7 +6051,7 @@
           "trainDetails": {
             "id": 8310,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6059,7 +6059,7 @@
           "trainDetails": {
             "id": 8018,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6067,7 +6067,7 @@
           "trainDetails": {
             "id": 8020,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6075,7 +6075,7 @@
           "trainDetails": {
             "id": 8022,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6083,7 +6083,7 @@
           "trainDetails": {
             "id": 8024,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6091,7 +6091,7 @@
           "trainDetails": {
             "id": 8026,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6099,7 +6099,7 @@
           "trainDetails": {
             "id": 8028,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6107,7 +6107,7 @@
           "trainDetails": {
             "id": 8030,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6115,7 +6115,7 @@
           "trainDetails": {
             "id": 8032,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6123,7 +6123,7 @@
           "trainDetails": {
             "id": 8034,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6131,7 +6131,7 @@
           "trainDetails": {
             "id": 8036,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6139,7 +6139,7 @@
           "trainDetails": {
             "id": 8038,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6147,7 +6147,7 @@
           "trainDetails": {
             "id": 8040,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6155,7 +6155,7 @@
           "trainDetails": {
             "id": 8042,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6163,7 +6163,7 @@
           "trainDetails": {
             "id": 8044,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6171,7 +6171,7 @@
           "trainDetails": {
             "id": 8046,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6179,7 +6179,7 @@
           "trainDetails": {
             "id": 8048,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": false
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -6187,7 +6187,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         },
         {
@@ -6195,7 +6195,7 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
-            "activeOnWeekendsAndHolidays": true
+            "serviceFrequency": "ed"
           }
         }
       ]

@@ -7,12 +7,11 @@ const {
   isFrequencyValid,
   getDeparturesInDirection,
   getDeparturesByFrequency,
-  getFrequency,
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  trainIdDirection1,
-  trainIdDirection2,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
 } = require("./index");
 
 function test(title, callback) {
@@ -117,28 +116,16 @@ test("getDeparturesInDirection()", () => {
 
 test("getDeparturesByFrequency()", () => {
   test(` get correct departures`, () => {
-    const frequency = false;
+    const frequency = "wd";
     const departures = getDeparturesByFrequency(
       stations[1].departures,
       frequency
     );
-    if (departures[0].trainDetails.activeOnWeekendsAndHolidays === frequency) {
+    if (departures[0].trainDetails.serviceFrequency === frequency) {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(departures[0].trainDetails.activeOnWeekendsAndHolidays);
-    }
-  });
-});
-
-test("getFrequency()", () => {
-  test(` gets right frequency`, () => {
-    const f = getFrequency("ed");
-    if (f === true) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(f);
+      console.log(departures[0].trainDetails.serviceFrequency);
     }
   });
 });
@@ -150,11 +137,11 @@ test("getTrainsByFrequency()", () => {
       getTrainsByDirection(trains, 2),
       frequency
     );
-    if (result[0].activeOnWeekendsAndHolidays === false) {
+    if (result[0].serviceFrequency === "wd") {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-      console.log(result[0].activeOnWeekendsAndHolidays);
+      console.log(result[0].serviceFrequency);
     }
   });
 });
@@ -175,7 +162,7 @@ test("getTrainsByDirection()", () => {
 test("isTrainIdValid()", () => {
   test(` invalid train id`, () => {
     const result = isTrainIdValid(
-      [...trainIdDirection1, ...trainIdDirection2],
+      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
       2222
     );
     if (!result) {
@@ -187,7 +174,7 @@ test("isTrainIdValid()", () => {
   });
   test(` valid train id`, () => {
     const result = isTrainIdValid(
-      [...trainIdDirection1, ...trainIdDirection2],
+      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
       8003
     );
     if (result) {

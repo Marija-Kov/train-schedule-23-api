@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const {
   isDatePatternValid,
   isTimePatternValid,
-  getFrequencyArray,
+  getServiceFrequencyArray,
   getIndexOfSelectedStation,
   getDirectionAndStationIndexes,
   narrowDownSelection,
@@ -58,10 +58,10 @@ test("isTimePatternValid()", () => {
   });
 });
 
-test("getFrequencyArray()", () => {
+test("getServiceFrequencyArray()", () => {
   // NOTE: Currently obsolete, no departures for weekends and holidays exclusively
   // test(` for weekends and holidays`, () => {
-  //   if (getFrequencyArray("2026-01-07").join(",") === "true,w&h_only") {
+  //   if (getServiceFrequencyArray("2026-01-07").join(",") === "ed,wh) {
   //     console.log(`  ✅`);
   //   } else {
   //     console.log(`  ❌`);
@@ -69,7 +69,7 @@ test("getFrequencyArray()", () => {
   // });
   test(` for work days`, () => {
     const mondayToFridayDate = "2026-02-03";
-    if (getFrequencyArray(mondayToFridayDate).join(",") === "true,false") {
+    if (getServiceFrequencyArray(mondayToFridayDate).join(",") === "ed,wd") {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
@@ -111,7 +111,7 @@ test("getIndexOfSelectedStation()", () => {
 
 test("narrowDownSelection()", () => {
   test(` narrows down selection by given criteria`, () => {
-    const result = narrowDownSelection(3, "19.05", stations, 2, [true, false]);
+    const result = narrowDownSelection(3, "19.05", stations, 2, ["ed", "wd"]);
     if (
       result.length < stations.length &&
       result[0].time >= 19.05 &&
@@ -133,7 +133,7 @@ test("shapeToOutputFormat()", () => {
         trainDetails: {
           id: 7116,
           directionId: 2,
-          activeOnWeekendsAndHolidays: false,
+          serviceFrequency: "wd",
         },
       },
     ]);
@@ -162,7 +162,7 @@ test("getResultFromTrainIdOverlaps()", () => {
           trainDetails: {
             id: 7116,
             directionId: 2,
-            activeOnWeekendsAndHolidays: false,
+            serviceFrequency: "wd",
           },
         },
         {
@@ -170,7 +170,7 @@ test("getResultFromTrainIdOverlaps()", () => {
           trainDetails: {
             id: 8003,
             directionId: 2,
-            activeOnWeekendsAndHolidays: false,
+            serviceFrequency: "wd",
           },
         },
       ]
@@ -192,7 +192,7 @@ test("getTimeOutputFormat()", () => {
         trainDetails: {
           id: 8003,
           directionId: 2,
-          activeOnWeekendsAndHolidays: false,
+          serviceFrequency: "wd",
         },
       }) === "11:20"
     ) {

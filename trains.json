@@ -2,7 +2,7 @@
   "7101": {
     "id": 7101,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "zemun",
@@ -25,7 +25,7 @@
   "7116": {
     "id": 7116,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "beograd centar",
@@ -48,7 +48,7 @@
   "7901": {
     "id": 7901,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "zemun",
@@ -71,7 +71,7 @@
   "8000": {
     "id": 8000,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -138,7 +138,7 @@
   "8001": {
     "id": 8001,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -205,7 +205,7 @@
   "8002": {
     "id": 8002,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -272,7 +272,7 @@
   "8003": {
     "id": 8003,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -339,7 +339,7 @@
   "8004": {
     "id": 8004,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -406,7 +406,7 @@
   "8005": {
     "id": 8005,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -473,7 +473,7 @@
   "8006": {
     "id": 8006,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -540,7 +540,7 @@
   "8007": {
     "id": 8007,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -607,7 +607,7 @@
   "8008": {
     "id": 8008,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -674,7 +674,7 @@
   "8009": {
     "id": 8009,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -741,7 +741,7 @@
   "8010": {
     "id": 8010,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -808,7 +808,7 @@
   "8011": {
     "id": 8011,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -875,7 +875,7 @@
   "8012": {
     "id": 8012,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -942,7 +942,7 @@
   "8013": {
     "id": 8013,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1009,7 +1009,7 @@
   "8014": {
     "id": 8014,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1076,7 +1076,7 @@
   "8015": {
     "id": 8015,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1143,7 +1143,7 @@
   "8016": {
     "id": 8016,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1210,7 +1210,7 @@
   "8017": {
     "id": 8017,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1277,7 +1277,7 @@
   "8018": {
     "id": 8018,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1344,7 +1344,7 @@
   "8019": {
     "id": 8019,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1411,7 +1411,7 @@
   "8020": {
     "id": 8020,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -1462,7 +1462,7 @@
   "8021": {
     "id": 8021,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1529,7 +1529,7 @@
   "8022": {
     "id": 8022,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1596,7 +1596,7 @@
   "8023": {
     "id": 8023,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1663,7 +1663,7 @@
   "8024": {
     "id": 8024,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1730,7 +1730,7 @@
   "8025": {
     "id": 8025,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1797,7 +1797,7 @@
   "8026": {
     "id": 8026,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -1864,7 +1864,7 @@
   "8027": {
     "id": 8027,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -1931,7 +1931,7 @@
   "8028": {
     "id": 8028,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -1998,7 +1998,7 @@
   "8029": {
     "id": 8029,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2065,7 +2065,7 @@
   "8030": {
     "id": 8030,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -2132,7 +2132,7 @@
   "8031": {
     "id": 8031,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2199,7 +2199,7 @@
   "8032": {
     "id": 8032,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -2266,7 +2266,7 @@
   "8033": {
     "id": 8033,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2333,7 +2333,7 @@
   "8034": {
     "id": 8034,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -2400,7 +2400,7 @@
   "8035": {
     "id": 8035,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2467,7 +2467,7 @@
   "8036": {
     "id": 8036,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -2534,7 +2534,7 @@
   "8037": {
     "id": 8037,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2601,7 +2601,7 @@
   "8038": {
     "id": 8038,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -2668,7 +2668,7 @@
   "8039": {
     "id": 8039,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2735,7 +2735,7 @@
   "8040": {
     "id": 8040,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -2802,7 +2802,7 @@
   "8041": {
     "id": 8041,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2869,7 +2869,7 @@
   "8042": {
     "id": 8042,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -2920,7 +2920,7 @@
   "8043": {
     "id": 8043,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "batajnica",
@@ -2987,7 +2987,7 @@
   "8044": {
     "id": 8044,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -3054,7 +3054,7 @@
   "8045": {
     "id": 8045,
     "directionId": 1,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "batajnica",
@@ -3121,7 +3121,7 @@
   "8046": {
     "id": 8046,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -3188,7 +3188,7 @@
   "8048": {
     "id": 8048,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": false,
+    "serviceFrequency": "wd",
     "itinerary": [
       {
         "station": "ovca",
@@ -3255,7 +3255,7 @@
   "8050": {
     "id": 8050,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -3322,7 +3322,7 @@
   "8202": {
     "id": 8202,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "beograd centar",
@@ -3345,7 +3345,7 @@
   "8310": {
     "id": 8310,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
@@ -3384,7 +3384,7 @@
   "8340": {
     "id": 8340,
     "directionId": 2,
-    "activeOnWeekendsAndHolidays": true,
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",

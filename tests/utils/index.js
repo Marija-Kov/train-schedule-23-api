@@ -3,14 +3,14 @@ const fs = require("node:fs");
 
 const shape = require("../../dist/utils/dataShapers/shapeData");
 const {
-  dataStrDirection1,
-  dataStrDirection2,
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
+  batajnica_ovca,
+  ovca_batajnica,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
+  train_frequency_batajnica_ovca,
+  train_frequency_ovca_batajnica,
   stationsNames,
-  stationsFormatted,
+  stationsDisplay,
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
 const stationsJson = fs.readFileSync(
@@ -32,13 +32,12 @@ const {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  getFrequency
 } = require("../../dist/utils/getStationsAndTrainsDataHelpers");
 
 const {
   isDatePatternValid,
   isTimePatternValid,
-  getFrequencyArray,
+  getServiceFrequencyArray,
   getIndexOfSelectedStation,
   getDirectionAndStationIndexes,
   narrowDownSelection,
@@ -50,14 +49,14 @@ const {
 
 module.exports = {
   shape,
-  dataStrDirection1,
-  dataStrDirection2,
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
+  batajnica_ovca,
+  ovca_batajnica,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
+  train_frequency_batajnica_ovca,
+  train_frequency_ovca_batajnica,
   stationsNames,
-  stationsFormatted,
+  stationsDisplay,
   stationsJson,
   trainsJson,
   isStationNameValid,
@@ -69,10 +68,9 @@ module.exports = {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  getFrequency,
   isDatePatternValid,
   isTimePatternValid,
-  getFrequencyArray,
+  getServiceFrequencyArray,
   getIndexOfSelectedStation,
   getDirectionAndStationIndexes,
   narrowDownSelection,

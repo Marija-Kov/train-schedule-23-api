@@ -4,9 +4,9 @@ import {
   Station,
   StationDepartureDetails,
   StationName,
-  TrainIdDirection1,
-  TrainIdDirection2,
-  StationNameFormatted,
+  TrainIdBatajnicaOvca,
+  TrainIdOvcaBatajnica,
+  StationNameDisplay,
   TimeInput,
   TrainItinerary,
 } from "train-schedule-types";
@@ -58,11 +58,11 @@ function createTimetableMatrix(
 
 
 function trainsData(
-  trainIdsDir1: TrainIdDirection1[],
-  trainIdsDir2: TrainIdDirection2[],
-  weekendsAndHolidays1: (boolean | "w&h_only")[],
-  weekendsAndHolidays2: (boolean | "w&h_only")[],
-  stations: StationName[],
+  trainIdsDir1: TrainIdBatajnicaOvca[],
+  trainIdsDir2: TrainIdOvcaBatajnica[],
+  serviceFrequencyDirection1: ("ed" | "wd" | "wh")[],
+  serviceFrequencyDirection2: ("ed" | "wd" | "wh")[],
+  stationNames: StationName[],
   timetable1: TimeInput[][],
   timetable2: TimeInput[][]
 ): Train[] {
@@ -72,9 +72,9 @@ function trainsData(
       createTrainObject(
         i,
         trainIdsDir1,
-        weekendsAndHolidays1,
+        serviceFrequencyDirection1,
         timetable1,
-        stations,
+        stationNames,
         1
       )
     );
@@ -84,9 +84,9 @@ function trainsData(
       createTrainObject(
         i,
         trainIdsDir2,
-        weekendsAndHolidays2,
+        serviceFrequencyDirection2,
         timetable2,
-        stations.slice().reverse(),
+        stationNames.slice().reverse(),
         2
       )
     );
@@ -96,8 +96,8 @@ function trainsData(
 
 function createTrainObject(
   index: number,
-  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
-  frequencies: (boolean | "w&h_only")[],
+  trainIds: (TrainIdBatajnicaOvca | TrainIdOvcaBatajnica)[],
+  frequencies: ("ed" | "wd" | "wh")[],
   matrix: TimeInput[][],
   stations: StationName[],
   directionId: 1 | 2
@@ -105,7 +105,7 @@ function createTrainObject(
   const train: Train = {
     id: trainIds[index],
     directionId: directionId,
-    activeOnWeekendsAndHolidays: frequencies[index],
+    serviceFrequency: frequencies[index],
     itinerary: [],
   };
   for (let i = 0; i < stations.length; ++i) {
@@ -115,13 +115,13 @@ function createTrainObject(
 }
 
 function addDeparture(
-  station: StationName,
+  aStationName: StationName,
   time: TimeInput,
   itinerary: TrainItinerary
 ) {
   if (time !== "n/a") {
     itinerary.push({
-      station: station,
+      station: aStationName,
       time: Number(time),
     });
   }
@@ -143,43 +143,43 @@ function writeTrainsEndpoint(arr: Train[]) {
 }
 
 function stationsData(
-  stations: StationName[],
-  stationsFormatted: StationNameFormatted[],
+  stationNames: StationName[],
+  stationsDisplay: StationNameDisplay[],
   trains: Train[]
 ): Station[] {
   const result: Station[] = [];
-  for (let i = 0; i < stations.length; ++i) {
-    result.push(createStationObject(stations[i], stationsFormatted[i], trains));
+  for (let i = 0; i < stationNames.length; ++i) {
+    result.push(createStationObject(stationNames[i], stationsDisplay[i], trains));
   }
   return result;
 }
 
 function createStationObject(
-  station: StationName,
-  stationFormatted: StationNameFormatted,
+  aStationName: StationName,
+  aStationNameDisplay: StationNameDisplay,
   trains: Train[]
 ) {
   const result: Station = {
-    name: station,
-    nameFormatted: stationFormatted,
+    name: aStationName,
+    nameDisplay: aStationNameDisplay,
     departures: [], // TODO: this array contains data about trains found on the station at certain times, not all of them are technically departures.
   };
   for (let i = 0; i < trains.length; ++i) {
-    if (trains[i].itinerary.filter((i) => i.station === station).length) {
-      result.departures.push(addDepartureToStation(trains[i], station));
+    if (trains[i].itinerary.filter((i) => i.station === aStationName).length) {
+      result.departures.push(addDepartureToStation(trains[i], aStationName));
     }
   }
   return result;
 }
 
-function addDepartureToStation(train: Train, station: StationName) {
-  const time = train.itinerary.filter((i) => i.station === station)[0].time;
+function addDepartureToStation(train: Train, aStationName: StationName) {
+  const time = train.itinerary.filter((i) => i.station === aStationName)[0].time;
   return {
     time: time,
     trainDetails: {
       id: train.id,
       directionId: train.directionId,
-      activeOnWeekendsAndHolidays: train.activeOnWeekendsAndHolidays,
+      serviceFrequency: train.serviceFrequency,
     },
   } as StationDepartureDetails;
 }

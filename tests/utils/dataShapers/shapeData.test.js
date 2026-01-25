@@ -1,15 +1,15 @@
 const {
   shape,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
+  train_frequency_batajnica_ovca,
+  train_frequency_ovca_batajnica,
 } = require("../index.js");
 const {
-  dataStrDirection1,
-  dataStrDirection2,
+  batajnica_ovca,
+  ovca_batajnica,
   stationsNames,
-  stationsFormatted,
-  trainIdDirection1,
-  trainIdDirection2,
+  stationsDisplay,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
 } = require("../index.js");
 
 function test(title, callback) {
@@ -20,7 +20,7 @@ function test(title, callback) {
 test("createTimetableMatrix()", () => {
   test(` matrix created correctly for direction 1`, () => {
     const data = shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(dataStrDirection1)
+      shape.default.extractDepartureTimes(batajnica_ovca)
     );
     if (
       data[0].join(",") ===
@@ -161,7 +161,7 @@ test("createTimetableMatrix()", () => {
 
   test(` matrix created correctly for direction 2`, () => {
     const data = shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(dataStrDirection2)
+      shape.default.extractDepartureTimes(ovca_batajnica)
     );
     if (
       data[0].join(",") ===
@@ -303,16 +303,16 @@ test("createTimetableMatrix()", () => {
 
 test("trainsData()", () => {
   const data = shape.default.trainsData(
-    trainIdDirection1,
-    trainIdDirection2,
-    trainIdActiveOnWeekendsAndHolidaysDirection1,
-    trainIdActiveOnWeekendsAndHolidaysDirection2,
+    train_id_batajnica_ovca,
+    train_id_ovca_batajnica,
+    train_frequency_batajnica_ovca,
+    train_frequency_ovca_batajnica,
     stationsNames,
     shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(dataStrDirection1)
+      shape.default.extractDepartureTimes(batajnica_ovca)
     ),
     shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(dataStrDirection2)
+      shape.default.extractDepartureTimes(ovca_batajnica)
     )
   );
   function getItinerary(trainId) {
@@ -355,18 +355,18 @@ test("trainsData()", () => {
 test("stationsData()", () => {
   const data = shape.default.stationsData(
     stationsNames,
-    stationsFormatted,
+    stationsDisplay,
     shape.default.trainsData(
-      trainIdDirection1,
-      trainIdDirection2,
-      trainIdActiveOnWeekendsAndHolidaysDirection1,
-      trainIdActiveOnWeekendsAndHolidaysDirection2,
+      train_id_batajnica_ovca,
+      train_id_ovca_batajnica,
+      train_frequency_batajnica_ovca,
+      train_frequency_ovca_batajnica,
       stationsNames,
       shape.default.createTimetableMatrix(
-        shape.default.extractDepartureTimes(dataStrDirection1)
+        shape.default.extractDepartureTimes(batajnica_ovca)
       ),
       shape.default.createTimetableMatrix(
-        shape.default.extractDepartureTimes(dataStrDirection2)
+        shape.default.extractDepartureTimes(ovca_batajnica)
       )
     )
   );

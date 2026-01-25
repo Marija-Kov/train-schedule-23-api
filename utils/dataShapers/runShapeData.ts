@@ -1,27 +1,27 @@
 import {
-  dataStrDirection1,
-  dataStrDirection2,
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
+  batajnica_ovca,
+  ovca_batajnica,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
+  train_frequency_batajnica_ovca,
+  train_frequency_ovca_batajnica,
   stationsNames,
-  stationsFormatted,
+  stationsDisplay,
 } from "./data/extractedData";
 
 import shape from "./shapeData";
 
-const departureTimesDirection1 = shape.extractDepartureTimes(dataStrDirection1);
-const departureTimesDirection2 = shape.extractDepartureTimes(dataStrDirection2);
+const departureTimesDirection1 = shape.extractDepartureTimes(batajnica_ovca);
+const departureTimesDirection2 = shape.extractDepartureTimes(ovca_batajnica);
 
 const timetableMatrixDirection1 = shape.createTimetableMatrix(departureTimesDirection1);
 const timetableMatrixDirection2 = shape.createTimetableMatrix(departureTimesDirection2);
 
 const trainsDataShaped = shape.trainsData(
-  trainIdDirection1,
-  trainIdDirection2,
-  trainIdActiveOnWeekendsAndHolidaysDirection1,
-  trainIdActiveOnWeekendsAndHolidaysDirection2,
+  train_id_batajnica_ovca,
+  train_id_ovca_batajnica,
+  train_frequency_batajnica_ovca,
+  train_frequency_ovca_batajnica,
   stationsNames,
   timetableMatrixDirection1,
   timetableMatrixDirection2
@@ -29,7 +29,7 @@ const trainsDataShaped = shape.trainsData(
 
 const stationsDataShaped = shape.stationsData(
   stationsNames,
-  stationsFormatted,
+  stationsDisplay,
   trainsDataShaped
 );
 

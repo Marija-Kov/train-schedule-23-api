@@ -22,11 +22,11 @@ export function isTimePatternValid(time: TimeInput) {
   return time.match(r);
 }
 
-export function getFrequencyArray(date: YyyyMmDd) {
+export function getServiceFrequencyArray(date: YyyyMmDd) {
   const day = new Date(date).getDay();
   return day === 0 || day === 6 || holidays.includes(date)
-    ? [true, "w&h_only"]
-    : [true, false];
+    ? ["ed", "wh"]
+    : ["ed", "wd"];
 }
 
 export function getDirectionAndStationIndexes(
@@ -42,8 +42,8 @@ export function getDirectionAndStationIndexes(
   return { indexFrom, indexTo, direction };
 }
 
-export function formatStationNameForOutput(index: number, stations: Station[]) {
-  return stations[index].nameFormatted;
+export function getStationNameDisplay(index: number, stations: Station[]) {
+  return stations[index].nameDisplay;
 }
 
 export function narrowDownSelection(
@@ -57,7 +57,7 @@ export function narrowDownSelection(
     return (
       d.time >= Number(time) &&
       d.trainDetails.directionId === direction &&
-      frequency.includes(d.trainDetails.activeOnWeekendsAndHolidays)
+      frequency.includes(d.trainDetails.serviceFrequency)
     );
   });
 }
@@ -93,11 +93,11 @@ export function getTimeOutputFormat(arrival: StationDepartureDetails) {
 }
 
 export function getIndexOfSelectedStation(
-  stationName: StationName,
+  aStationName: StationName,
   stations: Station[]
 ) {
   return stations
-    .filter((station: Station) => station.name === stationName)
+    .filter((station: Station) => station.name === aStationName)
     .map((station: Station) => stations.indexOf(station))[0];
 }
 
@@ -114,6 +114,6 @@ export function getStationIndexesIfDirectionIs2(
   return { indexFrom, indexTo };
 }
 
-export function getDirection(indexFrom: number, indexTo: number) {
+function getDirection(indexFrom: number, indexTo: number) {
   return (indexFrom > indexTo ? 2 : 1) as 1 | 2;
 }

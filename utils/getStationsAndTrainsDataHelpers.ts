@@ -1,4 +1,4 @@
-import { Station, StationName, StationDepartureDetails, TrainDetails, TrainsMap, TrainIdDirection1, TrainIdDirection2 } from "train-schedule-types";
+import { Station, StationName, StationDepartureDetails, TrainDetails, TrainsMap, TrainIdBatajnicaOvca, TrainIdOvcaBatajnica } from "train-schedule-types";
 import { stationsNames } from "./dataShapers/data/extractedData";
 
 export function isStationNameValid(station: StationName) {
@@ -26,16 +26,16 @@ export function getDeparturesInDirection(
 
 export function getDeparturesByFrequency(
   departures: StationDepartureDetails[],
-  frequency: boolean | "w&h_only" | undefined
+  frequency: "ed" | "wd" | "wh"
 ) {
   return departures.filter(
-    (d) => d.trainDetails.activeOnWeekendsAndHolidays === frequency
+    (d) => d.trainDetails.serviceFrequency === frequency
   );
 }
 
 export function getTrainsByFrequency(trains: TrainDetails[], frequency: "ed" | "wd" | "wh") {
   return Object.values(trains).filter(
-    (train) => train.activeOnWeekendsAndHolidays === getFrequency(frequency)
+    (train) => train.serviceFrequency === frequency
   );
 }
 
@@ -46,28 +46,8 @@ export function getTrainsByDirection(trains: TrainsMap, direction: 1 | 2) {
 }
 
 export function isTrainIdValid(
-  trainIds: (TrainIdDirection1 | TrainIdDirection2)[],
-  id: TrainIdDirection1 | TrainIdDirection2
+  trainIds: (TrainIdBatajnicaOvca | TrainIdOvcaBatajnica)[],
+  id: TrainIdBatajnicaOvca | TrainIdOvcaBatajnica
 ) {
   return trainIds.includes(id);
-}
-
-export function getFrequency(
-  frequency: "ed" | "wd" | "wh"
-): boolean | "w&h_only" | undefined {
-  let active: any;
-  switch (frequency) {
-    case "wh":
-      active = "w&h_only";
-      break;
-    case "ed":
-      active = true;
-      break;
-    case "wd":
-      active = false;
-      break;
-    default:
-      undefined;
-  }
-  return active;
 }

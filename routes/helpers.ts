@@ -3,8 +3,8 @@ import {
   TimeInput,
   YyyyMmDd,
   StationName,
-  TrainIdDirection1,
-  TrainIdDirection2,
+  TrainIdBatajnicaOvca,
+  TrainIdOvcaBatajnica,
 } from "train-schedule-types";
 
 /**
@@ -49,12 +49,12 @@ export function aFrequencyParam(frequencyParam: string) {
 }
 
 /**
- * Converts train id numerical string to type TrainIdDirection1 | TrainIdDirection2
+ * Converts train id numerical string to type TrainIdBatajnicaOvca | TrainIdOvcaBatajnica
  * @param trainIdParam train id extracted from the url
- * @returns train id number (TrainIdDirection1 | TrainIdDirection2)
+ * @returns train id number (TrainIdBatajnicaOvca | TrainIdOvcaBatajnica)
  */
 export function aTrainIdParam(trainIdParam: string) {
-  return Number(trainIdParam) as TrainIdDirection1 | TrainIdDirection2;
+  return Number(trainIdParam) as TrainIdBatajnicaOvca | TrainIdOvcaBatajnica;
 }
 
 /**
