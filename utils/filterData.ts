@@ -6,6 +6,7 @@ import {
   TrainIdBatajnicaOvca,
   TrainIdOvcaBatajnica,
   TrainsMap,
+  ServiceFrequency,
 } from "train-schedule-types";
 
 import {
@@ -141,7 +142,7 @@ const stationsData = (
   stations: Station[],
   aStation: StationName | undefined,
   direction: 1 | 2 | undefined,
-  frequency: "ed" | "wd" | "wh" | undefined
+  frequency: ServiceFrequency | undefined
 ) => {
   if (!stations)
     throw Error(
@@ -188,7 +189,7 @@ const stationsData = (
 const trainsData = (
   trains: TrainsMap,
   direction: 1 | 2 | undefined,
-  frequency: "ed" | "wd" | "wh" | undefined
+  frequency: ServiceFrequency | undefined
 ) => {
   if (!trains)
     throw Error("filterData > trainsData(): argument 'trains' is missing");

@@ -9,6 +9,7 @@ import {
   StationNameDisplay,
   TimeInput,
   TrainItinerary,
+  ServiceFrequency,
 } from "train-schedule-types";
 
 function extractDepartureTimes(dataStr: string): TimeInput[][] {
@@ -60,8 +61,8 @@ function createTimetableMatrix(
 function trainsData(
   trainIdsDir1: TrainIdBatajnicaOvca[],
   trainIdsDir2: TrainIdOvcaBatajnica[],
-  serviceFrequencyDirection1: ("ed" | "wd" | "wh")[],
-  serviceFrequencyDirection2: ("ed" | "wd" | "wh")[],
+  serviceFrequencyDirection1: ServiceFrequency[],
+  serviceFrequencyDirection2: ServiceFrequency[],
   stationNames: StationName[],
   timetable1: TimeInput[][],
   timetable2: TimeInput[][]
@@ -97,7 +98,7 @@ function trainsData(
 function createTrainObject(
   index: number,
   trainIds: (TrainIdBatajnicaOvca | TrainIdOvcaBatajnica)[],
-  frequencies: ("ed" | "wd" | "wh")[],
+  frequencies: ServiceFrequency[],
   matrix: TimeInput[][],
   stations: StationName[],
   directionId: 1 | 2

@@ -4,6 +4,7 @@ import {
   TrainIdOvcaBatajnica,
   StationName,
   StationNameDisplay,
+  ServiceFrequency,
 } from "train-schedule-types";
 
 // zeros entered manually to denote no departure
@@ -23,7 +24,7 @@ export const train_id_ovca_batajnica: TrainIdOvcaBatajnica[] = [
   8042, 8202, 8044, 8046, 8048, 7116, 8050, 8340,
 ];
 
-export const train_frequency_batajnica_ovca: ("ed" | "wd" | "wh")[] = [
+export const train_frequency_batajnica_ovca: ServiceFrequency[] = [
   "ed",
   "ed",
   "ed",
@@ -50,7 +51,7 @@ export const train_frequency_batajnica_ovca: ("ed" | "wd" | "wh")[] = [
   "wd",
   "ed",
 ];
-export const train_frequency_ovca_batajnica: ("ed" | "wd" | "wh")[]  = [
+export const train_frequency_ovca_batajnica: ServiceFrequency[]  = [
   "wd",
   "ed",
   "wd",

@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import {
   TimeInput,
   YyyyMmDd,
+  ServiceFrequency,
   StationName,
   TrainIdBatajnicaOvca,
   TrainIdOvcaBatajnica,
@@ -39,13 +40,13 @@ export function aDirectionParam(directionParam: string) {
 }
 
 /**
- * Converts a frequency parameter to type "ed" | "wd" | "wh"
+ * Converts a frequency parameter to type ServiceFrequency
  * @param frequencyParam frequency extracted from the url
  * @returns
  */
 export function aFrequencyParam(frequencyParam: string) {
   if (!frequencyParam) return undefined;
-  return frequencyParam as "ed" | "wd" | "wh";
+  return frequencyParam as ServiceFrequency;
 }
 
 /**
