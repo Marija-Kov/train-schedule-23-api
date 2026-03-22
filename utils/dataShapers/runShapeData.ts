@@ -1,38 +1,16 @@
 import {
-  batajnica_ovca,
-  ovca_batajnica,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
-  train_frequency_batajnica_ovca,
-  train_frequency_ovca_batajnica,
-  stationsNames,
-  stationsDisplay,
+  batajnicaOvca,
+  ovcaZemunResnikLazarevac,
+  ovcaZemunResnikMladenovac,
+  stationNamesDisplayMap
 } from "./data/extractedData";
 
 import shape from "./shapeData";
 
-const departureTimesDirection1 = shape.extractDepartureTimes(batajnica_ovca);
-const departureTimesDirection2 = shape.extractDepartureTimes(ovca_batajnica);
+const allTrains = shape.trainsData(batajnicaOvca, ovcaZemunResnikLazarevac, ovcaZemunResnikMladenovac)
 
-const timetableMatrixDirection1 = shape.createTimetableMatrix(departureTimesDirection1);
-const timetableMatrixDirection2 = shape.createTimetableMatrix(departureTimesDirection2);
+const allStations = shape.stationsData(stationNamesDisplayMap, allTrains)
 
-const trainsDataShaped = shape.trainsData(
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
-  train_frequency_batajnica_ovca,
-  train_frequency_ovca_batajnica,
-  stationsNames,
-  timetableMatrixDirection1,
-  timetableMatrixDirection2
-);
+shape.writeTrainsEndpoint(allTrains);
 
-const stationsDataShaped = shape.stationsData(
-  stationsNames,
-  stationsDisplay,
-  trainsDataShaped
-);
-
-shape.writeTrainsEndpoint(trainsDataShaped);
-
-shape.writeStationsEndpoint(stationsDataShaped);
+shape.writeStationsEndpoint(allStations)

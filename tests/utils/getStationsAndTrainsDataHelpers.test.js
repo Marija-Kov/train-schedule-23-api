@@ -10,8 +10,7 @@ const {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
+  batajnicaOvca,
 } = require("./index");
 
 function test(title, callback) {
@@ -162,7 +161,7 @@ test("getTrainsByDirection()", () => {
 test("isTrainIdValid()", () => {
   test(` invalid train id`, () => {
     const result = isTrainIdValid(
-      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
+      [...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2],
       2222
     );
     if (!result) {
@@ -174,7 +173,7 @@ test("isTrainIdValid()", () => {
   });
   test(` valid train id`, () => {
     const result = isTrainIdValid(
-      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
+      [...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2],
       8003
     );
     if (result) {

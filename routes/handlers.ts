@@ -11,6 +11,8 @@ import {
   aTimeParam,
 } from "./helpers";
 import { ExtendedServerRes } from "../framework";
+import { getServiceFrequencyArray } from "../utils/getDeparturesHelpers";
+import { ServiceFrequency, YyyyMmDd } from "train-schedule-types";
 
 export const departures = async (
   req: IncomingMessage,
@@ -21,19 +23,22 @@ export const departures = async (
     return res.sendJson(405, { error: "Method Not Allowed" });
   }
   if (!url) return;
-
+  
   try {
-    const result = filter.departures(
-      await data("./stations.json"),
-      aStationNameParam(param(url, 2)),
-      aStationNameParam(param(url, 3)),
-      aDateParam(param(url, 4)),
-      aTimeParam(param(url, 5))
+    const result = await filter.departuresNEWX(
+      await data("./stations.json"), // fetches stations
+      await data("./trains.json"), // fetches trains
+      aStationNameParam(param(url, 2)), // extracts departure station param
+      aStationNameParam(param(url, 3)), // extracts arrival station param
+      getServiceFrequencyArray(param(url, 4) as YyyyMmDd) as ServiceFrequency[], // gets relevant service frequency markers from date param
+      aTimeParam(param(url, 5)) // extracts time param from url
     );
-    const statusCode = result.error ? 400 : 200;
-    return res.sendJson(statusCode, result);
+    if (result) {
+      const statusCode = result.error ? 400 : 200;
+      return res.sendJson(statusCode, result);
+    }
   } catch (error) {
-    console.error("Error reading/filtering stations data:", error);
+    console.error("Error reading/filtering stations/trains data:", error);
     return res.sendJson(500, { error: "Internal server error" });
   }
 };

@@ -28,7 +28,7 @@ export function getServiceFrequencyArray(date: YyyyMmDd) {
     ? ["ed", "wh"]
     : ["ed", "wd"];
 }
-
+// OBSOLETE
 export function getDirectionAndStationIndexes(
   from: StationName,
   to: StationName,
@@ -41,7 +41,7 @@ export function getDirectionAndStationIndexes(
 
   return { indexFrom, indexTo, direction };
 }
-
+// OBSOLETE
 export function getStationNameDisplay(index: number, stations: Station[]) {
   return stations[index].nameDisplay;
 }
@@ -91,7 +91,7 @@ export function getResultFromTrainIdOverlaps(
 export function getTimeOutputFormat(arrival: StationDepartureDetails) {
   return arrival.time.toFixed(2).split(".").join(":") as TimeOutput;
 }
-
+// OBSOLETE
 export function getIndexOfSelectedStation(
   aStationName: StationName,
   stations: Station[]
@@ -100,7 +100,7 @@ export function getIndexOfSelectedStation(
     .filter((station: Station) => station.name === aStationName)
     .map((station: Station) => stations.indexOf(station))[0];
 }
-
+// OBSOLETE
 export function getStationIndexesIfDirectionIs2(
   direction: 1 | 2,
   indexFrom: number,
@@ -113,7 +113,7 @@ export function getStationIndexesIfDirectionIs2(
   }
   return { indexFrom, indexTo };
 }
-
+// OBSOLETE - ARouteExtractedData.stationNames may be used to get index
 function getDirection(indexFrom: number, indexTo: number) {
   return (indexFrom > indexTo ? 2 : 1) as 1 | 2;
 }

@@ -3,14 +3,8 @@ const fs = require("node:fs");
 
 const shape = require("../../dist/utils/dataShapers/shapeData");
 const {
-  batajnica_ovca,
-  ovca_batajnica,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
-  train_frequency_batajnica_ovca,
-  train_frequency_ovca_batajnica,
-  stationsNames,
-  stationsDisplay,
+  batajnicaOvca,
+  stationNamesDisplayMap
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
 const stationsJson = fs.readFileSync(
@@ -49,14 +43,8 @@ const {
 
 module.exports = {
   shape,
-  batajnica_ovca,
-  ovca_batajnica,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
-  train_frequency_batajnica_ovca,
-  train_frequency_ovca_batajnica,
-  stationsNames,
-  stationsDisplay,
+  batajnicaOvca,
+  stationNamesDisplayMap,
   stationsJson,
   trainsJson,
   isStationNameValid,

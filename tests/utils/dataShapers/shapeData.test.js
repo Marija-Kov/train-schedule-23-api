@@ -1,15 +1,6 @@
 const {
-  shape,
-  train_frequency_batajnica_ovca,
-  train_frequency_ovca_batajnica,
-} = require("../index.js");
-const {
-  batajnica_ovca,
-  ovca_batajnica,
-  stationsNames,
-  stationsDisplay,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
+  batajnicaOvca,
+  stationNamesDisplayMap
 } = require("../index.js");
 
 function test(title, callback) {
@@ -17,10 +8,10 @@ function test(title, callback) {
   callback();
 }
 
-test("createTimetableMatrix()", () => {
+test("overwriteNonTemporalMarkers()", () => {
   test(` matrix created correctly for direction 1`, () => {
-    const data = shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(batajnica_ovca)
+    const data = shape.default.overwriteNonTemporalMarkers(
+      shape.default.generateMatrix(batajnicaOvca.timetableDataDirection1)
     );
     if (
       data[0].join(",") ===
@@ -160,8 +151,8 @@ test("createTimetableMatrix()", () => {
   });
 
   test(` matrix created correctly for direction 2`, () => {
-    const data = shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(ovca_batajnica)
+    const data = shape.default.overwriteNonTemporalMarkers(
+      shape.default.generateMatrix(batajnicaOvca.timetableDataDirection2)
     );
     if (
       data[0].join(",") ===
@@ -303,16 +294,16 @@ test("createTimetableMatrix()", () => {
 
 test("trainsData()", () => {
   const data = shape.default.trainsData(
-    train_id_batajnica_ovca,
-    train_id_ovca_batajnica,
-    train_frequency_batajnica_ovca,
-    train_frequency_ovca_batajnica,
-    stationsNames,
-    shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(batajnica_ovca)
+    batajnicaOvca.trainIdsDirection1,
+    batajnicaOvca.trainIdsDirection2,
+    batajnicaOvca.serviceFrequencyDirection1,
+    batajnicaOvca.serviceFrequencyDirection2,
+    batajnicaOvca.stationNames,
+    shape.default.overwriteNonTemporalMarkers(
+      shape.default.generateMatrix(batajnicaOvca.timetableDataDirection1)
     ),
-    shape.default.createTimetableMatrix(
-      shape.default.extractDepartureTimes(ovca_batajnica)
+    shape.default.overwriteNonTemporalMarkers(
+      shape.default.generateMatrix(batajnicaOvca.timetableDataDirection2)
     )
   );
   function getItinerary(trainId) {
@@ -354,25 +345,25 @@ test("trainsData()", () => {
 
 test("stationsData()", () => {
   const data = shape.default.stationsData(
-    stationsNames,
-    stationsDisplay,
+    batajnicaOvca.stationNames,
+    Object.keys(stationNamesDisplayMap),
     shape.default.trainsData(
-      train_id_batajnica_ovca,
-      train_id_ovca_batajnica,
-      train_frequency_batajnica_ovca,
-      train_frequency_ovca_batajnica,
-      stationsNames,
-      shape.default.createTimetableMatrix(
-        shape.default.extractDepartureTimes(batajnica_ovca)
+      batajnicaOvca.trainIdsDirection1,
+      batajnicaOvca.trainIdsDirection2,
+      batajnicaOvca.serviceFrequencyDirection1,
+      batajnicaOvca.serviceFrequencyDirection2,
+      batajnicaOvca.stationNames,
+      shape.default.overwriteNonTemporalMarkers(
+        shape.default.generateMatrix(batajnicaOvca.timetableDataDirection1)
       ),
-      shape.default.createTimetableMatrix(
-        shape.default.extractDepartureTimes(ovca_batajnica)
+      shape.default.overwriteNonTemporalMarkers(
+        shape.default.generateMatrix(batajnicaOvca.timetableDataDirection2)
       )
     )
   );
   test(` writes all stops correctly`, () => {
     function checkStopsAt(stationName, targetLength, earliest, latest) {
-      const stationIndex = stationsNames.indexOf(stationName);
+      const stationIndex = batajnicaOvca.stationNames.indexOf(stationName);
       if (
         data[stationIndex].departures.length === targetLength &&
         data[stationIndex].departures[0].time === earliest &&
