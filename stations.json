@@ -107,7 +107,7 @@
           }
         },
         {
-          "time": 13.2,
+          "time": 12.35,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -391,7 +391,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         }
       ]
@@ -489,7 +489,7 @@
           }
         },
         {
-          "time": 13.24,
+          "time": 12.39,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -773,7 +773,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         }
       ]
@@ -871,7 +871,7 @@
           }
         },
         {
-          "time": 13.26,
+          "time": 12.41,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1155,7 +1155,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         }
       ]
@@ -1253,7 +1253,7 @@
           }
         },
         {
-          "time": 13.28,
+          "time": 12.43,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1537,7 +1537,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         }
       ]
@@ -1546,22 +1546,6 @@
       "name": "zemun",
       "nameDisplay": "Zemun",
       "departures": [
-        {
-          "time": 3.44,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.1,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.12,
           "trainDetails": {
@@ -1651,7 +1635,7 @@
           }
         },
         {
-          "time": 13.32,
+          "time": 12.47,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1923,14 +1907,6 @@
           }
         },
         {
-          "time": 19.28,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.47,
           "trainDetails": {
             "id": 8044,
@@ -1955,19 +1931,11 @@
           }
         },
         {
-          "time": 21.58,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.47,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -1984,22 +1952,6 @@
       "name": "tosin bunar",
       "nameDisplay": "Tošin bunar",
       "departures": [
-        {
-          "time": 3.47,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.13,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.16,
           "trainDetails": {
@@ -2089,7 +2041,7 @@
           }
         },
         {
-          "time": 13.36,
+          "time": 12.51,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -2361,14 +2313,6 @@
           }
         },
         {
-          "time": 19.25,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.43,
           "trainDetails": {
             "id": 8044,
@@ -2393,19 +2337,11 @@
           }
         },
         {
-          "time": 21.55,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.43,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2422,22 +2358,6 @@
       "name": "novi beograd",
       "nameDisplay": "Novi Beograd",
       "departures": [
-        {
-          "time": 3.49,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.15,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.19,
           "trainDetails": {
@@ -2527,7 +2447,7 @@
           }
         },
         {
-          "time": 13.39,
+          "time": 12.54,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -2799,14 +2719,6 @@
           }
         },
         {
-          "time": 19.22,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.4,
           "trainDetails": {
             "id": 8044,
@@ -2831,19 +2743,11 @@
           }
         },
         {
-          "time": 21.52,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.4,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -2860,22 +2764,6 @@
       "name": "beograd centar",
       "nameDisplay": "Beograd centar",
       "departures": [
-        {
-          "time": 3.54,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.2,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.23,
           "trainDetails": {
@@ -2965,7 +2853,7 @@
           }
         },
         {
-          "time": 13.43,
+          "time": 12.58,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -3133,14 +3021,6 @@
           }
         },
         {
-          "time": 10.23,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.16,
           "trainDetails": {
             "id": 8018,
@@ -3245,14 +3125,6 @@
           }
         },
         {
-          "time": 19.18,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.36,
           "trainDetails": {
             "id": 8044,
@@ -3277,19 +3149,11 @@
           }
         },
         {
-          "time": 21.48,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.36,
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3395,7 +3259,7 @@
           }
         },
         {
-          "time": 13.47,
+          "time": 13.02,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -3563,14 +3427,6 @@
           }
         },
         {
-          "time": 10.21,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.13,
           "trainDetails": {
             "id": 8018,
@@ -3703,7 +3559,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -3809,7 +3665,7 @@
           }
         },
         {
-          "time": 13.51,
+          "time": 13.06,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -3977,14 +3833,6 @@
           }
         },
         {
-          "time": 10.18,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.09,
           "trainDetails": {
             "id": 8018,
@@ -4117,7 +3965,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4223,7 +4071,7 @@
           }
         },
         {
-          "time": 13.55,
+          "time": 13.1,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -4391,14 +4239,6 @@
           }
         },
         {
-          "time": 10.15,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.06,
           "trainDetails": {
             "id": 8018,
@@ -4531,7 +4371,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -4637,7 +4477,7 @@
           }
         },
         {
-          "time": 13.59,
+          "time": 13.14,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -4805,14 +4645,6 @@
           }
         },
         {
-          "time": 10.1,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11,
           "trainDetails": {
             "id": 8018,
@@ -4945,7 +4777,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5051,7 +4883,7 @@
           }
         },
         {
-          "time": 14.02,
+          "time": 13.17,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -5219,14 +5051,6 @@
           }
         },
         {
-          "time": 10.08,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 10.58,
           "trainDetails": {
             "id": 8018,
@@ -5359,7 +5183,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5465,7 +5289,7 @@
           }
         },
         {
-          "time": 14.05,
+          "time": 13.2,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -5633,14 +5457,6 @@
           }
         },
         {
-          "time": 10.04,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 10.54,
           "trainDetails": {
             "id": 8018,
@@ -5773,7 +5589,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
@@ -5879,7 +5695,7 @@
           }
         },
         {
-          "time": 14.08,
+          "time": 13.23,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -6047,14 +5863,6 @@
           }
         },
         {
-          "time": 10,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 10.5,
           "trainDetails": {
             "id": 8018,
@@ -6187,7 +5995,7 @@
           "trainDetails": {
             "id": 8050,
             "directionId": 2,
-            "serviceFrequency": "ed"
+            "serviceFrequency": "wd"
           }
         },
         {
