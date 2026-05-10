@@ -247,6 +247,17 @@ const departuresNEWX = async (
     }
   })
 
+  // Filter out redundant results with layovers. If trains A, B and C (departing in that order) all have a layover with train D, then only show C-D in results. 
+  const checkedLayoverTrainIds: TrainId[] = []
+  
+  for (let j = indirectArrivals.length - 1; j >= 0; j--) {
+    if (checkedLayoverTrainIds.includes(indirectArrivals[j].layover.trainId)) {
+      indirectArrivals.splice(j, 1)
+    } else {
+      checkedLayoverTrainIds.push(indirectArrivals[j].layover.trainId)
+    }
+  }
+
   return {
     departureStation: stationNamesDisplayMap[from],
     arrivalStation: stationNamesDisplayMap[to],
