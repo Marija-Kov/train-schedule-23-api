@@ -1,4 +1,87 @@
 {
+  "7100": {
+    "id": 7100,
+    "directionId": 2,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "lazarevac",
+        "time": 5.4
+      },
+      {
+        "station": "vreoci",
+        "time": 5.47
+      },
+      {
+        "station": "stepojevac",
+        "time": 5.54
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 5.57
+      },
+      {
+        "station": "veliki borak",
+        "time": 6.01
+      },
+      {
+        "station": "barajevo centar",
+        "time": 6.06
+      },
+      {
+        "station": "barajevo ukr",
+        "time": 6.09
+      },
+      {
+        "station": "bela reka",
+        "time": 6.17
+      },
+      {
+        "station": "resnik",
+        "time": 6.3
+      },
+      {
+        "station": "kijevo",
+        "time": 6.33
+      },
+      {
+        "station": "knezevac",
+        "time": 6.35
+      },
+      {
+        "station": "rakovica",
+        "time": 6.39
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 6.47
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 6.51
+      },
+      {
+        "station": "pancevacki most",
+        "time": 6.54
+      },
+      {
+        "station": "krnjaca most",
+        "time": 6.58
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.01
+      },
+      {
+        "station": "sebes",
+        "time": 7.04
+      },
+      {
+        "station": "ovca",
+        "time": 7.07
+      }
+    ]
+  },
   "7101": {
     "id": 7101,
     "directionId": 1,
@@ -34,7 +117,7 @@
       },
       {
         "station": "resnik",
-        "time": 4.38
+        "time": 4.37
       },
       {
         "station": "bela reka",
@@ -307,6 +390,314 @@
       }
     ]
   },
+  "7105": {
+    "id": 7105,
+    "directionId": 1,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "ovca",
+        "time": 7.48
+      },
+      {
+        "station": "sebes",
+        "time": 7.52
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 7.55
+      },
+      {
+        "station": "krnjaca most",
+        "time": 7.57
+      },
+      {
+        "station": "pancevacki most",
+        "time": 8.02
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 8.05
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 8.08
+      },
+      {
+        "station": "rakovica",
+        "time": 8.16
+      },
+      {
+        "station": "knezevac",
+        "time": 8.19
+      },
+      {
+        "station": "kijevo",
+        "time": 8.21
+      },
+      {
+        "station": "resnik",
+        "time": 8.24
+      },
+      {
+        "station": "bela reka",
+        "time": 8.33
+      },
+      {
+        "station": "barajevo centar",
+        "time": 8.41
+      },
+      {
+        "station": "veliki borak",
+        "time": 8.46
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 8.49
+      },
+      {
+        "station": "stepojevac",
+        "time": 8.53
+      },
+      {
+        "station": "vreoci",
+        "time": 9
+      },
+      {
+        "station": "lazarevac",
+        "time": 9.06
+      }
+    ]
+  },
+  "7106": {
+    "id": 7106,
+    "directionId": 2,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "lazarevac",
+        "time": 11.4
+      },
+      {
+        "station": "vreoci",
+        "time": 11.47
+      },
+      {
+        "station": "stepojevac",
+        "time": 11.54
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 11.57
+      },
+      {
+        "station": "veliki borak",
+        "time": 12.01
+      },
+      {
+        "station": "barajevo centar",
+        "time": 12.06
+      },
+      {
+        "station": "barajevo ukr",
+        "time": 12.08
+      },
+      {
+        "station": "bela reka",
+        "time": 12.16
+      },
+      {
+        "station": "resnik",
+        "time": 12.25
+      },
+      {
+        "station": "kijevo",
+        "time": 12.28
+      },
+      {
+        "station": "knezevac",
+        "time": 12.3
+      },
+      {
+        "station": "rakovica",
+        "time": 12.34
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 12.42
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 12.46
+      },
+      {
+        "station": "pancevacki most",
+        "time": 12.49
+      },
+      {
+        "station": "krnjaca most",
+        "time": 12.53
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 12.56
+      },
+      {
+        "station": "sebes",
+        "time": 12.59
+      },
+      {
+        "station": "ovca",
+        "time": 13.02
+      }
+    ]
+  },
+  "7107": {
+    "id": 7107,
+    "directionId": 1,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "ovca",
+        "time": 11.5
+      },
+      {
+        "station": "sebes",
+        "time": 11.54
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 11.58
+      },
+      {
+        "station": "krnjaca most",
+        "time": 12
+      },
+      {
+        "station": "pancevacki most",
+        "time": 12.05
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 12.08
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 12.11
+      },
+      {
+        "station": "rakovica",
+        "time": 12.2
+      },
+      {
+        "station": "knezevac",
+        "time": 12.23
+      },
+      {
+        "station": "kijevo",
+        "time": 12.25
+      },
+      {
+        "station": "resnik",
+        "time": 12.28
+      },
+      {
+        "station": "bela reka",
+        "time": 12.4
+      },
+      {
+        "station": "barajevo centar",
+        "time": 12.48
+      },
+      {
+        "station": "veliki borak",
+        "time": 12.53
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 12.56
+      },
+      {
+        "station": "stepojevac",
+        "time": 13
+      },
+      {
+        "station": "vreoci",
+        "time": 13.07
+      },
+      {
+        "station": "lazarevac",
+        "time": 13.13
+      }
+    ]
+  },
+  "7108": {
+    "id": 7108,
+    "directionId": 2,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "lazarevac",
+        "time": 13.58
+      },
+      {
+        "station": "vreoci",
+        "time": 14.09
+      },
+      {
+        "station": "stepojevac",
+        "time": 14.16
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 14.19
+      },
+      {
+        "station": "veliki borak",
+        "time": 14.23
+      },
+      {
+        "station": "barajevo centar",
+        "time": 14.28
+      },
+      {
+        "station": "bela reka",
+        "time": 14.38
+      },
+      {
+        "station": "resnik",
+        "time": 14.48
+      },
+      {
+        "station": "kijevo",
+        "time": 14.52
+      },
+      {
+        "station": "knezevac",
+        "time": 14.55
+      },
+      {
+        "station": "rakovica",
+        "time": 15.01
+      },
+      {
+        "station": "beograd centar",
+        "time": 15.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 15.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 15.17
+      },
+      {
+        "station": "zemun",
+        "time": 15.2
+      }
+    ]
+  },
   "7111": {
     "id": 7111,
     "directionId": 1,
@@ -354,7 +745,7 @@
       },
       {
         "station": "resnik",
-        "time": 16.03
+        "time": 16
       },
       {
         "station": "bela reka",
@@ -469,6 +860,140 @@
       }
     ]
   },
+  "7113": {
+    "id": 7113,
+    "directionId": 1,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "zemun",
+        "time": 16.16
+      },
+      {
+        "station": "tosin bunar",
+        "time": 16.2
+      },
+      {
+        "station": "novi beograd",
+        "time": 16.23
+      },
+      {
+        "station": "beograd centar",
+        "time": 16.27
+      },
+      {
+        "station": "rakovica",
+        "time": 16.36
+      },
+      {
+        "station": "knezevac",
+        "time": 16.39
+      },
+      {
+        "station": "kijevo",
+        "time": 16.41
+      },
+      {
+        "station": "resnik",
+        "time": 16.44
+      },
+      {
+        "station": "bela reka",
+        "time": 16.54
+      },
+      {
+        "station": "barajevo centar",
+        "time": 17.02
+      },
+      {
+        "station": "veliki borak",
+        "time": 17.07
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 17.1
+      },
+      {
+        "station": "stepojevac",
+        "time": 17.12
+      },
+      {
+        "station": "vreoci",
+        "time": 17.26
+      },
+      {
+        "station": "lazarevac",
+        "time": 17.32
+      }
+    ]
+  },
+  "7114": {
+    "id": 7114,
+    "directionId": 2,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "lazarevac",
+        "time": 18.52
+      },
+      {
+        "station": "vreoci",
+        "time": 18.59
+      },
+      {
+        "station": "stepojevac",
+        "time": 19.06
+      },
+      {
+        "station": "leskovac kolubarski",
+        "time": 19.09
+      },
+      {
+        "station": "veliki borak",
+        "time": 19.14
+      },
+      {
+        "station": "barajevo centar",
+        "time": 19.19
+      },
+      {
+        "station": "bela reka",
+        "time": 19.33
+      },
+      {
+        "station": "resnik",
+        "time": 19.52
+      },
+      {
+        "station": "kijevo",
+        "time": 19.55
+      },
+      {
+        "station": "knezevac",
+        "time": 19.57
+      },
+      {
+        "station": "rakovica",
+        "time": 10.01
+      },
+      {
+        "station": "beograd centar",
+        "time": 20.1
+      },
+      {
+        "station": "novi beograd",
+        "time": 20.14
+      },
+      {
+        "station": "tosin bunar",
+        "time": 20.17
+      },
+      {
+        "station": "zemun",
+        "time": 20.2
+      }
+    ]
+  },
   "7115": {
     "id": 7115,
     "directionId": 1,
@@ -516,7 +1041,7 @@
       },
       {
         "station": "resnik",
-        "time": 19.1
+        "time": 19.08
       },
       {
         "station": "bela reka",
@@ -619,160 +1144,6 @@
       }
     ]
   },
-  "7901": {
-    "id": 7901,
-    "directionId": 1,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "zemun",
-        "time": 3.44
-      },
-      {
-        "station": "tosin bunar",
-        "time": 3.47
-      },
-      {
-        "station": "novi beograd",
-        "time": 3.49
-      },
-      {
-        "station": "beograd centar",
-        "time": 3.54
-      },
-      {
-        "station": "rakovica",
-        "time": 4.03
-      },
-      {
-        "station": "knezevac",
-        "time": 4.06
-      },
-      {
-        "station": "kijevo",
-        "time": 4.08
-      },
-      {
-        "station": "resnik",
-        "time": 4.11
-      },
-      {
-        "station": "ripanj kolonija",
-        "time": 4.24
-      },
-      {
-        "station": "ripanj",
-        "time": 4.28
-      },
-      {
-        "station": "klenje",
-        "time": 4.36
-      },
-      {
-        "station": "ripanj tunel",
-        "time": 4.48
-      },
-      {
-        "station": "ralja",
-        "time": 4.59
-      },
-      {
-        "station": "sopot kosmajski",
-        "time": 5.32
-      },
-      {
-        "station": "vlasko polje",
-        "time": 5.38
-      },
-      {
-        "station": "mladenovac",
-        "time": 5.43
-      }
-    ]
-  },
-  "7902": {
-    "id": 7902,
-    "directionId": 2,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "mladenovac",
-        "time": 6.2
-      },
-      {
-        "station": "vlasko polje",
-        "time": 6.26
-      },
-      {
-        "station": "sopot kosmajski",
-        "time": 6.33
-      },
-      {
-        "station": "ralja",
-        "time": 6.48
-      },
-      {
-        "station": "ripanj tunel",
-        "time": 6.59
-      },
-      {
-        "station": "klenje",
-        "time": 7.09
-      },
-      {
-        "station": "ripanj",
-        "time": 7.18
-      },
-      {
-        "station": "ripanj kolonija",
-        "time": 7.22
-      },
-      {
-        "station": "resnik",
-        "time": 7.35
-      },
-      {
-        "station": "kijevo",
-        "time": 7.38
-      },
-      {
-        "station": "knezevac",
-        "time": 7.4
-      },
-      {
-        "station": "rakovica",
-        "time": 7.43
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 7.51
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 7.54
-      },
-      {
-        "station": "pancevacki most",
-        "time": 7.57
-      },
-      {
-        "station": "krnjaca most",
-        "time": 8.02
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 8.05
-      },
-      {
-        "station": "sebes",
-        "time": 8.08
-      },
-      {
-        "station": "ovca",
-        "time": 8.11
-      }
-    ]
-  },
   "7903": {
     "id": 7903,
     "directionId": 1,
@@ -804,7 +1175,7 @@
       },
       {
         "station": "karadjordjev park",
-        "time": 16.13
+        "time": 16.14
       },
       {
         "station": "rakovica",
@@ -820,39 +1191,7 @@
       },
       {
         "station": "resnik",
-        "time": 16.31
-      },
-      {
-        "station": "ripanj kolonija",
-        "time": 16.44
-      },
-      {
-        "station": "ripanj",
-        "time": 16.47
-      },
-      {
-        "station": "klenje",
-        "time": 16.56
-      },
-      {
-        "station": "ripanj tunel",
-        "time": 17.08
-      },
-      {
-        "station": "ralja",
-        "time": 17.2
-      },
-      {
-        "station": "sopot kosmajski",
-        "time": 17.35
-      },
-      {
-        "station": "vlasko polje",
-        "time": 17.42
-      },
-      {
-        "station": "mladenovac",
-        "time": 17.48
+        "time": 16.3
       }
     ]
   },
@@ -861,38 +1200,6 @@
     "directionId": 2,
     "serviceFrequency": "ed",
     "itinerary": [
-      {
-        "station": "mladenovac",
-        "time": 18.07
-      },
-      {
-        "station": "vlasko polje",
-        "time": 18.13
-      },
-      {
-        "station": "sopot kosmajski",
-        "time": 18.2
-      },
-      {
-        "station": "ralja",
-        "time": 18.35
-      },
-      {
-        "station": "ripanj tunel",
-        "time": 18.47
-      },
-      {
-        "station": "klenje",
-        "time": 18.58
-      },
-      {
-        "station": "ripanj",
-        "time": 19.07
-      },
-      {
-        "station": "ripanj kolonija",
-        "time": 19.14
-      },
       {
         "station": "resnik",
         "time": 19.25
@@ -2471,63 +2778,63 @@
     "itinerary": [
       {
         "station": "batajnica",
-        "time": 13.2
+        "time": 12.35
       },
       {
         "station": "kamendin",
-        "time": 13.24
+        "time": 12.39
       },
       {
         "station": "zemunsko polje",
-        "time": 13.26
+        "time": 12.41
       },
       {
         "station": "altina",
-        "time": 13.28
+        "time": 12.43
       },
       {
         "station": "zemun",
-        "time": 13.32
+        "time": 12.47
       },
       {
         "station": "tosin bunar",
-        "time": 13.36
+        "time": 12.51
       },
       {
         "station": "novi beograd",
-        "time": 13.39
+        "time": 12.54
       },
       {
         "station": "beograd centar",
-        "time": 13.43
+        "time": 12.58
       },
       {
         "station": "karadjordjev park",
-        "time": 13.47
+        "time": 13.02
       },
       {
         "station": "vukov spomenik",
-        "time": 13.51
+        "time": 13.06
       },
       {
         "station": "pancevacki most",
-        "time": 13.55
+        "time": 13.1
       },
       {
         "station": "krnjaca most",
-        "time": 13.59
+        "time": 13.14
       },
       {
         "station": "krnjaca ukr",
-        "time": 14.02
+        "time": 13.17
       },
       {
         "station": "sebes",
-        "time": 14.05
+        "time": 13.2
       },
       {
         "station": "ovca",
-        "time": 14.08
+        "time": 13.23
       }
     ]
   },
@@ -4190,45 +4497,6 @@
       }
     ]
   },
-  "8202": {
-    "id": 8202,
-    "directionId": 2,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "resnik",
-        "time": 19
-      },
-      {
-        "station": "kijevo",
-        "time": 19.03
-      },
-      {
-        "station": "knezevac",
-        "time": 19.05
-      },
-      {
-        "station": "rakovica",
-        "time": 19.09
-      },
-      {
-        "station": "beograd centar",
-        "time": 19.18
-      },
-      {
-        "station": "novi beograd",
-        "time": 19.22
-      },
-      {
-        "station": "tosin bunar",
-        "time": 19.25
-      },
-      {
-        "station": "zemun",
-        "time": 19.28
-      }
-    ]
-  },
   "8205": {
     "id": 8205,
     "directionId": 1,
@@ -4280,33 +4548,6 @@
       {
         "station": "resnik",
         "time": 11.57
-      }
-    ]
-  },
-  "8209": {
-    "id": 8209,
-    "directionId": 1,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "beograd centar",
-        "time": 16
-      },
-      {
-        "station": "rakovica",
-        "time": 16.09
-      },
-      {
-        "station": "knezevac",
-        "time": 16.12
-      },
-      {
-        "station": "kijevo",
-        "time": 16.14
-      },
-      {
-        "station": "resnik",
-        "time": 16.17
       }
     ]
   },
@@ -4616,57 +4857,6 @@
       }
     ]
   },
-  "8306": {
-    "id": 8306,
-    "directionId": 1,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "ovca",
-        "time": 8.55
-      },
-      {
-        "station": "sebes",
-        "time": 8.59
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 9.03
-      },
-      {
-        "station": "krnjaca most",
-        "time": 9.05
-      },
-      {
-        "station": "pancevacki most",
-        "time": 9.1
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 9.13
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 9.16
-      },
-      {
-        "station": "rakovica",
-        "time": 9.25
-      },
-      {
-        "station": "knezevac",
-        "time": 9.28
-      },
-      {
-        "station": "kijevo",
-        "time": 9.3
-      },
-      {
-        "station": "resnik",
-        "time": 9.33
-      }
-    ]
-  },
   "8307": {
     "id": 8307,
     "directionId": 2,
@@ -4742,96 +4932,6 @@
       {
         "station": "resnik",
         "time": 9.56
-      }
-    ]
-  },
-  "8309": {
-    "id": 8309,
-    "directionId": 2,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "resnik",
-        "time": 10.3
-      },
-      {
-        "station": "kijevo",
-        "time": 10.33
-      },
-      {
-        "station": "knezevac",
-        "time": 10.35
-      },
-      {
-        "station": "rakovica",
-        "time": 10.39
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 10.47
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 10.51
-      },
-      {
-        "station": "pancevacki most",
-        "time": 10.54
-      },
-      {
-        "station": "krnjaca most",
-        "time": 10.58
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 11.01
-      },
-      {
-        "station": "sebes",
-        "time": 11.04
-      },
-      {
-        "station": "ovca",
-        "time": 11.07
-      }
-    ]
-  },
-  "8310": {
-    "id": 8310,
-    "directionId": 1,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "ovca",
-        "time": 10
-      },
-      {
-        "station": "sebes",
-        "time": 10.04
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 10.08
-      },
-      {
-        "station": "krnjaca most",
-        "time": 10.1
-      },
-      {
-        "station": "pancevacki most",
-        "time": 10.15
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 10.18
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 10.21
-      },
-      {
-        "station": "beograd centar",
-        "time": 10.23
       }
     ]
   },
@@ -4913,6 +5013,57 @@
       }
     ]
   },
+  "8313": {
+    "id": 8313,
+    "directionId": 2,
+    "serviceFrequency": "ed",
+    "itinerary": [
+      {
+        "station": "resnik",
+        "time": 11.4
+      },
+      {
+        "station": "kijevo",
+        "time": 11.43
+      },
+      {
+        "station": "knezevac",
+        "time": 11.45
+      },
+      {
+        "station": "rakovica",
+        "time": 11.49
+      },
+      {
+        "station": "karadjordjev park",
+        "time": 11.57
+      },
+      {
+        "station": "vukov spomenik",
+        "time": 12.01
+      },
+      {
+        "station": "pancevacki most",
+        "time": 12.04
+      },
+      {
+        "station": "krnjaca most",
+        "time": 12.08
+      },
+      {
+        "station": "krnjaca ukr",
+        "time": 12.11
+      },
+      {
+        "station": "sebes",
+        "time": 12.14
+      },
+      {
+        "station": "ovca",
+        "time": 12.17
+      }
+    ]
+  },
   "8314": {
     "id": 8314,
     "directionId": 1,
@@ -4961,57 +5112,6 @@
       {
         "station": "resnik",
         "time": 13.18
-      }
-    ]
-  },
-  "8315": {
-    "id": 8315,
-    "directionId": 2,
-    "serviceFrequency": "ed",
-    "itinerary": [
-      {
-        "station": "resnik",
-        "time": 12
-      },
-      {
-        "station": "kijevo",
-        "time": 12.03
-      },
-      {
-        "station": "knezevac",
-        "time": 12.05
-      },
-      {
-        "station": "rakovica",
-        "time": 12.09
-      },
-      {
-        "station": "karadjordjev park",
-        "time": 12.17
-      },
-      {
-        "station": "vukov spomenik",
-        "time": 12.21
-      },
-      {
-        "station": "pancevacki most",
-        "time": 12.24
-      },
-      {
-        "station": "krnjaca most",
-        "time": 12.28
-      },
-      {
-        "station": "krnjaca ukr",
-        "time": 12.31
-      },
-      {
-        "station": "sebes",
-        "time": 12.34
-      },
-      {
-        "station": "ovca",
-        "time": 12.37
       }
     ]
   },
@@ -6219,7 +6319,7 @@
       },
       {
         "station": "karadjordjev park",
-        "time": 22.58
+        "time": 22.57
       },
       {
         "station": "beograd centar",

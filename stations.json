@@ -107,7 +107,7 @@
           }
         },
         {
-          "time": 13.2,
+          "time": 12.35,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -489,7 +489,7 @@
           }
         },
         {
-          "time": 13.24,
+          "time": 12.39,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -871,7 +871,7 @@
           }
         },
         {
-          "time": 13.26,
+          "time": 12.41,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1253,7 +1253,7 @@
           }
         },
         {
-          "time": 13.28,
+          "time": 12.43,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1547,22 +1547,6 @@
       "nameDisplay": "Zemun",
       "departures": [
         {
-          "time": 3.44,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.1,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 6.12,
           "trainDetails": {
             "id": 8001,
@@ -1651,7 +1635,7 @@
           }
         },
         {
-          "time": 13.32,
+          "time": 12.47,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -1923,14 +1907,6 @@
           }
         },
         {
-          "time": 19.28,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.47,
           "trainDetails": {
             "id": 8044,
@@ -1955,14 +1931,6 @@
           }
         },
         {
-          "time": 21.58,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.47,
           "trainDetails": {
             "id": 8050,
@@ -1977,6 +1945,46 @@
             "directionId": 2,
             "serviceFrequency": "ed"
           }
+        },
+        {
+          "time": 4.1,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 16.16,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 15.2,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 20.2,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 21.58,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
         }
       ]
     },
@@ -1984,22 +1992,6 @@
       "name": "tosin bunar",
       "nameDisplay": "Tošin bunar",
       "departures": [
-        {
-          "time": 3.47,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.13,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.16,
           "trainDetails": {
@@ -2089,7 +2081,7 @@
           }
         },
         {
-          "time": 13.36,
+          "time": 12.51,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -2361,14 +2353,6 @@
           }
         },
         {
-          "time": 19.25,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.43,
           "trainDetails": {
             "id": 8044,
@@ -2393,14 +2377,6 @@
           }
         },
         {
-          "time": 21.55,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.43,
           "trainDetails": {
             "id": 8050,
@@ -2415,6 +2391,46 @@
             "directionId": 2,
             "serviceFrequency": "ed"
           }
+        },
+        {
+          "time": 4.13,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 16.2,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 15.17,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 20.17,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 21.55,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
         }
       ]
     },
@@ -2422,22 +2438,6 @@
       "name": "novi beograd",
       "nameDisplay": "Novi Beograd",
       "departures": [
-        {
-          "time": 3.49,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.15,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.19,
           "trainDetails": {
@@ -2527,7 +2527,7 @@
           }
         },
         {
-          "time": 13.39,
+          "time": 12.54,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -2799,14 +2799,6 @@
           }
         },
         {
-          "time": 19.22,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.4,
           "trainDetails": {
             "id": 8044,
@@ -2831,14 +2823,6 @@
           }
         },
         {
-          "time": 21.52,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.4,
           "trainDetails": {
             "id": 8050,
@@ -2853,6 +2837,46 @@
             "directionId": 2,
             "serviceFrequency": "ed"
           }
+        },
+        {
+          "time": 4.15,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 16.23,
+          "trainDetails": {
+            "id": 7113,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 15.14,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 20.14,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 21.52,
+          "trainDetails": {
+            "id": 7116,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
         }
       ]
     },
@@ -2860,22 +2884,6 @@
       "name": "beograd centar",
       "nameDisplay": "Beograd centar",
       "departures": [
-        {
-          "time": 3.54,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.2,
-          "trainDetails": {
-            "id": 7101,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
         {
           "time": 6.23,
           "trainDetails": {
@@ -2965,7 +2973,7 @@
           }
         },
         {
-          "time": 13.43,
+          "time": 12.58,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -3133,14 +3141,6 @@
           }
         },
         {
-          "time": 10.23,
-          "trainDetails": {
-            "id": 8310,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.16,
           "trainDetails": {
             "id": 8018,
@@ -3245,14 +3245,6 @@
           }
         },
         {
-          "time": 19.18,
-          "trainDetails": {
-            "id": 8202,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 19.36,
           "trainDetails": {
             "id": 8044,
@@ -3277,14 +3269,6 @@
           }
         },
         {
-          "time": 21.48,
-          "trainDetails": {
-            "id": 7116,
-            "directionId": 2,
-            "serviceFrequency": "wd"
-          }
-        },
-        {
           "time": 21.36,
           "trainDetails": {
             "id": 8050,
@@ -3297,6 +3281,14 @@
           "trainDetails": {
             "id": 8340,
             "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 4.2,
+          "trainDetails": {
+            "id": 7101,
+            "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
@@ -3317,9 +3309,9 @@
           }
         },
         {
-          "time": 16,
+          "time": 16.27,
           "trainDetails": {
-            "id": 8209,
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -3336,6 +3328,30 @@
           "time": 11.17,
           "trainDetails": {
             "id": 8311,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 15.1,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 20.1,
+          "trainDetails": {
+            "id": 7114,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 21.48,
+          "trainDetails": {
+            "id": 7116,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -3435,7 +3451,7 @@
           }
         },
         {
-          "time": 13.47,
+          "time": 13.02,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -3598,14 +3614,6 @@
           "time": 10.13,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.21,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -3779,17 +3787,17 @@
           }
         },
         {
-          "time": 8.41,
+          "time": 8.08,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.16,
+          "time": 8.41,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -3806,6 +3814,14 @@
           "time": 10.56,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.11,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -3859,7 +3875,7 @@
           }
         },
         {
-          "time": 16.13,
+          "time": 16.14,
           "trainDetails": {
             "id": 7903,
             "directionId": 1,
@@ -3939,17 +3955,17 @@
           }
         },
         {
-          "time": 7.15,
+          "time": 6.47,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.51,
+          "time": 7.15,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -3979,17 +3995,17 @@
           }
         },
         {
-          "time": 10.47,
+          "time": 11.57,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.17,
+          "time": 12.42,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -4201,7 +4217,7 @@
           }
         },
         {
-          "time": 13.51,
+          "time": 13.06,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -4364,14 +4380,6 @@
           "time": 10.09,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.18,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -4545,17 +4553,17 @@
           }
         },
         {
-          "time": 8.38,
+          "time": 8.05,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.13,
+          "time": 8.38,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -4572,6 +4580,14 @@
           "time": 10.53,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.08,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -4705,17 +4721,17 @@
           }
         },
         {
-          "time": 7.18,
+          "time": 6.51,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.54,
+          "time": 7.18,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -4745,17 +4761,17 @@
           }
         },
         {
-          "time": 10.51,
+          "time": 12.01,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.21,
+          "time": 12.46,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -4967,7 +4983,7 @@
           }
         },
         {
-          "time": 13.55,
+          "time": 13.1,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -5130,14 +5146,6 @@
           "time": 10.06,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.15,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -5311,17 +5319,17 @@
           }
         },
         {
-          "time": 8.35,
+          "time": 8.02,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.1,
+          "time": 8.35,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -5338,6 +5346,14 @@
           "time": 10.5,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.05,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -5471,17 +5487,17 @@
           }
         },
         {
-          "time": 7.21,
+          "time": 6.54,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.57,
+          "time": 7.21,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -5511,17 +5527,17 @@
           }
         },
         {
-          "time": 10.54,
+          "time": 12.04,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.24,
+          "time": 12.49,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -5733,7 +5749,7 @@
           }
         },
         {
-          "time": 13.59,
+          "time": 13.14,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -5896,14 +5912,6 @@
           "time": 10,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.1,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -6077,17 +6085,17 @@
           }
         },
         {
-          "time": 8.3,
+          "time": 7.57,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.05,
+          "time": 8.3,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -6104,6 +6112,14 @@
           "time": 10.45,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -6237,17 +6253,17 @@
           }
         },
         {
-          "time": 7.25,
+          "time": 6.58,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.02,
+          "time": 7.25,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -6277,17 +6293,17 @@
           }
         },
         {
-          "time": 10.58,
+          "time": 12.08,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.28,
+          "time": 12.53,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -6499,7 +6515,7 @@
           }
         },
         {
-          "time": 14.02,
+          "time": 13.17,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -6662,14 +6678,6 @@
           "time": 9.58,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.08,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -6843,17 +6851,17 @@
           }
         },
         {
-          "time": 8.28,
+          "time": 7.55,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.03,
+          "time": 8.28,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -6870,6 +6878,14 @@
           "time": 10.43,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 11.58,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -7003,17 +7019,17 @@
           }
         },
         {
-          "time": 7.27,
+          "time": 7.01,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.05,
+          "time": 7.27,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -7043,17 +7059,17 @@
           }
         },
         {
-          "time": 11.01,
+          "time": 12.11,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.31,
+          "time": 12.56,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -7265,7 +7281,7 @@
           }
         },
         {
-          "time": 14.05,
+          "time": 13.2,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -7428,14 +7444,6 @@
           "time": 9.54,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10.04,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -7609,17 +7617,17 @@
           }
         },
         {
-          "time": 8.24,
+          "time": 7.52,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.59,
+          "time": 8.24,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -7636,6 +7644,14 @@
           "time": 10.39,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 11.54,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -7769,17 +7785,17 @@
           }
         },
         {
-          "time": 7.3,
+          "time": 7.04,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.08,
+          "time": 7.3,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -7809,17 +7825,17 @@
           }
         },
         {
-          "time": 11.04,
+          "time": 12.14,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.34,
+          "time": 12.59,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -8031,7 +8047,7 @@
           }
         },
         {
-          "time": 14.08,
+          "time": 13.23,
           "trainDetails": {
             "id": 8023,
             "directionId": 1,
@@ -8194,14 +8210,6 @@
           "time": 9.5,
           "trainDetails": {
             "id": 8016,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 10,
-          "trainDetails": {
-            "id": 8310,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -8375,17 +8383,17 @@
           }
         },
         {
-          "time": 8.2,
+          "time": 7.48,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.55,
+          "time": 8.2,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -8402,6 +8410,14 @@
           "time": 10.35,
           "trainDetails": {
             "id": 8312,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 11.5,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -8535,17 +8551,17 @@
           }
         },
         {
-          "time": 7.33,
+          "time": 7.07,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 8.11,
+          "time": 7.33,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -8575,17 +8591,17 @@
           }
         },
         {
-          "time": 11.07,
+          "time": 12.17,
           "trainDetails": {
-            "id": 8309,
+            "id": 8313,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 12.37,
+          "time": 13.02,
           "trainDetails": {
-            "id": 8315,
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -8709,14 +8725,6 @@
       "nameDisplay": "Rakovica",
       "departures": [
         {
-          "time": 4.03,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 4.29,
           "trainDetails": {
             "id": 7101,
@@ -8749,17 +8757,17 @@
           }
         },
         {
-          "time": 8.5,
+          "time": 8.16,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.25,
+          "time": 8.5,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -8792,6 +8800,14 @@
           "time": 11.49,
           "trainDetails": {
             "id": 8207,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.2,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -8845,17 +8861,17 @@
           }
         },
         {
-          "time": 16.09,
+          "time": 16.22,
           "trainDetails": {
-            "id": 8209,
+            "id": 7903,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 16.22,
+          "time": 16.36,
           "trainDetails": {
-            "id": 7903,
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -8933,17 +8949,17 @@
           }
         },
         {
-          "time": 7.07,
+          "time": 6.39,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.43,
+          "time": 7.07,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -8981,14 +8997,6 @@
           }
         },
         {
-          "time": 10.39,
-          "trainDetails": {
-            "id": 8309,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.09,
           "trainDetails": {
             "id": 8311,
@@ -8997,9 +9005,17 @@
           }
         },
         {
-          "time": 12.09,
+          "time": 11.49,
           "trainDetails": {
-            "id": 8315,
+            "id": 8313,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.34,
+          "trainDetails": {
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9032,6 +9048,14 @@
           "time": 14.29,
           "trainDetails": {
             "id": 8323,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 15.01,
+          "trainDetails": {
+            "id": 7108,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9093,17 +9117,17 @@
           }
         },
         {
-          "time": 19.09,
+          "time": 19.34,
           "trainDetails": {
-            "id": 8202,
+            "id": 7904,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 19.34,
+          "time": 10.01,
           "trainDetails": {
-            "id": 7904,
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9139,14 +9163,6 @@
       "nameDisplay": "Kneževac",
       "departures": [
         {
-          "time": 4.06,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 4.32,
           "trainDetails": {
             "id": 7101,
@@ -9179,17 +9195,17 @@
           }
         },
         {
-          "time": 8.53,
+          "time": 8.19,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.28,
+          "time": 8.53,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9222,6 +9238,14 @@
           "time": 11.52,
           "trainDetails": {
             "id": 8207,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.23,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9275,17 +9299,17 @@
           }
         },
         {
-          "time": 16.12,
+          "time": 16.25,
           "trainDetails": {
-            "id": 8209,
+            "id": 7903,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 16.25,
+          "time": 16.39,
           "trainDetails": {
-            "id": 7903,
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9363,17 +9387,17 @@
           }
         },
         {
-          "time": 7.04,
+          "time": 6.35,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.4,
+          "time": 7.04,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9411,14 +9435,6 @@
           }
         },
         {
-          "time": 10.35,
-          "trainDetails": {
-            "id": 8309,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.05,
           "trainDetails": {
             "id": 8311,
@@ -9427,9 +9443,17 @@
           }
         },
         {
-          "time": 12.05,
+          "time": 11.45,
           "trainDetails": {
-            "id": 8315,
+            "id": 8313,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.3,
+          "trainDetails": {
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9462,6 +9486,14 @@
           "time": 14.25,
           "trainDetails": {
             "id": 8323,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.55,
+          "trainDetails": {
+            "id": 7108,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9523,17 +9555,17 @@
           }
         },
         {
-          "time": 19.05,
+          "time": 19.3,
           "trainDetails": {
-            "id": 8202,
+            "id": 7904,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 19.3,
+          "time": 19.57,
           "trainDetails": {
-            "id": 7904,
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9569,14 +9601,6 @@
       "nameDisplay": "Kijevo",
       "departures": [
         {
-          "time": 4.08,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 4.34,
           "trainDetails": {
             "id": 7101,
@@ -9609,17 +9633,17 @@
           }
         },
         {
-          "time": 8.55,
+          "time": 8.21,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.3,
+          "time": 8.55,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9652,6 +9676,14 @@
           "time": 11.54,
           "trainDetails": {
             "id": 8207,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.25,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9705,17 +9737,17 @@
           }
         },
         {
-          "time": 16.14,
+          "time": 16.27,
           "trainDetails": {
-            "id": 8209,
+            "id": 7903,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 16.27,
+          "time": 16.41,
           "trainDetails": {
-            "id": 7903,
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -9793,17 +9825,17 @@
           }
         },
         {
-          "time": 7.02,
+          "time": 6.33,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.38,
+          "time": 7.02,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9841,14 +9873,6 @@
           }
         },
         {
-          "time": 10.33,
-          "trainDetails": {
-            "id": 8309,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11.03,
           "trainDetails": {
             "id": 8311,
@@ -9857,9 +9881,17 @@
           }
         },
         {
-          "time": 12.03,
+          "time": 11.43,
           "trainDetails": {
-            "id": 8315,
+            "id": 8313,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.28,
+          "trainDetails": {
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9892,6 +9924,14 @@
           "time": 14.23,
           "trainDetails": {
             "id": 8323,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.52,
+          "trainDetails": {
+            "id": 7108,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9953,17 +9993,17 @@
           }
         },
         {
-          "time": 19.03,
+          "time": 19.28,
           "trainDetails": {
-            "id": 8202,
+            "id": 7904,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 19.28,
+          "time": 19.55,
           "trainDetails": {
-            "id": 7904,
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -9999,15 +10039,7 @@
       "nameDisplay": "Resnik",
       "departures": [
         {
-          "time": 4.11,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 4.38,
+          "time": 4.37,
           "trainDetails": {
             "id": 7101,
             "directionId": 1,
@@ -10039,17 +10071,17 @@
           }
         },
         {
-          "time": 8.58,
+          "time": 8.24,
           "trainDetails": {
-            "id": 8304,
+            "id": 7105,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 9.33,
+          "time": 8.58,
           "trainDetails": {
-            "id": 8306,
+            "id": 8304,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10082,6 +10114,14 @@
           "time": 11.57,
           "trainDetails": {
             "id": 8207,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.28,
+          "trainDetails": {
+            "id": 7107,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10127,7 +10167,7 @@
           }
         },
         {
-          "time": 16.03,
+          "time": 16,
           "trainDetails": {
             "id": 7111,
             "directionId": 1,
@@ -10135,17 +10175,17 @@
           }
         },
         {
-          "time": 16.17,
+          "time": 16.3,
           "trainDetails": {
-            "id": 8209,
+            "id": 7903,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 16.31,
+          "time": 16.44,
           "trainDetails": {
-            "id": 7903,
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10175,7 +10215,7 @@
           }
         },
         {
-          "time": 19.1,
+          "time": 19.08,
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
@@ -10223,17 +10263,17 @@
           }
         },
         {
-          "time": 6.59,
+          "time": 6.3,
           "trainDetails": {
-            "id": 7102,
+            "id": 7100,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 7.35,
+          "time": 6.59,
           "trainDetails": {
-            "id": 7902,
+            "id": 7102,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10271,14 +10311,6 @@
           }
         },
         {
-          "time": 10.3,
-          "trainDetails": {
-            "id": 8309,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
           "time": 11,
           "trainDetails": {
             "id": 8311,
@@ -10287,9 +10319,17 @@
           }
         },
         {
-          "time": 12,
+          "time": 11.4,
           "trainDetails": {
-            "id": 8315,
+            "id": 8313,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.25,
+          "trainDetails": {
+            "id": 7106,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10322,6 +10362,14 @@
           "time": 14.2,
           "trainDetails": {
             "id": 8323,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.48,
+          "trainDetails": {
+            "id": 7108,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10383,17 +10431,17 @@
           }
         },
         {
-          "time": 19,
+          "time": 19.25,
           "trainDetails": {
-            "id": 8202,
+            "id": 7904,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
         {
-          "time": 19.25,
+          "time": 19.52,
           "trainDetails": {
-            "id": 7904,
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10427,306 +10475,42 @@
     "ripanj kolonija": {
       "name": "ripanj kolonija",
       "nameDisplay": "Ripanj kolonija",
-      "departures": [
-        {
-          "time": 4.24,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 16.44,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 7.22,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 19.14,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "ripanj": {
       "name": "ripanj",
       "nameDisplay": "Ripanj",
-      "departures": [
-        {
-          "time": 4.28,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 16.47,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 7.18,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 19.07,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "klenje": {
       "name": "klenje",
       "nameDisplay": "Klenje",
-      "departures": [
-        {
-          "time": 4.36,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 16.56,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 7.09,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.58,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "ripanj tunel": {
       "name": "ripanj tunel",
       "nameDisplay": "Ripanj tunel",
-      "departures": [
-        {
-          "time": 4.48,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 17.08,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 6.59,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.47,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "ralja": {
       "name": "ralja",
       "nameDisplay": "Ralja",
-      "departures": [
-        {
-          "time": 4.59,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 17.2,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 6.48,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.35,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "sopot kosmajski": {
       "name": "sopot kosmajski",
       "nameDisplay": "Sopot Kosmajski",
-      "departures": [
-        {
-          "time": 5.32,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 17.35,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 6.33,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.2,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "vlasko polje": {
       "name": "vlasko polje",
       "nameDisplay": "Vlaško Polje",
-      "departures": [
-        {
-          "time": 5.38,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 17.42,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 6.26,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.13,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "mladenovac": {
       "name": "mladenovac",
       "nameDisplay": "Mladenovac",
-      "departures": [
-        {
-          "time": 5.43,
-          "trainDetails": {
-            "id": 7901,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 17.48,
-          "trainDetails": {
-            "id": 7903,
-            "directionId": 1,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 6.2,
-          "trainDetails": {
-            "id": 7902,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        },
-        {
-          "time": 18.07,
-          "trainDetails": {
-            "id": 7904,
-            "directionId": 2,
-            "serviceFrequency": "ed"
-          }
-        }
-      ]
+      "departures": []
     },
     "bela reka": {
       "name": "bela reka",
@@ -10749,9 +10533,33 @@
           }
         },
         {
+          "time": 8.33,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.4,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.12,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 16.54,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10761,6 +10569,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 6.17,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -10781,9 +10597,33 @@
           }
         },
         {
+          "time": 12.16,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.38,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.48,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 19.33,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10825,6 +10665,22 @@
             "directionId": 1,
             "serviceFrequency": "ed"
           }
+        },
+        {
+          "time": 6.09,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.08,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
         }
       ]
     },
@@ -10849,9 +10705,33 @@
           }
         },
         {
+          "time": 8.41,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.48,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.2,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.02,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10861,6 +10741,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 6.06,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -10881,9 +10769,33 @@
           }
         },
         {
+          "time": 12.06,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.28,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.39,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 19.19,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10919,9 +10831,33 @@
           }
         },
         {
+          "time": 8.46,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.53,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.25,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.07,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -10931,6 +10867,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 6.01,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -10951,9 +10895,33 @@
           }
         },
         {
+          "time": 12.01,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.23,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.34,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 19.14,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -10989,9 +10957,33 @@
           }
         },
         {
+          "time": 8.49,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 12.56,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.28,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.1,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -11001,6 +10993,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 5.57,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -11021,9 +11021,33 @@
           }
         },
         {
+          "time": 11.57,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.19,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.21,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 19.09,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -11059,9 +11083,33 @@
           }
         },
         {
+          "time": 8.53,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 13,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.31,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.12,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -11071,6 +11119,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 5.54,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -11091,9 +11147,33 @@
           }
         },
         {
+          "time": 11.54,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.16,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.18,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 19.06,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -11129,9 +11209,33 @@
           }
         },
         {
+          "time": 9,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 13.07,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.37,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.26,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -11141,6 +11245,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 5.47,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -11161,6 +11273,22 @@
           }
         },
         {
+          "time": 11.47,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 14.09,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.11,
           "trainDetails": {
             "id": 7112,
@@ -11169,9 +11297,9 @@
           }
         },
         {
-          "time": 0,
+          "time": 18.59,
           "trainDetails": {
-            "id": 7904,
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }
@@ -11207,9 +11335,33 @@
           }
         },
         {
+          "time": 9.06,
+          "trainDetails": {
+            "id": 7105,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 13.13,
+          "trainDetails": {
+            "id": 7107,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 16.43,
           "trainDetails": {
             "id": 7111,
+            "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 17.32,
+          "trainDetails": {
+            "id": 7113,
             "directionId": 1,
             "serviceFrequency": "ed"
           }
@@ -11219,6 +11371,14 @@
           "trainDetails": {
             "id": 7115,
             "directionId": 1,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 5.4,
+          "trainDetails": {
+            "id": 7100,
+            "directionId": 2,
             "serviceFrequency": "ed"
           }
         },
@@ -11239,9 +11399,33 @@
           }
         },
         {
+          "time": 11.4,
+          "trainDetails": {
+            "id": 7106,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 13.58,
+          "trainDetails": {
+            "id": 7108,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
           "time": 17.05,
           "trainDetails": {
             "id": 7112,
+            "directionId": 2,
+            "serviceFrequency": "ed"
+          }
+        },
+        {
+          "time": 18.52,
+          "trainDetails": {
+            "id": 7114,
             "directionId": 2,
             "serviceFrequency": "ed"
           }

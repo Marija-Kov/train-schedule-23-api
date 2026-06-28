@@ -13,7 +13,6 @@ import {
 import {
   batajnicaOvca,
   ovcaZemunResnikLazarevac,
-  ovcaZemunResnikMladenovac,
   stationNamesDisplayMap
 } from "./dataShapers/data/extractedData";
 
@@ -448,7 +447,7 @@ const aTrainData = (
     // DO NOT RETURN ALL ON trains/sfewfw/
     return trains;
   }
-  if (!isTrainIdValid([...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2, ...ovcaZemunResnikLazarevac.trainIdsDirection1, ...ovcaZemunResnikLazarevac.trainIdsDirection2, ...ovcaZemunResnikMladenovac.trainIdsDirection1, ...ovcaZemunResnikMladenovac.trainIdsDirection2], trainId)) {
+  if (!isTrainIdValid([...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2, ...ovcaZemunResnikLazarevac.trainIdsDirection1, ...ovcaZemunResnikLazarevac.trainIdsDirection2], trainId)) {
     return { error: "Invalid train id" };
   }
   return trains[trainId];

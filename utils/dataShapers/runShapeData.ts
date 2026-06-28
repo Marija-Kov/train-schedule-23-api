@@ -1,13 +1,12 @@
 import {
   batajnicaOvca,
   ovcaZemunResnikLazarevac,
-  ovcaZemunResnikMladenovac,
   stationNamesDisplayMap
 } from "./data/extractedData";
 
 import shape from "./shapeData";
 
-const allTrains = shape.trainsData(batajnicaOvca, ovcaZemunResnikLazarevac, ovcaZemunResnikMladenovac)
+const allTrains = shape.trainsData(batajnicaOvca, ovcaZemunResnikLazarevac)
 
 const allStations = shape.stationsData(stationNamesDisplayMap, allTrains)
 
