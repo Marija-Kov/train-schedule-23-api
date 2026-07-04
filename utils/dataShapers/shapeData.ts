@@ -140,7 +140,7 @@ function createTrainObject(
    * There are overlaps in routes which results in a train id showing up in more than one timetable.
    * These overlaps do not affect the direction - if a train is bound to direction 1 on route A-G,
    * it will be bound to direction 1 on route B-C because of the way we defined the directions
-   * (which may or may not be helpful when getting departures with layovers).
+   * (which may or may not be helpful when getting departures with transfers).
    */
   const train: Train = {
     id: trainIds[index],
