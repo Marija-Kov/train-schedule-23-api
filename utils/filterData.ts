@@ -2,12 +2,10 @@ import {
   Station,
   StationName,
   TimeInput,
-  YyyyMmDd,
   TrainId,
   TrainsMap,
   ServiceFrequency,
-  Train,
-  TrainItinerary
+  Train
 } from "train-schedule-types";
 
 import {
@@ -17,14 +15,7 @@ import {
 } from "./dataShapers/data/extractedData";
 
 import {
-  isDatePatternValid,
   isTimePatternValid,
-  getServiceFrequencyArray,
-  getStationNameDisplay,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
 } from "./getDeparturesHelpers";
 
 import {
@@ -132,7 +123,7 @@ function subtractHHMM(minuend: TimeInput, subtrahend: TimeInput) {
   return `${differenceHH}h ${differenceMM}min`
 }
 
-const departuresNEWX = async (
+const getDepartures = async (
   stations: { [key in StationName]: Station },
   trains: { [key in TrainId]: Train },
   from?: StationName,
@@ -142,7 +133,7 @@ const departuresNEWX = async (
 ) => {
 
   if (!stations)
-    throw Error("filterData > departuresNEWX(): argument 'stations' is missing");
+    throw Error("filterData > getDepartures(): argument 'stations' is missing");
   if (!from) {
     return {
       error: "Departure station parameter is required",
@@ -200,15 +191,15 @@ const departuresNEWX = async (
     }
   }
 
-  const firstTransferRecord = possibleTransfers[0];
+  const { station, arrivalTime } = possibleTransfers[0];
 
   const transferDepartures = getDirectArrivals(
     stations,
     trains,
-    firstTransferRecord.station,
+    station,
     to,
     serviceFrequency,
-    firstTransferRecord.arrivalTime,
+    arrivalTime,
     checkedTrainsArray
   )
 
@@ -263,106 +254,6 @@ const departuresNEWX = async (
     departures: [...directArrivals, ...indirectArrivals]
   }
 }
-
-const departures = (
-  stations: Station[],
-  from: StationName | undefined,
-  to: StationName | undefined,
-  date: YyyyMmDd,
-  time: TimeInput
-) => {
-  if (!stations)
-    throw Error("filterData > departures(): argument 'stations' is missing");
-  if (!from) {
-    return {
-      error: "Departure station parameter is required",
-    };
-  }
-  if (!to) {
-    return {
-      error: "Arrival station parameter is required",
-    };
-  }
-  if (
-    (from && !Object.keys(stationNamesDisplayMap).includes(from)) ||
-    (to && !Object.keys(stationNamesDisplayMap).includes(to))
-  ) {
-    return {
-      error: "Invalid departure and/or arrival station parameter",
-    };
-  }
-
-  if (from && to && from === to) {
-    return {
-      error: "Departure and arrival station must be different",
-    };
-  }
-  if (!date) {
-    return { error: "Date parameter is required" };
-  }
-  if (!time) {
-    return { error: "Time parameter is required" };
-  }
-
-  if (!isDatePatternValid(date)) {
-    return { error: "Invalid date value" };
-  }
-
-  if (!isTimePatternValid(time)) {
-    return { error: "Invalid time format or value" };
-  }
-
-  const { indexFrom, indexTo, direction } = getDirectionAndStationIndexes(
-    from,
-    to,
-    stations
-  );
-
-  const frequency = getServiceFrequencyArray(date);
-
-  const narrowedDownSelectionOfDepartures = narrowDownSelection(
-    indexFrom,
-    time,
-    stations,
-    direction,
-    frequency
-  );
-
-  if (!narrowedDownSelectionOfDepartures.length) {
-    return {
-      error: "No departures found for specified parameters",
-    };
-  }
-
-  const outputDepartures = shapeToOutputFormat(
-    narrowedDownSelectionOfDepartures
-  );
-
-  const narrowedDownSelectionOfArrivals = narrowDownSelection(
-    indexTo,
-    time,
-    stations,
-    direction,
-    frequency
-  );
-
-  const departures = getResultFromTrainIdOverlaps(
-    outputDepartures,
-    narrowedDownSelectionOfArrivals
-  );
-
-  if (!departures.length) {
-    return {
-      error: "No departures found for specified parameters",
-    };
-  }
-
-  return {
-    departureStation: getStationNameDisplay(indexFrom, stations),
-    arrivalStation: getStationNameDisplay(indexTo, stations),
-    departures: departures,
-  };
-};
 
 const stationsData = (
   stations: { [key in StationName]: Station },
@@ -454,8 +345,7 @@ const aTrainData = (
 };
 
 const filter = {
-  departures,
-  departuresNEWX,
+  getDepartures,
   stationsData,
   trainsData,
   aTrainData,

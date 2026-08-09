@@ -3,13 +3,7 @@ const {
   isDatePatternValid,
   isTimePatternValid,
   getServiceFrequencyArray,
-  getIndexOfSelectedStation,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
   getTimeOutputFormat,
-  getStationIndexesIfDirectionIs2,
 } = require("./index");
 
 function test(title, callback) {
@@ -77,113 +71,6 @@ test("getServiceFrequencyArray()", () => {
   });
 });
 
-test("getDirectionAndStationIndexes()", () => {
-  test(` gets correct indexes and direction`, () => {
-    const result = getDirectionAndStationIndexes(
-      "altina",
-      "kamendin",
-      stations
-    );
-    if (
-      result.indexFrom === 3 &&
-      result.indexTo === 1 &&
-      result.direction === 2
-    ) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-});
-
-test("getIndexOfSelectedStation()", () => {
-  test(` gets correct index`, () => {
-    const index = getIndexOfSelectedStation("altina", stations);
-    if (index === 3) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(index);
-    }
-  });
-});
-
-test("narrowDownSelection()", () => {
-  test(` narrows down selection by given criteria`, () => {
-    const result = narrowDownSelection(3, "19.05", stations, 2, ["ed", "wd"]);
-    if (
-      result.length < stations.length &&
-      result[0].time >= 19.05 &&
-      result[0].trainDetails
-    ) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-});
-
-test("shapeToOutputFormat()", () => {
-  test(` shapes output object correctly`, () => {
-    const result = shapeToOutputFormat([
-      {
-        time: 21.47,
-        trainDetails: {
-          id: 7116,
-          directionId: 2,
-          serviceFrequency: "wd",
-        },
-      },
-    ]);
-    if (result[0].departureTime && result[0].arrivalTime && result[0].trainId) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-});
-
-test("getResultFromTrainIdOverlaps()", () => {
-  test(` gets correct final search result`, () => {
-    const result = getResultFromTrainIdOverlaps(
-      [
-        {
-          departureTime: "11:00",
-          arrivalTime: "00:01",
-          trainId: 7116,
-        },
-      ],
-      [
-        {
-          time: 11.3,
-          trainDetails: {
-            id: 7116,
-            directionId: 2,
-            serviceFrequency: "wd",
-          },
-        },
-        {
-          time: 11.2,
-          trainDetails: {
-            id: 8003,
-            directionId: 2,
-            serviceFrequency: "wd",
-          },
-        },
-      ]
-    );
-    if (result.length === 1) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-});
-
 test("getTimeOutputFormat()", () => {
   test(` formats time correctly`, () => {
     if (
@@ -199,29 +86,6 @@ test("getTimeOutputFormat()", () => {
       console.log(`  ✅`);
     } else {
       console.log(`  ❌`);
-    }
-  });
-});
-
-test("getStationIndexesIfDirectionIs2()", () => {
-  test(` gets indexes of given stations in direction 2`, () => {
-    let indexFrom = 4;
-    let indexTo = 1;
-    let stationsCount = 15;
-    const result = getStationIndexesIfDirectionIs2(
-      2,
-      indexFrom,
-      indexTo,
-      stations
-    );
-    if (
-      result.indexFrom === stationsCount - 1 - indexFrom &&
-      result.indexTo === stationsCount - 1 - indexTo
-    ) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
     }
   });
 });

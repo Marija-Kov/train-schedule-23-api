@@ -32,13 +32,7 @@ const {
   isDatePatternValid,
   isTimePatternValid,
   getServiceFrequencyArray,
-  getIndexOfSelectedStation,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
   getTimeOutputFormat,
-  getStationIndexesIfDirectionIs2,
 } = require("../../dist/utils/getDeparturesHelpers.js");
 
 module.exports = {
@@ -59,11 +53,5 @@ module.exports = {
   isDatePatternValid,
   isTimePatternValid,
   getServiceFrequencyArray,
-  getIndexOfSelectedStation,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
   getTimeOutputFormat,
-  getStationIndexesIfDirectionIs2,
 };

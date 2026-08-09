@@ -25,7 +25,7 @@ export const departures = async (
   if (!url) return;
   
   try {
-    const result = await filter.departuresNEWX(
+    const result = await filter.getDepartures(
       await data("./stations.json"), // fetches stations
       await data("./trains.json"), // fetches trains
       aStationNameParam(param(url, 2)), // extracts departure station param
