@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.7.0",
+    "@types/node": "^20.19.43",
     "train-schedule-types": "^3.0.0"
   },
   "dependencies": {
