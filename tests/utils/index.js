@@ -4,6 +4,7 @@ const fs = require("node:fs");
 const shape = require("../../dist/utils/dataShapers/shapeData");
 const {
   batajnicaOvca,
+  ovcaZemunResnikLazarevac,
   stationNamesDisplayMap
 } = require("../../dist/utils/dataShapers/data/extractedData");
 
@@ -26,18 +27,18 @@ const {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-} = require("../../dist/utils/getStationsAndTrainsDataHelpers");
+} = require("../../dist/utils/getStationsAndTrainsDataHelpers.js");
 
 const {
   isDatePatternValid,
   isTimePatternValid,
   getServiceFrequencyArray,
-  getTimeOutputFormat,
 } = require("../../dist/utils/getDeparturesHelpers.js");
 
 module.exports = {
   shape,
   batajnicaOvca,
+  ovcaZemunResnikLazarevac,
   stationNamesDisplayMap,
   stationsJson,
   trainsJson,
@@ -53,5 +54,4 @@ module.exports = {
   isDatePatternValid,
   isTimePatternValid,
   getServiceFrequencyArray,
-  getTimeOutputFormat,
 };

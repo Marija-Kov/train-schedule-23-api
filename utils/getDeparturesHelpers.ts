@@ -1,7 +1,5 @@
 import {
-  StationDepartureDetails,
   TimeInput,
-  TimeOutput,
   YyyyMmDd,
 } from "train-schedule-types";
 import { holidays } from "./dataShapers/data/extractedData";
@@ -24,8 +22,4 @@ export function getServiceFrequencyArray(date: YyyyMmDd) {
   return day === 0 || day === 6 || holidays.includes(date)
     ? ["ed", "wh"]
     : ["ed", "wd"];
-}
-
-export function getTimeOutputFormat(arrival: StationDepartureDetails) {
-  return arrival.time.toFixed(2).split(".").join(":") as TimeOutput;
 }
