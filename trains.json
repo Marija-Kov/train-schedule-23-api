@@ -4433,7 +4433,7 @@
   "8050": {
     "id": 8050,
     "directionId": 2,
-    "serviceFrequency": "wd",
+    "serviceFrequency": "ed",
     "itinerary": [
       {
         "station": "ovca",
