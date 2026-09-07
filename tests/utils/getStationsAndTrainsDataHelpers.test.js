@@ -1,3 +1,5 @@
+const test = require("node:test")
+const assert = require("node:assert")
 const {
   stationsJson,
   trainsJson,
@@ -10,178 +12,118 @@ const {
   getTrainsByFrequency,
   getTrainsByDirection,
   isTrainIdValid,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
-} = require("./index");
+  batajnicaOvca,
+  ovcaZemunResnikLazarevac,
+} = require("./index")
 
-function test(title, callback) {
-  console.log(title);
-  callback();
-}
+test("Get stations and traind data helpers", async (t) => {
+  const stations = JSON.parse(stationsJson).stations;
+  const trains = JSON.parse(trainsJson)
 
-const stations = JSON.parse(stationsJson).stations;
-const trains = JSON.parse(trainsJson);
+  await t.test("isStationNameValid()", async (t) => {
+    const invalidStationName = "abc"
+    const validStationName = "klenje"
 
-test("isStationNameValid()", () => {
-  test(` invalid station name`, () => {
-    const invalidName = "abc";
-    if (!isStationNameValid(invalidName)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isStationNameValid(invalidName));
-    }
-  });
+    await t.test("should be an invalid station name", () => {
+      assert(!isStationNameValid(invalidStationName))
+    })
+    
+    await t.test("should be a valid station name", () => {
+      assert(isStationNameValid(validStationName), `Should be a valid station name: ${validStationName}`)
+    })
+  })
+  
+  await t.test("getStation()", async (t) => {
+    const aStationName = "novi beograd"
 
-  test(` valid station name`, () => {
-    const validName = "altina";
-    if (isStationNameValid(validName)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isStationNameValid(validName));
-    }
-  });
-});
+    await t.test("should get a correct station property", () => {
+      let aStationObject = getStation(aStationName, stations)
+      assert(aStationObject.name === aStationName)
+    })
 
-test("getStation()", () => {
-  test(` gets a station`, () => {
-    const station = getStation("altina", stations);
-    if (station.name === "altina") {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(station);
-    }
-  });
-});
+  })
 
-test("isDirectionValid()", () => {
-  test(` valid direction`, () => {
-    const direction = 1;
-    if (isDirectionValid(direction)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isDirectionValid(direction));
-    }
-  });
-  test(` invalid direction`, () => {
-    const direction = 0;
-    if (!isDirectionValid(direction)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isDirectionValid(direction));
-    }
-  });
-});
+  await t.test("isDirectionValid()", async (t) => {
+    const invalidDirection = 3
+    const validDirection = 2
+    
+    await t.test("should be an invalid direction", () => {
+      assert(!isDirectionValid(invalidDirection))
+    })
+    
+    await t.test("should be a valid direction", async (t) => {
+      assert(isDirectionValid(validDirection))
+    })
+  })
 
-test("isFrequencyValid()", () => {
-  test(` valid frequency`, () => {
-    const frequency = "ed";
-    if (isFrequencyValid(frequency)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isFrequencyValid(frequency));
-    }
-  });
-  test(` invalid frequency`, () => {
-    const frequency = "ww";
-    if (!isFrequencyValid(frequency)) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(isFrequencyValid(frequency));
-    }
-  });
-});
+  await t.test("isFrequencyValid()", async (t) => {
+    const invalidFrequency = "ww"
+    const validFrequency = "ed"
+    
+    await t.test("should be an invalid frequency", async (t) => {
+      assert(!isFrequencyValid(invalidFrequency))
+    })
 
-test("getDeparturesInDirection()", () => {
-  test(` get correct departures`, () => {
-    const direction = 2;
-    const departures = getDeparturesInDirection(
-      stations[1].departures,
-      direction
-    );
-    if (departures[0].trainDetails.directionId === direction) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(departures[0].trainDetails.directionId);
-    }
-  });
-});
+    await t.test("ahould be a valid frequency", async (t) => {
+      assert(isFrequencyValid(validFrequency))
+    })
+  })
+  
+  await t.test("isTrainIdValid()", async (t) => {
+    const invalidTrainId = 1000
+    const validTrainId = 8003
+     
+    await t.test("should be an invalid train id", async (t) => {
+      assert(!isTrainIdValid([...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2, ...ovcaZemunResnikLazarevac.trainIdsDirection1, ...ovcaZemunResnikLazarevac.trainIdsDirection2], invalidTrainId))
+    })
 
-test("getDeparturesByFrequency()", () => {
-  test(` get correct departures`, () => {
-    const frequency = "wd";
-    const departures = getDeparturesByFrequency(
-      stations[1].departures,
-      frequency
-    );
-    if (departures[0].trainDetails.serviceFrequency === frequency) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(departures[0].trainDetails.serviceFrequency);
-    }
-  });
-});
+    await t.test("should be a valid train id", async (t) => {
+      assert(isTrainIdValid([...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2, ...ovcaZemunResnikLazarevac.trainIdsDirection1, ...ovcaZemunResnikLazarevac.trainIdsDirection2], validTrainId)) 
+    })
+     
+    
+  }) 
+  
+  await t.test("getDeparturesInDirection()", async (t) => {
+    const aDirection = 1
+    const aStationName = "tosin bunar"
 
-test("getTrainsByFrequency()", () => {
-  test(` gets trains by frequency correctly`, () => {
-    const frequency = "wd";
-    const result = getTrainsByFrequency(
-      getTrainsByDirection(trains, 2),
-      frequency
-    );
-    if (result[0].serviceFrequency === "wd") {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result[0].serviceFrequency);
-    }
-  });
-});
+    await t.test("should get departures for an expected direction", async (t) => {
+      const departuresInDirection = getDeparturesInDirection(stations[aStationName].departures, aDirection)
 
-test("getTrainsByDirection()", () => {
-  test(` gets trains by direction correctly`, () => {
-    const direction = 2;
-    const result = getTrainsByDirection(trains, direction);
-    if (result[0].directionId === direction) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result[0].directionId);
-    }
-  });
-});
+      assert(departuresInDirection[0].trainDetails.directionId === aDirection)
+    })
+    
+  })
 
-test("isTrainIdValid()", () => {
-  test(` invalid train id`, () => {
-    const result = isTrainIdValid(
-      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
-      2222
-    );
-    if (!result) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-  test(` valid train id`, () => {
-    const result = isTrainIdValid(
-      [...train_id_batajnica_ovca, ...train_id_ovca_batajnica],
-      8003
-    );
-    if (result) {
-      console.log(`  ✅`);
-    } else {
-      console.log(`  ❌`);
-      console.log(result);
-    }
-  });
-});
+  await t.test("getTrainsInDirection()", async (t) => {
+    const aDirection = 2
+
+    await t.test("should get trains for an expected direction", async (t) => {
+      const trainsInDirection = getTrainsByDirection(trains, aDirection)
+    
+      assert(trainsInDirection[0].directionId === aDirection)
+    })
+  })
+  
+  await t.test("getDeparturesByFrequency()", async (t) => {
+    const aFrequency = "wd"
+    const aStationName = "karadjordjev park"
+    
+    await t.test("should get departures from a station of expected frequency", async (t) => {
+      const departuresByFrequency = getDeparturesByFrequency(stations[aStationName].departures, aFrequency)
+      
+      assert(departuresByFrequency[0].trainDetails.serviceFrequency === aFrequency)
+    })
+  })
+
+  await t.test("getTrainsByFrequency()", async (t) => {
+    const aFrequency = "ed"
+
+    await t.test("should get trains of the expected service frequency", async (t) => {
+      const trainsByFrequency = getTrainsByFrequency(trains, aFrequency)
+    
+      assert(trainsByFrequency[0].serviceFrequency === aFrequency)
+    })
+  })
+})

@@ -59,8 +59,9 @@ This example will return all departures from Novi Beograd to Batajnica on April 
 
 #### Direction Id <a name = "directionId"></a>
 
-- `1` - refers to direction Batajnica - Ovca;
-- `2` - refers to direction Ovca - Batajnica;
+- `1` - refers to direction Batajnica - Ovca, Ovca - Lazarevac, Ovca - Mladenovac;
+- `2` - refers to direction Ovca - Batajnica, Lazarevac - Ovca, Mladenovac - Ovca;
+
 
 #### Station Names <a name = "listOfStations"></a>
 
@@ -81,6 +82,26 @@ Below is the ordered list of train stations typed as they should be used in the 
 13. `krnjaca-ukr`
 14. `sebes`
 15. `ovca`
+16. `rakovica` 
+17. `knezevac`
+18. `kijevo`
+19. `resnik` 
+20. `bela reka` 
+21. `barajevo ukr` 
+22. `barajevo centar`
+23. `veliki borak` 
+24. `leskovac kolubarski` 
+25. `stepojevac`
+26. `vreoci` 
+27. `lazarevac`
+28. `ripanj kolonija`
+29. `ripanj`
+30. `klenje`
+31. `ripanj tunel`
+32. `ralja`
+33. `sopot kosmajski`
+34. `vlasko polje` 
+35. `mladenovac`
 
 #### Date parameter <a name = "dateFormat">
 

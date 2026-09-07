@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node run-tests.js"
+    "test": "./tests/run.sh"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.7.0",
-    "train-schedule-types": "^2.1.1"
+    "@types/node": "^20.19.43",
+    "train-schedule-types": "^3.0.0"
   },
   "dependencies": {
     "ts-node": "^10.9.1",

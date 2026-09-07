@@ -4,7 +4,8 @@
       "module": "commonjs",
       "outDir": "dist/utils",
       "strict": true,
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "types": ["node"]
     },
     "include": ["utils/**/*", "tests/utils/getDeparturesHelpers.test.js"]
   }

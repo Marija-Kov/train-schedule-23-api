@@ -2,28 +2,20 @@ import {
   Station,
   StationName,
   TimeInput,
-  YyyyMmDd,
-  TrainIdBatajnicaOvca,
-  TrainIdOvcaBatajnica,
+  TrainId,
   TrainsMap,
   ServiceFrequency,
+  Train
 } from "train-schedule-types";
 
 import {
-  stationsNames,
-  train_id_batajnica_ovca,
-  train_id_ovca_batajnica,
+  batajnicaOvca,
+  ovcaZemunResnikLazarevac,
+  stationNamesDisplayMap
 } from "./dataShapers/data/extractedData";
 
 import {
-  isDatePatternValid,
   isTimePatternValid,
-  getServiceFrequencyArray,
-  getStationNameDisplay,
-  getDirectionAndStationIndexes,
-  narrowDownSelection,
-  shapeToOutputFormat,
-  getResultFromTrainIdOverlaps,
 } from "./getDeparturesHelpers";
 
 import {
@@ -38,15 +30,110 @@ import {
   isTrainIdValid,
 } from "./getStationsAndTrainsDataHelpers";
 
-const departures = (
-  stations: Station[],
-  from: StationName | undefined,
-  to: StationName | undefined,
-  date: YyyyMmDd,
-  time: TimeInput
+const getDirectArrivals = (
+  stations: { [key in StationName]: Station },
+  trains: { [key in TrainId]: Train },
+  from: StationName,
+  to: StationName,
+  serviceFrequency: ServiceFrequency[],
+  time: TimeInput,
+  checkedTrainsArray: TrainId[]
+): {
+  departureSt: StationName, arrivalSt: StationName, departureTime: TimeInput, arrivalTime: TimeInput, trainId: TrainId, transfer: {
+    station: StationName,
+    arrivalTime: TimeInput,
+    departureTime: TimeInput,
+    waitTime: string,
+    trainId: TrainId
+  }
+}[] => {
+  let result: any[] = [];
+  const departuresFromTheStationByQueriedTimeAndFrequency = stations[from].departures.filter(d => (d.time >= Number(time)) && (d.trainDetails.serviceFrequency === serviceFrequency[0] || d.trainDetails.serviceFrequency === serviceFrequency[1]) && d)
+  departuresFromTheStationByQueriedTimeAndFrequency.forEach(d => {
+    const trainId = d.trainDetails.id;
+    if (checkedTrainsArray.includes(trainId)) return;
+    result = [...result, ...trains[trainId].itinerary.filter(i => i.station === to).map(i => {
+      checkedTrainsArray.push(trainId)
+      return {
+        departureTime: d.time,
+        arrivalTime: i.time,
+        trainId: trainId,
+        transfer: null // for all direct arrivals
+      }
+    })]
+  })
+  return result.filter(e => e !== undefined && e.departureTime < e.arrivalTime);
+}
+
+const getTransferStationAndArrivalTimes = (
+  stations: { [key in StationName]: Station },
+  trains: { [key in TrainId]: Train },
+  from: StationName,
+  to: StationName,
+  serviceFrequency: ServiceFrequency[],
+  time: TimeInput,
+  checkedTrainsArray: TrainId[]
 ) => {
+  let result: any[] = [];
+  const departuresFromTheStationByQueriedTimeAndFrequency =
+    stations[from].departures
+      .filter(d => (d.time >= Number(time)) &&
+        (d.trainDetails.serviceFrequency === serviceFrequency[0] || d.trainDetails.serviceFrequency === serviceFrequency[1]) &&
+        d)
+  departuresFromTheStationByQueriedTimeAndFrequency.forEach(d => {
+    const trainId = d.trainDetails.id;
+    if (checkedTrainsArray.includes(trainId)) return;
+    result =
+      [...result,
+      ...trains[trainId].itinerary.filter(i => i.station === "karadjordjev park") // karadjordjev park is a transfer station for all train lines
+        .map(i => {
+          checkedTrainsArray.push(trainId);
+          return {
+            station: i.station, 
+            departureTime: d.time, 
+            arrivalTime: i.time, 
+            trainId: trainId
+          }
+        })]
+  })
+  return result.filter(e => e !== undefined && e.departureTime < e.arrivalTime);
+}
+
+function subtractHHMM(minuend: TimeInput, subtrahend: TimeInput) {
+  let minuendHH = Math.trunc(Number(minuend));
+  let subtrahendHH = Math.trunc(Number(subtrahend));
+  if (minuendHH < subtrahendHH) {
+    console.error("Bad input: minuend must be greater than subtrahend")
+    return
+  }
+
+  let minuendMM = Number(String(minuend).split(".")[1]) || 0; // hmm..
+  let subtrahendMM = Number(String(subtrahend).split(".")[1]) || 0;
+
+  if (minuendMM < subtrahendMM) {
+    minuendHH -= 1;
+    minuendMM += 60;
+  }
+
+  const differenceHH = minuendHH - subtrahendHH;
+  const differenceMM = minuendMM - subtrahendMM;
+
+  if (differenceHH === 0) return `${differenceMM}min`
+
+  return `${differenceHH}h ${differenceMM}min`
+}
+
+const getDepartures = async (
+  stations: { [key in StationName]: Station },
+  trains: { [key in TrainId]: Train },
+  from?: StationName,
+  to?: StationName,
+  serviceFrequency?: ServiceFrequency[],
+  time?: TimeInput,
+) => {
+
   if (!stations)
-    throw Error("filterData > departures(): argument 'stations' is missing");
+    throw Error("filterData > getDepartures(): argument 'stations' is missing");
   if (!from) {
     return {
       error: "Departure station parameter is required",
@@ -58,8 +145,8 @@ const departures = (
     };
   }
   if (
-    (from && !stationsNames.includes(from)) ||
-    (to && !stationsNames.includes(to))
+    (from && !Object.keys(stationNamesDisplayMap).includes(from)) ||
+    (to && !Object.keys(stationNamesDisplayMap).includes(to))
   ) {
     return {
       error: "Invalid departure and/or arrival station parameter",
@@ -71,75 +158,105 @@ const departures = (
       error: "Departure and arrival station must be different",
     };
   }
-  if (!date) {
+  if (!serviceFrequency) {
     return { error: "Date parameter is required" };
   }
   if (!time) {
     return { error: "Time parameter is required" };
   }
-
-  if (!isDatePatternValid(date)) {
-    return { error: "Invalid date value" };
+  // must be an array of 2 strings of ServiceFrequency type
+  if (!Array.isArray(serviceFrequency) || serviceFrequency.length !== 2) {
+    return { error: "Invalid service frequency value" };
   }
 
   if (!isTimePatternValid(time)) {
     return { error: "Invalid time format or value" };
   }
 
-  const { indexFrom, indexTo, direction } = getDirectionAndStationIndexes(
-    from,
-    to,
-    stations
-  );
+  let checkedTrainsArray: TrainId[] = [];
 
-  const frequency = getServiceFrequencyArray(date);
+  const directArrivals = getDirectArrivals(stations, trains, from, to, serviceFrequency, time, checkedTrainsArray);
 
-  const narrowedDownSelectionOfDepartures = narrowDownSelection(
-    indexFrom,
-    time,
-    stations,
-    direction,
-    frequency
-  );
+  if (!directArrivals.length) {
+    checkedTrainsArray = []
+  }
+  // departures form the transfer to destination station in the specified time frame
+  const possibleTransfers = getTransferStationAndArrivalTimes(stations, trains, from, to, serviceFrequency, time, checkedTrainsArray);
 
-  if (!narrowedDownSelectionOfDepartures.length) {
+  if (!possibleTransfers.length) {
     return {
-      error: "No departures found for specified parameters",
-    };
+      departureStation: stationNamesDisplayMap[from],
+      arrivalStation: stationNamesDisplayMap[to],
+      departures: directArrivals // this may be []
+    }
   }
 
-  const outputDepartures = shapeToOutputFormat(
-    narrowedDownSelectionOfDepartures
-  );
+  const { station, arrivalTime } = possibleTransfers[0];
 
-  const narrowedDownSelectionOfArrivals = narrowDownSelection(
-    indexTo,
-    time,
+  const transferDepartures = getDirectArrivals(
     stations,
-    direction,
-    frequency
-  );
+    trains,
+    station,
+    to,
+    serviceFrequency,
+    arrivalTime,
+    checkedTrainsArray
+  )
 
-  const departures = getResultFromTrainIdOverlaps(
-    outputDepartures,
-    narrowedDownSelectionOfArrivals
-  );
+  const indirectArrivals: 
+  { departureTime: TimeInput; 
+    arrivalTime: TimeInput; 
+    trainId: TrainId; 
+    transfer: { 
+      station: StationName; 
+      arrivalTime: TimeInput; 
+      departureTime: TimeInput; 
+      waitTime: string | undefined; 
+      trainId: TrainId; 
+    }; 
+  }[] = [];
 
-  if (!departures.length) {
-    return {
-      error: "No departures found for specified parameters",
-    };
+  possibleTransfers.forEach((l, i) => {
+    for (let j = 0; j <= transferDepartures.length; j++) {
+      // this ensures that we only get the trains in the right direction
+      if (transferDepartures[j] && transferDepartures[j].departureTime > l.arrivalTime) {
+        indirectArrivals.push({
+          departureTime: l.departureTime,
+          arrivalTime: transferDepartures[j].arrivalTime,
+          trainId: l.trainId,
+          transfer: {
+            station: l.station,
+            arrivalTime: l.arrivalTime,
+            departureTime: transferDepartures[j].departureTime,
+            waitTime: subtractHHMM(transferDepartures[j].departureTime, l.arrivalTime),
+            trainId: transferDepartures[j].trainId
+          }
+        })
+        break // we only need the shortest transfer duration
+      }
+    }
+  })
+
+  // Filter out redundant results with transfers. If trains A, B and C (departing in that order) all have a transfer with train D, then only show C-D in results. 
+  const checkedTransferTrainIds: TrainId[] = []
+  
+  for (let j = indirectArrivals.length - 1; j >= 0; j--) {
+    if (checkedTransferTrainIds.includes(indirectArrivals[j].transfer.trainId)) {
+      indirectArrivals.splice(j, 1)
+    } else {
+      checkedTransferTrainIds.push(indirectArrivals[j].transfer.trainId)
+    }
   }
 
   return {
-    departureStation: getStationNameDisplay(indexFrom, stations),
-    arrivalStation: getStationNameDisplay(indexTo, stations),
-    departures: departures,
-  };
-};
+    departureStation: stationNamesDisplayMap[from],
+    arrivalStation: stationNamesDisplayMap[to],
+    departures: [...directArrivals, ...indirectArrivals]
+  }
+}
 
 const stationsData = (
-  stations: Station[],
+  stations: { [key in StationName]: Station },
   aStation: StationName | undefined,
   direction: 1 | 2 | undefined,
   frequency: ServiceFrequency | undefined
@@ -212,7 +329,7 @@ const trainsData = (
 
 const aTrainData = (
   trains: TrainsMap,
-  trainId: TrainIdBatajnicaOvca | TrainIdOvcaBatajnica | undefined
+  trainId: TrainId | undefined
 ) => {
   if (!trains) {
     throw Error("filterData > aTrainData(): argument 'trains' is missing");
@@ -221,14 +338,14 @@ const aTrainData = (
     // DO NOT RETURN ALL ON trains/sfewfw/
     return trains;
   }
-  if (!isTrainIdValid([...train_id_batajnica_ovca, ...train_id_ovca_batajnica], trainId)) {
+  if (!isTrainIdValid([...batajnicaOvca.trainIdsDirection1, ...batajnicaOvca.trainIdsDirection2, ...ovcaZemunResnikLazarevac.trainIdsDirection1, ...ovcaZemunResnikLazarevac.trainIdsDirection2], trainId)) {
     return { error: "Invalid train id" };
   }
   return trains[trainId];
 };
 
 const filter = {
-  departures,
+  getDepartures,
   stationsData,
   trainsData,
   aTrainData,
